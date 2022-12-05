@@ -1,0 +1,52 @@
+Started 1 December 2022
+Field warming experiments -- growth and phenology...
+
+
+<><><><>
+Kea ... 2 December 2022
+We asked her 'what evidence do you have that growing season length  and growth are related...'
+
+Ponderosa pine on gravel pit -- 'fuckers would not shut down' ...
+- They sowed them the end of June
+- Then they asked them to shut down in mid-August... in September, still growing (no photoperiod control as they're outside)... still growing in October and November. We don't know what will happen? They're still out there. They might all die, and thus their growth will be 0. 
+
+
+What makes plant shut down? 
+Temperature
+Water status
+Nutrients
+Photoperiod
+
+Do plants that start growing season earlier grow more? Two answer: 'no' and 'yes, they should.' They sowed some 1 June to end of June and the ones that started earlier are 4 inches taller (the others are 3 inches taller) 'but there are confounding factors.' 
+
+
+<><><><>
+
+
+ISI search for ... 
+
+budburst OR leadout OR leaf out OR bud burst (All Fields) and warming experiment AND growth (All Fields) | 164 results
+
+growing season length (All Fields) and warming experiment AND growth (All Fields) | 111 results
+
+Bronson 2009: Effect of ecosystem warming on boreal black spruce bud burst and shoot growth
+
+"Empirical results from this study suggest that soil and air warming causes an earlier bud burst for all years of observation and greater shoot lengths by the third season of warming."
+
+Clark et al. 2013: The seasonal timing of warming that controls onset of the growing season
+
+Model from exits, "By coherently synthesizing discrete observations with continuous responses to temperature variation, we accurately quantify how increasing temperature variation accelerates onset of growth. Application to warming experiments at two latitudes demonstrates that maximum responses to warming are concentrated in late winter, weeks ahead of the main budbreak period."
+
+COMMON garden: 
+Guo et al. 2021: Common-garden experiment reveals clinal trends of bud phenology in black spruce populations from a latitudinal gradient in the boreal forest
+
+"Despite a longer period for photosynthesis expected for the evergreen black spruce under warmer conditions, the period spent for bud development could remain unchanged."
+
+
+I checked some experiments directly ....
+
+SPRUCE: https://mnspruce.ornl.gov/publications/years (has fine root growth ... carbon papers all seem about peat since this was a warmed peatland)
+
+HF soil warming, found Farnsworth et al. 1995, https://harvardforest1.fas.harvard.edu/sites/harvardforest.fas.harvard.edu/files/publications/pdfs/Farnsworth_JofEcology_1995.pdf ... this seems promising but the 'intact control plots' growing the most makes me worry about experimental issues. Warming enhanced diameter growth of woody species in one year ... 
+
+
