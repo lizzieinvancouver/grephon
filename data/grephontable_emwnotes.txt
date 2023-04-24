@@ -1,0 +1,79 @@
+Started 24 April 2023
+By Lizzie
+
+Notes by Lizzie while entering papers into table....
+
+
+<><><><><><><><>
+Notes by Lizzie on 24 April 2023
+
+I am struggling with 'How did they measure growing season length?' (column H) for xylogenesis studies that used start and end of growth. 
+
+Do we want to capture sample size at all? Number of species/individuals/years?
+
+I also sort of feel like we should have a xylogenesis expert review my work. 
+
+Core (intra-annual xylogenesis) seems broken in half when you download the file. 
+
+
+-------------------------
+Citations
+
+Silvestro et al. 2023 cite this which sounds cool: 
+Silvestro, R. et al. From phenology to forest management: Ecotypes selection can avoid early or late frosts, but not both. For. Ecol. Manag. 436, 21–26 (2019).
+
+Etzvold et al 2021 cite this a lot ...
+	Forrest, J. & Miller-Rushing, A.J. (2010) Toward a synthetic under- standing of the role of phenology in ecology and evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 365, 3101–3112.
++++++++
+
+
+-------------------------
+Silvestro et al. 2023
+
+
+We collected wood microcores weekly from April to October 2018 from 27 individuals in Quebec (Canada) and prepared anatomical sections to assess wood formation dynamics and their relationships with the anatomical traits of the wood cells
+
+27 balsam firs at the Montmorency Forest, Quebec, Canada
+
+each additional xylem cell lengthened the growing season by 1 day
+
+[diffs in] earlywood-latewood formation.... In conifers, earlywood is more dependent on soil water content to sustain a greater cell extension, and latewood depends more often on temperature and sugar availability
+
+However, wood phenology can vary significantly among individuals 18,19.
+
+[3 hypotheses:] A longer growing season leads to a greater annual tracheid production in which: (1) Earlywood and latewood productions increase proportionally, no differences in morphometric density can be highlighted; (2) A longer growing season increases carbon assimilation in wood21, latewood production augments and thus increases carbon sequestration and morphometric density; or (3) An earlier onset of the growing season does not result in extra carbon sequestration from wood production22, earlywood production increases, resulting in a lower morphometric wood density.
+
+[Results support that] individuals experiencing an earlier resumption of xylem growth increase earlywood production and decrease morphometric wood density.
+
+Primary and secondary growth processes depend on one another, are synchronous, and unquestionably competitive (11,25). 
+
+Our results agree with previous studies19, in which the end of the growing season was marked by a larger among-tree variability than the onset. The difference in variability between the onset and the ending of wood phenology is likely related to a different contribution of the endogenous and environmental factors driving these phenological phases. 
+
+Over the last decade, the scientific literature provided evidence of a global acceleration of forest growth dynamics due to climate change (42–46). 
+
+[They say their results agree with Dow et al. 2022.]
+
+-------------------------
+Etzold et al. 2021 (TreeNet study)
+
+daily radial growth
+7 species (Picea abies, Pinus sylvestris, Abies alba, Fagus sylvatica, Fraxinus excelsior, Quercus petraea, Quercus pubescens)
+47 sites across Switzerland 
+8 years
+'Day length set a window of opportunity for radial growth'
+
+[Nice, they used the 'dredge' f(x).]
+
+Annual growth was non-linearly related to stem phenology with a bell-shaped optimum, whereas it was positively related to N daysgrowth (Figure 4).
+
+Thus, phenology hardly contributed to explain the inter-annual variation in annual growth, whereas growth activity, particularly N daysgrowth, turned out to be the most important pre- dictor in the LMM, explaining 65% to 88% of the inter- annual variation (Table S3, Figure S8).
+
+N_daysgrowth is the number of days with growth (daily growth rate >0)
+
+
+stem growth phenology (GROstart, GROend, GROlength)
+
+GROlength was not significantly different among species.
+
+
+
