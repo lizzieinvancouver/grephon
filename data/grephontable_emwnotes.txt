@@ -15,6 +15,8 @@ I also sort of feel like we should have a xylogenesis expert review my work.
 
 Core (intra-annual xylogenesis) seems broken in half when you download the file. 
 
+Within species versus between individuals versus within years (within individuals)
+
 
 -------------------------
 Citations
