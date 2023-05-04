@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{amsmath}
-\usepackage{xr-hyper}
+\usepackage{hyperref}
 % \externaldocument{}
 \usepackage{parskip}
 
@@ -34,9 +34,9 @@
 source("..//analyses/tablemergeclean.R")
 @
 
-Most folks submitted their tables trying to digest papers on growing season length relates to growth -- thank you! We ended up with \Sexpr{nrow(d)} rows of data across \Sexpr{papernum} papers. You can check out the merged file 
+Most folks submitted their tables trying to digest papers on growing season length relates to growth -- thank you! We ended up with \Sexpr{nrow(d)} rows of data across \Sexpr{papernum} papers. You can check out the merged file in the output folder \href{https://github.com/lizzieinvancouver/grephon/tree/main/analyses}{here}.
 
-I did a quick review and then clean on some entries. Here's some info from that....
+I did a quick review and then clean on some entries. You can look at the code (\verb|tablemergeclean.R|) in the \href{https://github.com/lizzieinvancouver/grephon/tree/main/analyses}{analyses folder}. Here's some info from that....
 
 Most studies are temperate or boreal forests as best I can tell. Lots of \emph{Pinus, Abies, Betula, Fraxinus, Quercus, Fagus}.
 
