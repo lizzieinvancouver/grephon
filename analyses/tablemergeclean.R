@@ -18,8 +18,9 @@ achin <- fread("input/grephontable_Alana.csv")
 emw <- fread("input/grephontable_emw.csv")
 fb <- fread("input/grephontable_FB.csv")
 kp <- fread("input/grephontable_kp.csv")
+cjc <- fread("input/grephontable_cjc.csv")
 
-d <- rbind(rdm, ake, achin, emw, fb, kp)
+d <- rbind(rdm, ake, achin, emw, fb, kp, cjc)
 
 # Go through consistency of entries...
 table(d$biome)
@@ -28,15 +29,14 @@ table(d$study_type)
 table(d$growth_metric)
 table(d$gsl_metric)
 subset(d, gsl_metric=="estimated start to estimated end")
+unique(d$species_list)
 
-# Messing around ... 
-table(d$authorsthink_evidence_gslbygrowth)
-table(d$authorsthink_evidence_gslbygrowth, d$youthink_evidence_gslxgrowth)
-
-# How many found relationship?
-authorsyes <- subset(d, authorsthink_evidence_gslbygrowth=="yes")
+papernum <- length(unique(d$paper_id))
 
 ## Simplify some columns
+
+d$study_type[which(d$study_type=="continental scale long-term observational study of phenology combined with model, checked against remote-sensed data")] <- "continental scale obs phenology with model"
+
 
 # authors think about gsl x growth
 d$simple.authorsthink.gslxgrowth <- NA
@@ -46,10 +46,13 @@ d$simple.authorsthink.gslxgrowth[which(d$authorsthink_evidence_gslbygrowth=="no 
 d$simple.authorsthink.gslxgrowth[grep("unsure", d$authorsthink_evidence_gslbygrowth)] <- "unsure"
 d$simple.authorsthink.gslxgrowth[grep("not sure", d$authorsthink_evidence_gslbygrowth)] <- "unsure"
 d$simple.authorsthink.gslxgrowth[which(d$authorsthink_evidence_gslbygrowth=="not mentioned")] <- "not mentioned"
+table(d$simple.authorsthink.gslxgrowth )
 
 # you think about gsl x growth
 d$simple.wethink.gslxgrowth <- d$youthink_evidence_gslxgrowth
 d$simple.wethink.gslxgrowth[which(d$youthink_evidence_gslxgrowth=="yes, but their path model is quite weird and may have problems")] <- "unsure"
+d$simple.wethink.gslxgrowth[which(d$youthink_evidence_gslxgrowth=="not sure")] <- "unsure"
+table(d$simple.wethink.gslxgrowth)
 
 # growth metric
 d$simple.growth.metric <- d$growth_metric
@@ -57,14 +60,27 @@ d$simple.growth.metric[grep("intra-annual", d$growth_metric)] <- "intra-annual c
 d$simple.growth.metric[grep("cell development metrics", d$growth_metric)] <- "intra-annual core"
 d$simple.growth.metric[grep("growth anomalies", d$growth_metric)] <- "intra-annual core"
 d$simple.growth.metric[which(d$growth_metric=="annual core")] <- "annual core"
-d$simple.growth.metric[grep("photosynthesis", d$growth_metric)] <- "photosynthesis"
-d$simple.growth.metric[grep("NDVI", d$growth_metric)] <- "other"
-d$simple.growth.metric[grep("LAI", d$growth_metric)] <- "other"
-d$simple.growth.metric[grep("root", d$growth_metric)] <- "other"
+d$simple.growth.metric[grep("photosynthe", d$growth_metric)] <- "photosynthesis"
+d$simple.growth.metric[grep("biomass", d$growth_metric)] <- "biomass/height/R:S"
+d$simple.growth.metric[grep("root", d$growth_metric)] <- "biomass/height/R:S"
+d$simple.growth.metric[grep("height", d$growth_metric)] <- "biomass/height/R:S"
+d$simple.growth.metric[grep("NDVI", d$growth_metric)] <- "NDVI/LAI"
+d$simple.growth.metric[grep("LAI", d$growth_metric)] <- "NDVI/LAI"
 d$simple.growth.metric[grep("NPP", d$growth_metric)] <- "other"
+d$simple.growth.metric[grep("LMA", d$growth_metric)] <- "other"
+d$simple.growth.metric[grep("stomatal conductance", d$growth_metric)] <- "other"
+d$simple.growth.metric[grep("water-use efficiencty", d$growth_metric)] <- "other"
+
 
 table(d$simple.growth.metric)
 table(d$simple.growth.metric, d$simple.authorsthink.gslxgrowth)
 table(d$simple.authorsthink.gslxgrowth, d$simple.wethink.gslxgrowth)
 
 # table(d$study_type, d$simple.growth.metric)
+
+# How many papers found relationship?
+authorsyes <- subset(d, simple.authorsthink.gslxgrowth=="yes")
+yespapers <- length(unique(authorsyes$paper_id))
+
+# Write it out ...
+write.csv(d, "output/grephontable.csv", row.names=FALSE)

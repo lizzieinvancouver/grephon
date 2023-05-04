@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{xr-hyper}
+% \externaldocument{}
+\usepackage{parskip}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO]{May 2023}
+\fancyhead[RO]{Grephon table}
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+
+\renewcommand{\refname}{\CHead{}}
+
+\title{Grephon: What we learned from the papers}
+\date{\today}
+\author{Grephon group} 
+\maketitle
+
+\tableofcontents
+
+\section{Quick results}
+
+Most folks submitted their tables trying to digest papers on growing season length relates to growth -- thank you! We ended up with 35 rows of data across 21 papers. You can check out the merged file 
+
+I did a quick review and then clean on some entries. Here's some info from that....
+
+Most studies are temperate or boreal forests as best I can tell. Lots of \emph{Pinus, Abies, Betula, Fraxinus, Quercus, Fagus}.
+
+Growth metrics were dominated by tree rings (annual cores):
+\begin{Schunk}
+\begin{Soutput}
+                                 NDVI/LAI          annual core 
+                   1                    2                   10 
+  biomass/height/R:S dendrometer diameter    intra-annual core 
+                   5                    2                    6 
+               other       photosynthesis 
+                   4                    5 
+\end{Soutput}
+\end{Schunk}
+
+\newpage
+Study types were dominated by tree rings (intra and inter-annual) but then more diverse:
+\begin{Schunk}
+\begin{Soutput}
+                                         2 
+continental scale obs phenology with model 
+                                         1 
+             ecosystem carbon budget model 
+                                         1 
+                                greenhouse 
+                                         7 
+                     greenhouse or chamber 
+                                         1 
+          intra-annual cores (xylogenesis) 
+                                         2 
+                                provenance 
+                                         1 
+                                 satellite 
+                                         3 
+shade and climate manipulation experiments 
+                                         1 
+            shade manipulation experiments 
+                                         1 
+                                 tree ring 
+                                        15 
+\end{Soutput}
+\end{Schunk}
+\newpage
+
+In 6 papers and 10 rows of data, authors thought they found a relationship, but this varied with growth metric (you'll also see we're rather unsure about those intra-annual core studies):
+\begin{Schunk}
+\begin{Soutput}
+                       no not mentioned unsure yes
+                        0             0      0   0
+  NDVI/LAI              0             2      0   0
+  annual core           3             1      0   4
+  biomass/height/R:S    1             0      0   3
+  dendrometer diameter  2             0      0   0
+  intra-annual core     2             0      4   0
+  other                 2             0      0   2
+  photosynthesis        0             1      0   1
+\end{Soutput}
+\end{Schunk}
+
+
+And we're not so sure more than one row of data includes a growth x growing season relationship:
+\begin{Schunk}
+\begin{Soutput}
+                  no unsure yes
+  no            0  3      5   0
+  not mentioned 0  0      0   0
+  unsure        0  4      0   0
+  yes           0  0      9   1
+\end{Soutput}
+\end{Schunk}
+
+\section{Questions I think we need to answer before entering more data...}
+
+\begin{enumerate}
+\item Was this data entry doable? It was easy enough for me to clean quickly, but I did not hear how it went for others doing entry?
+\item I and Ailene want some of our papers reviewed by someone else, do we want to just have everything checked twice?
+\item Adjustments to data entry ...
+\begin{enumerate}
+\item What do we mean by `did authors think they found evidence?' ... I still struggled with this. Do we mean in whatever way they defined it? Do we want or have a column for GSL x growth (our version ... and what is our version? We could have a couple, see list below)? 
+\item Are we separating out leaf from wood phenology studies enough?
+\item How to enter xylogenesis studies?
+\item I like the study level question, but I think it needs refining. Ailene added "Strideck et al 2022 study created tree ring chronologies (by merging tree rings across individuals within sites- a common practices in tree ring research) so I selected `Across sites' for study\_level. Might be worth a discussion as there may be other tree ring studies that use a similar approach." See below also ...
+\end{enumerate}
+\end{enumerate}
+
+\newpage
+\begin{Schunk}
+\begin{Soutput}
+                                                       1 
+                                      across individuals 
+                                                      10 
+                                            across sites 
+                                                       1 
+                                across sites/populations 
+                                                       9 
+across sites/populations across years within individuals 
+                                                       1 
+                                          across species 
+                                                       1 
+                         across years within individuals 
+                                                       7 
+                 across years within individuals\302\240 
+                                                       2 
+                                      within individuals 
+                                                       1 
+ within individuals for < 1 year (April to October 2018) 
+                                                       1 
+                         within years within individuals 
+                                                       1 
+\end{Soutput}
+\end{Schunk}
+
+
+\begin{enumerate}
+\item Can we write out the statements we want to make or line widths in a figure we want to define from this so we can make sure we're happy with the table?
+\item What is our dream metric of GSL x growth?
+\begin{enumerate}
+\item GSL must be start to end for me -- NOT days growth $>$0 or such ... 
+\item Does photosynthesis count as growth? What about the other random entries such as NDVI?
+\end{enumerate}
+\end{enumerate}
+
+\section{Next steps}
+
+\begin{enumerate}
+\item Finalize the table again
+\item Decide on how to assign additional reviews (re-reviewing) and assign!
+\item Decide on aims to decide which papers we WOULD add
+\item Do it ... 
+\end{enumerate}
+
+\end{document}
+
+\section{References}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+
+Please find my attached table entries! I have several questions:
+1) What to do when there are no species listed (e.g., Chen et al 2000 focused on "Canadian forests" with no mention at all of species. I put "NA" for now, but not sure that's the best entry...perhaps ">!"? or "no species listed" would be better?
+2) Chen et al. found effects of disturbance (forest fire, insect-induced mortality, harvest) on growth (NPP)-does this count as a biophysical constraint (under endogenous factors)? 
+3) The grephon_meta notes say "across years within individuals" includes " covers many tree ring studies (I think)" however, the Strideck et al 2022 study created tree ring chronologies (by merging tree rings across individuals within sites- a common practices in tree ring research) so I selected "Across sites" for study_level. Might be worth a discussion as there may be other tree ring studies that use a similar approach.
+4) I would really like to have someone else read over the same paper (especially Zani) and see if they agree with my interpretation. IS this something we could do?
+

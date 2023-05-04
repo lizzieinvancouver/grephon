@@ -8,6 +8,7 @@
 *.Rhistory
 *.docx
 analyses/.Rhistory
+*.Rapp.history
 
 *.DS_Store
 /notposting
