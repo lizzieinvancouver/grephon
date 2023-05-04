@@ -68,7 +68,7 @@ daily radial growth
 
 Annual growth was non-linearly related to stem phenology with a bell-shaped optimum, whereas it was positively related to N daysgrowth (Figure 4).
 
-Thus, phenology hardly contributed to explain the inter-annual variation in annual growth, whereas growth activity, particularly N daysgrowth, turned out to be the most important pre- dictor in the LMM, explaining 65% to 88% of the inter- annual variation (Table S3, Figure S8).
+Thus, phenology hardly contributed to explain the inter-annual variation in annual growth, whereas growth activity, particularly N daysgrowth, turned out to be the most important predictor in the LMM, explaining 65% to 88% of the inter- annual variation (Table S3, Figure S8).
 
 N_daysgrowth is the number of days with growth (daily growth rate >0)
 
