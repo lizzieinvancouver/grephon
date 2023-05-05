@@ -31,7 +31,7 @@
 
 \section{Quick results}
 
-Most folks submitted their tables trying to digest papers on growing season length relates to growth -- thank you! We ended up with 35 rows of data across 21 papers. You can check out the merged file in the output folder \href{https://github.com/lizzieinvancouver/grephon/tree/main/analyses}{here}.
+Most folks submitted their tables trying to digest papers on growing season length relates to growth -- thank you! We ended up with 42 rows of data across 24 papers. You can check out the merged file in the output folder \href{https://github.com/lizzieinvancouver/grephon/tree/main/analyses}{here}.
 
 I did a quick review and then clean on some entries. You can look at the code (\verb|tablemergeclean.R|) in the \href{https://github.com/lizzieinvancouver/grephon/tree/main/analyses}{analyses folder}. Here's some info from that....
 
@@ -40,12 +40,25 @@ Most studies are temperate or boreal forests as best I can tell. Lots of \emph{P
 Growth metrics were dominated by tree rings (annual cores):
 \begin{Schunk}
 \begin{Soutput}
-                                 NDVI/LAI          annual core 
-                   1                    2                   10 
-  biomass/height/R:S dendrometer diameter    intra-annual core 
-                   5                    2                    6 
-               other       photosynthesis 
-                   4                    5 
+                                                                  1 
+                                                           NDVI/LAI 
+                                                                  3 
+NEP and GPP (net ecosystem production and gross primary production) 
+                                                                  1 
+                                                        annual core 
+                                                                 10 
+                                                 biomass/height/R:S 
+                                                                  8 
+                                               dendrometer diameter 
+                                                                  2 
+                                                  intra-annual core 
+                                                                  6 
+                                      leaf chlorophyll (SPAD meter) 
+                                                                  1 
+                                                              other 
+                                                                  4 
+                                                     photosynthesis 
+                                                                  6 
 \end{Soutput}
 \end{Schunk}
 
@@ -56,46 +69,94 @@ Study types were dominated by tree rings (intra and inter-annual) but then more 
 > table(d$study_type)
 \end{Sinput}
 \begin{Soutput}
-                                         2 
-continental scale obs phenology with model 
-                                         1 
-             ecosystem carbon budget model 
-                                         1 
-                                greenhouse 
-                                         7 
-                     greenhouse or chamber 
-                                         1 
-          intra-annual cores (xylogenesis) 
-                                         2 
-                                provenance 
-                                         1 
-                                 satellite 
-                                         3 
-shade and climate manipulation experiments 
-                                         1 
-            shade manipulation experiments 
-                                         1 
-                                 tree ring 
-                                        15 
+                                              2 
+     continental scale obs phenology with model 
+                                              1 
+                  ecosystem carbon budget model 
+                                              1 
+                                     greenhouse 
+                                              7 
+                          greenhouse or chamber 
+                                              1 
+greenhouse or chamber (technically CHN terrace) 
+                                              1 
+               intra-annual cores (xylogenesis) 
+                                              2 
+                   phenology observations (PEP) 
+                                              1 
+                                     provenance 
+                                              1 
+                               provenance trial 
+                                              3 
+                                      satellite 
+                                              3 
+                                 satellite data 
+                                              1 
+     shade and climate manipulation experiments 
+                                              1 
+                 shade manipulation experiments 
+                                              1 
+                                      synthesis 
+                                              1 
+                                      tree ring 
+                                             15 
 \end{Soutput}
 \end{Schunk}
 \newpage
 
-In 6 papers and 10 rows of data, authors thought they found a relationship, but this varied with growth metric (you'll also see we're rather unsure about those intra-annual core studies):
+In 8 papers and 14 rows of data, authors thought they found a relationship, but this varied with growth metric (you'll also see we're rather unsure about those intra-annual core studies):
 \begin{Schunk}
 \begin{Sinput}
 > table(d$simple.growth.metric, d$simple.authorsthink.gslxgrowth)
 \end{Sinput}
 \begin{Soutput}
-                       no not mentioned unsure yes
-                        0             0      0   0
-  NDVI/LAI              0             2      0   0
-  annual core           3             1      0   4
-  biomass/height/R:S    1             0      0   3
-  dendrometer diameter  2             0      0   0
-  intra-annual core     2             0      4   0
-  other                 2             0      0   2
-  photosynthesis        0             1      0   1
+                                                                      no
+                                                                       0
+  NDVI/LAI                                                             0
+  NEP and GPP (net ecosystem production and gross primary production)  0
+  annual core                                                          3
+  biomass/height/R:S                                                   1
+  dendrometer diameter                                                 2
+  intra-annual core                                                    2
+  leaf chlorophyll (SPAD meter)                                        0
+  other                                                                2
+  photosynthesis                                                       0
+                                                                     
+                                                                      not mentioned
+                                                                                  0
+  NDVI/LAI                                                                        3
+  NEP and GPP (net ecosystem production and gross primary production)             0
+  annual core                                                                     1
+  biomass/height/R:S                                                              0
+  dendrometer diameter                                                            0
+  intra-annual core                                                               0
+  leaf chlorophyll (SPAD meter)                                                   1
+  other                                                                           0
+  photosynthesis                                                                  2
+                                                                     
+                                                                      unsure
+                                                                           0
+  NDVI/LAI                                                                 0
+  NEP and GPP (net ecosystem production and gross primary production)      0
+  annual core                                                              0
+  biomass/height/R:S                                                       0
+  dendrometer diameter                                                     0
+  intra-annual core                                                        4
+  leaf chlorophyll (SPAD meter)                                            0
+  other                                                                    0
+  photosynthesis                                                           0
+                                                                     
+                                                                      yes
+                                                                        0
+  NDVI/LAI                                                              0
+  NEP and GPP (net ecosystem production and gross primary production)   1
+  annual core                                                           4
+  biomass/height/R:S                                                    6
+  dendrometer diameter                                                  0
+  intra-annual core                                                     0
+  leaf chlorophyll (SPAD meter)                                         0
+  other                                                                 2
+  photosynthesis                                                        1
 \end{Soutput}
 \end{Schunk}
 
@@ -108,9 +169,9 @@ And we're not so sure more than one row of data includes a growth x growing seas
 \begin{Soutput}
                   no unsure yes
   no            0  3      5   0
-  not mentioned 0  0      0   0
+  not mentioned 0  3      0   0
   unsure        0  4      0   0
-  yes           0  0      9   1
+  yes           1  0      9   4
 \end{Soutput}
 \end{Schunk}
 
@@ -134,27 +195,33 @@ And we're not so sure more than one row of data includes a growth x growing seas
 > table(d$study_level)
 \end{Sinput}
 \begin{Soutput}
-                                                       1 
-                                      across individuals 
-                                                      10 
-                                            across sites 
-                                                       1 
-                                across sites/populations 
-                                                       9 
-across sites/populations across years within individuals 
-                                                       1 
-                                          across species 
-                                                       1 
-                         across years within individuals 
-                                                       7 
-                 across years within individuals\302\240 
-                                                       2 
-                                      within individuals 
-                                                       1 
- within individuals for < 1 year (April to October 2018) 
-                                                       1 
-                         within years within individuals 
-                                                       1 
+                                                              1 
+                                             across individuals 
+                                                             11 
+                              across provenances within species 
+                                                              3 
+                                                   across sites 
+                                                              1 
+                                       across sites/populations 
+                                                              9 
+       across sites/populations across years within individuals 
+                                                              1 
+                                                 across species 
+                                                              1 
+                                across years within individuals 
+                                                              8 
+                        across years within individuals\302\240 
+                                                              2 
+across years within pixels (500 m pixels from 2001-2018 :MODIS) 
+                                                              1 
+                                      across years within sites 
+                                                              1 
+                                             within individuals 
+                                                              1 
+        within individuals for < 1 year (April to October 2018) 
+                                                              1 
+                                within years within individuals 
+                                                              1 
 \end{Soutput}
 \end{Schunk}
 

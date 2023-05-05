@@ -19,8 +19,9 @@ emw <- fread("input/grephontable_emw.csv")
 fb <- fread("input/grephontable_FB.csv")
 kp <- fread("input/grephontable_kp.csv")
 cjc <- fread("input/grephontable_cjc.csv")
+jhrl <- fread("input/grephontable-jhrl.csv")
 
-d <- rbind(rdm, ake, achin, emw, fb, kp, cjc)
+d <- rbind(rdm, ake, achin, emw, fb, kp, cjc, jhrl)
 
 # Go through consistency of entries...
 table(d$biome)
