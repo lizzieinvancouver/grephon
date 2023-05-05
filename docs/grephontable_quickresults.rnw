@@ -47,19 +47,19 @@ table(d$simple.growth.metric)
 
 \newpage
 Study types were dominated by tree rings (intra and inter-annual) but then more diverse:
-<<label=studytype, echo=FALSE>>=
+<<label=studytype, echo=TRUE>>=
 table(d$study_type)
 @
 \newpage
 
 In \Sexpr{yespapers} papers and \Sexpr{nrow(authorsyes)} rows of data, authors thought they found a relationship, but this varied with growth metric (you'll also see we're rather unsure about those intra-annual core studies):
-<<label=authorsthinkgrowth, echo=FALSE>>=
+<<label=authorsthinkgrowth, echo=TRUE>>=
 table(d$simple.growth.metric, d$simple.authorsthink.gslxgrowth)
 @
 
 
 And we're not so sure more than one row of data includes a growth x growing season relationship:
-<<label=authorswethink, echo=FALSE>>=
+<<label=authorswethink, echo=TRUE>>=
 table(d$simple.authorsthink.gslxgrowth, d$simple.wethink.gslxgrowth)
 @
 
@@ -78,7 +78,7 @@ table(d$simple.authorsthink.gslxgrowth, d$simple.wethink.gslxgrowth)
 \end{enumerate}
 
 \newpage
-<<label=authorswethink, echo=FALSE>>=
+<<label=authorswethink, echo=TRUE>>=
 table(d$study_level)
 @
 

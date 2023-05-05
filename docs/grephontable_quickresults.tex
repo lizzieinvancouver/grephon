@@ -52,6 +52,9 @@ Growth metrics were dominated by tree rings (annual cores):
 \newpage
 Study types were dominated by tree rings (intra and inter-annual) but then more diverse:
 \begin{Schunk}
+\begin{Sinput}
+> table(d$study_type)
+\end{Sinput}
 \begin{Soutput}
                                          2 
 continental scale obs phenology with model 
@@ -80,6 +83,9 @@ shade and climate manipulation experiments
 
 In 6 papers and 10 rows of data, authors thought they found a relationship, but this varied with growth metric (you'll also see we're rather unsure about those intra-annual core studies):
 \begin{Schunk}
+\begin{Sinput}
+> table(d$simple.growth.metric, d$simple.authorsthink.gslxgrowth)
+\end{Sinput}
 \begin{Soutput}
                        no not mentioned unsure yes
                         0             0      0   0
@@ -96,6 +102,9 @@ In 6 papers and 10 rows of data, authors thought they found a relationship, but 
 
 And we're not so sure more than one row of data includes a growth x growing season relationship:
 \begin{Schunk}
+\begin{Sinput}
+> table(d$simple.authorsthink.gslxgrowth, d$simple.wethink.gslxgrowth)
+\end{Sinput}
 \begin{Soutput}
                   no unsure yes
   no            0  3      5   0
@@ -121,6 +130,9 @@ And we're not so sure more than one row of data includes a growth x growing seas
 
 \newpage
 \begin{Schunk}
+\begin{Sinput}
+> table(d$study_level)
+\end{Sinput}
 \begin{Soutput}
                                                        1 
                                       across individuals 
