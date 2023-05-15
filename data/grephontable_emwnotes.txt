@@ -5,6 +5,19 @@ Notes by Lizzie while entering papers into table....
 
 
 <><><><><><><><>
+Notes by Lizzie on 15 May 2023
+
+Added refs to wiki, save for these:
+
+Liu, B., Li, Y., Eckstein, D., Zhu, L., Dawadi, B. & Liang, E. (2013) Has an extending growing season any effect on the radial growth of Smith fir at the timberline on the southeastern Tibetan Plateau? Trees, 27, 441–446. 
+	https://link.springer.com/article/10.1007/s00468-012-0819-z
+	Did not include as seems to be modeled growth/temperature stuff
+
+Ruehr, N.K., Gast, A., Weber, C., Daub, B. & Arneth, A. (2015) Water availability as dominant control of heat stress responses in two contrasting tree species. Tree Physiology, tpv102.
+	https://academic.oup.com/treephys/article/36/2/164/2364606
+
+
+<><><><><><><><>
 Notes by Lizzie on 24 April 2023
 
 I am struggling with 'How did they measure growing season length?' (column H) for xylogenesis studies that used start and end of growth. 
