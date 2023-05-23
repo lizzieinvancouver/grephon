@@ -1,13 +1,16 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2639
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue10;}
-{\*\expandedcolortbl;;\cssrgb\c99942\c98555\c0;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue10;\red253\green128\blue8;\red253\green128\blue8;
+}
+{\*\expandedcolortbl;;\cssrgb\c99942\c98555\c0;\cssrgb\c100000\c57637\c0;\cssrgb\c100000\c57637\c0;
+}
 \paperw11900\paperh16840\margl1440\margr1440\vieww17660\viewh15080\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 grephontable data entry\
 Started 25 April 2023\
-\cb2 Updated 5 May 2023\cb1 \
+\cb2 Updated 5 May 2023\
+\cb3 Update 23 May 2023\cb1 \
 \
 \ul decoder:\ulnone \
 GSL \'97 growing season length\
@@ -28,7 +31,9 @@ SOS/EOS \'97 start of season/end of season (almost always referring to remote se
 	2c. They consider \ul different parts of GSL separately, but never GSL altogether\ulnone  (e.g., a study uses EOS and SOS as response variable (two separate tests), but not growing season length, then enter as two rows).\
 	2d. \ul Varying their input data related to resources/temperature or related\ulnone , such that multiple tests are conducted and interpreted (example here is Dow paper used one set of data to look at GSL x growth and then a DIFFERENT set of data to test for temperature/precipitation constraints \'97 this would be two lines).\
 	2e. Multiple distinct studies of other sorts. (Unless they put them all together somehow, in which case enter \'91synthesis\'92 in \'91study_type\'92.)\
-You do not need to include more than one row this for statistical tests / data that are unrelated to the question of growth, growing season length and mechanism. Or if the authors are working to analyze or show it altogether as one big thing (path model, giant table of many stats etc.).\
+You do not need to include more than one row this for statistical tests / data that are unrelated to the question of growth, growing season length and mechanism. Or if the authors are working to analyze or show it altogether as one big thing (path model, giant table of many stats etc.) \cb3 or if you basically would enter the same for all columns beyond 
+\f1\b gsl_end_metric 
+\f0\b0 (in that case, you can put multiple entries in the growth or GSL metric columns and Lizzie will adjust in R). \cb1 \
 3. Enter your data 
 \f1\b following along with the information below
 \f0\b0 . \
@@ -37,9 +42,12 @@ You do not need to include more than one row this for statistical tests / data t
 \f0\b0 .\
 5. Take general notes on any difficulties you have filling out the table, and think about whether these are issues arising because there is some important piece of information you feel needs to be included (missing column), because you can not find the most relevant answer in the drop down menu, or because you are not sure what you should do.\
 6. Note citations within your paper and review papers that have cited your paper for other papers we should add. Make a list and organize so you have a top list of 0-5 papers. \
+\cb3 NEW! If you have a paper that never seems to test for GSL x growth (and by this I mean *any* version of it \'97 NOT just our version of it) for whatever reason (often this seems to happen in modeling papers) then you should enter data through 
+\f1\b gsl_end_metric 
+\f0\b0  but then can enter NA for all following columns. Please FLAG these papers when you email your data to Lizzie. \cb1 \
 \
 \
-\ul Enter the following in each column:\ulnone \
+\ul Enter the following in each column: \ulnone \
 \
 *Extra notes indicated by an asterisk. Please do not enter the asterisk in the csv files though!\
 Please try to enter something in every column to show you considered it, even if the entry is NA.\
@@ -133,8 +141,8 @@ I added \'91elevation\'92 and \'91latitude\'92 as ways to measure GSL based on R
 	none\
 	[free form to enter what is not covered above]\
 
-\f1\b \cb2 authorsthink_evidence_gslxgrowth
-\f0\b0 : Did they find evidence that tree growth (whatever the metric of growth you listed previously) increases with growing season length? Their GSL metric must be either start to end of wood or vegetative growth or periods suitable for growth related to wood or vegetative growth (this latter case mainly for drought systems etc.). Ideally one of these:\
+\f1\b \cb2 authorsthink_evidence_gslxgrowth [\cb4 double check closely!]
+\f0\b0 \cb2 : Did they find evidence that tree growth (whatever the metric of growth you listed previously) increases with growing season length? Their GSL metric must be either start to end of wood or vegetative growth or periods suitable for growth related to wood or vegetative growth (this latter case mainly for drought systems etc.). Ideally one of these:\
 	yes\
 	no\
 	not mentioned\
@@ -157,7 +165,9 @@ I added \'91elevation\'92 and \'91latitude\'92 as ways to measure GSL based on R
 	NA\
 
 \f1\b authorsthink_ALTteststatistic
-\f0\b0 : If they think they found evidence, using a test of NOT GSL x growth, then what is their evidence? Brief free-form entry or NA. \
+\f0\b0 : If they think they found evidence, using a test of NOT GSL x growth, then what is their evidence? \cb4 Brief free-form entry or NA. Be sure to clarify here what relationship they looked at. [If you fill this out you should probably have entered \'91not mentioned\'92 in 
+\f1\b authorsthink_evidence_gslxgrowth
+\f0\b0 . ]\cb1 \
 
 \f1\b teststatistic_where
 \f0\b0 : For either of previous columns give figure or table; if no figure or table, give pg number as follows:\
