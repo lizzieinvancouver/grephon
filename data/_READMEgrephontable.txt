@@ -11,5 +11,6 @@ Submission rounds (folders):
 
 submittedround1 -- first full pass at big table (submitted early May 2023), on 5 May 2023 we met discussed and adjusted so then ...
 submittedround2 -- updated version of table, should be same papers as submittedround1 but with more columns and some new rules. Due 15 May 2023, but I am typing today and still waiting. 
-submittedround3 -- new papers and the first set of DOUBLE entry papers
+submittedround3 -- new papers and the first set of DOUBLE entry papers .. and maybe some of round4 (second set of double entry and a very few new papers) as not everyone submitted so I lumped
+submittedroundafterpartnersmeet -- should be set of reviewed for correct entry papers... 
 

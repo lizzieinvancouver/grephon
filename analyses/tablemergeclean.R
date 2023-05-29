@@ -45,6 +45,9 @@ achin3 <- fread("input/round3/grephontable_Alana.csv")
 emw3 <- fread("input/round3/grephontable_emw.csv")
 # fb <- fread("input/round3/XXX.csv")
 kp3 <- fread("input/round3/grephontable_kp_2.csv")
+kp4 <- fread("input/round3/grephontable_kp_3.csv")
+kp4$V39 <- NULL
+kp3 <- rbind(kp3, kp4)
 # cjc <- fread("input/round3/XXX.csv")
 jhrl3 <- fread("input/round3/grephontable_jhrl3.csv")
 # slim down any where they sent last time's data
@@ -104,6 +107,7 @@ deailenejannekedfwide <- reshape(doubleentrydfsmAKEJHRL, idvar=c("paper_id", "pa
 dekavyalizziedfwide[,c("paperid", "gsl_start_metric.KP", "gsl_start_metric.emw")]
 
 dekavyalizziedfwide[,grep("gsl_start_metric", names(dekavyalizziedfwide), value=TRUE)]
+
           
 comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  "gsl_start_metric")
 comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  "authorsthink_evidence_gslxgrowth")
@@ -116,7 +120,10 @@ comparedoubentry(deailenejannekedfwide, c("Ailene", "JHRL"),  "growth_metric")
 comparedoubentry(deailenejannekedfwide, c("Ailene", "JHRL"),  "youthink_evidence_gslxgrowth")
 
 
-
+# Just look at them all ...
+for (i in names(dr3)[3:14]){
+    comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  i)
+}
 
 
 
