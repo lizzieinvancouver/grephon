@@ -17,7 +17,7 @@ library(data.table)
 library(stringr)
 
 
-setwd("~/Documents/git/projects/grephon/analyses")
+setwd("~/Documents/git/projects/grephon/grephon/analyses")
 
 ## needed functions
 comparedoubentry <- function(df, suffixeshere, columnname){
@@ -28,174 +28,99 @@ comparedoubentry <- function(df, suffixeshere, columnname){
     }
           
 
-# round 2
-rdm2 <- fread("input/round2/grephontable_rdm2.0.csv")
-ake2 <- fread("input/round2/grephontable_AKE.csv")
-achin2 <- fread("input/round2/grephontable_Alana.csv")
-emw2 <- fread("input/round2/grephontable_emw.csv")
-# fb <- fread("input/round2/XXX.csv")
-kp2 <- fread("input/round2/grephontable_kp.csv")
-# cjc <- fread("input/round2/XXX.csv")
-jhrl2 <- fread("input/round2/grephontable_jhrl2.csv")
+# after double entry meetings
+rdmf <- fread("input/round4_doubled/grephontable_rdm2.4.csv")
+akej <- fread("input/round4_doubled/grephontable_JHRLAKE-fin.csv")
+achinc <- fread("input/round4_doubled/grephontable_AlanaCat.csv")
+emw <- fread("input/round4_doubled/grephontable_emw.csv")
+kp <- fread("input/round4_doubled/grephon_doubleEntry_kp.csv")
 
-# round 3
-rdm3ALL <- fread("input/round3/grephontable_rdm2.1.csv")
-ake3 <- fread("input/round3/grephontable_Ailene_20May2023.csv")
-achin3 <- fread("input/round3/grephontable_Alana.csv")
-emw3 <- fread("input/round3/grephontable_emw.csv")
-# fb <- fread("input/round3/XXX.csv")
-kp3 <- fread("input/round3/grephontable_kp_2.csv")
-kp4 <- fread("input/round3/grephontable_kp_3.csv")
-kp4$V39 <- NULL
-kp3 <- rbind(kp3, kp4)
-# cjc <- fread("input/round3/XXX.csv")
-jhrl3 <- fread("input/round3/grephontable_jhrl3.csv")
-# slim down any where they sent last time's data
-rdm3 <- rdm3ALL[which(!rdm3ALL$paper_id %in% unique(rdm2$paper_id)),]
+dall <- rbind(rdmf, akej, achinc, emw, kp)
 
-dr2 <- rbind(rdm2, ake2, achin2, emw2, kp2, jhrl2)
-dr3 <- rbind(rdm3, ake3, achin3, emw3, kp3, jhrl3)
+sort(unique(dall$paper_id))
+# expecting 37
+# waiting on Buermann_etal_2018 from kp
 
-# okay, step 1 is to get the double enteries separated out
-dr2 <- subset(dr2, paper_id!="") # empty
-dr2$paperid  <- tolower(str_replace_all(dr2$paper_id, " ", ""))
-dr3$paperid  <- tolower(str_replace_all(dr3$paper_id, " ", ""))
-# manually fix some ...
-dr3$paperid[which(dr3$paperid=="keenanetal2014")] <- "keenan2014"
-dr3$paperid[which(dr3$paperid=="mckownetal2016")] <- "mckown2016"
-dr2$paperid[which(dr2$paperid=="zohner2023")] <- "zohnerpreprint"
-# lists
-sort(unique(dr2$paperid))
-sort(unique(dr3$paperid))
-allids <- c(unique(dr2$paperid), unique(dr3$paperid))
-sort(allids[!duplicated(allids)])
+d <- dall
 
-# round2 doublentry should include:
-doublentryexp <- c("camarero2022", "desauvage2022", "dow2022", "etzold2021", "gao2022",
-"mckown2022", "silvestro2023", "soolananayakanahally2013", "vitasse2009",
-"zani2020", "zohnerpreprint", "francon2020", "eckes-sherpard2020",
- "stridbeck2022", "zhu2021", "finzi2021", "chen2000", 
-"ren2019")
-
-doublentryids <- unique(dr2$paperid)[which(unique(dr2$paperid) %in% unique(dr3$paperid))]
-sort(doublentryexp)
-sort(doublentryids)
-
-doubleentrydf <- rbind(
-    dr2[which(dr2$paperid %in% doublentryids),],
-    dr3[which(dr3$paperid %in% doublentryids),]
-)
-
-# need all unique columns to reshape ...
-table(doubleentrydf$paperid, doubleentrydf$who_entered)
-multirows <- c("vitasse2009", "zani2020", "zohnerpreprint")
-doubleentrydfsm <- doubleentrydf[which(!doubleentrydf$paperid %in% multirows),]
-table(doubleentrydfsm$paperid, doubleentrydfsm$who_entered)
-
-# look at pairs ...
-doubleentrydfsmAKEJHRL <- subset(doubleentrydfsm, who_entered=="Ailene" |
-                                                  who_entered=="JHRL")
-doubleentrydfsmKPEMW <- subset(doubleentrydfsm, who_entered=="KP" |
-                                 who_entered=="emw")
-
-
-# reshaping
-dekavyalizziedfwide <- reshape(doubleentrydfsmKPEMW, idvar=c("paper_id", "paperid"), timevar="who_entered", direction = "wide")
-deailenejannekedfwide <- reshape(doubleentrydfsmAKEJHRL, idvar=c("paper_id", "paperid"), timevar="who_entered", direction = "wide")
-
-# need to work on this ... https://stackoverflow.com/questions/24561936/grep-to-search-column-names-of-a-dataframe
-dekavyalizziedfwide[,c("paperid", "gsl_start_metric.KP", "gsl_start_metric.emw")]
-
-dekavyalizziedfwide[,grep("gsl_start_metric", names(dekavyalizziedfwide), value=TRUE)]
-
-          
-comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  "gsl_start_metric")
-comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  "authorsthink_evidence_gslxgrowth")
-comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  "growth_metric")
-comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  "youthink_evidence_gslxgrowth")
-
-comparedoubentry(deailenejannekedfwide, c("Ailene", "JHRL"),  "gsl_start_metric")
-comparedoubentry(deailenejannekedfwide, c("Ailene", "JHRL"),  "authorsthink_evidence_gslxgrowth")
-comparedoubentry(deailenejannekedfwide, c("Ailene", "JHRL"),  "growth_metric")
-comparedoubentry(deailenejannekedfwide, c("Ailene", "JHRL"),  "youthink_evidence_gslxgrowth")
-
-
-# Just look at them all ...
-for (i in names(dr3)[3:14]){
-    comparedoubentry(dekavyalizziedfwide, c("KP", "emw"),  i)
-}
-
-
-
-## checking a few general things...
-d <- rbind(dr2, dr3)
-table(d$growth_metric)
-table(d$gsl_start_metric)
-subset(d, growth_metric=="photosynthesis")
-
-
-
-## OLDER CODE, need to update once all cleaned ... 
 
 # Go through consistency of entries...
-table(d$biome)
-table(d$paper_id)
-table(d$study_type)
 table(d$growth_metric)
-table(d$gsl_metric)
-subset(d, gsl_metric=="estimated start to estimated end")
-unique(d$species_list)
+
 
 papernum <- length(unique(d$paper_id))
 
 ## Simplify some columns
 
-d$study_type[which(d$study_type=="continental scale long-term observational study of phenology combined with model, checked against remote-sensed data")] <- "continental scale obs phenology with model"
+## Deal with multiple growth metrics 
+subset(d, growth_metric=="dendrometer diameter AND intra-annual core (xylogeneis)" ) # michelot2012; hmm, I think we could do either; not both?
+subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot -- which one?
+subset(d, growth_metric=="stem density; proportion flowering; proportion fruiting") #  Wheeler2016: going with stem density 
 
 
-# authors think about gsl x growth
-d$simple.authorsthink.gslxgrowth <- NA
-d$simple.authorsthink.gslxgrowth[grep("yes", d$authorsthink_evidence_gslbygrowth)] <- "yes"
-d$simple.authorsthink.gslxgrowth[which(d$authorsthink_evidence_gslbygrowth=="no")] <- "no"
-d$simple.authorsthink.gslxgrowth[which(d$authorsthink_evidence_gslbygrowth=="no (or atleast, its weaker than others think) ")] <- "no"
-d$simple.authorsthink.gslxgrowth[grep("unsure", d$authorsthink_evidence_gslbygrowth)] <- "unsure"
-d$simple.authorsthink.gslxgrowth[grep("not sure", d$authorsthink_evidence_gslbygrowth)] <- "unsure"
-d$simple.authorsthink.gslxgrowth[which(d$authorsthink_evidence_gslbygrowth=="not mentioned")] <- "not mentioned"
-table(d$simple.authorsthink.gslxgrowth )
-
-# you think about gsl x growth
-d$simple.wethink.gslxgrowth <- d$youthink_evidence_gslxgrowth
-d$simple.wethink.gslxgrowth[which(d$youthink_evidence_gslxgrowth=="yes, but their path model is quite weird and may have problems")] <- "unsure"
-d$simple.wethink.gslxgrowth[which(d$youthink_evidence_gslxgrowth=="not sure")] <- "unsure"
-table(d$simple.wethink.gslxgrowth)
+## Deal with gsl metrics 
+sort(unique(d$gsl_metric))
+sort(unique(d$gsl_start_metric))
+sort(unique(d$gsl_end_metric))
 
 # growth metric
-d$simple.growth.metric <- d$growth_metric
-d$simple.growth.metric[grep("intra-annual", d$growth_metric)] <- "intra-annual core"
-d$simple.growth.metric[grep("cell development metrics", d$growth_metric)] <- "intra-annual core"
-d$simple.growth.metric[grep("growth anomalies", d$growth_metric)] <- "intra-annual core"
-d$simple.growth.metric[which(d$growth_metric=="annual core")] <- "annual core"
-d$simple.growth.metric[grep("photosynthe", d$growth_metric)] <- "photosynthesis"
-d$simple.growth.metric[grep("biomass", d$growth_metric)] <- "biomass/height/R:S"
-d$simple.growth.metric[grep("root", d$growth_metric)] <- "biomass/height/R:S"
-d$simple.growth.metric[grep("height", d$growth_metric)] <- "biomass/height/R:S"
-d$simple.growth.metric[grep("NDVI", d$growth_metric)] <- "NDVI/LAI"
-d$simple.growth.metric[grep("LAI", d$growth_metric)] <- "NDVI/LAI"
-d$simple.growth.metric[grep("NPP", d$growth_metric)] <- "other"
-d$simple.growth.metric[grep("LMA", d$growth_metric)] <- "other"
-d$simple.growth.metric[grep("stomatal conductance", d$growth_metric)] <- "other"
-d$simple.growth.metric[grep("water-use efficiencty", d$growth_metric)] <- "other"
+d$growth <- d$growth_metric
+d$growth[grep("intra-annual", d$growth_metric)] <- "intra-annual core"
+d$growth[grep("intraannual cores", d$growth_metric)] <- "intra-annual core"
+d$growth[grep("photosynthe", d$growth_metric)] <- "photosynthesis" # doing this first, so we re-assign NEP ones below
+d$growth[grep("dendrometer", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
+d$growth[grep("circumference at breast height", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
+d$growth[grep("carbon flux", d$growth_metric)] <- "ecosystem fluxes"
+d$growth[grep("net ecosystem production", d$growth_metric)] <- "ecosystem fluxes"
+d$growth[grep("in terms of both NEP and gross ecosystem photosynthesis", d$growth_metric)] <- "ecosystem fluxes"
+d$growth[grep("NPP", d$growth_metric)] <- "NPP"
+d$growth[grep("stem density", d$growth_metric)] <- "stem density"
+d$growth[grep("height", d$growth_metric)] <- "height"
 
 
-table(d$simple.growth.metric)
-table(d$simple.growth.metric, d$simple.authorsthink.gslxgrowth)
-table(d$simple.authorsthink.gslxgrowth, d$simple.wethink.gslxgrowth)
+unique(sort(d$growth))
 
-# table(d$study_type, d$simple.growth.metric)
+# GSL metric
+d$gsl <- d$gsl_metric
+d$gsl[grep("fluxnet derived", d$gsl_metric)] <- "flux related"
+d$gsl[grep("plant vegetative phenology", d$gsl_metric)] <- "plant vegetative phenology"
+d$gsl[grep("the period when the forest was in leaf", d$gsl_metric)] <- "plant vegetative phenology"
+d$gsl[grep("GDD", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("snowmelt day", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("monthly temperature data", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("Mar-May Temperature", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("all days with an average daily temperature above DTMIN", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("satellite derived", d$gsl_metric)] <- "satellite derived"
+d$gsl[grep("NDVI", d$gsl_metric)] <- "satellite derived"
+d$gsl[grep("none", d$gsl_metric)] <- "not measured"
 
-# How many papers found relationship?
-authorsyes <- subset(d, simple.authorsthink.gslxgrowth=="yes")
-yespapers <- length(unique(authorsyes$paper_id))
+sort(unique(d$gsl))
+
+# Standardize GSL x growth 
+table(d$authorsthink_evidence_gslxgrowth)
+d$gslxgrowth <- d$authorsthink_evidence_gslxgrowth
+d$gslxgrowth[grep("maybe", d$authorsthink_evidence_gslxgrowth)] <- "not sure"
+
+# Studies with authorsthink_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
+checking <- subset(d, gslxgrowth=="yes" | gslxgrowth=="no")
+seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood phenology")
+
+
+## Quetions
+subset(d, growth_metric=="") ## did Alana and Cat mean to leave this empty in desauvage2022?
+# Kavya has 3 rows for wheeler, did she mean it?
+subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013
+subset(d, authorsthink_evidence_gslxgrowth=="yes, no") # Alana!
+
+## Questions for everyone
+# NEP is similar to NPP?
+
+##
+table(d$gsl_metric)
+subset(d, gsl_metric=="estimated start to estimated end")
+unique(d$species_list)
+
+
 
 # Write it out ...
-write.csv(d, "output/grephontable.csv", row.names=FALSE)
+# write.csv(d, "output/grephontable.csv", row.names=FALSE)
