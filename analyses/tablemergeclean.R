@@ -42,7 +42,7 @@ sort(unique(dall$paper_id))
 # waiting on Buermann_etal_2018 from kp
 
 d <- dall
-
+names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
 
 # Go through consistency of entries...
 table(d$growth_metric)
@@ -52,7 +52,7 @@ papernum <- length(unique(d$paper_id))
 
 ## Simplify some columns
 
-## Deal with multiple growth metrics 
+## Deal with multiple growth metrics (questions: are we okay with number of rows?)
 subset(d, growth_metric=="dendrometer diameter AND intra-annual core (xylogeneis)" ) # michelot2012; hmm, I think we could do either; not both?
 subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot -- which one?
 subset(d, growth_metric=="stem density; proportion flowering; proportion fruiting") #  Wheeler2016: going with stem density 
@@ -77,8 +77,9 @@ d$growth[grep("NPP", d$growth_metric)] <- "NPP"
 d$growth[grep("stem density", d$growth_metric)] <- "stem density"
 d$growth[grep("height", d$growth_metric)] <- "height"
 
-
-unique(sort(d$growth))
+# Question .... which categories can we combine?
+# NEP is similar to NPP?
+unique(sort(d$growth)) 
 
 # GSL metric
 d$gsl <- d$gsl_metric
@@ -101,19 +102,45 @@ table(d$authorsthink_evidence_gslxgrowth)
 d$gslxgrowth <- d$authorsthink_evidence_gslxgrowth
 d$gslxgrowth[grep("maybe", d$authorsthink_evidence_gslxgrowth)] <- "not sure"
 
+# Questions: What to do about not sure?
+gslxgrowthmaybe <- subset(d, gslxgrowth=="not sure")
+gslxgrowthmaybe[,1:3]
+
 # Studies with authorsthink_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
+# Questions here ... 
+# Do we want to add "satellite derived" as an okay metric of vegetative phenology? I think so. 
 checking <- subset(d, gslxgrowth=="yes" | gslxgrowth=="no")
 seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood phenology")
+seemswrong[,c("paper_id", "who_entered", "gslxgrowth", "gsl", "gsl_start_metric", "gsl_end_metric")]
 
 
-## Quetions
+# More questions (esp. what does 'no' 'not sure' mean?)
+unique(d$authorsthink_ALTteststatistic)
+subset(d, authorsthink_ALTteststatistic=="Fig 4") # oh dear, that's me
+subset(d, authorsthink_ALTteststatistic=="no") # Alana
+subset(d, authorsthink_ALTteststatistic=="not sure") # Alana
+
+# More questions -- what is the no here? And the 'correlation between height growth duration and height'?
+table(d$authorsthink_evidence_gslxgrowth_suitabledays_or_starttoend)
+
+# Endo and external factors
+table(d$authorslooked_externalfactors)
+table(d$authorslooked_endogenousfactors)
+
+
+latitudestuff <- c("MAT in origin as related to adaptation to latitude/temperature",
+    "yes - for temperature x latitude relationships with radial growth")
+
+
+latstudies <- d[which(d$authorsthink_ALTteststatistic %in% latitudestuff),] # hmm, missing Vitasse
+
+## Questions ... specific (if time allows)
 subset(d, growth_metric=="") ## did Alana and Cat mean to leave this empty in desauvage2022?
 # Kavya has 3 rows for wheeler, did she mean it?
 subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013
 subset(d, authorsthink_evidence_gslxgrowth=="yes, no") # Alana!
 
-## Questions for everyone
-# NEP is similar to NPP?
+
 
 ##
 table(d$gsl_metric)
