@@ -3,10 +3,9 @@
 
 ## On the train into Zurich, we made the connection! ##
 
-## Updated 22 May 2023, hoping to ..
-# (1) Check how double entry is going
-# (2) Review what we have found
-# DID NOT make it past (1) so need to work on that and do (2) someday.
+## Updated 22 June 2023, hoping to ..
+# (1) Check the files submitted
+# (2) Try to report out to people our overal findings and what they are reporting
 
 # housekeeping
 rm(list=ls()) 
@@ -20,26 +19,20 @@ library(stringr)
 setwd("~/Documents/git/projects/grephon/grephon/analyses")
 
 ## needed functions
-comparedoubentry <- function(df, suffixeshere, columnname){
-    column1 <- paste(columnname, suffixeshere[1], sep=".")
-    column2 <- paste(columnname, suffixeshere[2], sep=".")
-    columnz <- c("paperid", column1, column2)
-    print(df[,..columnz])
-    }
-          
+  
 
-# after double entry meetings
-rdmf <- fread("input/round4_doubled/grephontable_rdm2.4.csv")
-akej <- fread("input/round4_doubled/grephontable_JHRLAKE-fin.csv")
-achinc <- fread("input/round4_doubled/grephontable_AlanaCat.csv")
-emw <- fread("input/round4_doubled/grephontable_emw.csv")
-kp <- fread("input/round4_doubled/grephon_doubleEntry_kp.csv")
+# after double entry meetings and final table update (we hope)
+rdmf <- fread("input/round6/grephontable_rdm_fb_5.1.csv")
+# akej <- fread("input/round6/grephontable_JHRLAKE-fin.csv")
+achinc <- fread("input/round6/grephon table Alana and Cat final round.csv") # missing what should be col 19 "gs_metric_other"
+emw <- fread("input/round6/grephontable_emw.csv")
+kp <- fread("input/round6/grephontable_kp_NEW.csv")
 
-dall <- rbind(rdmf, akej, achinc, emw, kp)
+dall <- rbind(rdmf, achinc, emw, kp) # akej
 
 sort(unique(dall$paper_id))
 # expecting 37
-# waiting on Buermann_etal_2018 from kp
+
 
 d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
@@ -53,8 +46,7 @@ papernum <- length(unique(d$paper_id))
 ## Simplify some columns
 
 ## Deal with multiple growth metrics (questions: are we okay with number of rows?)
-subset(d, growth_metric=="dendrometer diameter AND intra-annual core (xylogeneis)" ) # michelot2012; hmm, I think we could do either; not both?
-subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot -- which one?
+subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot so I think okay
 subset(d, growth_metric=="stem density; proportion flowering; proportion fruiting") #  Wheeler2016: going with stem density 
 
 
@@ -98,22 +90,32 @@ d$gsl[grep("none", d$gsl_metric)] <- "not measured"
 sort(unique(d$gsl))
 
 # Standardize GSL x growth 
-table(d$authorsthink_evidence_gslxgrowth)
-d$gslxgrowth <- d$authorsthink_evidence_gslxgrowth
-d$gslxgrowth[grep("maybe", d$authorsthink_evidence_gslxgrowth)] <- "not sure"
+table(d$authorsthink_evidence_gsxgrowth)
+d$gsxgrowth <- d$authorsthink_evidence_gsxgrowth
 
 # Questions: What to do about not sure?
-gslxgrowthmaybe <- subset(d, gslxgrowth=="not sure")
-gslxgrowthmaybe[,1:3]
+gsxgrowthmaybe <- subset(d, gsxgrowth=="not sure")
+gsxgrowthmaybe[,1:3] # my weird bruening2017 paper, could be a no (as it's assumed basically)
 
-# Studies with authorsthink_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
+# Now look at our definition of gsl x growth ... 
+table(d$ourdefinition_evidence_gslxgrowth)
+d$ourdefinition_evidence_gslxgrowth[which(d$ourdefinition_evidence_gslxgrowth=="negative relationships")] <- "negative relationship"
+d$gsxgrowthours <- d$ourdefinition_evidence_gslxgrowth
+
+
+# Studies with ourdefinition_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
 # Questions here ... 
 # Do we want to add "satellite derived" as an okay metric of vegetative phenology? I think so. 
-checking <- subset(d, gslxgrowth=="yes" | gslxgrowth=="no")
-seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood phenology")
-seemswrong[,c("paper_id", "who_entered", "gslxgrowth", "gsl", "gsl_start_metric", "gsl_end_metric")]
+checking <- subset(d, gsxgrowthours=="yes" | gsxgrowthours=="no")
+seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood phenology" 
+    & gsl!="satellite derived")
+seemswrong[,c("paper_id", "who_entered", "gsxgrowth", "gsl", "gs_start_metric", "gs_end_metric", "gsxgrowthours")]
 
 
+
+
+## Below not yet updated ... 
+if(FALSE){
 # More questions (esp. what does 'no' 'not sure' mean?)
 unique(d$authorsthink_ALTteststatistic)
 subset(d, authorsthink_ALTteststatistic=="Fig 4") # oh dear, that's me
@@ -146,7 +148,7 @@ subset(d, authorsthink_evidence_gslxgrowth=="yes, no") # Alana!
 table(d$gsl_metric)
 subset(d, gsl_metric=="estimated start to estimated end")
 unique(d$species_list)
-
+}
 
 
 # Write it out ...

@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{xr-hyper}
+% \externaldocument{xxx}
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+\SweaveOpts{concordance=FALSE}
+\renewcommand{\refname}{\CHead{}}
+
+\emph{Hello and thanks for your submitting your data entry! I am reviewing files and will be asking for your help to fix things that seem wrong. I apologize as I will probably send multiple entries on this as I find issues; please bear with me. And thanks again!}
+% For issues raised in this file you can send me an updated csv if you wish or simply detail to me in an email the correct answer and I will update it. 
+
+I am currently checking that `our definition' of phenology is entered correctly and your name showed up in an entry that looked wrong (you'll see that your entry indicates that our definition was tested, but other rows suggest this could not be correct)....
+
+<<echo=FALSE>>=
+source("~/Documents/git/projects/grephon/grephon/analyses/tablemergeclean.R")
+@
+
+<<echo=TRUE>>=
+seemswrong[,c("paper_id", "who_entered", "gsxgrowth", "gsl", 
+	"gs_start_metric", "gs_end_metric", "gsxgrowthours")]
+@
+
+I wonder if you did not mean `no' and instead meant one of the other `no' or `not' options. Here's a reminder of the metadata on this entry and possible entries:
+
+{\bf ourdefinition\_evidence\_gslxgrowth:} Did they find evidence that growth (whatever metric they used) increased with longer growing seasons. Their GSL metric must be: start to end of wood or vegetative growth (can include satellite data) or periods suitable for growth related to wood or vegetative growth (this latter case mainly for drought systems etc.). Suitable days CANNOT be the number of days they observed growth. 
+\begin{quote}
+	yes\\
+	no\\
+	negative relationship\\
+	no data for this\\
+	not tested but have data\\
+	not sure\\
+\end{quote}
+
+{\bf Friendly tip!} You may also want to check your entries for \verb|ourdefinition_evidence_gslxgrowth| and make sure your `no' entries there meant `they tested and did not find a relationship. 
+
+\end{document}
+
+\section{References}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
