@@ -39,6 +39,7 @@ sort(unique(dall$paper_id))
 
 d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
+d$paper_id <- tolower(d$paper_id) # who knew that R sorts capital letters first, then lowercase?
 
 # Go through consistency of entries...
 table(d$growth_metric)

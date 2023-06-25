@@ -38,7 +38,7 @@ Out of \Sexpr{papernum} papers (we have currently \Sexpr{nrow(d)} rows of data) 
 sort(unique(eviany$paper_id))
 @
 
-And those papers with evidence of our definition are:
+And those papers with evidence of our definition are (side query: how come Zhang2021 is here, but not showing up above?):
 <<echo=TRUE>>=
 sort(unique(eviour$paper_id))
 @
