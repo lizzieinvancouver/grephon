@@ -1,0 +1,350 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{todonotes}
+\usepackage{xr-hyper}
+% \externaldocument{xxx}
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+
+\renewcommand{\refname}{\CHead{}}
+
+\iffalse
+\title{Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?}
+\author{Team Grephon}
+\date{\today}
+\maketitle
+\fi 
+\emph{{\bf Warnings \& disclaimers:}
+Currently not all studies included.... and I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
+
+\section{Current take home results}
+
+
+Out of 30 papers (we have currently 43 rows of data) 16 found evidence for GS x growth (any which way) and  9 found evidence for our definition of GS x growth. Those papers with any evidence are:
+
+\begin{Schunk}
+\begin{Sinput}
+> sort(unique(eviany$paper_id))
+\end{Sinput}
+\begin{Soutput}
+ [1] "Cuny2012"                 "Drew & Downes 2018"      
+ [3] "Etzold2021"               "Gao2022"                 
+ [5] "Keenan et al 2014"        "Moser2019"               
+ [7] "Oddi2022"                 "Silvestro2023"           
+ [9] "Soolananayakanahally2013" "Zhu2021"                 
+[11] "delpierre2017"            "francon2020"             
+[13] "grossiord2022"            "mckown2016"              
+[15] "michelot2012"             "wheeler2016"             
+\end{Soutput}
+\end{Schunk}
+
+And those papers with evidence of our definition are:
+\begin{Schunk}
+\begin{Sinput}
+> sort(unique(eviour$paper_id))
+\end{Sinput}
+\begin{Soutput}
+[1] "Cuny2012"           "Drew & Downes 2018" "Oddi2022"          
+[4] "Silvestro2023"      "Zhang2021"          "delpierre2017"     
+[7] "grossiord2022"      "mckown2016"         "michelot2012"      
+\end{Soutput}
+\end{Schunk}
+and they cover both wood and plant vegetative studies:
+\begin{Schunk}
+\begin{Sinput}
+> table(eviour$gsl)
+\end{Sinput}
+\begin{Soutput}
+plant vegetative phenology          satellite derived 
+                         5                          1 
+            wood phenology 
+                         5 
+\end{Soutput}
+\end{Schunk}
+Broadening beyond our definition includes studies where GS is not measured, or climate is used instead:
+\begin{Schunk}
+\begin{Sinput}
+> table(eviour$gsl)
+\end{Sinput}
+\begin{Soutput}
+plant vegetative phenology          satellite derived 
+                         5                          1 
+            wood phenology 
+                         5 
+\end{Soutput}
+\end{Schunk}
+
+\newpage
+I have not checked whether that is different than random, but you can contrast that with the overall suite of GSL metrics and it looks representative to me on quick glance:
+\begin{Schunk}
+\begin{Sinput}
+> table(d$gsl)
+\end{Sinput}
+\begin{Soutput}
+climate related to satellite phenology data 
+                                          1 
+                                       date 
+                                          1 
+                               not measured 
+                                          5 
+                 plant vegetative phenology 
+                                         15 
+                          satellite derived 
+                                          3 
+                 temperature or snow metric 
+                                          5 
+                             wood phenology 
+                                         12 
+\end{Soutput}
+\end{Schunk}
+
+They also cover a pretty wide diversity of growth metrics:
+\begin{Schunk}
+\begin{Sinput}
+> table(eviany$growth) # any definition
+\end{Sinput}
+\begin{Soutput}
+                      annual core cell production (number of cells) 
+                                3                                 1 
+        dendrometer/circumference                  ecosystem fluxes 
+                                3                                 2 
+                           height    intra-annual core (xylogeneis) 
+                                4                                 3 
+                   photosynthesis                  root:shoot ratio 
+                                1                                 1 
+                     stem density 
+                                1 
+\end{Soutput}
+\begin{Sinput}
+> table(eviour$growth) # our definition
+\end{Sinput}
+\begin{Soutput}
+cell production (number of cells)         dendrometer/circumference 
+                                1                                 2 
+                 ecosystem fluxes                            height 
+                                1                                 3 
+   intra-annual core (xylogeneis)                    photosynthesis 
+                                2                                 1 
+                 root:shoot ratio 
+                                1 
+\end{Soutput}
+\end{Schunk}
+
+\newpage
+Here's the full set of GS x growth that found it:
+\begin{Schunk}
+\begin{Sinput}
+> table(eviany$gslxgrowth) # any definition
+\end{Sinput}
+\begin{Soutput}
+                                 not measured x annual core 
+                                                          1 
+              not measured x intra-annual core (xylogeneis) 
+                                                          1 
+                        plant vegetative phenology x height 
+                                                          4 
+plant vegetative phenology x intra-annual core (xylogeneis) 
+                                                          1 
+                plant vegetative phenology x photosynthesis 
+                                                          1 
+              plant vegetative phenology x root:shoot ratio 
+                                                          1 
+                       satellite derived x ecosystem fluxes 
+                                                          2 
+                   temperature or snow metric x annual core 
+                                                          2 
+                  temperature or snow metric x stem density 
+                                                          1 
+         wood phenology x cell production (number of cells) 
+                                                          1 
+                 wood phenology x dendrometer/circumference 
+                                                          3 
+            wood phenology x intra-annual core (xylogeneis) 
+                                                          1 
+\end{Soutput}
+\begin{Sinput}
+> table(eviour$gslxgrowth) # our definition
+\end{Sinput}
+\begin{Soutput}
+               plant vegetative phenology x height 
+                                                 3 
+       plant vegetative phenology x photosynthesis 
+                                                 1 
+     plant vegetative phenology x root:shoot ratio 
+                                                 1 
+              satellite derived x ecosystem fluxes 
+                                                 1 
+wood phenology x cell production (number of cells) 
+                                                 1 
+        wood phenology x dendrometer/circumference 
+                                                 2 
+   wood phenology x intra-annual core (xylogeneis) 
+                                                 2 
+\end{Soutput}
+\end{Schunk}
+
+To contrast, here's what studies that did NOT find evidence looked like:
+\begin{Schunk}
+\begin{Sinput}
+> table(noeviany$gslxgrowth) # any definition
+\end{Sinput}
+\begin{Soutput}
+climate related to satellite phenology data x dendrometer/circumference 
+                                                                      1 
+                                                     date x annual core 
+                                                                      1 
+                               plant vegetative phenology x annual core 
+                                                                      3 
+    plant vegetative phenology x annual core (simulated to intraannual) 
+                                                                      1 
+                                   plant vegetative phenology x biomass 
+                                                                      1 
+                                        satellite derived x annual core 
+                                                                      1 
+                               temperature or snow metric x annual core 
+                                                                      1 
+                             wood phenology x dendrometer/circumference 
+                                                                      3 
+                        wood phenology x intra-annual core (xylogeneis) 
+                                                                      2 
+\end{Soutput}
+\begin{Sinput}
+> table(noeviour$gslxgrowth) # our definition
+\end{Sinput}
+\begin{Soutput}
+       plant vegetative phenology x annual core 
+                                              3 
+           plant vegetative phenology x biomass 
+                                              1 
+     wood phenology x dendrometer/circumference 
+                                              1 
+wood phenology x intra-annual core (xylogeneis) 
+                                              1 
+\end{Soutput}
+\end{Schunk}
+
+\section{Getting back to writing our paper}
+
+\emph{Reminder of what we expected the table we worked on since April to help us with ...}
+\begin{enumerate}
+\item Section: Review three reasons for not growing 
+\begin{enumerate} 
+\item Overview paragraph of three reasons
+\begin{enumerate} 
+\item Measurement -- see box/figure  (include measurement only here or briefly so we move through it fast)
+\item Resource limitation
+\item Constraints
+\end{enumerate}
+\item Resource limitation, evidence for an against \todo{Table will help us with this}
+\begin{enumerate}
+\item Nutrients
+\item Water
+\item Is this more species-specific?
+\end{enumerate}
+\item Constraints, evidence for an against \todo{Table will help us with this}
+\begin{enumerate}
+\item Leaf life span
+\item Budset stuff ... (Zohner, Sool.)
+\item Evidence across species? Or which is species-specific
+\end{enumerate}
+\end{enumerate}
+\item What do do next (The future! Is there a framework to our future directions? It would be nice if we found one) \todo{This needs a total overhaul after the table; figure out the section headers}
+\end{enumerate}
+
+\vspace{5ex}
+So, we hoped these studies would help with the prevalence of evidence for external and endogenous factors. I haven't got as far on this (and we did not consistently enter whether growth or GSL or both was limiting) but here's a quick look at the 21 papers that found evidence of external factors and 8 that found evidence of endogenous (in contrast to 6 papers that looked but did not find evidence of external or 17 endogenous factors).
+
+For those that did, they looked at these GSL metrics:
+\begin{Schunk}
+\begin{Sinput}
+> table(exoyes$gsl)
+\end{Sinput}
+\begin{Soutput}
+                      date               not measured 
+                         1                          4 
+plant vegetative phenology          satellite derived 
+                        13                          1 
+temperature or snow metric             wood phenology 
+                         4                          5 
+\end{Soutput}
+\begin{Sinput}
+> table(endoyes$gsl)
+\end{Sinput}
+\begin{Soutput}
+              not measured plant vegetative phenology 
+                         1                          8 
+            wood phenology 
+                         4 
+\end{Soutput}
+\end{Schunk}
+And specifically:
+\begin{Schunk}
+\begin{Sinput}
+> table(exoyes$gs_metric_used)
+\end{Sinput}
+\begin{Soutput}
+               start metric only                     start to end 
+                               4                               14 
+start to end (I think for SFGCC)                    suitable days 
+                               1                                1 
+       time with growth observed                           unsure 
+                               2                                2 
+\end{Soutput}
+\begin{Sinput}
+> table(endoyes$gs_metric_used)
+\end{Sinput}
+\begin{Soutput}
+                     none         start metric only              start to end 
+                        1                         1                         8 
+time with growth observed                    unsure 
+                        1                         2 
+\end{Soutput}
+\end{Schunk}
+And these growth metrics (seems a bias towards annual core studies looking at external; we have 11 annual core results):
+\begin{Schunk}
+\begin{Sinput}
+> table(exoyes$growth)
+\end{Sinput}
+\begin{Soutput}
+                        NDVI/greenness                            annual core 
+                                     1                                      8 
+annual core (simulated to intraannual)                                biomass 
+                                     1                                      2 
+             dendrometer/circumference                       ecosystem fluxes 
+                                     3                                      2 
+                                height         intra-annual core (xylogeneis) 
+                                     5                                      3 
+                        photosynthesis                       root:shoot ratio 
+                                     2                                      1 
+                          stem density 
+                                     1 
+\end{Soutput}
+\begin{Sinput}
+> table(endoyes$growth) 
+\end{Sinput}
+\begin{Soutput}
+              annual core                   biomass dendrometer/circumference 
+                        1                         2                         4 
+         ecosystem fluxes          growth anomalies                    height 
+                        1                         1                         3 
+           photosynthesis          root:shoot ratio 
+                        1                         1 
+\end{Soutput}
+\end{Schunk}
+
+
+
+\end{document}
+
+\section{References}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}

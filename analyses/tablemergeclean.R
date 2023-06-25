@@ -22,24 +22,26 @@ setwd("~/Documents/git/projects/grephon/grephon/analyses")
   
 
 # after double entry meetings and final table update (we hope)
-rdmf <- fread("input/round6/grephontable_rdm_fb_5.1.csv")
-# akej <- fread("input/round6/grephontable_JHRLAKE-fin.csv")
-achinc <- fread("input/round6/grephon table Alana and Cat final round.csv") # missing what should be col 19 "gs_metric_other"
+rdmfprep <- fread("input/round6/grephontable_rdm_fb_5.2.csv")
+akej <- fread("input/round6/grephontable_JHRLAKE-fin-19Jun2023_hacked.csv") # missing what should be col 19 "gs_metric_other" so I hacked this version
+achinc <- fread("input/round6/grephon table Alana and Cat final round.csv") 
 emw <- fread("input/round6/grephontable_emw.csv")
 kp <- fread("input/round6/grephontable_kp_NEW.csv")
 
-dall <- rbind(rdmf, achinc, emw, kp) # akej
+rdmf <- subset(rdmfprep, paper_id!="")
+
+dall <- rbind(rdmf, achinc, emw, kp) # akej, 
+# dall <- rbind(rdmf, akej, achinc, emw, kp) # I cannot currently fix this
 
 sort(unique(dall$paper_id))
-# expecting 37
-
+# expecting 37 I thought ... have 30 here, expect 8 more from Janneke and Ailene
+# so I should check my original counting
 
 d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
 
 # Go through consistency of entries...
 table(d$growth_metric)
-
 
 papernum <- length(unique(d$paper_id))
 
@@ -57,17 +59,19 @@ sort(unique(d$gsl_end_metric))
 
 # growth metric
 d$growth <- d$growth_metric
-d$growth[grep("intra-annual", d$growth_metric)] <- "intra-annual core"
-d$growth[grep("intraannual cores", d$growth_metric)] <- "intra-annual core"
+d$growth[grep("intra-annual", d$growth_metric)] <- "intra-annual core (xylogeneis)"
+d$growth[grep("intraannual cores", d$growth_metric)] <- "intra-annual core (xylogeneis)"
 d$growth[grep("photosynthe", d$growth_metric)] <- "photosynthesis" # doing this first, so we re-assign NEP ones below
+d$growth[grep("ring width", d$growth_metric)] <- "annual core" # CHECK
 d$growth[grep("dendrometer", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
 d$growth[grep("circumference at breast height", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
 d$growth[grep("carbon flux", d$growth_metric)] <- "ecosystem fluxes"
 d$growth[grep("net ecosystem production", d$growth_metric)] <- "ecosystem fluxes"
 d$growth[grep("in terms of both NEP and gross ecosystem photosynthesis", d$growth_metric)] <- "ecosystem fluxes"
-d$growth[grep("NPP", d$growth_metric)] <- "NPP"
+d$growth[grep("CO2 assimilation", d$growth_metric)] <- "ecosystem fluxes"
 d$growth[grep("stem density", d$growth_metric)] <- "stem density"
 d$growth[grep("height", d$growth_metric)] <- "height"
+d$growth[grep("growth anomalies", d$growth_metric)] <- "growth anomalies"
 
 # Question .... which categories can we combine?
 # NEP is similar to NPP?
@@ -89,6 +93,10 @@ d$gsl[grep("none", d$gsl_metric)] <- "not measured"
 
 sort(unique(d$gsl))
 
+# Compound metric
+d$gslxgrowth <- paste(d$gsl, d$growth, sep=" x ")
+table(d$gslxgrowth)
+
 # Standardize GSL x growth 
 table(d$authorsthink_evidence_gsxgrowth)
 d$gsxgrowth <- d$authorsthink_evidence_gsxgrowth
@@ -101,6 +109,7 @@ gsxgrowthmaybe[,1:3] # my weird bruening2017 paper, could be a no (as it's assum
 table(d$ourdefinition_evidence_gslxgrowth)
 d$ourdefinition_evidence_gslxgrowth[which(d$ourdefinition_evidence_gslxgrowth=="negative relationships")] <- "negative relationship"
 d$gsxgrowthours <- d$ourdefinition_evidence_gslxgrowth
+table(d$gsxgrowthours)
 
 
 # Studies with ourdefinition_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
@@ -112,6 +121,58 @@ seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood p
 seemswrong[,c("paper_id", "who_entered", "gsxgrowth", "gsl", "gs_start_metric", "gs_end_metric", "gsxgrowthours")]
 
 
+# Endo and external factors: CHECK!
+table(d$authorslooked_externalfactors)
+table(d$authorslooked_endogenousfactors)
+# ... a bunch of these lack the gsl or growth part
+missingstuffendoexo <- subset(d, authorslooked_externalfactors=="yes" | authorslooked_endogenousfactors=="yes" )
+missingstuffendoexo[,c("paper_id", "who_entered")]
+
+# What types of studies find evidence for this relationship in any way?
+eviany <- subset(d, gsxgrowth=="yes")
+eviour <- subset(d, gsxgrowthours=="yes")
+
+noeviany <- subset(d, gsxgrowth=="no")
+noeviour <- subset(d, gsxgrowthours=="no")
+
+papersnumanyevi <- length(unique(eviany$paper_id))
+papersnumourevi <- length(unique(eviour$paper_id))
+
+table(eviany$gsl)
+table(eviour$gsl)
+
+table(eviany$gs_metric_used)
+table(eviour$gs_metric_used)
+
+table(eviany$growth)
+table(eviour$growth)
+
+table(eviany$study_level)
+table(eviour$study_level)
+
+table(eviany$gslxgrowth)
+table(eviour$gslxgrowth)
+
+# What do annual cores find? The three yes ones are where gsl is not mentioned or they use temperature or snow metric
+annualcores <- subset(d, growth=="annual core")
+table(annualcores$gsxgrowth)
+table(annualcores$gsxgrowthours)
+
+# What types of studies look at external factors vs endogenous ones?
+exoyes <- d[grep("yes", d$authorslooked_externalfactors),]
+endoyes <- d[grep("yes", d$authorslooked_endogenousfactors),]
+
+exono <- d[grep("no", d$authorslooked_externalfactors),]
+endono <- d[grep("no", d$authorslooked_endogenousfactors),]
+
+table(exoyes$gsl)
+table(endoyes$gsl)
+
+table(exoyes$gs_metric_used)
+table(endoyes$gs_metric_used)
+
+table(exoyes$growth)
+table(endoyes$growth)
 
 
 ## Below not yet updated ... 
@@ -121,13 +182,6 @@ unique(d$authorsthink_ALTteststatistic)
 subset(d, authorsthink_ALTteststatistic=="Fig 4") # oh dear, that's me
 subset(d, authorsthink_ALTteststatistic=="no") # Alana
 subset(d, authorsthink_ALTteststatistic=="not sure") # Alana
-
-# More questions -- what is the no here? And the 'correlation between height growth duration and height'?
-table(d$authorsthink_evidence_gslxgrowth_suitabledays_or_starttoend)
-
-# Endo and external factors
-table(d$authorslooked_externalfactors)
-table(d$authorslooked_endogenousfactors)
 
 
 latitudestuff <- c("MAT in origin as related to adaptation to latitude/temperature",

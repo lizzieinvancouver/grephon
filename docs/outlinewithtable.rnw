@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{todonotes}
+\usepackage{xr-hyper}
+% \externaldocument{xxx}
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+\SweaveOpts{concordance=FALSE}
+\renewcommand{\refname}{\CHead{}}
+
+\iffalse
+\title{Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?}
+\author{Team Grephon}
+\date{\today}
+\maketitle
+\fi 
+\emph{{\bf Warnings \& disclaimers:}
+Currently not all studies included.... and I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
+
+\section{Current take home results}
+
+<<echo=FALSE>>=
+source("~/Documents/git/projects/grephon/grephon/analyses/tablemergeclean.R")
+@
+
+Out of \Sexpr{papernum} papers (we have currently \Sexpr{nrow(d)} rows of data) \Sexpr{papersnumanyevi} found evidence for GS x growth (any which way) and  \Sexpr{papersnumourevi} found evidence for our definition of GS x growth. Those papers with any evidence are:
+
+<<echo=TRUE>>=
+sort(unique(eviany$paper_id))
+@
+
+And those papers with evidence of our definition are:
+<<echo=TRUE>>=
+sort(unique(eviour$paper_id))
+@
+and they cover both wood and plant vegetative studies:
+<<echo=TRUE>>=
+table(eviour$gsl)
+@
+Broadening beyond our definition includes studies where GS is not measured, or climate is used instead:
+<<echo=TRUE>>=
+table(eviour$gsl)
+@
+
+\newpage
+I have not checked whether that is different than random, but you can contrast that with the overall suite of GSL metrics and it looks representative to me on quick glance:
+<<echo=TRUE>>=
+table(d$gsl)
+@
+
+They also cover a pretty wide diversity of growth metrics:
+<<echo=TRUE>>=
+table(eviany$growth) # any definition
+table(eviour$growth) # our definition
+@
+
+\newpage
+Here's the full set of GS x growth that found it:
+<<echo=TRUE>>=
+table(eviany$gslxgrowth) # any definition
+table(eviour$gslxgrowth) # our definition
+@
+
+To contrast, here's what studies that did NOT find evidence looked like:
+<<echo=TRUE>>=
+table(noeviany$gslxgrowth) # any definition
+table(noeviour$gslxgrowth) # our definition
+@
+
+\section{Getting back to writing our paper}
+
+\emph{Reminder of what we expected the table we worked on since April to help us with ...}
+\begin{enumerate}
+\item Section: Review three reasons for not growing 
+\begin{enumerate} 
+\item Overview paragraph of three reasons
+\begin{enumerate} 
+\item Measurement -- see box/figure  (include measurement only here or briefly so we move through it fast)
+\item Resource limitation
+\item Constraints
+\end{enumerate}
+\item Resource limitation, evidence for an against \todo{Table will help us with this}
+\begin{enumerate}
+\item Nutrients
+\item Water
+\item Is this more species-specific?
+\end{enumerate}
+\item Constraints, evidence for an against \todo{Table will help us with this}
+\begin{enumerate}
+\item Leaf life span
+\item Budset stuff ... (Zohner, Sool.)
+\item Evidence across species? Or which is species-specific
+\end{enumerate}
+\end{enumerate}
+\item What do do next (The future! Is there a framework to our future directions? It would be nice if we found one) \todo{This needs a total overhaul after the table; figure out the section headers}
+\end{enumerate}
+
+\vspace{5ex}
+So, we hoped these studies would help with the prevalence of evidence for external and endogenous factors. I haven't got as far on this (and we did not consistently enter whether growth or GSL or both was limiting) but here's a quick look at the \Sexpr{length(unique(exoyes$paper_id))} papers that found evidence of external factors and \Sexpr{length(unique(endoyes$paper_id))} that found evidence of endogenous (in contrast to \Sexpr{length(unique(exono$paper_id))} papers that looked but did not find evidence of external or \Sexpr{length(unique(endono$paper_id))} endogenous factors).
+
+For those that did, they looked at these GSL metrics:
+<<echo=TRUE>>=
+table(exoyes$gsl)
+table(endoyes$gsl)
+@
+And specifically:
+<<echo=TRUE>>=
+table(exoyes$gs_metric_used)
+table(endoyes$gs_metric_used)
+@
+And these growth metrics (seems a bias towards annual core studies looking at external; we have \Sexpr{nrow(annualcores)} annual core results):
+<<echo=TRUE>>=
+table(exoyes$growth)
+table(endoyes$growth) 
+@
+
+
+
+\end{document}
+
+\section{References}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
