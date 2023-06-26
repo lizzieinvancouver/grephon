@@ -24,7 +24,7 @@
 \maketitle
 \fi 
 \emph{{\bf Warnings \& disclaimers:}
-Currently not all studies included.... and I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
+Currently excluding Richardson2020 study, and I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
 
 \section{Current take home results}
 
@@ -46,9 +46,10 @@ and they cover both wood and plant vegetative studies:
 <<echo=TRUE>>=
 table(eviour$gsl)
 @
+\newpage
 Broadening beyond our definition includes studies where GS is not measured, or climate is used instead:
 <<echo=TRUE>>=
-table(eviour$gsl)
+table(eviany$gsl)
 @
 
 \newpage
@@ -123,7 +124,23 @@ table(exoyes$growth)
 table(endoyes$growth) 
 @
 
-
+\section{Next steps}
+\begin{enumerate}
+\item How to finalize the table cleaning?
+\begin{enumerate}
+\item I would prefer this all documented over github than being done over email
+\item Not sure how to resolve Richardson study
+\item And there are likely more ....
+\end{enumerate}
+\item How do we want to analyze the table?
+\begin{enumerate}
+\item One idea is to break out what parts of the paper people are working on and then they do their own analysis -- but built off one set of shared cleaning code or such.
+\item Work on analysis using the table is centralized in one person
+\end{enumerate}
+\item Do we want to make a figure that reviews the path diagram from GSL to growth and somehow summarizes what we have found?
+\item Do we wan to re-analyze any of the studies that have the data but did not test our definition? (Dow2022, Finzi2020, Stridbeck2022, zani2020, chen1998, ren2019)
+\item What else?
+\end{enumerate}
 
 \end{document}
 

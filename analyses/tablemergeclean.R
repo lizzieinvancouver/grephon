@@ -19,22 +19,28 @@ library(stringr)
 setwd("~/Documents/git/projects/grephon/grephon/analyses")
 
 ## needed functions
+
+## Flags
+suppressrichardson <- TRUE
   
 
 # after double entry meetings and final table update (we hope)
 rdmfprep <- fread("input/round6/grephontable_rdm_fb_5.2.csv")
-akej <- fread("input/round6/grephontable_JHRLAKE-fin-19Jun2023_hacked.csv") # missing what should be col 19 "gs_metric_other" so I hacked this version
+akej <- fread("input/round6/grephontable_JHRLAKE-fin-25Jun2023.csv") 
 achinc <- fread("input/round6/grephon table Alana and Cat final round.csv") 
 emw <- fread("input/round6/grephontable_emw.csv")
 kp <- fread("input/round6/grephontable_kp_NEW.csv")
 
+# cleaning up some issues before merging data
 rdmf <- subset(rdmfprep, paper_id!="")
+if(suppressrichardson){
+    akej <- akej[which(akej$paper_id!="Richardson2020"),]
+}
 
-dall <- rbind(rdmf, achinc, emw, kp) # akej, 
-# dall <- rbind(rdmf, akej, achinc, emw, kp) # I cannot currently fix this
+dall <- rbind(rdmf, akej, achinc, emw, kp) 
 
 sort(unique(dall$paper_id))
-# expecting 37 I thought ... have 30 here, expect 8 more from Janneke and Ailene
+# expecting 37 I thought ... amd we have 38
 # so I should check my original counting
 
 d <- dall
@@ -55,8 +61,8 @@ subset(d, growth_metric=="stem density; proportion flowering; proportion fruitin
 
 ## Deal with gsl metrics 
 sort(unique(d$gsl_metric))
-sort(unique(d$gsl_start_metric))
-sort(unique(d$gsl_end_metric))
+sort(unique(d$gs_start_metric))
+sort(unique(d$gs_end_metric))
 
 # growth metric
 d$growth <- d$growth_metric
@@ -64,15 +70,36 @@ d$growth[grep("intra-annual", d$growth_metric)] <- "intra-annual core (xylogenei
 d$growth[grep("intraannual cores", d$growth_metric)] <- "intra-annual core (xylogeneis)"
 d$growth[grep("photosynthe", d$growth_metric)] <- "photosynthesis" # doing this first, so we re-assign NEP ones below
 d$growth[grep("ring width", d$growth_metric)] <- "annual core" # CHECK
+# The below line overwrites "dendrometer, intra-annual core (xylogeneis)" to dendrometer
 d$growth[grep("dendrometer", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
 d$growth[grep("circumference at breast height", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
+d$growth[grep("stem density", d$growth_metric)] <- "stem density"
+# The below overwrites "height,  root:shoot ratio" 
+d$growth[grep("height", d$growth_metric)] <- "height"
+d$growth[grep("growth anomalies", d$growth_metric)] <- "growth anomalies"
+d$growth[grep("NDVI/green", d$growth_metric)] <- "NDVI/greenness"
+
+# A ton of stuff falling under ecosystem fluxes
 d$growth[grep("carbon flux", d$growth_metric)] <- "ecosystem fluxes"
 d$growth[grep("net ecosystem production", d$growth_metric)] <- "ecosystem fluxes"
 d$growth[grep("in terms of both NEP and gross ecosystem photosynthesis", d$growth_metric)] <- "ecosystem fluxes"
 d$growth[grep("CO2 assimilation", d$growth_metric)] <- "ecosystem fluxes"
-d$growth[grep("stem density", d$growth_metric)] <- "stem density"
-d$growth[grep("height", d$growth_metric)] <- "height"
-d$growth[grep("growth anomalies", d$growth_metric)] <- "growth anomalies"
+d$growth[grep("NEP, GEP", d$growth_metric)] <- "ecosystem fluxes"
+d$growth[grep("NPP", d$growth_metric)] <- "ecosystem fluxes"
+
+
+
+# CHECK
+# Need to discuss with Janneke and Ailene this entry ... they probably should have used gs_metric_other to limit the numnber of entries here. 
+d[grep("(calcuated from flux towers)", d$growth_metric)]
+# Ask Fredi's opinion here
+d[grep("(simulated to intraannual)", d$growth),]
+
+# growth metric is modeled or not?
+d$growthmodeled <- "no"
+d$growthmodeled[grep("model", d$growth_metric)] <- "yes"
+d$growthmodeled[grep("simulated", d$growth_metric)] <- "yes"
+
 
 # Question .... which categories can we combine?
 # NEP is similar to NPP?
@@ -87,6 +114,9 @@ d$gsl[grep("GDD", d$gsl_metric)] <- "temperature or snow metric"
 d$gsl[grep("snowmelt day", d$gsl_metric)] <- "temperature or snow metric"
 d$gsl[grep("monthly temperature data", d$gsl_metric)] <- "temperature or snow metric"
 d$gsl[grep("Mar-May Temperature", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("minimum temperature", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("spring \\(mar-may\\) temperature", d$gsl_metric)] <- "temperature or snow metric"
+d$gsl[grep("climate related to satellite phenology data", d$gsl_metric)] <- "temperature or snow metric" # this is Dow
 d$gsl[grep("all days with an average daily temperature above DTMIN", d$gsl_metric)] <- "temperature or snow metric"
 d$gsl[grep("satellite derived", d$gsl_metric)] <- "satellite derived"
 d$gsl[grep("NDVI", d$gsl_metric)] <- "satellite derived"
@@ -102,6 +132,9 @@ table(d$gslxgrowth)
 table(d$authorsthink_evidence_gsxgrowth)
 d$gsxgrowth <- d$authorsthink_evidence_gsxgrowth
 
+# CHECK -- this is when I gave up on dealing with the richardson paper ... this feels not super useful
+d[grep("yes \\(both sites\\)", d$authorsthink_evidence_gsxgrowth),]
+
 # Questions: What to do about not sure?
 gsxgrowthmaybe <- subset(d, gsxgrowth=="not sure")
 gsxgrowthmaybe[,1:3] # my weird bruening2017 paper, could be a no (as it's assumed basically)
@@ -110,8 +143,9 @@ gsxgrowthmaybe[,1:3] # my weird bruening2017 paper, could be a no (as it's assum
 table(d$ourdefinition_evidence_gslxgrowth)
 d$ourdefinition_evidence_gslxgrowth[which(d$ourdefinition_evidence_gslxgrowth=="negative relationships")] <- "negative relationship"
 d$gsxgrowthours <- d$ourdefinition_evidence_gslxgrowth
-table(d$gsxgrowthours)
+d$gsxgrowthours[grep("not tested but have data", d$ourdefinition_evidence_gslxgrowth)] <- "not tested but have data"
 
+table(d$gsxgrowthours)
 
 # Studies with ourdefinition_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
 # Questions here ... 
@@ -119,8 +153,11 @@ table(d$gsxgrowthours)
 checking <- subset(d, gsxgrowthours=="yes" | gsxgrowthours=="no")
 seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood phenology" 
     & gsl!="satellite derived")
-seemswrong[,c("paper_id", "who_entered", "gsxgrowth", "gsl", "gs_start_metric", "gs_end_metric", "gsxgrowthours")]
+seemswrong[,c("paper_id", "who_entered", "gsxgrowth", "gsl", "gs_start_metric", "gs_end_metric", "gsxgrowthours")] # When this is no rows, we say hurrah!
 
+# Wondering what the model studies find
+dmodel <- subset(d, growthmodeled=="yes")
+dmodel[,48:51]
 
 # Endo and external factors: CHECK!
 table(d$authorslooked_externalfactors)
@@ -128,6 +165,9 @@ table(d$authorslooked_endogenousfactors)
 # ... a bunch of these lack the gsl or growth part
 missingstuffendoexo <- subset(d, authorslooked_externalfactors=="yes" | authorslooked_endogenousfactors=="yes" )
 missingstuffendoexo[,c("paper_id", "who_entered")]
+
+# Which papers have data but do not test it?
+d$paper_id[d$gsxgrowthours=="not tested but have data"]
 
 # What types of studies find evidence for this relationship in any way?
 eviany <- subset(d, gsxgrowth=="yes")
@@ -158,6 +198,11 @@ table(eviour$gslxgrowth)
 annualcores <- subset(d, growth=="annual core")
 table(annualcores$gsxgrowth)
 table(annualcores$gsxgrowthours)
+
+# What do wood phenology studies find?
+woodphen <- subset(d, gsl=="wood phenology")
+woodphen[,c(1:2,48:51)]
+subset(d, paper_id=="oddi2022") # CHECK: Not clear to me how this has "no data for this" for the last entry for this paper
 
 # What types of studies look at external factors vs endogenous ones?
 exoyes <- d[grep("yes", d$authorslooked_externalfactors),]
