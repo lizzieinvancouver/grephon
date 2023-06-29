@@ -252,4 +252,4 @@ unique(d$species_list)
 
 
 # Write it out ...
-# write.csv(d, "output/grephontable.csv", row.names=FALSE)
+write.csv(d, "output/grephontable.csv", row.names=FALSE)
