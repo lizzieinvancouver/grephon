@@ -2,10 +2,10 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica-Oblique;
 }
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue10;\red253\green128\blue8;
-\red0\green0\blue0;\red253\green128\blue8;\red255\green255\blue255;}
+\red251\green2\blue255;\red0\green0\blue0;\red255\green255\blue255;}
 {\*\expandedcolortbl;;\csgray\c0\c0;\cssrgb\c99942\c98555\c0;\cssrgb\c100000\c57637\c0;
-\cssrgb\c0\c0\c0;\cssrgb\c100000\c57637\c0;\csgray\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww20740\viewh20360\viewkind0
+\cssrgb\c100000\c25279\c100000;\cssrgb\c0\c0\c0;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20740\viewh16620\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 \cb2 grephontable data entry\
@@ -13,6 +13,7 @@ Started 25 April 2023\
 Updated 5 May-1 June 2023\
 \cb3 Revised 9 June 2023\cb2 \
 \cb4 Updated 12 June 2023\cb2 \
+\cb5 Updated 3 July 2023\cb2 \
  \
 \ul decoder:\ulnone \
 GSL \'97 growing season length\
@@ -25,7 +26,7 @@ SOS/EOS \'97 start of season/end of season (almost always referring to remote se
 \f0\b0  highlighting (potentially) important information.\
 2. 
 \f1\b \cb3 Enter ONE ROW 
-\f0\b0 per distinct results of growth x GSL in your paper (Lizzie will not break out single rows into multiple rows, so be sure you have entered as many rows as you think your paper should have\cb2 .\cb4 [Prioritize result closest to our definition of GSL and include similar metrics with similar results in \cf5 gs_metric_other.\cf0 ] \cb2 You would have MORE than one row when a study includes multiple datasets / measures of growth, growing season length, and / or resources / temperature, such that multiple tests are conducted and interpreted separately (fill out the columns separately for each metric / measure). So, 
+\f0\b0 per distinct results of growth x GSL in your paper (Lizzie will not break out single rows into multiple rows, so be sure you have entered as many rows as you think your paper should have\cb2 .\cb4 [Prioritize result closest to our definition of GSL and include similar metrics with similar results in \cf6 gs_metric_other.\cf0 ] \cb2 You would have MORE than one row when a study includes multiple datasets / measures of growth, growing season length, and / or resources / temperature, such that multiple tests are conducted and interpreted separately (fill out the columns separately for each metric / measure). So, 
 \f1\b enter >1 row in these cases:
 \f0\b0 \
 	2a. Distinctly \ul different measures of growth and/or GSL\ulnone  (or parts of GSL, including SOS and EOS). Example: they measure GSL via budset and also via end of xylogenesis \'97 one of these is vegetative phenology and one is wood phenology, however two different measures of vegetative phenology would be one row unless results diverge. \cb4 Another example: they measure growth as flux tower and as tree radial width (these should be separate rows).\cb2  \
@@ -162,9 +163,9 @@ I added \'91elevation\'92 and \'91latitude\'92 as ways to measure GSL based on R
 \f1\b \'91[not used for gsxgrowth]\'92\cb4  If both, enter [data not found and not used for gsxgrowth]\cb2 \
 \
 \cb3 gs_start_satellite [new!]: 
-\f0\b0 If they used satellite data for their start metric; please give their resolution and metric here. You can also comment on if you think it is a good metric (if you feel confident to do that).  \cb6 Not satellite data? Enter NA.\cb7 \
-\cb2 	\cb6 NA\cb2 \
-	\cb6 Free form entry\cb2 \
+\f0\b0 If they used satellite data for their start metric; please give their resolution and metric here. You can also comment on if you think it is a good metric (if you feel confident to do that).  \cb4 Not satellite data? Enter NA.\cb7 \
+\cb2 	\cb4 NA\cb2 \
+	\cb4 Free form entry\cb2 \
 
 \f1\b \
 gs_end_metric
@@ -178,7 +179,7 @@ gs_end_metric
 	\cb3 * If they mention gsl_end data that you did not easily find in the paper please add 
 \f1\b \'91[data not found]\'92
 \f0\b0 ; additionally if they did not use this metric in their statistical tests of gs x growth please add 
-\f1\b \'91[not used for gsxgrowth]\'92 \cb6  If both, enter [data not found and not used for gsxgrowth]\cb3 \
+\f1\b \'91[not used for gsxgrowth]\'92 \cb4  If both, enter [data not found and not used for gsxgrowth]\cb3 \
 \cb2 \
 \cb3 gs_end_satellite [new!]: 
 \f0\b0 If they used satellite data for their end metric; please give their resolution and metric here. You can also comment on if you think it is a good metric (if you feel confident to do that). \cb4 Not satellite data? Enter NA.\cb7 \
@@ -204,7 +205,7 @@ gs_end_metric
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f1\b \cf5 \cb4 gs_metric_other [new!]: 
+\f1\b \cf6 \cb4 gs_metric_other [new!]: 
 \f0\b0 Other metrics of GS that found similar results to those you are reporting (and are clearly shown and easy to find in the paper) but you do not need to break out into multiple rows based on aforementioned multi-row rules. Separate multiple entries with a comma.\
 	
 \f2\i example
@@ -261,7 +262,7 @@ gs_end_metric
 \
 
 \f1\b \cb3 ourdefinition_evidence_gslxgrowth [NEW!]
-\f0\b0 : Did they find evidence that growth (whatever metric they used) increased with longer growing seasons. Their GSL metric must be: start to end of wood or vegetative growth (can include satellite data) or periods suitable for growth related to wood or vegetative growth (this latter case mainly for drought systems etc.). Suitable days CANNOT be the number of days they observed growth. \
+\f0\b0 : Did they find evidence that growth (whatever metric they used) increased with longer growing seasons\cb5  (if split, any yes means yes)\cb3 . Their GSL metric must be: start to end of wood or vegetative growth (can include satellite data) or periods suitable for growth related to wood or vegetative growth (this latter case mainly for drought systems etc.). Suitable days CANNOT be the number of days they observed growth. \
 	yes\
 	no\
 \cb4 	negative relationship\
@@ -277,9 +278,11 @@ gs_end_metric
 \
 
 \f1\b authorslooked_externalfactors
-\f0\b0 : Did they look for evidence that external factors, like resources or temperature, limits the length of the growing season or limits growth?  Ideally one of these or brief alternative entry:\
+\f0\b0 : Did they look for evidence that external factors, like resources or temperature, limits the length of the growing season (\cb5 or growing season metric\cb2 ) or limits growth?  Ideally one of these or brief alternative entry:\
 	yes - length of growing season\
 	yes - growth\
+	yes - growth and growing season\
+	\cb5 yes - [insert specific metric of growing season if not length]\cb2 \
 	no\
 	not sure*\
 	NA\
@@ -296,6 +299,7 @@ gs_end_metric
 	yes - length of growing season\
 	yes - growth\
 	yes - growth and growing season\
+\cb5 	yes - [insert specific metric of growing season if not length]\cb2 \
 	no\
 	not sure* \
 	NA\
@@ -315,11 +319,15 @@ gs_end_metric
 	NA\
 
 \f1\b authorslooked_endogenousfactors
-\f0\b0 : Did they look for evidence that developmental, biophysical or provenance constraints (endogenous factors) limits the length of the growing season? Ideally one of these:\
-	yes\
+\f0\b0 : Did they look for evidence that developmental, biophysical or provenance constraints (endogenous factors) limit the length of the growing season or limits growth?  Ideally one of these or brief alternative entry:\
+	yes - length of growing season\
+	yes - growth\
+	yes - growth and growing season\
+\cb5 	yes - [insert specific metric of growing season if not length]\cb2 \
 	no\
-	not sure*\
+	not sure* \
 	NA\
+	[free form to enter what is not covered above]\
 * Use \'91not sure\'92 only in extreme cases (where you really cannot commit to another answer). \
 
 \f1\b authorslooked_endogenousfactors_notsure
@@ -328,11 +336,15 @@ gs_end_metric
 	NA\
 
 \f1\b authorsfoundevidencefor_endogenousfactors
-\f0\b0 : Did they find that evidence developmental, biophysical or provenance constraints (endogenous factors) limits the length of the growing season? Ideally one of these:\
-	yes\
+\f0\b0 : Did they find that evidence developmental, biophysical or provenance constraints (endogenous factors)  limit the length of the growing season or limits growth?  Ideally one of these or brief alternative entry:\
+	yes - length of growing season\
+	yes - growth\
+	yes - growth and growing season\
+\cb5 	yes - [insert specific metric of growing season if not length]\cb2 \
 	no\
-	not sure*\
+	not sure* \
 	NA\
+	[free form to enter what is not covered above]\
 * Use \'91not sure\'92 only in extreme cases (where you really cannot commit to another answer). \
 
 \f1\b authorsfoundevidencefor_endogenousfactors_notsure: 
