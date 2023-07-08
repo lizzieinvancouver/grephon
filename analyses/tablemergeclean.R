@@ -22,7 +22,7 @@ setwd("~/Documents/git/projects/grephon/grephon/analyses")
 ## needed functions
 
 ## Flags
-suppressrichardson <- TRUE
+suppressrichardson <- FALSE
   
 
 # after double entry meetings and final table update (we hope)
@@ -64,13 +64,14 @@ subset(d, growth_metric=="stem density; proportion flowering; proportion fruitin
 sort(unique(d$gsl_metric))
 sort(unique(d$gs_start_metric))
 sort(unique(d$gs_end_metric))
+# d$paper_id[which(d$gs_end_metric=="end vegetative")] # lots of these end vegetative, but they are across papers
 
 # growth metric
 d$growth <- d$growth_metric
 d$growth[grep("intra-annual", d$growth_metric)] <- "intra-annual core (xylogeneis)"
 d$growth[grep("intraannual cores", d$growth_metric)] <- "intra-annual core (xylogeneis)"
 d$growth[grep("photosynthe", d$growth_metric)] <- "photosynthesis" # doing this first, so we re-assign NEP ones below
-d$growth[grep("ring width", d$growth_metric)] <- "annual core" # CHECK
+d$growth[grep("ring width", d$growth_metric)] <- "annual core" # Alana confirmed this is correct
 # The below line overwrites "dendrometer, intra-annual core (xylogeneis)" to dendrometer
 d$growth[grep("dendrometer", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
 d$growth[grep("circumference at breast height", d$growth_metric)] <- "dendrometer/circumference" # doing first so we get intra-annual core for Wheeler below
