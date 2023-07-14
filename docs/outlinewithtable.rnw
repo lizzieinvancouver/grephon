@@ -17,12 +17,48 @@
 \SweaveOpts{concordance=FALSE}
 \renewcommand{\refname}{\CHead{}}
 
-\iffalse
+
 \title{Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?}
 \author{Team Grephon}
 \date{\today}
 \maketitle
-\fi 
+
+The idea that longer growing seasons lead to increased plant growth is an intuitive tenet across multiple fields, including physiology (CITES), dendrochronology (CITES) and ecology. It is also a foundational assumption of most models of the future global carbon cycle (CITES). Most models project that future anthropogenic warming will be partly offset by increased carbon sequestration---primarily of temperate and boreal forests---as warming lengthens growing season (CITES), an assumption supported by a suite of ecosystem-scale studies (CITES). Yet recent work has called this assumption into question.
+
+A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth (CITES), with potentially large implications for future climate change. This research suggests fundamental limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients (CITES) to small-scale studies of cell growth in lab settings (CITES). Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth (CITES) to effects of climate change itself, such as increased drought or temperatures too high for plant growth (CITES), as well as differences simply due to the metric of growth (GREEN KEENAN).
+
+Here we review links between growing season length and plant growth across fields to identify the potential mechanisms underlying recent research that has found no link. Our approach spans multiple fields to unify both foundational studies with recent research related to anthropogenic warming. We show that  ...
+
+
+i. Hypotheses for why GSL x growth is not found are not equally tested across fields: Constraint issues in provenance but not tree ring etc.
+ii. Our premise is that some hypotheses for what’s going may be tractably already answered by combining data across fields/methods
+iii. And, you could go far by cross-field tweaking of what each field is doing
+
+And somehow ... This is important!
+i. Carbon storage and climate change
+ii. Fundamental to physiology, species assembly
+
+Studies that Green \& Keenan say no relationship:
+% Fatichi et al. 2014 (opinion)
+% Fatichi et al. 2019 (review)
+% JIang et al 2020 (FACE or sinilar) 
+
+
+
+The proposed mechanisms for this, however, are highly diverse---and most studies measure different aspects of growth across widely varying spatial and temporal scales. 
+
+Yet the proposed mechanisms for this are highly diverse, as are the temporal and spatial scales of st
+
+
+each with varying hypothesis for why. 
+
+A positive link between longer growing seasons and increased carbon sequestration 
+
+A suite of recent studies have called into question this fundamental assumption .... failed to find a link between longer seasons and increased tree growth
+
+This assumption appeared well supported by several large-scale studies of ecosystem fluxes (
+
+\newpage 
 \emph{{\bf Warnings \& disclaimers:}
 Currently excluding Richardson2020 study, and I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
 
