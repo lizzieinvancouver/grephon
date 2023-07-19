@@ -113,11 +113,12 @@ spd1_long<-spd1_long[-which(is.na(spd1_long$species_name)),]
 
 countspp<-sort(table(c(spd1_long$species_name)), decreasing=TRUE)
 sppcols<-rep("lightgreen", times=length(names(countspp)))
-sppcols[grepl("Pinus",names(countgen))]<-"darkgreen"
-sppcols[grepl("Tsuga",names(countgen))]<-"darkgreen"
-sppcols[grepl("Picea",names(countgen))]<-"darkgreen"
-sppcols[grepl("Larix",names(countgen))]<-"darkgreen"
-sppcols[grepl("Juniperus",names(countgen))]<-"darkgreen"
+sppcols[grepl("Pinus",names(countspp))]<-"darkgreen"
+sppcols[grepl("Tsuga",names(countspp))]<-"darkgreen"
+sppcols[grepl("Picea",names(countspp))]<-"darkgreen"
+sppcols[grepl("Larix",names(countspp))]<-"darkgreen"
+sppcols[grepl("Juniperus",names(countspp))]<-"darkgreen"
+sppcols[grepl("Abies",names(countspp))]<-"darkgreen"
 
 
 #Make a barplot of genera
