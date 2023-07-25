@@ -8,6 +8,7 @@
 \usepackage{parskip}
 \usepackage{todonotes}
 \usepackage{xr-hyper}
+\usepackage[utf8]{inputenc}
 % \externaldocument{xxx}
 
 \def\labelitemi{--}
@@ -25,13 +26,23 @@
 
 The idea that longer growing seasons lead to increased plant growth is an intuitive tenet across multiple fields, including physiology (CITES), dendrochronology (CITES) and ecology. It is also a foundational assumption of most models of the future global carbon cycle (CITES). Most models project that future anthropogenic warming will be partly offset by increased carbon sequestration---primarily of temperate and boreal forests---as warming lengthens growing season (CITES), an assumption supported by a suite of ecosystem-scale studies (CITES). Yet recent work has called this assumption into question.
 
-A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth (CITES), with potentially large implications for future climate change. This research suggests fundamental limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients (CITES) to small-scale studies of cell growth in lab settings (CITES). Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth (CITES) to effects of climate change itself, such as increased drought or temperatures too high for plant growth (CITES), as well as differences simply due to the metric of growth (GREEN KEENAN).
+A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth (CITES), with potentially large implications for future climate change. This research suggests limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients (CITES) to small-scale studies of cell growth in lab settings (CITES) to previous studies of ecosystem fluxes with warming (CITES). Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth (CITES) to effects of climate change itself, such as increased drought or temperatures too high for plant growth (CITES), as well as differences simply due to the metric of growth (GREEN KEENAN).
 
-Here we review links between growing season length and plant growth across fields to identify the potential mechanisms underlying recent research that has found no link. Our approach spans multiple fields to unify both foundational studies with recent research related to anthropogenic warming. We show that  ...
+Here we review the connections between growing season length and plant growth across fields to identify the potential mechanisms that unite---and could disconnect---these processes. Our approach spans multiple fields to unify foundational studies with recent research related to anthropogenic warming. We find a pervasive disciplinary split between studies that limits our current ability to identify the underlying processes, and further highlight critical insights from physiology, community ecology, and life history theory that have been unexamined in recent work. Taken together, the current and past versions of fields studying connections between growing season length and growth appear primed to develop a holistic theory of when, where and how climate change may increase tree growth, with implications for both forecasts of future climate change and for fundamental science.
 
+\emph{How warmer temperatures increase tree growth, or not}
+
+Fundamentally, temperature limits biological processes and is a dominant controller of biological time. Temperatures that are too cool (often considered to be below 5C for temperate trees) and too warm (an area of active research but maybe 30-45C for trees???, but perhaps see a figure we'll add?) slow down biological processes to near-unobservably slow and eventually can lead to tissue death (CITES). Between the upper and lower limit biological processes underpinning growth generally accelerate such that warming can have a direct effect, effectively by accelerating biological time, up until the maximum rate (Fig. \ref{fig:concepbiotime}). This maximum rate means absolute time also matters to plant growth, which provides the mechanism through which longer growing seasons---extending absolute available time---can increase total plant growth. % Within this range, however, are most growing season temperatures as warm temperatures fundamentally define the growing season for many temperate plants. 
+ 
+\newpage
+\begin{figure}[h!]
+\includegraphics[width=0.5\textwidth]{..//figures/gsltogrowth/gsltogrowth_emw1a.png}
+\caption{Idealized simplified version of the world, where resources (including water, N etc.) are abundant and temperatures are never too cool or too hot. In this world, temperature can increase growth directly (through increasing the speed of biological processes, up to some limit) and indirectly, but increasing the absolute available time for those processes to happen and lead to more growth.}
+\label{fig:concepbiotime}
+\end{figure}
 
 i. Hypotheses for why GSL x growth is not found are not equally tested across fields: Constraint issues in provenance but not tree ring etc.
-ii. Our premise is that some hypotheses for what’s going may be tractably already answered by combining data across fields/methods
+ii. Our premise is that some hypotheses for what is going may be tractably already answered by combining data across fields/methods
 iii. And, you could go far by cross-field tweaking of what each field is doing
 
 And somehow ... This is important!
@@ -43,7 +54,7 @@ Studies that Green \& Keenan say no relationship:
 % Fatichi et al. 2019 (review)
 % JIang et al 2020 (FACE or sinilar) 
 
-
+Most global models of future warming assume increased anthropogenic carbon will be offset by increased carbon sequestration in forests as growing seasons lengthen.
 
 The proposed mechanisms for this, however, are highly diverse---and most studies measure different aspects of growth across widely varying spatial and temporal scales. 
 
@@ -56,13 +67,15 @@ A positive link between longer growing seasons and increased carbon sequestratio
 
 A suite of recent studies have called into question this fundamental assumption .... failed to find a link between longer seasons and increased tree growth
 
-This assumption appeared well supported by several large-scale studies of ecosystem fluxes (
+This assumption appeared well supported by several large-scale studies of ecosystem fluxes 
+
+
 
 \newpage 
 \emph{{\bf Warnings \& disclaimers:}
-Currently excluding Richardson2020 study, and I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
+I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
 
-\section{Current take home results}
+\section{Old take home results from table}
 
 <<echo=FALSE>>=
 source("~/Documents/git/projects/grephon/grephon/analyses/tablemergeclean.R")
