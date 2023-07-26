@@ -23,14 +23,13 @@ setwd("~/Documents/git/projects/grephon/grephon/analyses")
 
 
 # after double entry meetings and final table update (we hope)
-rdmfprep <- fread("input/round6/grephontable_rdm_fb_5.2.csv") # need to update!
+rdmf <- fread("input/round7/grephontable_rdm_fb_5.4.csv") # need to update!
 akej <- fread("input/round7/grephontable_JHRLAKE.csv") 
 achinc <- fread("input/round7/grephon table Alana and Cat final round.csv") 
 emw <- fread("input/round7/grephontable_emw.csv")
 kp <- fread("input/round7/grephontable_kp_NEW_updatedExogenous.csv")
 
 # cleaning up some issues before merging data
-rdmf <- subset(rdmfprep, paper_id!="")
 akej$V46 <- NULL
 akej$V47 <- NULL
 
