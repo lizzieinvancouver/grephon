@@ -39,6 +39,10 @@ sort(unique(dall$paper_id))
 # expecting 37 I thought ... amd we have 38
 # so I should check my original counting
 
+## Comment by CJC 4Aug: Are there supposed to be two Soolananayakanahallys? 
+# There's one listed for 2013 and one for 2014 but only one in the article list
+# This would fix the 38 issue
+
 d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
 d$paper_id <- tolower(d$paper_id) # who knew that R sorts capital letters first, then lowercase?
@@ -55,8 +59,13 @@ papernum <- length(unique(d$paper_id))
 # First is growth metric, we make a new column called growth
 table(d$growth_metric)
 
+## Check by CJC 4Aug:
+sool <- d[(d$paper_id %in% c("soolananayakanahally2013", "soolananayakanahally2014")),]
+table(sool$growth_metric, sool$paper_id)
+
 ## Deal with multiple growth metrics (questions: are we okay with number of rows?)
 subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot so I think okay
+## CJC 4Aug comment: Soolananayakanahally2013 has "height" and "height, root:shoot ratio", I think we can separate the two maybe?
 subset(d, growth_metric=="stem density; proportion flowering; proportion fruiting") #  Wheeler2016: going with stem density (emw reviewed this paper)
 
 # growth metric
@@ -174,6 +183,8 @@ d$gsxgrowthourdef <- d$ourdefinition_evidence_gslxgrowth
 d$gsxgrowthourdef[grep("not tested but have data", d$ourdefinition_evidence_gslxgrowth)] <- "not tested but have data"
 
 table(d$gsxgrowthourdef)
+### CJC 4Aug: I'm curious about the blank entry...
+subset(d[(d$gsxgrowthourdef==""),]) ## I think this should be "no"
 
 
 ###########################
@@ -213,6 +224,9 @@ missingstuffendoexo[,c("paper_id", "who_entered")]
 # Which papers have data but do not test it?
 d$paper_id[d$gsxgrowthourdef=="not tested but have data"]
 
+## CJC 4Aug: not sure if necessary but capitalize france for consistency
+d$country <- ifelse(d$country=="france", "France", d$country)
+
 # What types of studies find evidence for this relationship in any way?
 eviany <- subset(d, gsxgrowth=="yes")
 eviour <- subset(d, gsxgrowthourdef=="yes")
@@ -242,6 +256,7 @@ table(eviour$gslxgrowth)
 unique(d$country)
 unique(eviany$country)
 unique(eviour$country)
+
 
 # Does species matter? Seems unlikely....
 sort(unique(d$species_list))
