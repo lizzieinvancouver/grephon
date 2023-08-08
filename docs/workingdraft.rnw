@@ -1,0 +1,181 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{todonotes}
+\usepackage{xr-hyper}
+\usepackage[utf8]{inputenc}
+% \externaldocument{xxx}
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+\SweaveOpts{concordance=FALSE}
+\renewcommand{\refname}{\CHead{}}
+
+
+\title{Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?}
+\author{Team Grephon}
+\date{\today}
+\maketitle
+
+The idea that longer growing seasons lead to increased plant growth is an intuitive tenet across multiple fields, including physiology (CITES), dendrochronology (CITES) and ecology. It is also a foundational assumption of most models of the future global carbon cycle (CITES). Most models project that future anthropogenic warming will be partly offset by increased carbon sequestration---primarily of temperate and boreal forests---as warming lengthens growing season (CITES), an assumption supported by a suite of ecosystem-scale studies (CITES). Yet recent work has called this assumption into question.
+
+A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth (CITES), with potentially large implications for future climate change. This research suggests limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients (CITES) to small-scale studies of cell growth in lab settings (CITES) to previous studies of ecosystem fluxes with warming (CITES). Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth (CITES) to effects of climate change itself, such as increased drought or temperatures too high for plant growth (CITES), as well as differences simply due to the metric of growth (GREEN KEENAN).
+
+Here we review the connections between growing season length and plant growth across fields to identify the potential mechanisms that unite---and could disconnect---these processes. Our approach spans multiple fields to unify foundational studies with recent research related to anthropogenic warming. We find a pervasive disciplinary split between studies that limits our current ability to identify the underlying processes, and further highlight critical insights from physiology, community ecology, and life history theory that have been unexamined in recent work. Taken together, the current and past versions of fields studying connections between growing season length and growth appear primed to develop a holistic theory of when, where and how climate change may increase tree growth, with implications for both forecasts of future climate change and for fundamental science.
+
+\emph{How warmer temperatures increase tree growth, or not}
+
+Fundamentally, temperature limits biological processes and is a dominant controller of biological time. Temperatures that are too cool (often considered to be below 5C for temperate trees) and too warm (an area of active research but maybe 30-45C for trees???, but perhaps see a figure we'll add?) slow down biological processes to near-unobservably slow and eventually can lead to tissue death (CITES). Between the upper and lower limit biological processes underpinning growth generally accelerate such that warming can have a direct effect, effectively by accelerating biological time, up until the maximum rate (Fig. \ref{fig:concepbiotime}). This maximum rate means absolute time also matters to plant growth, which provides the mechanism through which longer growing seasons---extending absolute available time---can increase total plant growth. % Within this range, however, are most growing season temperatures as warm temperatures fundamentally define the growing season for many temperate plants. 
+ 
+
+
+i. Hypotheses for why GSL x growth is not found are not equally tested across fields: Constraint issues in provenance but not tree ring etc.
+ii. Our premise is that some hypotheses for what is going may be tractably already answered by combining data across fields/methods
+iii. And, you could go far by cross-field tweaking of what each field is doing
+
+And somehow ... This is important!
+i. Carbon storage and climate change
+ii. Fundamental to physiology, species assembly
+
+Studies that Green \& Keenan say no relationship:
+% Fatichi et al. 2014 (opinion)
+% Fatichi et al. 2019 (review)
+% JIang et al 2020 (FACE or sinilar) 
+
+Most global models of future warming assume increased anthropogenic carbon will be offset by increased carbon sequestration in forests as growing seasons lengthen.
+
+The proposed mechanisms for this, however, are highly diverse---and most studies measure different aspects of growth across widely varying spatial and temporal scales. 
+
+Yet the proposed mechanisms for this are highly diverse, as are the temporal and spatial scales of st
+
+
+each with varying hypothesis for why. 
+
+A positive link between longer growing seasons and increased carbon sequestration 
+
+A suite of recent studies have called into question this fundamental assumption .... failed to find a link between longer seasons and increased tree growth
+
+This assumption appeared well supported by several large-scale studies of ecosystem fluxes 
+
+
+\section{Figures}
+\newpage
+\begin{figure}[h!]
+\includegraphics[width=0.5\textwidth]{..//figures/gsltogrowth/gsltogrowth_emw1a.png}
+\caption{Idealized simplified version of the world, where resources (including water, N etc.) are abundant and temperatures are never too cool or too hot. In this world, temperature can increase growth directly (through increasing the speed of biological processes, up to some limit) and indirectly, but increasing the absolute available time for those processes to happen and lead to more growth.}
+\label{fig:concepbiotime}
+\end{figure}
+
+
+\begin{figure}[h!]
+\includegraphics[width=0.75\textwidth]{..//figures/simpletempcurve_fromlucidboard.png}
+\caption{Simplified version of how GDD works before and after climate change.}
+\label{fig:simpletemp}
+\end{figure}
+
+
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{..//figures/grephonfig.pdf}
+\caption{Less simplified version of how temperature works.}
+\label{fig:temperaturecomplex}
+\end{figure}
+
+
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{..//figures/some conceptual figure2.0.png}
+\caption{Pathways through which climate change could alter growing season length and growth.}
+\label{fig:pathways}
+\end{figure}
+
+
+\clearpage
+
+\section{Old take home results from table}
+
+\emph{{\bf Warnings \& disclaimers:}
+I flip between counting papers at the start to looking more at rows, so you were forewarned on that. }
+
+
+<<echo=FALSE>>=
+source("~/Documents/git/projects/grephon/grephon/analyses/tablemergeclean_basics.R")
+@
+
+Out of \Sexpr{papernum} papers (we have currently \Sexpr{nrow(d)} rows of data).
+
+\section{Getting back to writing our paper}
+
+\emph{Reminder of what we expected the table we worked on since April to help us with ...}
+\begin{enumerate}
+\item Section: Review three reasons for not growing 
+\begin{enumerate} 
+\item Overview paragraph of three reasons
+\begin{enumerate} 
+\item Measurement -- see box/figure  (include measurement only here or briefly so we move through it fast)
+\item Resource limitation
+\item Constraints
+\end{enumerate}
+\item Resource limitation, evidence for an against \todo{Table will help us with this}
+\begin{enumerate}
+\item Nutrients
+\item Water
+\item Is this more species-specific?
+\end{enumerate}
+\item Constraints, evidence for an against \todo{Table will help us with this}
+\begin{enumerate}
+\item Leaf life span
+\item Budset stuff ... (Zohner, Sool.)
+\item Evidence across species? Or which is species-specific
+\end{enumerate}
+\end{enumerate}
+\item What do do next (The future! Is there a framework to our future directions? It would be nice if we found one) \todo{This needs a total overhaul after the table; figure out the section headers}
+\end{enumerate}
+
+\vspace{5ex}
+So, we hoped these studies would help with the prevalence of evidence for external and endogenous factors. I haven't got as far on this (and we did not consistently enter whether growth or GSL or both was limiting) but here's a quick look at the \Sexpr{length(unique(exoyes$paper_id))} papers that found evidence of external factors and \Sexpr{length(unique(endoyes$paper_id))} that found evidence of endogenous (in contrast to \Sexpr{length(unique(exono$paper_id))} papers that looked but did not find evidence of external or \Sexpr{length(unique(endono$paper_id))} endogenous factors).
+
+For those that did, they looked at these GSL metrics:
+<<echo=TRUE>>=
+table(exoyes$gsl)
+table(endoyes$gsl)
+@
+And specifically:
+<<echo=TRUE>>=
+table(exoyes$gs_metric_used)
+table(endoyes$gs_metric_used)
+@
+And these growth metrics (seems a bias towards annual core studies looking at external; we have \Sexpr{nrow(annualcores)} annual core results):
+<<echo=TRUE>>=
+table(exoyes$growth)
+table(endoyes$growth) 
+@
+
+\section{Next steps}
+\begin{enumerate}
+\item How to finalize the table cleaning?
+\begin{enumerate}
+\item I would prefer this all documented over github than being done over email
+\item Not sure how to resolve Richardson study
+\item And there are likely more ....
+\end{enumerate}
+\item How do we want to analyze the table?
+\begin{enumerate}
+\item One idea is to break out what parts of the paper people are working on and then they do their own analysis -- but built off one set of shared cleaning code or such.
+\item Work on analysis using the table is centralized in one person
+\end{enumerate}
+\item Do we want to make a figure that reviews the path diagram from GSL to growth and somehow summarizes what we have found?
+\item Do we wan to re-analyze any of the studies that have the data but did not test our definition? (Dow2022, Finzi2020, Stridbeck2022, zani2020, chen1998, ren2019)
+\item What else?
+\end{enumerate}
+
+\end{document}
+
+\section{References}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
