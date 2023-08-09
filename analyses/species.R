@@ -10,7 +10,7 @@
 #   -which species are most studied?
 #   -which species show trends vs not?
 #   -any useful ways to categorize spp? (e.g. functional group, Grime CSR, freeze/shade tolerance)
-
+# (3) add continent
 # housekeeping
 rm(list=ls()) 
 options(stringsAsFactors=FALSE)
@@ -35,15 +35,31 @@ d$species_num[which(d$species_num=="No species listed")]<-"no spp"
 d$species_num[which(d$species_num=="3 functional types")]<-"no spp"
 d$species_num[which(d$species_num=="no species listed")]<-"no spp"
 
+#add continent
+d$continent<-"1Europe"
+d$continent[d$country=="USA"]<-"2North.America" 
+d$continent[d$country=="Canada"]<-"2North.America" 
+d$continent[d$country=="China"]<-"3Asia" 
+d$continent[d$country=="China, USA"]<-"7Asia,North.America" 
+d$continent[d$country=="northern hemisphere"]<-"8Northern hemisphere"
+d$continent[d$country=="China"]<-"3Asia" 
+d$continent[d$country=="Northern hemisphere"]<-"8Northern hemisphere"
+d$continent[d$country=="north hemisphere vegetation"]<-"8Northern hemisphere"
+d$continent[d$country=="Australia"]<-"4Australia"
+d$continent[d$country=="Argentina"]<-"5South.America"
+d$continent[d$country=="global, but phenology data mainly from Germany, Switzerland, Austria "]<-"9Global"
+d$continent[d$country=="21 sites mostly in Europe and North America"]<-"6Europe, North America"
+d$continent[d$country=="North America (USA, Canada), Europe"]<-"6Europe, North America"
+
 sptab<-table(d$species_num)
-namord<-c(5,1,8,2,9,3,4,6,7,10)
+namord<-c(1,8,2,9,3,4,5,6,7,10)
 sptab<-sptab[order(namord)]
 
 #Next look at species_list column
 sort(unique(d$species_list))
 
 #do some cleaning
-spd<-subset(d,select=c("paper_id","study_type","species_num","species_list","authorsthink_evidence_gsxgrowth"))
+spd<-subset(d,select=c("paper_id","study_type","continent","species_num","species_list","authorsthink_evidence_gsxgrowth"))
 spd$species_list[which(spd$species_list=="ITRDB and ITPCAS")]<-NA
 spd$species_list[which(spd$species_list=="no specific species")]<-NA
 spd$species_list[which(spd$species_list=="BSI (broad leaved summer green shade-intolerant), BST (broad-leaved summer-green shade-tolerant), NS (needle-leaved summer green)")]<-NA
@@ -92,7 +108,7 @@ gencols[which(names(countgen)=="Tsuga")]<-"darkgreen"
   #Make a barplot of genera
   pdf("../figures/genusnums.pdf",width=12,height=8)
   par(mar=c(10,5,1,1))
-  barplot(countgen, ylab="# of studies",xlab=" ",
+  barplot(countgen, ylab="# of papers",xlab=" ",
           col=gencols, ylim=c(0,25),
           las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.3)
   legend("topright",legend=c("angiosperm","gymnosperm"),
@@ -100,14 +116,15 @@ gencols[which(names(countgen)=="Tsuga")]<-"darkgreen"
   
   dev.off()
   
+#sptab<-sptab[order(names(sptab))]
   
 #Make a barplot of sp numbers
 pdf("../figures/numsppplot.pdf",width=7,height=5)
-barplot(sptab, ylab="# of studies",xlab="# of species",
+barplot(sptab, ylab="# of papers",xlab="# of species",
         col="lightblue")
 dev.off()
 
-spd1<- subset(spd2,select=c("paper_id","study_type","authorsthink_evidence_gsxgrowth","sp1","sp2","sp3","sp4","sp5","sp6","sp7","sp8","sp9","sp10"))
+spd1<- subset(spd2,select=c("paper_id","study_type","authorsthink_evidence_gsxgrowth","continent","sp1","sp2","sp3","sp4","sp5","sp6","sp7","sp8","sp9","sp10"))
 spd1_long<-gather(spd1,key="species", value="species_name",sp1,sp2,sp3,sp4,sp5,sp6,sp7,sp8,sp9,sp10)
 spd1_long<-spd1_long[-which(is.na(spd1_long$species_name)),]
 
@@ -124,7 +141,7 @@ sppcols[grepl("Abies",names(countspp))]<-"darkgreen"
 #Make a barplot of genera
 pdf("../figures/speciesnums.pdf",width=12,height=8)
 par(mar=c(15,5,1,1))
-barplot(countspp, ylab="# of studies",xlab=" ",
+barplot(countspp, ylab="# of papers",xlab=" ",
         col=sppcols, ylim=c(0,20),
         las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
 legend("topright",legend=c("angiosperm","gymnosperm"),
@@ -141,10 +158,27 @@ findcols<-c("darkred","white","gray","darkblue")
 pdf("../figures/speciesnums_finds.pdf",width=12,height=8)
 par(mar=c(15,5,1,1))
 barplot(t(table(spd1_long$species_name,spd1_long$authorsthink_e)),
-        ylab="# of studies",xlab=" ",
+        ylab="# of papers",xlab=" ",
         col=findcols, ylim=c(0,20),
         las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
 legend("topright",legend=c("yes","no","not sure","not mentioned"),
        fill =c("darkblue","darkred","gray","white"), cex=1.5, bty="n")
+
+dev.off()
+
+##species nums by continent
+
+contcols<-c("green4","darkblue","goldenrod","salmon","lightblue","purple3")
+  countsppcont<-table(spd1_long$species_name,spd1_long$cont)
+#colSums(countsppcont)
+#Make a barplot of genera
+pdf("../figures/speciesnumsbycont.pdf",width=15,height=5)
+par(mar=c(15,5,1,1))
+barplot(countsppcont,beside=TRUE,
+        ylab="# of papers",xlab=" ",
+        col="darkblue", ylim=c(0,18),
+        las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
+#legend("topright",legend=c("Europe","North America","Asia","Australia","South America", "Asia & North America"),
+#       fill =contcols, cex=1.5, bty="n")
 
 dev.off()
