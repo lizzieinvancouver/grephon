@@ -62,6 +62,8 @@ table(d$growth_metric)
 ## Check by CJC 4Aug:
 sool <- d[(d$paper_id %in% c("soolananayakanahally2013", "soolananayakanahally2014")),]
 table(sool$growth_metric, sool$paper_id)
+## Updated by CJC 9Aug:
+d$paper_id <- ifelse(d$paper_id == "soolananayakanahally2014", "soolananayakanahally2013", d$paper_id)
 
 ## Deal with multiple growth metrics (questions: are we okay with number of rows?)
 subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot so I think okay
