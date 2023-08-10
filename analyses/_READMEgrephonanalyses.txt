@@ -9,6 +9,7 @@ This folder and process is in development, but here's what we have so far for FI
 
 - tablemergeclean_methodexoendo.R -- code mostly by Alana that reads in  grephontablesemiclean.csv cleans up exo and endo stuff and works on a new method column and writes out grephontable.csv
 
+-species.R --code by Ailene to summarize some information about species in our table. includes some cleaning.
 
 FAQ:
 
