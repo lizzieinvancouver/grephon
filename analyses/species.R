@@ -139,11 +139,11 @@ sppcols[grepl("Abies",names(countspp))]<-"darkgreen"
 
 
 #Make a barplot of genera
-pdf("../figures/speciesnums.pdf",width=12,height=8)
+pdf("../figures/speciesnums.pdf",width=14,height=8)
 par(mar=c(15,5,1,1))
 barplot(countspp, ylab="# of studies (rows)",xlab=" ",
         col=sppcols, ylim=c(0,20),
-        las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
+        las=3,cex.lab=1.2, cex.axis=1.2, cex.names=1.1)
 legend("topright",legend=c("angiosperm","gymnosperm"),
        fill =c("lightgreen","darkgreen"), cex=1.5)
 
@@ -155,12 +155,12 @@ spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgro
 spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="yes (1 of 2 sites)"]<-"yes"
 spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="negative relationship"]<-"yes"
 findcols<-c("darkred","white","gray","darkblue")
-pdf("../figures/speciesnums_finds.pdf",width=12,height=8)
+pdf("../figures/speciesnums_finds.pdf",width=14,height=8)
 par(mar=c(15,5,1,1))
 barplot(t(table(spd1_long$species_name,spd1_long$authorsthink_e)),
         ylab="# of studies (rows)",xlab=" ",
         col=findcols, ylim=c(0,20),
-        las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
+        las=3,cex.lab=1.2, cex.axis=1.2, cex.names=1.2)
 legend("topright",legend=c("yes","no","not sure","not mentioned"),
        fill =c("darkblue","darkred","gray","white"), cex=1.5, bty="n")
 
@@ -178,7 +178,7 @@ par(mar=c(15,5,1,1))
 barplot(countsppcont,beside=TRUE,
         ylab="# of studies (rows)",xlab=" ",
         col="darkblue", ylim=c(0,18),
-        las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
+        las=3,cex.lab=1.2, cex.axis=1.2, cex.names=1.2)
 #legend("topright",legend=c("Europe","North America","Asia","Australia","South America", "Asia & North America"),
 #       fill =contcols, cex=1.5, bty="n")
 
