@@ -56,7 +56,7 @@ namord<-c(1,8,2,9,3,4,5,6,7,10)
 sptab<-sptab[order(namord)]
 
 #Next look at species_list column
-sort(unique(d$species_list))
+#sort(unique(d$species_list))
 
 #do some cleaning
 spd<-subset(d,select=c("paper_id","study_type","continent","species_num","species_list","authorsthink_evidence_gsxgrowth"))
@@ -108,7 +108,7 @@ gencols[which(names(countgen)=="Tsuga")]<-"darkgreen"
   #Make a barplot of genera
   pdf("../figures/genusnums.pdf",width=12,height=8)
   par(mar=c(10,5,1,1))
-  barplot(countgen, ylab="# of papers",xlab=" ",
+  barplot(countgen, ylab="# of studies (rows)",xlab=" ",
           col=gencols, ylim=c(0,25),
           las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.3)
   legend("topright",legend=c("angiosperm","gymnosperm"),
@@ -120,7 +120,7 @@ gencols[which(names(countgen)=="Tsuga")]<-"darkgreen"
   
 #Make a barplot of sp numbers
 pdf("../figures/numsppplot.pdf",width=7,height=5)
-barplot(sptab, ylab="# of papers",xlab="# of species",
+barplot(sptab, ylab="# of studies (rows)",xlab="# of species",
         col="lightblue")
 dev.off()
 
@@ -141,7 +141,7 @@ sppcols[grepl("Abies",names(countspp))]<-"darkgreen"
 #Make a barplot of genera
 pdf("../figures/speciesnums.pdf",width=12,height=8)
 par(mar=c(15,5,1,1))
-barplot(countspp, ylab="# of papers",xlab=" ",
+barplot(countspp, ylab="# of studies (rows)",xlab=" ",
         col=sppcols, ylim=c(0,20),
         las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
 legend("topright",legend=c("angiosperm","gymnosperm"),
@@ -158,7 +158,7 @@ findcols<-c("darkred","white","gray","darkblue")
 pdf("../figures/speciesnums_finds.pdf",width=12,height=8)
 par(mar=c(15,5,1,1))
 barplot(t(table(spd1_long$species_name,spd1_long$authorsthink_e)),
-        ylab="# of papers",xlab=" ",
+        ylab="# of studies (rows)",xlab=" ",
         col=findcols, ylim=c(0,20),
         las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
 legend("topright",legend=c("yes","no","not sure","not mentioned"),
@@ -169,13 +169,14 @@ dev.off()
 ##species nums by continent
 
 contcols<-c("green4","darkblue","goldenrod","salmon","lightblue","purple3")
-  countsppcont<-table(spd1_long$species_name,spd1_long$cont)
+
+ countsppcont<-table(spd1_long$species_name,spd1_long$cont)
 #colSums(countsppcont)
 #Make a barplot of genera
 pdf("../figures/speciesnumsbycont.pdf",width=15,height=5)
 par(mar=c(15,5,1,1))
 barplot(countsppcont,beside=TRUE,
-        ylab="# of papers",xlab=" ",
+        ylab="# of studies (rows)",xlab=" ",
         col="darkblue", ylim=c(0,18),
         las=3,cex.lab=1.3, cex.axis=1.3, cex.names=1.2)
 #legend("topright",legend=c("Europe","North America","Asia","Australia","South America", "Asia & North America"),
