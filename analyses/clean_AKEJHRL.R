@@ -3,14 +3,6 @@
 
 ## Goal is to check and correct "authorsfoundevidencefor_endogenousfactors" columnrows added by Ailene & Janneke. 
 
-# housekeeping
-rm(list=ls()) 
-options(stringsAsFactors=FALSE)
-
-setwd("~Documents/GitHub/grephon/analyses")
-
-d <- read.csv("output/grephontable.csv", header=TRUE)
-
 #select out and clean Finzi2020 (previously said "yes" only)
 d$authorsfoundevidencefor_endogenousfactors[d$who_entered=="AKE&JHRL" & d$paper_id=="finzi2020"]<- 
     c("yes - growth [spring NEP] and gs_start_metric relationship differences due to species composition",

@@ -12,22 +12,6 @@
 #   -any useful ways to categorize spp? (e.g. functional group, Grime CSR, freeze/shade tolerance)
 # (3) add continent
 # housekeeping
-rm(list=ls()) 
-options(stringsAsFactors=FALSE)
-
-## packages
-library(tidyverse)
-library(dplyr)
-library(tidyr)
-
-setwd("~/Documents/git/projects/grephon/grephon/analyses")
-
-## needed functions
-
-## Flags
-
-d <- read.csv("output/grephontable.csv", header=TRUE)
-head(d)
 
 # First look at number of spp column
 # cleaning

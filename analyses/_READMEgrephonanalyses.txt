@@ -1,6 +1,15 @@
 Started 25 July 2023
 By Lizzie so far
 
+<><><><><><><><><><><>
+As of 21 August 2023, Lizzie is in the middle of updating this! 
+
+Everything now is sourced in cleantableall.R (but I aim to pull out graphs/info etc.).
+
+
+<><><><><><><><><><><>
+NEED to UPDATE BELOW....
+
 This folder and process is in development, but here's what we have so far for FILES:
 
 - tablemerge.rnw (and tex and pdf) -- Sweave file for some issues, no one really needs this and Lizzie should perhaps delete it someday soon.

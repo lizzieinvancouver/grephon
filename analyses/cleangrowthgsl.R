@@ -3,45 +3,9 @@
 
 ## On the train into Zurich, we made the connection! ##
 
-## Updated 22 June 2023, hoping to ..
-# (1) Check the files submitted
-# (2) Try to report out to people our overal findings and what they are reporting
-
-# housekeeping
-rm(list=ls()) 
-options(stringsAsFactors=FALSE)
-
-## packages
-library(data.table)
-library(tidyverse)
-library(stringr)
-
-
-setwd("~/Documents/git/projects/grephon/grephon/analyses")
-
-## needed functions
-
-
-# after double entry meetings and final table update (we hope)
-rdmf <- fread("input/round7/grephontable_rdm_fb_5.4.csv") # need to update!
-akej <- fread("input/round7/grephontable_JHRLAKE.csv") 
-achinc <- fread("input/round7/grephon table Alana and Cat final round.csv") 
-emw <- fread("input/round7/grephontable_emw.csv")
-kp <- fread("input/round7/grephontable_kp_NEW_updatedExogenous.csv")
-
-# cleaning up some issues before merging data
-akej$V46 <- NULL
-akej$V47 <- NULL
-
-dall <- rbind(rdmf, akej, achinc, emw, kp) 
 
 sort(unique(dall$paper_id))
-# expecting 37 I thought ... amd we have 38
-# so I should check my original counting
-
-## Comment by CJC 4Aug: Are there supposed to be two Soolananayakanahallys? 
-# There's one listed for 2013 and one for 2014 but only one in the article list
-# This would fix the 38 issue
+# expecting 37 I thought ... but we have 38, but we have Soolananayakanahally2013 duplicate (fixed below)
 
 d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
@@ -64,6 +28,8 @@ sool <- d[(d$paper_id %in% c("soolananayakanahally2013", "soolananayakanahally20
 table(sool$growth_metric, sool$paper_id)
 ## Updated by CJC 9Aug:
 d$paper_id <- ifelse(d$paper_id == "soolananayakanahally2014", "soolananayakanahally2013", d$paper_id)
+sort(unique(d$paper_id))
+
 
 ## Deal with multiple growth metrics (questions: are we okay with number of rows?)
 subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot so I think okay
@@ -301,6 +267,3 @@ latitudestuff <- c("MAT in origin as related to adaptation to latitude/temperatu
 
 latstudies <- d[which(d$authorsthink_ALTteststatistic %in% latitudestuff),] # hmm, missing Vitasse
 
-
-# Write it out ...
-write.csv(d, "output/grephontablesemiclean.csv", row.names=FALSE)
