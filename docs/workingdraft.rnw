@@ -18,6 +18,7 @@
 \SweaveOpts{concordance=FALSE}
 \renewcommand{\refname}{\CHead{}}
 
+% See also: git/grants/crc2023/crc2023app/docs/crc_notes2023more.tex which has some reference notes
 
 \title{Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?}
 \author{Team Grephon}
