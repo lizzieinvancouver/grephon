@@ -11,7 +11,6 @@ d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
 d$paper_id <- tolower(d$paper_id) # who knew that R sorts capital letters first, then lowercase?
 
-papernum <- length(unique(d$paper_id))
 
 ###########################
 ##  Cleaning up metrics  ##
@@ -159,7 +158,6 @@ subset(d[(d$gsxgrowthourdef==""),]) ## I think this should be "no"
 ## Misc cleaning ##
 ###########################
 
-
 # Studies with ourdefinition_evidence_gslxgrowth as yes or no MUST have the right metrics, check ... 
 # Questions here ... 
 # Do we want to add "satellite derived" as an okay metric of vegetative phenology? I think so. 
@@ -184,86 +182,5 @@ missingstuffendoexo <- subset(d, authorslooked_externalfactors=="yes" | authorsl
 missingstuffendoexo[,c("paper_id", "who_entered")]
 
 
-##################################
-##  Looking at what we've found ##
-## This should get moved eventually ## 
-######################################
 
-# Which papers have data but do not test it?
-d$paper_id[d$gsxgrowthourdef=="not tested but have data"]
-
-## CJC 4Aug: not sure if necessary but capitalize france for consistency
-d$country <- ifelse(d$country=="france", "France", d$country)
-
-# What types of studies find evidence for this relationship in any way?
-eviany <- subset(d, gsxgrowth=="yes")
-eviour <- subset(d, gsxgrowthourdef=="yes")
-
-noeviany <- subset(d, gsxgrowth=="no")
-noeviour <- subset(d, gsxgrowthourdef=="no")
-
-papersnumanyevi <- length(unique(eviany$paper_id))
-papersnumourevi <- length(unique(eviour$paper_id))
-
-table(eviany$gsl)
-table(eviour$gsl)
-
-table(eviany$gs_metric_used)
-table(eviour$gs_metric_used)
-
-table(eviany$growth)
-table(eviour$growth)
-
-table(eviany$study_level)
-table(eviour$study_level)
-
-table(eviany$gslxgrowth)
-table(eviour$gslxgrowth)
-
-# Does country matter? (No, but highly biased)
-unique(d$country)
-unique(eviany$country)
-unique(eviour$country)
-
-
-# Does species matter? Seems unlikely....
-sort(unique(d$species_list))
-sort(unique(eviany$species_list))
-sort(unique(eviour$species_list))
-
-# .. and biome
- sort(unique(d$biome))
-
-# What do annual cores find? The three yes ones are where gsl is not mentioned or they use temperature or snow metric
-annualcores <- subset(d, growth=="annual core")
-table(annualcores$gsxgrowth)
-table(annualcores$gsxgrowthourdef)
-
-# What do wood phenology studies find?
-woodphen <- subset(d, gsl=="wood phenology")
-woodphen[,c(1:2,48:51)]
-subset(d, paper_id=="oddi2022") # CHECK: Not clear to me how this has "no data for this" for the last entry for this paper
-
-# What types of studies look at external factors vs endogenous ones?
-exoyes <- d[grep("yes", d$authorslooked_externalfactors),]
-endoyes <- d[grep("yes", d$authorslooked_endogenousfactors),]
-
-exono <- d[grep("no", d$authorslooked_externalfactors),]
-endono <- d[grep("no", d$authorslooked_endogenousfactors),]
-
-table(exoyes$gsl)
-table(endoyes$gsl)
-
-table(exoyes$gs_metric_used)
-table(endoyes$gs_metric_used)
-
-table(exoyes$growth)
-table(endoyes$growth)
-
-
-## Some stuff on latitude
-latitudestuff <- c("MAT in origin as related to adaptation to latitude/temperature",
-    "yes - for temperature x latitude relationships with radial growth")
-
-latstudies <- d[which(d$authorsthink_ALTteststatistic %in% latitudestuff),] # hmm, missing Vitasse
 

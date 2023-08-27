@@ -3,6 +3,7 @@
 
 ## This was in a file Alana sent Lizzie, then Lizzie put in tablemergeclean.R ...
 ## then Lizzie pulled it out so we can clean things for a while, then organize. ## 
+## Now (late August 2023) it is part of the cleaning workflow ##
 
 
 ## Below from Alana
@@ -155,43 +156,3 @@ d$what.endo[grep(" no for latitude and bud burst timing and lammas are not realt
 #check
 unique(d$what.endo)
 
-
-
-# Filter and look ---------------------------------------------------------
-
-#make new dfs
-unique(d$look.ext)
-yes_growth<- filter(d, look.ext  == "yes - growth" |look.ext  == "yes - growth and growing season")
-yes_ext.gsl<- filter(d, look.ext  == "yes - growing season" |look.ext  == "yes - growth and growing season")
-yes_ext <- rbind(yes_growth, yes_ext.gsl)
-no_ext<- filter(d, look.ext  == "no" )
-#not sure where to include  "yes - photosythesis or carbon flux"
-
-
-found_ext<- filter(yes_growth, find.ext  =="yes - growth"|find.ext  == "yes - growth and growing season" )
-found_ext.gsl<- filter(yes_ext.gsl, find.ext  == "yes - growing season" |find.ext  == "yes - growth and growing season")#not sure this is the filter we want
-not.found_ext<- filter(yes_growth, find.ext  == "no" )
-
-#what factors were found?
-unique(d$what.ext)
-as.data.frame(table(found_ext$what.ext))
-as.data.frame(table(not.found_ext$what.ext))
-
-#who looks for external factors?
-all <- as.data.frame(table(d$method))
-all
-as.data.frame(table(yes_ext$method))
-as.data.frame(table(no_ext$method))
-
-#who finds external factors?
-looked <- as.data.frame(table(yes_ext$method))
-found <- as.data.frame(table(found_ext$method))
-as.data.frame(table(found_ext.gsl$method))
-as.data.frame(table(not.found_ext$method))
-
-# Merge the tables based on Var1
-who.looked <- merge(all, looked, by = "Var1", suffixes = c("_all", "_looked"))
-who.looked
-
-who.found <- merge(looked, found, by = "Var1", suffixes = c("_looked", "_found"))
-who.found
