@@ -2,23 +2,19 @@ Started 25 July 2023
 By Lizzie so far
 
 <><><><><><><><><><><>
-As of 21 August 2023, Lizzie is in the middle of updating this! 
+This folder contains all the cleaning code, some analyses (whathappened.R) and plots (plotspecies.R). 
 
-Everything now is sourced in cleantableall.R (but I aim to pull out graphs/info etc.).
+For CLEANING! README please: *Everything now is sourced in cleantableall.R*
+-> This means that if you want to edit any file sourced (in source folder), then you need to run the preceeding code in cleantableall.R 
+-> For example, if you want to run and edit and play around with cleanageclass.R, I would run through Step 3 (line 42), then open and work in cleanageclass.R.
 
 
 <><><><><><><><><><><>
-NEED to UPDATE BELOW....
-
-This folder and process is in development, but here's what we have so far for FILES:
+More info on some files here:
 
 - tablemerge.rnw (and tex and pdf) -- Sweave file for some issues, no one really needs this and Lizzie should perhaps delete it someday soon.
 
-- tablemergeclean_basics.R -- code mostly by Lizzie that cleans up growth and GSL metrics mostly then writes out grephontablesemiclean.csv
-
-- tablemergeclean_methodexoendo.R -- code mostly by Alana that reads in  grephontablesemiclean.csv cleans up exo and endo stuff and works on a new method column and writes out grephontable.csv
-
--species.R --code by Ailene to summarize some information about species in our table. includes some cleaning.
+- whathappened.R -- current code with analyses for paper
 
 FAQ:
 

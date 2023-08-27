@@ -36,19 +36,19 @@ dall <- rbind(rdmf, akej, achinc, emw, kp)
 d <- dall
 
 # Step 2: Clean up some issues in entries
-source("clean_AKEJHRL.R") 
+source("source/clean_AKEJHRL.R") 
 
 # Step 3: Clean growth, GSL (and start/end) and a bunch of other misc stuff
-source("cleangrowthgsl.R")
+source("source/cleangrowthgsl.R")
 
 # Step 4: Merge in ageclass info
-source("cleanageclass.R")
+source("source/cleanageclass.R")
 
 # Step 5: Clean who looked at endo and ext factors
-source("clean_methodexoendo.R") 
+source("source/clean_methodexoendo.R") 
 
 # Step 6: Clean species
-source("cleanspecies.R") 
+source("source/cleanspecies.R") 
 
 # Step 7 (prime!): Write it out ...
 write.csv(d, "output/grephontable.csv", row.names=FALSE)
