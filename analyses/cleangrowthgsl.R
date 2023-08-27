@@ -7,7 +7,6 @@
 sort(unique(dall$paper_id))
 # expecting 37 I thought ... but we have 38, but we have Soolananayakanahally2013 duplicate (fixed below)
 
-d <- dall
 names(d)[names(d)=="authorsthink_ALTteststatistic:"] <- "authorsthink_ALTteststatistic"
 d$paper_id <- tolower(d$paper_id) # who knew that R sorts capital letters first, then lowercase?
 
@@ -28,11 +27,12 @@ table(sool$growth_metric, sool$paper_id)
 ## Updated by CJC 9Aug:
 d$paper_id <- ifelse(d$paper_id == "soolananayakanahally2014", "soolananayakanahally2013", d$paper_id)
 sort(unique(d$paper_id))
-
+# Now at 37 papers! As expected.
 
 ## Deal with multiple growth metrics (questions: are we okay with number of rows?)
 subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013; this paper already seems broken out a lot so I think okay
 ## CJC 4Aug comment: Soolananayakanahally2013 has "height" and "height, root:shoot ratio", I think we can separate the two maybe?
+## EMW replies to CJC: We planned on one row per response variable when they were similar like this, so leaving for now
 subset(d, growth_metric=="stem density; proportion flowering; proportion fruiting") #  Wheeler2016: going with stem density (emw reviewed this paper)
 
 # growth metric
@@ -145,14 +145,17 @@ gsxgrowthmaybe[,1:3] # my weird bruening2017 paper, could be a no (as it's assum
 
 # Now look at our definition of gsl x growth ... 
 table(d$ourdefinition_evidence_gslxgrowth)
-d$ourdefinition_evidence_gslxgrowth[which(d$ourdefinition_evidence_gslxgrowth=="negative relationships")] <- "negative relationship"
+# Cleaning from more zohner issues ... 
+# moving over from wrong column
+d$ourdefinition_evidence_gslxgrowth[(d$ourdefinition_evidence_gslxgrowth=="")] <- "no data for this" 
+# based on other entries this should be no data for this, not no
+d$ourdefinition_evidence_gslxgrowth[which(d$gs_end_metric=="fluxnet derived - last date GPP went below 10% or 25% max GPP")]  <- "no data for this" 
+# Other cleaning ...
+d$ourdefinition_evidence_gslxgrowth[which(d$ourdefinition_evidence_gslxgrowth=="negative relationships" )] <- "negative relationship"
 d$gsxgrowthourdef <- d$ourdefinition_evidence_gslxgrowth
 d$gsxgrowthourdef[grep("not tested but have data", d$ourdefinition_evidence_gslxgrowth)] <- "not tested but have data"
 
 table(d$gsxgrowthourdef)
-### CJC 4Aug: I'm curious about the blank entry...
-subset(d[(d$gsxgrowthourdef==""),]) ## I think this should be "no"
-
 
 ###########################
 ## Misc cleaning ##
@@ -166,21 +169,6 @@ seemswrong <- subset(checking, gsl!= "plant vegetative phenology" & gsl!="wood p
     & gsl!="satellite derived")
 seemswrong[,c("paper_id", "who_entered", "gsxgrowth", "gsl", "gs_start_metric", "gs_end_metric", "gsxgrowthourdef")] # When this is no rows, we say hurrah!
 
-# Wondering what the model studies find
-dmodel <- subset(d, growthmodeled=="yes")
-dmodel[,48:51]
-
-# Which metrics find it? 
-table(d$growth, d$gsxgrowthourdef) # of the common ones, annual cores do not find our definition
-table(d$growth, d$gsxgrowth) # and annual cores more often than not do not find their own definition; ecosystem fluxes and height are often yes
-
-# Endo and external factors: CHECK!
-table(d$authorslooked_externalfactors)
-table(d$authorslooked_endogenousfactors)
 # ... a bunch of these lack the gsl or growth part
 missingstuffendoexo <- subset(d, authorslooked_externalfactors=="yes" | authorslooked_endogenousfactors=="yes" )
 missingstuffendoexo[,c("paper_id", "who_entered")]
-
-
-
-

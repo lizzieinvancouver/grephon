@@ -32,25 +32,23 @@ kp <- fread("input/round7/grephontable_kp_NEW_updatedExogenous.csv")
 akej$V46 <- NULL
 akej$V47 <- NULL
 
-dall <- rbind(rdmf, akej, achinc, emw, kp) 
+dall <- rbind(rdmf, akej, achinc, emw, kp)
+d <- dall
 
-# Step 2: Clean growth, GSL (and start/end) and a bunch of other misc stuff
+# Step 2: Clean up some issues in entries
+source("clean_AKEJHRL.R") 
+
+# Step 3: Clean growth, GSL (and start/end) and a bunch of other misc stuff
 source("cleangrowthgsl.R")
 
-# Step 3: Clean up some issues in entries
-source("clean_AKEJHRL.R")
+# Step 4: Merge in ageclass info
+source("cleanageclass.R")
 
-# Step X ... merge in ageclass table?
-tryme <- read.csv("input/ageclass.csv")
-tryme <- tryme[!duplicated(tryme),]
-worryabout <- aggregate(tryme["age_class"], tryme["paper_id"], FUN=length)
-worryabout[which(worryabout$age_class >1),]
+# Step 5: Clean who looked at endo and ext factors
+source("clean_methodexoendo.R") 
 
-# Step X: Clean who looked at endo and ext factors
-source("clean_methodexoendo.R") # NEED to check this given above AKEJHRL cleaning
+# Step 6: Clean species
+source("cleanspecies.R") 
 
-# Step X: Clean spcies
-source("species.R") 
-
-# Step X: Write it out ...
+# Step 7 (prime!): Write it out ...
 write.csv(d, "output/grephontable.csv", row.names=FALSE)
