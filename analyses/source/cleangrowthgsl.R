@@ -18,6 +18,9 @@ d$paper_id <- tolower(d$paper_id) # who knew that R sorts capital letters first,
 
 # Go through consistency of entries...
 
+## CJC 4Aug: not sure if necessary but capitalize france for consistency
+d$country <- ifelse(d$country=="france", "France", d$country)
+
 # First is growth metric, we make a new column called growth
 table(d$growth_metric)
 
@@ -136,6 +139,8 @@ d$gslxgrowthsimple <- paste(d$gslsimple, d$growthsimple, sep=" x ")
 table(d$gslxgrowthsimple)
 
 # Standardize GSL x growth 
+# but first clean one piece ...
+d$authorsthink_evidence_gsxgrowth[which(d$authorsthink_evidence_gsxgrowth=="yes - growth and growing season")] <- "yes"
 table(d$authorsthink_evidence_gsxgrowth)
 d$gsxgrowth <- d$authorsthink_evidence_gsxgrowth
 

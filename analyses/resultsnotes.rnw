@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{xr-hyper}
+% \externaldocument{xxx}
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+\SweaveOpts{concordance=FALSE}
+\renewcommand{\refname}{\CHead{}}
+
+\emph{Parking lot for results we may use:}
+
+<<echo=FALSE>>=
+source("~/Documents/git/projects/grephon/grephon/analyses/whathappened.R")
+@
+
+Most papers found evidence of positive relationship between growth and growing season length (\Sexpr{papersnumanyevi} papers, with the rest not testing for any relationship or not finding one). \Sexpr{papersnumourevi} papers found evidence for vegetative development related to growth. However, \Sexpr{papersnumnoevi} papers did not find evidence of other growth x season length relationships they tested, and \Sexpr{papersnumnoourevi} tested for but did not find evidence of vegetative development related to growth---making the evidence for and against these relationships clearly split.
+
+Out of \Sexpr{papernum} papers, \Sexpr{numwithdatanottested} had data to test our definition, but did not. 
+
+
+
+\end{document}
+
+\section{References}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}

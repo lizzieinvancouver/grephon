@@ -29,11 +29,13 @@ papernum <- length(unique(d$paper_id))
 
 # Which papers have data but do not test it?
 d$paper_id[d$gsxgrowthourdef=="not tested but have data"]
-
-## CJC 4Aug: not sure if necessary but capitalize france for consistency
-d$country <- ifelse(d$country=="france", "France", d$country)
+withdatanottested <- d[which(d$gsxgrowthourdef=="not tested but have data"),]
+numwithdatanottested <- length(unique(withdatanottested$paper_id))
 
 # What types of studies find evidence for this relationship in any way?
+table(d$gsxgrowth)
+table(d$gsxgrowthourdef)
+
 eviany <- subset(d, gsxgrowth=="yes")
 eviour <- subset(d, gsxgrowthourdef=="yes")
 
@@ -43,14 +45,17 @@ noeviour <- subset(d, gsxgrowthourdef=="no")
 papersnumanyevi <- length(unique(eviany$paper_id))
 papersnumourevi <- length(unique(eviour$paper_id))
 
-table(eviany$gsl)
-table(eviour$gsl)
+papersnumnoevi <- length(unique(noeviany$paper_id))
+papersnumnoourevi <- length(unique(noeviour$paper_id))
+
+table(eviany$gslsimple)
+table(eviour$gslsimple)
 
 table(eviany$gs_metric_used)
 table(eviour$gs_metric_used)
 
-table(eviany$growth)
-table(eviour$growth)
+table(eviany$growthsimple)
+table(eviour$growthsimple)
 
 table(eviany$study_level)
 table(eviour$study_level)
@@ -80,7 +85,6 @@ table(annualcores$gsxgrowthourdef)
 # What do wood phenology studies find?
 woodphen <- subset(d, gsl=="wood phenology")
 woodphen[,c(1:2,48:51)]
-subset(d, paper_id=="oddi2022") # CHECK: Not clear to me how this has "no data for this" for the last entry for this paper
 
 # What types of studies look at external factors vs endogenous ones?
 exoyes <- d[grep("yes", d$authorslooked_externalfactors),]
@@ -98,6 +102,16 @@ table(endoyes$gs_metric_used)
 table(exoyes$growth)
 table(endoyes$growth)
 
+# Simpler metrics ...
+table(exoyes$growthsimple)
+table(endoyes$growthsimple)
+# compare to these totals
+table(d$growthsimple)
+
+table(exoyes$gslsimple)
+table(endoyes$gslsimple)
+# compare to these totals
+table(d$gslsimple)
 
 ## Some stuff on latitude
 latitudestuff <- c("MAT in origin as related to adaptation to latitude/temperature",
