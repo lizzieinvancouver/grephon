@@ -32,6 +32,14 @@ d$paper_id[d$gsxgrowthourdef=="not tested but have data"]
 withdatanottested <- d[which(d$gsxgrowthourdef=="not tested but have data"),]
 numwithdatanottested <- length(unique(withdatanottested$paper_id))
 
+# Any trends with year? No.
+substrRight <- function(x, n){
+  substr(x, nchar(x)-n+1, nchar(x))
+}
+
+d$year <- as.numeric(substrRight(d$paper_id, 4))
+plot(year~as.factor(gsxgrowthourdef), data=d)
+
 # What types of studies find evidence for this relationship in any way?
 table(d$gsxgrowth)
 table(d$gsxgrowthourdef)

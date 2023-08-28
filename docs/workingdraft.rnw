@@ -25,6 +25,10 @@
 \date{\today}
 \maketitle
 
+\begin{abstract}
+Recently a growing number of studies have challenged a fundamental assumption underlying most forecasts of future climate climate---that longer growing seasons lead to increased tree growth---which predict increased plant growth will partly offset carbon emissions. A suite of diverse hypotheses, from increased drought and high temperatures, to internal limits on plant growth each year, have generally failed to coalesce around a predictive model why longer growing seasons do not increase tree growth. Here we highlight how progress could come from rising to the interdisciplinary challenge of this topic. Working across dendrochronology, ecology, and physiology, we present a mechanistic framework for predicting when longer seasons should lead to greater growth. While persistent biases in which disciplines study which mechanisms means much of the framework remains untested, we show that critical data---currently untapped---could rapidly advance our understanding, and in turn greatly improve vegetation models. % and highlight how poorly tested most mechanisms are.
+\end{abstract}
+
 The idea that longer growing seasons lead to increased plant growth is an intuitive tenet across multiple fields, including physiology (CITES), dendrochronology (CITES) and ecology. It is also a foundational assumption of most models of the future global carbon cycle (CITES). Most models project that future anthropogenic warming will be partly offset by increased carbon sequestration---primarily of temperate and boreal forests---as warming lengthens growing season (CITES), an assumption supported by a suite of ecosystem-scale studies (CITES). Yet recent work has called this assumption into question.
 
 A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth (CITES), with potentially large implications for future climate change. This research suggests limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients (CITES) to small-scale studies of cell growth in lab settings (CITES) to previous studies of ecosystem fluxes with warming (CITES). Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth (CITES) to effects of climate change itself, such as increased drought or temperatures too high for plant growth (CITES), as well as differences simply due to the metric of growth (GREEN KEENAN).
@@ -35,7 +39,7 @@ Here we review the connections between growing season length and plant growth ac
 
 Fundamentally, temperature limits biological processes and is a dominant controller of biological time. Temperatures that are too cool (often considered to be below 5C for temperate trees) and too warm (an area of active research but maybe 30-45C for trees???, but perhaps see a figure we'll add?) slow down biological processes to near-unobservably slow and eventually can lead to tissue death (CITES). Between the upper and lower limit biological processes underpinning growth generally accelerate such that warming can have a direct effect, effectively by accelerating biological time, up until the maximum rate (Fig. \ref{fig:concepbiotime}). This maximum rate means absolute time also matters to plant growth, which provides the mechanism through which longer growing seasons---extending absolute available time---can increase total plant growth. % Within this range, however, are most growing season temperatures as warm temperatures fundamentally define the growing season for many temperate plants. 
  
-
+\textcolor{teal}{End this section with short part of how well do we know this based on controlled studies? (Alana)}
 
 i. Hypotheses for why GSL x growth is not found are not equally tested across fields: Constraint issues in provenance but not tree ring etc.
 ii. Our premise is that some hypotheses for what is going may be tractably already answered by combining data across fields/methods
@@ -105,7 +109,7 @@ I flip between counting papers at the start to looking more at rows, so you were
 
 
 <<echo=FALSE>>=
-source("~/Documents/git/projects/grephon/grephon/analyses/tablemergeclean_basics.R")
+source("~/Documents/git/projects/grephon/grephon/analyses/whathappened.R")
 @
 
 Out of \Sexpr{papernum} papers (we have currently \Sexpr{nrow(d)} rows of data).
