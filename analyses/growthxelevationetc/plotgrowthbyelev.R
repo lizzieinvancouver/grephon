@@ -25,6 +25,9 @@ d$growthmm[which(d$growth_units=="cm/yr-1")] <- d$growth_value[which(d$growth_un
 unique(d$predictor_type)
 delev <- subset(d, predictor_type!="latitude")
 
+# one study (huang2010) has multiple species
+table(d$species, d$dataset_id)
+
 library(ggplot2)
 ggplot(delev, aes(x=predictor_value, y=growthmm, color=dataset_id)) +
     geom_point() +
