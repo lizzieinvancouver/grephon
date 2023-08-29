@@ -60,6 +60,7 @@ elev<-c(704,851,950,1064,1091,1197,1454,1460,1603)
 standelev<-cbind(stand,elev)
 dat2.df<-left_join(dat.df, standelev,copy=TRUE)
 dat2.df$mean.rw<-rowMeans(rngdat[,1:159])
+dat2.df$mean20.rw<-rowMeans(rngdat[,1:20])
 dat2.df$elev<-as.numeric(dat2.df$elev)
 for(i in unique(dat2.df$species)){
 spdat<-dat2.df[dat2.df$species==i,]
