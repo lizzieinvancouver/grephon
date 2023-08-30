@@ -19,7 +19,7 @@
 \emph{Parking lot for results we may use:}
 
 <<echo=FALSE>>=
-source("~/Documents/git/projects/grephon/grephon/analyses/whathappened.R")
+source("whathappened.R")
 @
 
 Most papers found evidence of positive relationship between growth and growing season length (\Sexpr{papersnumanyevi} papers, with the rest not testing for any relationship or not finding one). \Sexpr{papersnumourevi} papers found evidence for vegetative development related to growth. However, \Sexpr{papersnumnoevi} papers did not find evidence of other growth x season length relationships they tested, and \Sexpr{papersnumnoourevi} tested for but did not find evidence of vegetative development related to growth---making the evidence for and against these relationships clearly split.
