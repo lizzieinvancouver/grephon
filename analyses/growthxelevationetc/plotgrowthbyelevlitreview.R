@@ -20,7 +20,7 @@ d <- read.csv("input/classicalrefs_datascraped.csv")
 
 # fix the growth in cm and make error numeric, or 0
 d$growthmm <- d$growth_value
-d$growthmm[which(d$growth_units=="cm/yr-1")] <- d$growth_value[which(d$growth_units=="cm/yr-1")]/10
+d$growthmm[which(d$growth_units=="cm/yr-1")] <- d$growth_value[which(d$growth_units=="cm/yr-1")]*10
 d$error <- as.numeric(d$growth_errorvalue)
 d$error[which(is.na(d$error)==TRUE)] <- 0
 
