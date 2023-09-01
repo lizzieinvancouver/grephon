@@ -12,12 +12,12 @@ library(dplyr)
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/grephon/grephon/analyses")
 } else if (length(grep("ailene", getwd()))>0) 
-{setwd("C:/Users/ailene.ettinger/Documents/GitHub/grephon/analyses")
+{setwd("~/GitHub/grephon/analyses/growthxelevationetc")
 }
 
 #read in data
-rawdat1<-read.csv("../data/mora.dat/SouthSideCoresX.csv", header=TRUE)
-climate<-read.csv("../data/mora.dat/Clim.csv", header=TRUE)
+rawdat1<-read.csv("input/mora.dat/SouthSideCoresX.csv", header=TRUE)
+climate<-read.csv("input/mora.dat/Clim.csv", header=TRUE)
 
 #first average cores from same trees, get rid of 1st and last year; go back 1850
 rawdat<-rawdat1[,c(1:3,5:6,9:169)] #only columns we need
@@ -65,67 +65,42 @@ standelev<-cbind(stand,elev)
 dat2.df<-left_join(dat.df, standelev,copy=TRUE)
 dat2.df$mean.rw<-rowMeans(rngdat[,1:159])
 dat2.df$mean20.rw<-rowMeans(rngdat[,1:20])
+dat2.df$DBH<-as.numeric(dat2.df$DBH)
+dat2.df$dbh20<-as.numeric(dat2.df$DBH)-(2*rowSums(rngdat[,1:20]))
+
+dat2.df$bai20<-(pi*(dat2.df$DBH/2)^2)-(pi*(dat2.df$dbh20/2)^2)/20
+
 dat2.df$elev<-as.numeric(dat2.df$elev)
+
+#plots of mean ring width vs elevation
 for(i in unique(dat2.df$species)){
-spdat<-dat2.df[dat2.df$species==i,]
-spplotname=paste("../figures/mora",i,"rwelev.pdf", sep="")
-pdf(spplotname,height=5,width=8)
-boxplot(spdat$mean.rw~spdat$elev,xlab="Elevation (m)", ylab="Average ring width (cm)", main=paste(i))
-dev.off()
+  spdat<-dat2.df[dat2.df$species==i,]
+  spplotname=paste("figures/mora",i,"rwelev.pdf", sep="")
+  pdf(spplotname,height=5,width=8)
+  boxplot(spdat$mean.rw~spdat$elev,xlab="Elevation (m)", ylab="Average ring width (mm)", main=paste(i))
+  dev.off()
 }
 
+#plots of mean annual bai vs elevation
+
+for(i in unique(dat2.df$species)){
+  spdat<-dat2.df[dat2.df$species==i,]
+  spplotname=paste("figures/mora",i,"baielev.pdf", sep="")
+  pdf(spplotname,height=5,width=8)
+  boxplot(spdat$bai20~spdat$elev,xlab="Elevation (m)", ylab="Mean BAI (sq.mm)", main=paste(i))
+  dev.off()
+}  
 # write out quickly for quick plot by lizzie
-write.csv(dat2.df, "growthxelevationetc/output/dat2.df.csv", row.names=FALSE)
+write.csv(dat2.df, "output/dat2.df.csv", row.names=FALSE)
+
+#################################################################
+####If we decide to use bai instead of rw, the below is a start #
+#################################################################
+
 
 #########################################################
 ###############################@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ## If we decide we want climate data (isntead of just elevation) could start with the bwlo:
-#summarize climate data: up to 2007 growing season
-minyr<-min(climate[,1])+1; maxyr<-2007 #WE SHOULD GET MORE RECENT DATA
-MAT<-c(); TP<-c(); Tsnow<-c(); GP<-c(); DP<-c(); GT<-c(); DT<-c()
-for(i in minyr:maxyr){
-	tmpclim<-climate[climate[,1]==i|climate[,1]==i-1,]
-	climyr<-tmpclim[10:21,]
-	tmpTP<-sum(climyr[,3]); TP<-c(TP,tmpTP)
-	tmpMAT<-mean(climyr[,4]); MAT<-c(MAT,tmpMAT)
-	tmpTsnow<-sum(climyr[,5]); Tsnow<-c(Tsnow,tmpTsnow)
-	tmpGP<-sum(climyr[8:12,3]); GP<-c(GP,tmpGP)
-	tmpDP<-sum(climyr[2:6,3]); DP<-c(DP,tmpDP)
-	tmpGT<-mean(climyr[8:12,4]); GT<-c(GT,tmpGT)
-	tmpDT<-mean(climyr[2:6,4]); DT<-c(DT,tmpDT)
-}
-clim<-cbind(seq(minyr,maxyr),MAT,TP,Tsnow,GP,DP,GT,DT)
-dimnames(clim)<-list(c(), c("year","MAT","TPrecip","Tsnow","GPrecip","DPrecip","GTemp","DTemp"))
-MAT<-clim[,2]
-TP<-clim[,3]
-GP<-clim[,5]
-DP<-clim[,6]
-GT<-clim[,7]
-DT<-clim[,8]
-
-#Next correlate with tree growth
-#standardize climatic variables, if desired
-MAT2<-(MAT-mean(MAT))/sd(MAT)
-TP2<-(TP-mean(TP))/sd(TP)
-Tsnow2<-(Tsnow-mean(Tsnow))/sd(Tsnow)
-GP2<-(GP-mean(GP))/sd(GP)
-DP2<-(DP-mean(DP))/sd(DP)
-GT2<-(GT-mean(GT))/sd(GT)
-DT2<-(DT-mean(DT))/sd(DT)
-climst<-cbind(seq(minyr,maxyr),MAT2,TP2,Tsnow2,GP2,DP2,GT2,DT2)
-dimnames(climst)<-list(c(), c("year","MATST","TPrecipST","TsnowST","GPrecipST","DPrecipST","GTempST","DTempST"))
-#reorder clim to match tree ring order
-climst<-climst[order(climst[,1], decreasing=TRUE),]
-head(climst)
-MATST<-climst[,2]
-TPST<-climst[,3]
-GPST<-climst[,5]
-DPST<-climst[,6]
-GTST<-climst[,7]
-DTST<-climst[,8]
-
-
-
 
 #Kevin's climate data estimates for each stand, which are based on PRISM estimates
 standtemp<-read.csv("tree_plot_climate_temp.csv", header=TRUE)
