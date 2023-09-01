@@ -9,7 +9,11 @@ options(stringsAsFactors = FALSE)
 library(dplyr)
 
 ##Read in data
-setwd("C:/Users/ailene.ettinger/Documents/GitHub/grephon/analyses")
+if(length(grep("lizzie", getwd())>0)) { 
+  setwd("~/Documents/git/projects/grephon/grephon/analyses")
+} else if (length(grep("ailene", getwd()))>0) 
+{setwd("C:/Users/ailene.ettinger/Documents/GitHub/grephon/analyses")
+}
 
 #read in data
 rawdat1<-read.csv("../data/mora.dat/SouthSideCoresX.csv", header=TRUE)
@@ -69,6 +73,10 @@ pdf(spplotname,height=5,width=8)
 boxplot(spdat$mean.rw~spdat$elev,xlab="Elevation (m)", ylab="Average ring width (cm)", main=paste(i))
 dev.off()
 }
+
+# write out quickly for quick plot by lizzie
+write.csv(dat2.df, "growthxelevationetc/output/dat2.df.csv", row.names=FALSE)
+
 #########################################################
 ###############################@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ## If we decide we want climate data (isntead of just elevation) could start with the bwlo:
