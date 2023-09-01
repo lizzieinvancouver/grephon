@@ -8,7 +8,7 @@
 \usepackage{gensymb}
 \usepackage{parskip}
 \usepackage{xcolor}
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \usepackage{xr-hyper}
 \usepackage[utf8]{inputenc}
 % \externaldocument{xxx}
@@ -28,55 +28,116 @@
 \maketitle
 
 \begin{abstract}
-Recently a growing number of studies have challenged a fundamental assumption underlying most forecasts of future climate climate---that longer growing seasons lead to increased tree growth---which predict increased plant growth will partly offset carbon emissions. A suite of diverse hypotheses, from increased drought and high temperatures, to internal limits on plant growth each year, have generally failed to coalesce around a predictive model why longer growing seasons do not increase tree growth. Here we highlight how progress could come from rising to the interdisciplinary challenge of this topic. Working across dendrochronology, ecology, and physiology, we present a mechanistic framework for predicting when longer seasons should lead to greater growth. While persistent biases in which disciplines study which mechanisms means much of the framework remains untested, we show that critical data---currently untapped---could rapidly advance our understanding, and in turn greatly improve vegetation models. % and highlight how poorly tested most mechanisms are.
+Recently a growing number of studies have challenged a fundamental assumption underlying most forecasts of future climate climate---that longer growing seasons lead to increased tree growth---which predict increased plant growth will partly offset carbon emissions. A suite of diverse hypotheses, from increased drought and high temperatures, to internal limits on plant growth each year, have generally failed to coalesce around a predictive model of why longer growing seasons do, or do not, increase tree growth. Here we highlight how progress could come from rising to the interdisciplinary challenge of this topic. Working across dendrochronology, ecology, life history, and physiology, we present a mechanistic framework for predicting when longer seasons should lead to greater growth. While persistent biases in which disciplines study which mechanisms means much of the framework remains untested, we show that critical data---currently untapped---could rapidly advance our understanding, and in turn greatly improve vegetation models. % and highlight how poorly tested most mechanisms are.
 \end{abstract}
 
-The idea that longer growing seasons lead to increased plant growth is an intuitive tenet across multiple fields, including physiology (CITES), dendrochronology (CITES) and ecology. It is also a foundational assumption of most models of the future global carbon cycle (CITES). Most models project that future anthropogenic warming will be partly offset by increased carbon sequestration---primarily of temperate and boreal forests---as warming lengthens growing season (CITES), an assumption supported by a suite of ecosystem-scale studies (CITES). Yet recent work has called this assumption into question.
 
-A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth (CITES), with potentially large implications for future climate change. This research suggests limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients (CITES) to small-scale studies of cell growth in lab settings (CITES) to previous studies of ecosystem fluxes with warming (CITES). Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth (CITES) to effects of climate change itself, such as increased drought or temperatures too high for plant growth (CITES), as well as differences simply due to the metric of growth (GREEN KEENAN).
+The idea that longer growing seasons lead to increased plant growth is an intuitive tenet across multiple fields, including physiology\todo{addcites}, dendrochronology\todo{addcites} and ecology. It is also a foundational assumption of most models of the future global carbon cycle\todo{addcites}. Most models project that future anthropogenic warming will be partly offset by increased carbon sequestration---primarily of temperate and boreal forests---as warming lengthens growing season\todo{addcites}, an assumption supported by a suite of ecosystem-scale studies \citep{finzi2020,keenan2014net}. Yet recent work has called this assumption into question.
 
-Here we review the connections between growing season length and plant growth across fields to identify the potential mechanisms that unite---and could disconnect---these processes. Our approach spans multiple fields to unify foundational studies with recent research related to anthropogenic warming. We find a pervasive disciplinary split between studies that systematically limits our current ability to identify the underlying processes. We highlight critical insights from physiology, community ecology, and life history theory that have been unexamined in recent work. Taken together, the current fields studying connections between growing season length and growth appear primed to develop a holistic theory of when, where and how climate change may increase tree growth, with implications for both forecasts of future climate change and for fundamental science.
+A suite of recent studies have suggested longer growing seasons do not lead to greater tree growth \citep{dow2022warm,green2022limits,silvestro2023longer}, with potentially large implications for future climate change. This research suggests limitations on plant growth mean forests will be limited sinks with increased warming. Such findings challenge decades of research that find growth does increase with longer seasons, from large-scale studies along natural elevational gradients\todo{addcites} to small-scale studies of cell growth in lab settings\todo{addcites} to previous studies of ecosystem fluxes with warming \citep{finzi2020,keenan2014net}. Proposed mechanisms for the apparent disconnect are highly diverse, from previously unknown fundamental internal limits on plant growth \citep{zohner2023effect} to effects of climate change itself, such as increased drought or temperatures too high for plant growth \citep{dow2022warm}, as well as differences simply due to the metric of growth \citep{green2022limits}.
+% Studies that Green \& Keenan say no relationship:
+	% Fatichi et al. 2014 (opinion)
+	% Fatichi et al. 2019 (review)
+	% JIang et al 2020 (FACE or sinilar) 
+
+Here we review the connections between growing season length and plant growth across fields to identify the potential mechanisms that unite---and could disconnect---these processes. Our approach spans multiple fields to unify foundational studies with recent research related to anthropogenic warming. We find a pervasive disciplinary split between studies that systematically limits our ability to identify the underlying processes. We highlight critical insights from physiology, community ecology, and life history theory that have been unexamined in recent work. Taken together, the current fields studying connections between growing season length and growth appear primed to develop a holistic theory of when, where and how climate change may increase tree growth, with implications for both forecasts of future climate change and for fundamental science.
 
 \emph{How warmer temperatures increase tree growth, or not}
 
-Fundamentally, temperature limits biological processes and is a dominant controller of biological time. Temperatures that are too cool (often considered to be below 5\degree C for temperate trees) and too warm \citep[an area of active research][, see also Fig. \ref{fig:temperaturecomplex}]{martinez2008hot,cabon2022cross} slow down biological processes to near-unobservably slow and eventually can lead to tissue death (CITES). Between the upper and lower limit biological processes underpinning growth generally accelerate such that warming can have a direct effect, effectively by accelerating biological time, up until the maximum rate (Fig. \ref{fig:concepbiotime}). This maximum rate means absolute time also matters to plant growth, which provides the mechanism through which longer growing seasons---extending absolute available time---can increase total plant growth. % Within this range, however, are most growing season temperatures as warm temperatures fundamentally define the growing season for many temperate plants. 
+Fundamentally, temperature limits biological processes and is a dominant controller of biological time. Temperatures that are too cool (often considered to be below 5\degree C for temperate trees) and too warm \citep[an area of active research][, see also Fig. \ref{fig:temperaturecomplex}]{martinez2008hot,cabon2022cross} slow down biological processes to near-unobservably slow and eventually can lead to tissue death\todo{addcites}. Between the upper and lower limit biological processes underpinning growth generally accelerate such that warming can have a direct effect, effectively by accelerating biological time, up until the maximum rate (Fig. \ref{fig:concepbiotime}). This maximum rate means absolute time also matters to plant growth, which provides the mechanism through which longer growing seasons---extending absolute available time---can increase total plant growth. % Within this range, however, are most growing season temperatures as warm temperatures fundamentally define the growing season for many temperate plants. 
  
-\colorbox{pink}{End this section with short part of how well do we know this based on controlled studies? (Alana)}
+\colorbox{pink}{End this section with short part of how well do we know this based on controlled studies? (Alana)} Ideally either end on: so if physiological evidence for this is not so amazing, where does this hypothesis come from? Or: So, physiological studies support this (some? a lot?), what studies in other disciplines interested in tree growth?
 
-i. Hypotheses for why GSL x growth is not found are not equally tested across fields: Constraint issues in provenance but not tree ring etc.
-ii. Our premise is that some hypotheses for what is going may be tractably already answered by combining data across fields/methods
+Dendrochronology---the study of tree rings and their dating---has long assumed growth decreases with shorter seasons \citep[e.g.,][]{bruening2017}, though this connection is almost always made across space, not time. Elevation and latitude---two major factors that generally shorten seasons, and change a suite of climatic factors---generally lead to less annual growth (new Fig?). Most current work in dendrochronology assumes this relationship and focuses more on how climatic factors shift across these gradients\todo{addcites}. 
+
+This focus on climatic signals in tree growth (measured by ring width) is the hallmark of dendrochronology, with the methods in the field generally designed around this aim. Statistical approaches attempt to remove periods of rapid growth with age. Sampling methods, at both the species and individual tree level, aim for the most climatic response (either to temperature or precipitation). This has led to a strong focus on conifers (gymnosperms), creating a major split from most studies of leaf phenology, which focus almost entirely on deciduous species (mainly angiosperms).
+% Elevation and latitude---two major factors that generally shorten seasons, and change a suite of climatic factors---generally lead to less annual growth (new Fig?) though this relationship in reality may be more messy than many conceptual diagrams suggest. 
+
+The disciplines of dendrochronology and physiology have readily offered mechanisms for the recent results that increased growth may not come with longer seasons. External climatic drivers that offset the positive growth effects of longer seasons are often reported in tree ring studies\todo{addcites}, suggested when higher temperatures and lower precipitation produce negative correlations with growth\todo{addcites}. In contrast, several other studies suggest fundamental developmental constraints that prevent trees from responding to longer seasons\todo{addcites}. 
+
+Yet these hypotheses have been tested in radically different ways, never together, and ignore a suite of research on this topic---including other major possible mechanisms. A systematic review of the literature highlights a focus on external climatic drivers limiting growth in annual tree ring studies, while lab experimental and woody phenology (xylogenesis studies) focus on physiological constraints (spanning 37 papers and 60 unique tests or studies; see Supp or Fig/Table). Further, we found little support for reports of a disconnect between growth and growing season length. Instead the field has generally found split support---across methods---for the when longer seasons lead to increased growth, suggesting that understanding the relationship mechanistically will be critical to accurate predictions. As we outline below, a single mechanism is unlikely to explain all results, requiring more a more unified framework---and tests of it---for progress. 
+
+\emph{A cross-disciplinary framework for when longer seasons increase tree growth}
+
+Here we examine the mechanisms that may limit or disrupt longer growing seasons leading to increased growth, integrating across the fields of dendrochronology, physiology, and ecology. A suite of mechanisms, both external---including climatic and biotic drivers---and internal can alter any simple growth x season length relationships. But a tendency to focus on only one or the other means we have little understanding of how they compare, or which may explain current findings. 
+
+\emph{i. External drivers}
+
+Research into external abiotic drivers is the bread and butter of dendrochronologists and they cannot stop themselves from running a gazillion tests of how ring width correlates with easy-to-get climate variables: temperature and precipitation. Following the fundamental theory of how low and high temperatures slow biological processes, many tree ring studies have shown both temperature extremes correlate with lower growth\todo{addcites}. These temperature limits, however, generally assume sufficient soil moisture for plant growth---and a suite of tree ring studies confirm this, finding correlations with precipitation\todo{addcites} or other metrics related to plant access to water\todo{addcites}. The actual relationship between temperature, moisture and tree growth is more complex, as studies finding strong correlations between vapor pressure deficit and growth attest\todo{addcites}. Recent studies testing for evidence that external factors may limit a growth x growing season length relationship have generally always found one or more negative correlation between growth and a climatic driver. 
+
+Biotic external factors---including herbivory, disease and competition---can also limit growth, though this has rarely been mentioned in studies examining growing season length and growth. Yet herbivory can have large impacts on forests, leading to declines in satellite measures of greenness often associated of signals of plant senescence\todo{addcites}. And disease is well known to determine forest dynamics. Both these drivers though can be more episodic and harder to measure, making them more difficult to easily test as mechanisms for limiting growth. In contrast, proxies for competition (such as surrounding tree density and identity), can be more easily measured, but are rarely studied. Mechanistic physiology studies rarely measure (or even include) competition and, given dendrochronology's focus on climatic signal through growth, the field similarly tries to avoid the study or impact of plant competition, even though it is foundational to forest dynamics. 
+
+\emph{ii. Internal programming}
+
+Almost unmentioned in dendrochronology, internal constraints on plant growth are the bouncy castle of plant physiology (you watch physiologists talking about constraints and they are just having a heyday). Genetic and developmental constraints include fundamental limits on plant processes through biophysical realities \citep[e.g., allometry, chemical reaction limits, and genetic architecture that may limit what trait combinations are possible,][]{ackerly2000evolution}, but also constraints more particular to certain species, populations or individual trees. Recent studies on how earlier seasons affect tree growth has focused strongly on developmental constraints, suggesting a never-before-heard-of role for the summer solstice to limit how much and when plants can invest in growth \citep{zohner2023effect}. This is hypothesized to be universal, somewhat contradicting decades of work showing local adaptation by populations, and species-level differences in `determinism' in growth x growing season length relationships. 
+
+Beyond genetic and developmental constraints, evolutionary history can constrain plant responses\todo{addcites}. The legacy of historical evolutionary pressures---including different external drivers---is not easily erased.  Thus, many species show evidence of previous selection, seen when evolutionary relationships (usually represented through phylogeny) predict plant responses and lead to clade-level similarities. Most studies testing for such historical effects on plant responses find them, though this is effectively unstudied currently as a controller of how growing season length may be limited in affecting growth. Further, many physiological syntheses find results suggestive of strong phylogenetic relationships, but fail to discuss or test them \citep[e.g., discussions of evergreen versus deciduous phenology without testing for whether this is actually correlated with the deep in time split between gymnosperms and angiosperms,][]{way2010differential}. 
+
+% Perhaps most remarkably unmentioned in the current debate is the prevalence of species-level differences ....
+Beyond phylogenetic patterns across clades, species can differ for a host of predictable reasons. Decades of plant ecology work has highlighted different plant strategies along which species---especially within communities---assemble. Leaf, wood and other plant traits show trade-offs along a acquisitive to conservative axis: where some species can grow rapidly and more flexibly take advantage of resources, but are less defended against herbivores and compete poorly at low resource levels, whereas other species compete well at low resource levels, but at the expense of growing slower and conservatively \citep[][]{Grime:1977sw,diaz2016}. This trade-off would predict certain species to be far more likely to grow more with longer seasons, while others may not. (\colorbox{yellow}{Fredi adds a little on determinate/indeterminate growth?}) (\colorbox{orange}{And somewhere we have to say ring vs diffuse porous?}). Such strategies may also make predictions for reproductive investment. % Such strategies may also make predictions for reproductive investment, which---along with species-level differences---is almost wholly ignored in the current debate on the relationship between growth and growing season length.
+
+Trade-offs between vegetative and reproductive investments are a paradigm of life history theory and produce differences across levels---from between species to within individuals. How trees invest in reproduction (seeds within cones and fruits), including how they vary across their lifetime and between years varies with species. Many species mast---producing abundant cones or fruits in only some years and thus massively shifting carbon allocation to reproduction in some years, which could impact measures of growth. Indeed, while research is still debating the proximate and ultimate mechanisms for masting, many hypotheses suggest higher summer temperatures could trigger masting in the following year \citep{hacket2016tree,hacket2016consistent}; if true, then reduced growth in years following warm summers may not indicate temperatures too high for growth, as often suggested \citep[e.g.,][]{gantois2022new,dow2022warm}, but instead shifting investment in reproduction.... 
+% Beyond genetic and developmental constraints, evolutionary history can constrain plant responses\todo{addcites}, though this is effectively unstudied currently as a controller of how growing season length may be limited in affecting growth. Yet most studies testing for such historical effects on plant responses find them. 
+
+Shifting investment in growth versus reproduction, differences in plant strategies and phylogeny all predict testable variation in how growing season length impacts growth, but have been almost wholly ignored in the current debate. We argue this is because of a lack of cross-disciplinary study. For example, while evolutionary history, ecology and life history theory all predict differences across species, the two major disciplines currently studying this---physiology and dendrochronology---generally study either one species\todo{addcites}, lump all species in a site\todo{addcites}, or divide by one trait \citep[e.g.,][]{dow2022warm}. Research on trends over elevation, which seem foundational to understanding the growth x growing season length relationship, have been on a very limited species list---with almost no comparison across species. % Evolutionary history, ecology and life history theory all predict differences across species, but current analyses generally study either one species\todo{addcites}, or lump all species in a site\todo{addcites}.  
+
+Beyond failing to test a suite of highly relevant mechanisms, the lack of cross-disciplinary study means we lack coherent tests that compare multiple mechanisms. Dendrochronology considers almost exclusively external drivers, while physiological tests of constraints do not usually predict for which species, when and where constraints will be most important. Taken together, the current landscape of research suggests we may be testing a hypothesis for shifts with climate change that we never previously understood well in fundamental biology. 
+
+\emph{To the bat-mobile Robin! How to tackle this cross-disciplinary framework}
+
+(\colorbox{cyan}{Hoping Janneke or someone wants to jump in somewhere here ...} in this section with our opinions on what people should measure, and something about statistical approaches?)
+
+But really predicting when the longer growing seasons of anthropogenic climate change will lead to increased growth requires building fundamental biological knowledge in a suite of areas across physiology, life history, tree rings, ecology and evolutionary biology. Careful cross-disciplinary is critical, but will benefit from shifts within disciplines. 
+
+All fields would benefit from a deeper understanding of the physiological connections between growing season length and growth. Much work has focused on measures of growth and phenology without a clear mechanistic link. Similarly, many current suggestions of constraints lack any physiological mechanism. Physiological studies that follow carbohydrate and cell division versus expansion dynamics could yield insights. This is particularly important if want to include constraints in our projections, as extrapolating is especially dangerous when the underlying mechanistic model is wrong
+
+Bridging across disciplines will require bridging across time-scales, a consistent and thorny issue for research into trees. We found most physiological studies of growth x growing season length relationships studied 1-2 years of dynamics, usually of juvenile trees, while tree ring studies are focused on synthesizing across decades or longer of adult tree growth. Perhaps because of this dichotomy, tree ring studies often study lag effects\todo{addcites}, while they are rarely mentioned in physiological studies. Given the complexity of carbon storage in trees \citep{finzi2020,thompson2023no,anderson2022drives}, and how investment can shift across years\todo{addcites}, we argue more studies should acknowledge and test for lag effects. Integrating more research from ecology and field global change experiments could help. Large scale experiments on heat (e.g., SPRUCE), moisture via drought or irrigation (e.g., DroughtNet, Phynwald) and other factors (e.g., $CO_2$ in FACE) have increasingly been used to test ecological `memory' and could help scale up from smaller and shorter-time scale physiological studies.
+
+Dendrochronology provides an invaluable long-term perspective, but using it to understand tree growth beyond climatic factors will require new perspectives and approaches. As rings are easiest to observe in conifers, and conifers often exist in the most extreme climatic places (and thus have more clear signal of climate on growth), dendrochronology has limited data for species where phenology may be most strongly tied to growth---deciduous species, which are mostly angiosperms. Phenology and dendrochronology are somewhat unique fields in biology for their open data that is both geographically and temporally deep; yet the overlap in comparable data due to each field focusing mostly on different suites of species is incredibly limited (\colorbox{orange}{New fig here of PEP725 x ITRB data?}). Further, most standard statistical methods for `standardizing' tree ring data are focused on enhancing climatic signals---which could schmear insights into growing season length or other factors, especially for studies across populations \citep{de2022temperature}. The fundamental model of growth in dendrochronology could use revisiting, especially as new mechanistic understanding from physiology advances. Layering on the complexity of growth depending not only temperature and precipitation, but on vapor pressure deficit, as well as losses in growth that are more episodic (e.g., frost, disease) would help.
+
+From these shifts in physiological and tree ring studies, could come more comparable quantitative estimates---which we currently lack. While multiple papers report a lack of relationship between growth and growing season length, we have no fundamental understanding of what the effect size of this relationship should be, and thus no way to know if we have good power in current studies to detect it. Estimates of how growth shifts with elevation likely include responses from both plasticity and local adaptation and thus could be an upper bound on our expectations, yet elevational trends to date appear relatively weak and noisy (Fig. \ref{fig:gxelev})---suggesting a suite of missing mechanistic understanding. Additionally, observational studies must attempt to tease out effects of high temperatures that should accelerate the rate of plant growth, from longer seasons, and from temperatures that are too high and stall growth. Without a solid basis for the underlying temperature response curve, such attempts are likely non-identifiable statistically, and thus could easily report underlying correlations between predictors as signals of different temperature and season-length responses [\colorbox{orange}{More on VPD and/or xylogenesis here?}]. And these complexities must be addressed through a multi-species lens.
+
+While tackling these challenges for multiple species alone can seem daunting, allowing for and studying differences between species may remove much of the noise in current studies. Species-level variation in growth is a repeated prediction and finding of both life history theory and community ecology, and both yield expectations of which species should differ the most. Species with acquisitive versus conservative traits, and which differ in their reproductive strategies (i.e., masting or not, fruit size and number) should form the basis of choosing which species to focus on for further study and to test predictions. Acquisitive species with consistent investment in fruit would show stronger shifts in growth with changing growing season length---assuming no other factors become limiting. Given the potential role of evolutionary history, selecting for these varying strategies within a clade, or---if not feasible---correcting for phylogenetic distance would more robustly test how strategies influence the growth x growing season length relationship. Studies across more species, or careful synthesis of studies across species, could test for the role of evolutionary history.
+
+Getting a handle on species-level variation is super-duper important as we need to understand the scale of it versus other levels of variation, and compared to other drivers of variation. Current studies of how growing season length influences growth have worked at a variety of scales, with many recent ones focusing on inter-annual variation within individuals (or ecosystems) while previous work across space more likely compared populations, with almost none comparing species. Partitioning this variation requires studies that sample carefully at each level, then statistically separate out variation. 
+
+Theory clearly predicts species are unlikely to share a common growth x growing season length relationship, but less research addresses how the relationship should shift across populations. \emph{In situ} elevation work suggests no genetic differences \citep{king2013tree}, while common garden studies across latitudes suggest phenological variation across populations limits growth \citep{soolanayakanahally2013timing}, though most work is not comparable as common garden studies rarely report annual ring width. Given that many common garden studies have some data on phenology\todo{addcites} and are designed to tease out population versus inter-annual variation, collecting tree ring data from them seems a rapid way to estimate variation across these two levels, and could be combined with species level variation. Given how old some common gardens are, research may also be able to examine impacts of biotic and abiotic disturbances or effects of climatic variation.
+
+Disentangling the effects of major drivers on growth---from growing season length, to temperature, moisture and constraints---likely requires experiments. To date, few experiments have teased out the effects of warmer temperatures versus an longer season, and none---to our knowledge---have carefully measured growth. Such experiments, however, will be critical in establishing a baseline understanding of the role of season length alone in determining growth. And they can compare species robustly. Advancing them to extend the season via early growth or delayed senescence, and layering on heat waves or drought treatments could provide comparable estimates and test lag effects (when sampled multiple years after the manipulations). While these are most easily done for juvenile trees, they could be done on adult trees (given the infrastructure investment), giving the opportunity to measure impacts on reproductive output as well. 
+% Comparing the effects of various drivers on growth---from growing season length, to temperature, moisture and constraints---may be impossible from observational or experimental approaches alone. Each is limited ... 
+
+\emph{Conclusions:}
+Anthropogenic climate change has often been described as an unfortunate, unnatural, and unreplicated experiment. What this often hints at is how much it has highlighted important biology we don't know well, and how much it requires us to rediscover dusty old fundamentals, while also exposing their limits---and thus our limits of understanding. When, how and why longer seasons lead to increased tree growth will require a multi-discplinary reckoning with how temperature, growth and biological time affect plant growth. But we need to figure it out, because getting this right is important for our future forest dynamics, and the suite of species and services that depend on them. And that includes carbon sequestration---which, we really need now! 
+
+
+\emph{Misc text without a home...}
+
+Disciplinary work could also rapidly advance our understanding, especially if designed to be comparable across disciplines. Tree ring studies are inherently focused on growth through ring width, but reporting frost events, biotic disturbances, reproduction status of trees and considering mast years would acknowledge additional mechanisms. Physiological studies tend to avoid such complexities through controlled environments and a focus on juvenile plant stages, but scaling up between life stages is critical. Bridging this gap would be aided by physiological studies reporting metrics similar to ring width, alongside their more common measurements of shoot elongation, height and biomass. 
+
+This framework predicts longer growing seasons will increase growth for species with regular reproduction (no masting), an acquisitive strategy, from clades that are historically (on an evolutionary timescale) plastic, in locations that are warm---but not too warm---and moist. Further earlier growth should not drive increased frost damage, herbivory, or disease... Go test it, preferably in some mid-latitude, temperate forest for a species not too close to the edge of its range.
+
+
+i. Hypotheses for why GSL x growth is not found are not equally tested across fields: Constraint issues in provenance but not tree ring etc.\\
+ii. Our premise is that some hypotheses for what is going may be tractably already answered by combining data across fields/methods\\
 iii. And, you could go far by cross-field tweaking of what each field is doing
 
-And somehow ... This is important!
-i. Carbon storage and climate change
-ii. Fundamental to physiology, species assembly
-
-Studies that Green \& Keenan say no relationship:
-% Fatichi et al. 2014 (opinion)
-% Fatichi et al. 2019 (review)
-% JIang et al 2020 (FACE or sinilar) 
-
+\iffalse
 Most global models of future warming assume increased anthropogenic carbon will be offset by increased carbon sequestration in forests as growing seasons lengthen.
 
 The proposed mechanisms for this, however, are highly diverse---and most studies measure different aspects of growth across widely varying spatial and temporal scales. 
-
-Yet the proposed mechanisms for this are highly diverse, as are the temporal and spatial scales of st
-
-
-each with varying hypothesis for why. 
 
 A positive link between longer growing seasons and increased carbon sequestration 
 
 A suite of recent studies have called into question this fundamental assumption .... failed to find a link between longer seasons and increased tree growth
 
 This assumption appeared well supported by several large-scale studies of ecosystem fluxes 
+\fi
 
-
-\section{Figures}
 \newpage
+\section{Figures}
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/grephonfig.pdf}
-\caption{Less simplified version of how temperature works.}
+\caption{Less simplified version of how temperature works, including lots of limits at high and low temperatures.}
 \label{fig:temperaturecomplex}
 \end{figure}
 
@@ -85,6 +146,13 @@ This assumption appeared well supported by several large-scale studies of ecosys
 \includegraphics[width=0.5\textwidth]{..//figures/gsltogrowth/gsltogrowth_emw1a.png}
 \caption{Idealized simplified version of the world, where resources (including water, N etc.) are abundant and temperatures are never too cool or too hot. In this world, temperature can increase growth directly (through increasing the speed of biological processes, up to some limit) and indirectly, but increasing the absolute available time for those processes to happen and lead to more growth.}
 \label{fig:concepbiotime}
+\end{figure}
+
+
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{..//analyses/growthxelevationetc/figures/growthxelev2part.pdf}
+\caption{Literature review of growth x elevation studies (left) and results from Mount Tahoma/Rainier (right).}
+\label{fig:gxelev}
 \end{figure}
 
 
@@ -105,6 +173,11 @@ This assumption appeared well supported by several large-scale studies of ecosys
 
 
 \clearpage
+\section{References}
+\bibliography{..//bibtex/grephonbib}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+
+\clearpage
 
 \section{Old take home results from table}
 
@@ -113,7 +186,6 @@ I flip between counting papers at the start to looking more at rows, so you were
 
 
 
-Out of 37 papers (we have currently 60 rows of data).
 
 \section{Getting back to writing our paper}
 
@@ -143,119 +215,8 @@ Out of 37 papers (we have currently 60 rows of data).
 \item What do do next (The future! Is there a framework to our future directions? It would be nice if we found one) \todo{This needs a total overhaul after the table; figure out the section headers}
 \end{enumerate}
 
-\vspace{5ex}
-So, we hoped these studies would help with the prevalence of evidence for external and endogenous factors. I haven't got as far on this (and we did not consistently enter whether growth or GSL or both was limiting) but here's a quick look at the 28 papers that found evidence of external factors and 15 that found evidence of endogenous (in contrast to 12 papers that looked but did not find evidence of external or 25 endogenous factors).
 
-For those that did, they looked at these GSL metrics:
-\begin{Schunk}
-\begin{Sinput}
-> table(exoyes$gsl)
-\end{Sinput}
-\begin{Soutput}
-                      date               not measured 
-                         1                         11 
-plant vegetative phenology          satellite derived 
-                        20                          2 
-temperature or snow metric             wood phenology 
-                         5                          5 
-\end{Soutput}
-\begin{Sinput}
-> table(endoyes$gsl)
-\end{Sinput}
-\begin{Soutput}
-              not measured plant vegetative phenology 
-                        10                         11 
-         satellite derived             wood phenology 
-                         2                          5 
-\end{Soutput}
-\end{Schunk}
-And specifically:
-\begin{Schunk}
-\begin{Sinput}
-> table(exoyes$gs_metric_used)
-\end{Sinput}
-\begin{Soutput}
-                                              end metric only 
-                                                            8 
-                                                         none 
-                                                            1 
-                                            start metric only 
-                                                            9 
-                                                 start to end 
-                                                           12 
-                             start to end (I think for SFGCC) 
-                                                            1 
-                                                suitable days 
-                                                            4 
-time with growth estimated (from mar-may temperature records) 
-                                                            1 
-                                    time with growth observed 
-                                                            2 
-                                                       unsure 
-                                                            2 
-\end{Soutput}
-\begin{Sinput}
-> table(endoyes$gs_metric_used)
-\end{Sinput}
-\begin{Soutput}
-          end metric only                      none         start metric only 
-                        7                         1                         6 
-             start to end time with growth observed                    unsure 
-                       10                         2                         2 
-\end{Soutput}
-\end{Schunk}
-And these growth metrics (seems a bias towards annual core studies looking at external; we have 14 annual core results):
-\begin{Schunk}
-\begin{Sinput}
-> table(exoyes$growth)
-\end{Sinput}
-\begin{Soutput}
-                NDVI/greenness                    annual core 
-                             2                             11 
-          biomass height stems      dendrometer/circumference 
-                             8                              3 
-              ecosystem fluxes intra-annual core (xylogeneis) 
-                             7                              5 
-                  not measured                 photosynthesis 
-                             1                              7 
-              root:shoot ratio 
-                             1 
-\end{Soutput}
-\begin{Sinput}
-> table(endoyes$growth) 
-\end{Sinput}
-\begin{Soutput}
-                NDVI/greenness                    annual core 
-                             1                              2 
-          biomass height stems      dendrometer/circumference 
-                             6                              4 
-              ecosystem fluxes intra-annual core (xylogeneis) 
-                             8                              2 
-                photosynthesis               root:shoot ratio 
-                             5                              1 
-\end{Soutput}
-\end{Schunk}
-
-\section{Next steps}
-\begin{enumerate}
-\item How to finalize the table cleaning?
-\begin{enumerate}
-\item I would prefer this all documented over github than being done over email
-\item Not sure how to resolve Richardson study
-\item And there are likely more ....
-\end{enumerate}
-\item How do we want to analyze the table?
-\begin{enumerate}
-\item One idea is to break out what parts of the paper people are working on and then they do their own analysis -- but built off one set of shared cleaning code or such.
-\item Work on analysis using the table is centralized in one person
-\end{enumerate}
-\item Do we want to make a figure that reviews the path diagram from GSL to growth and somehow summarizes what we have found?
-\item Do we wan to re-analyze any of the studies that have the data but did not test our definition? (Dow2022, Finzi2020, Stridbeck2022, zani2020, chen1998, ren2019)
-\item What else?
-\end{enumerate}
 
 \end{document}
 
-\section{References}
-\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
-\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+
