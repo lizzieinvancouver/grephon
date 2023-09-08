@@ -93,14 +93,9 @@ for(i in unique(dat2.df$species)){
 # write out quickly for quick plot by lizzie
 write.csv(dat2.df, "output/dat2.df.csv", row.names=FALSE)
 
-#################################################################
-####If we decide to use bai instead of rw, the below is a start #
-#################################################################
-
-
 #########################################################
 ###############################@@@@@@@@@@@@@@@@@@@@@@@@@@@
-## If we decide we want climate data (isntead of just elevation) could start with the bwlo:
+## If we decide we want climate data (instead of just elevation) could start with the below:
 
 #Kevin's climate data estimates for each stand, which are based on PRISM estimates
 standtemp<-read.csv("tree_plot_climate_temp.csv", header=TRUE)

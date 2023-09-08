@@ -6,7 +6,7 @@ options(stringsAsFactors=FALSE)
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/grephon/grephon/analyses")
 } else if (length(grep("ailene", getwd()))>0) 
-{setwd("boomboom")
+{setwd("C:/Users/ailene.ettinger/Documents/GitHub/grephon/analyses")
 }
 
 # packages
@@ -147,3 +147,4 @@ barplot(countsppcont,beside=TRUE,
 #       fill =contcols, cex=1.5, bty="n")
 
 dev.off()
+
