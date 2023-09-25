@@ -219,6 +219,14 @@ I flip between counting papers at the start to looking more at rows, so you were
 \end{enumerate}
 
 
+\section{Box 1. “Growth”, measured how, exactly?}
+\par Tree growth can be measured in a variety of ways. Our systematic review included studies that quantified growth by measuring radial growth (e.g., through increment cores or dendrometers, n=28), biomass, height, or number of stems (n=9), root:shoot ratio (n=1), and C assimilation (e.g. net ecosystem productivity or gross primary productivity, n=20). Some studies used modeled estimates of photosynthesis (e.g. from LPJ, InTEC, or other models, REFS) while others measured photosynthesis at the leaf level, through flux towers, or used greenness metrics (NDVI). 
+
+\par Growth measurements vary across disciplines and study types, posing a further challenge to an interdisciplinary approach to understanding how growing season length relates to growth. Greenhouse or growth chamber studies and provenance trials are more likely to measure height or biomass, whereas larger scale syntheses and remote-sensed studies are more likely to use metrics of carbon assimilation. 
+
+\par Aligning across the range of growth metrics will be critical for an integrated understanding of growth-growing season length relationships and implications under continued climate change.  There is decoupling among some metrics of growth. For example, vegetation photosynthesis may be poorly correlated with tree radially growth, and this relationship can vary seasonally (Cabon et al 2022). Further, tree radial growth is not a perfect indicator of whole tree growth, since plants allocate
+carbon to their roots, leaves, reproductive structures, and stores in addition to wo aboveground biomass. Relationships among different metrics of growth are not simplistic, so selecting relevant ones and aligning across the most widely used ones will be necessary, though not easy: the relationship  between photosynthesis, radial growth, and carbon uptake has large implications for future carbon sequestration and iremains widely debated (Greene and Keenan).
+
 
 \end{document}
 
