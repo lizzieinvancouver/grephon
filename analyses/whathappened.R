@@ -9,7 +9,7 @@ options(stringsAsFactors=FALSE)
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/grephon/grephon/analyses")
 } else if (length(grep("ailene", getwd()))>0) 
-{setwd("boomboom")
+{setwd("C:/Users/ailene.ettinger/Documents/GitHub/grephon/analyses")
 }
 
 ## packages
@@ -183,3 +183,9 @@ who.looked
 
 who.found <- merge(looked, found, by = "Var1", suffixes = c("_looked", "_found"))
 who.found
+
+###looking at growth a bit more for Box on measurements
+unique(d$growth_metric)
+unique(d$growthsimple)a
+table(d$method,d$growthsimple)
+colSums(table(d$method,d$growthsimple))
