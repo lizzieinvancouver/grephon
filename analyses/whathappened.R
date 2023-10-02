@@ -186,6 +186,12 @@ who.found
 
 ###looking at growth a bit more for Box on measurements
 unique(d$growth_metric)
-unique(d$growthsimple)a
+unique(d$growthsimple)
 table(d$method,d$growthsimple)
-colSums(table(d$method,d$growthsimple))
+boxmetrics <- colSums(table(d$method,d$growthsimple))
+boxradg <- unname(boxmetrics["radial growth"])
+boxbiomassg <- unname(boxmetrics["biomass height stems"])
+boxcaccg <- unname(boxmetrics["putative C assimilation"])
+boxrootshootg <- unname(boxmetrics["root:shoot ratio"])
+
+
