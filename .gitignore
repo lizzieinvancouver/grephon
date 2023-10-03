@@ -10,5 +10,6 @@
 analyses/.Rhistory
 *.Rapp.history
 
+*Rplots.pdf
 *.DS_Store
 /notposting
