@@ -72,25 +72,29 @@ p1 <- ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
   geom_point() +
   geom_smooth(method="lm")+
   theme_article() + theme(legend.position = 'right') + scale_color_brewer(palette = "PuOr") +
-  xlab("Elevation (m)") + ylab("Growth (mm)")
+  xlab("Elevation (m)") + ylab("Growth- ring width (mm)")
 
-#p2 <- ggplot(mora, aes(x=elev, y=mean.rw, color=species)) +
-#  geom_point() +
-#  geom_smooth(method="lm")+
-#  guides(colour = "none") +
-#  theme_article()
+
 mora$species[mora$species=="Abam"] <- 'Abies amabilis'
 mora$species[mora$species=="Psme"] <- 'Pseudotsuga menziesii'
 mora$species[mora$species=="Thpl"] <- 'Thuja plicata'
 mora$species[mora$species=="Tshe"] <- 'Tsuga heterophylla'
 mora$species[mora$species=="Tsme"] <- 'Tsuga mertensiana'
 mora$species[mora$species=="Xano"] <- 'Xanthocyparus nootkatensis'
+p2 <- ggplot(mora, aes(x=elev, y=mean.rw, color=species)) +
+  geom_point() +
+  geom_smooth(method="lm")+
+  theme_article() + scale_color_brewer(palette = "YlGnBu") +
+  xlab("Elevation (m)") + ylab("Growth- ring width (mm)")
 
 p3 <- ggplot(mora, aes(x=elev, y=bai20cm, color=species)) +
   geom_point() +
   geom_smooth(method="lm")+
   theme_article() + theme(legend.position = 'right') + scale_color_brewer(palette = "YlGnBu") +
-  xlab("Elevation (m)") + ylab("Growth (sq.cm)")
+  xlab("Elevation (m)") + ylab("Growth - basal area increment (sq.cm)")
 
 ggarrange(p1,p3)
-ggsave("grbyelev.png", plot = ggarrange(p1,p3))
+ggsave("figures/grbyelev.png", plot = ggarrange(p1,p3))
+
+ggarrange(p2,p3)
+ggsave("figures/grbyelev_rwvsbai.png", plot = ggarrange(p2,p3))
