@@ -34,6 +34,8 @@ htab.df$studnames[i]<-xst
 }
 #add in hypohteses from figure
 hypfig<-subset(h, select=c("group_final","wording_figure"))
+hypfigdist = hypfig%>% distinct(group_final,.keep_all = TRUE)
+colnames(hypfigdist)[1]<-"hypothesis"
 
-htab.df2<-left_join(htab.df2,)
+htab.df2<-left_join(htab.df,hypfigdist)
 write.csv(htab.df,"analyses/output/hyp_summarytab.csv",row.names=FALSE)
