@@ -11,11 +11,13 @@ options(stringsAsFactors=FALSE)
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/grephon/grephon/analyses/growthxelevationetc")
 } else if (length(grep("ailene", getwd()))>0) 
-{setwd("boomboom")
+{setwd("~/GitHub/grephon/analyses/growthxelevationetc")
 }
 
 # packages 
 library(viridis)
+library(egg)
+library(ggplot2)
 
 # get the data
 d <- read.csv("input/classicalrefs_datascraped.csv")
@@ -35,7 +37,8 @@ delev <- subset(d, predictor_type!="latitude")
 # Will confirm and for now remove ...
 delevsm <- subset(delev, dataset_id!="zhu2018")
 delevsm$spstudy <- paste(delevsm$species, "from", delevsm$dataset_id)
-
+#Convert bai to cm
+mora$bai20cm<-mora$bai20/100
 # checks
 unique(delevsm$predictor_units)
 
@@ -60,3 +63,38 @@ for(i in c(1:length(unique(mora$species)))){
 }
 legend("topright", unique(mora$species), col=colz, pch=16, bty="n")
 dev.off()
+
+
+#Now make these look prettier, convert to a 2 or 3 paneled, add error, constrain lines to where data occurs
+delevsm$species[grep("Fagus",delevsm$species)] <- 'Fagus sylvatica'
+
+p1 <- ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
+  geom_point() +
+  geom_smooth(method="lm")+
+  theme_article() + theme(legend.position = 'right') + scale_color_brewer(palette = "PuOr") +
+  xlab("Elevation (m)") + ylab("Growth- ring width (mm)")
+
+
+mora$species[mora$species=="Abam"] <- 'Abies amabilis'
+mora$species[mora$species=="Psme"] <- 'Pseudotsuga menziesii'
+mora$species[mora$species=="Thpl"] <- 'Thuja plicata'
+mora$species[mora$species=="Tshe"] <- 'Tsuga heterophylla'
+mora$species[mora$species=="Tsme"] <- 'Tsuga mertensiana'
+mora$species[mora$species=="Xano"] <- 'Xanthocyparus nootkatensis'
+p2 <- ggplot(mora, aes(x=elev, y=mean.rw, color=species)) +
+  geom_point() +
+  geom_smooth(method="lm")+
+  theme_article() + scale_color_brewer(palette = "YlGnBu") +
+  xlab("Elevation (m)") + ylab("Growth- ring width (mm)")
+
+p3 <- ggplot(mora, aes(x=elev, y=bai20cm, color=species)) +
+  geom_point() +
+  geom_smooth(method="lm")+
+  theme_article() + theme(legend.position = 'right') + scale_color_brewer(palette = "YlGnBu") +
+  xlab("Elevation (m)") + ylab("Growth - basal area increment (sq.cm)")
+
+ggarrange(p1,p3)
+ggsave("figures/grbyelev.png", plot = ggarrange(p1,p3))
+
+ggarrange(p2,p3)
+ggsave("figures/grbyelev_rwvsbai.png", plot = ggarrange(p2,p3))
