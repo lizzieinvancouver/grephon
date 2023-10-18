@@ -15,9 +15,9 @@ library(tidyverse)
 # get the data
 h <- read.csv("data/Grephon.hypotheses.csv")
 head(h)
-unique(h$group_final)#10 hypotheses
+unique(h$hypothesis_for_fig)#10 hypotheses
 sort(unique(h$addressed.in.which.Grephon.paper))#35 grephon papers
-htab<-table(h$addressed.in.which.Grephon.paper,h$group_final)
+htab<-table(h$addressed.in.which.Grephon.paper,h$hypothesis_for_fig)
 #Calculate how many papers test each hypothesis
 #consolitdate duplicate hypotheses/paper: replace cells >1 with 1
 htab[htab > 1] <- 1 
@@ -34,8 +34,13 @@ htab.df$studnames[i]<-xst
 }
 #add in hypohteses from figure
 hypfig<-subset(h, select=c("group_final","wording_figure"))
-hypfigdist = hypfig%>% distinct(group_final,.keep_all = TRUE)
-colnames(hypfigdist)[1]<-"hypothesis"
+hypfigdist = hypfig%>% distinct(wording_figure,.keep_all = TRUE)
+colnames(hypfigdist)[2]<-"hypothesis"
 
 htab.df2<-left_join(htab.df,hypfigdist)
-write.csv(htab.df,"analyses/output/hyp_summarytab.csv",row.names=FALSE)
+ htab.df2$num.studies<-as.integer(htab.df2$num.studies)
+ htab.df3<-subset(htab.df2, select=c(hypothesis,num.studies,studnames))   
+ htab.df4<-htab.df3[sort(htab.df3$num.studies,decreasing=TRUE),]
+# htab.df2
+write.csv(htab.df4,"analyses/output/hyp_summarytab.csv",row.names=FALSE)
+write.csv(htab.df2,"analyses/output/hyp_summarytab2.csv",row.names=FALSE)
