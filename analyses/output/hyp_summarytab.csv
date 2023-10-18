@@ -1,13 +1,13 @@
-"hypothesis","num.studies","studnames"
-"","2","bruening 2017,Richardson2020"
-"C-sink limitation","2","oddi 2022,Zani2020"
-"C-source limitation","2","Finzi2020,oddi 2022"
-"drought offset","6","buermann2018,camarrero 2022,DeSauvage 2022,Drew 2018,etzold2021,Kolar 2016"
-"earlier-longer-more growth","17","camarrero 2022,Chen 2000,cufar2014,Delpierre 2017,DeSauvage 2022,dow2022,Finzi2020,gao 2022,grossiord2022,Keenan 2014,moser 2019,Richardson2020,silvestro2023,SOOLANAYAKANAHALLY 2013,Stridbeck2022,wheeler2016,zhang 2021"
-"effect of growth rate not equal to growth duration","5","cuny 2012,DeSauvage 2022,francon2020,michelot2012,ren 2019"
-"none","3","brand 2022,chen 1998,zu et al 2021"
-"population adaptation to GS length","2","Sebastian-Alconza 2020,Vitasse et al. 2009"
-"PP control over growth","4","moser 2019,SOOLANAYAKANAHALLY 2013,x,Zohner et al 2023"
-"shift in C-allocation towards roots","1","McKown 2016"
-"shift of whole pheno sequence","3","Delpierre 2017,DeSauvage 2022,SOOLANAYAKANAHALLY 2013"
-"species characteristics","5","cuny 2012,etzold2021,McKown 2016,michelot2012,x"
+hypothesis,num.studies,studnames,wording_figure
+earlier-longer-more growth,17,"camarrero 2022,Chen 2000,cufar2014,Delpierre 2017,DeSauvage 2022,dow2022,Finzi2020,gao 2022,grossiord2022,Keenan 2014,moser 2019,Richardson2020,silvestro2023,SOOLANAYAKANAHALLY 2013,Stridbeck2022,wheeler2016,zhang 2021",Longer growing season = more growth
+drought offset,6,"buermann2018,camarrero 2022,DeSauvage 2022,Drew 2018,etzold2021,Kolar 2016",More temp = more drought (drought limitation)
+effect of growth rate not equal to growth duration,5,"cuny 2012,DeSauvage 2022,francon2020,michelot2012,ren 2019",Longer growing season != more growth
+species characteristics,5,"cuny 2012,etzold2021,McKown 2016,michelot2012,x",species-specific responses
+PP control over growth,4,"moser 2019,SOOLANAYAKANAHALLY 2013,x,Zohner et al 2023",Longer growing season != more growth
+none,3,"brand 2022,chen 1998,zu et al 2021",
+shift of whole pheno sequence,3,"Delpierre 2017,DeSauvage 2022,SOOLANAYAKANAHALLY 2013",Earlier !-longer
+,2,"bruening 2017,Richardson2020",
+C-sink limitation,2,"oddi 2022,Zani2020",Longer growing season != more growth
+C-source limitation,2,"Finzi2020,oddi 2022",carbon fertilization
+population adaptation to GS length,2,"Sebastian-Alconza 2020,Vitasse et al. 2009",population-specific responses
+shift in C-allocation towards roots,1,McKown 2016,shift in allocation
