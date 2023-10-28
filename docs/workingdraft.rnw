@@ -81,24 +81,74 @@ External factors related to species interactions---including herbivory, disease 
 
 \subsubsection*{Internal}
 
-\paragraph{Universal limits} % START here ... chunks pasted in but need help to flow
-
-Almost unmentioned in dendrochronology, internal constraints on plant growth are the bouncy castle of plant physiology (you watch physiologists talking about constraints and they are just having a heyday). Genetic and developmental constraints include fundamental limits on plant processes through biophysical realities \citep[e.g., allometry, chemical reaction limits, and genetic architecture that may limit what trait combinations are possible,][]{ackerly2000evolution}, but also constraints more particular to certain species, populations or individual trees. Recent studies on how earlier seasons affect tree growth has focused strongly on developmental constraints, suggesting a never-before-heard-of role for the summer solstice to limit how much and when plants can invest in growth \citep{zohner2023effect}. This is hypothesized to be universal, somewhat contradicting decades of work showing local adaptation by populations, and species-level differences in `determinism' in growth x growing season length relationships. 
+\paragraph{Universal limits} 
+Plants internal programming could limit growth responses to longer seasons, with some constraints operating universally across species. These constraints can be genetic or developmental and include fundamental limits on plant processes through biophysical realities \citep[e.g., allometry, chemical reaction limits, and genetic architecture that may limit what trait combinations are possible][]{ackerly2000evolution}. Recent studies on how earlier seasons affect tree growth has focused strongly on developmental constraints, suggesting a never-before-heard-of role for the summer solstice to limit how much and when plants can invest in growth \citep{zohner2023effect}. This is hypothesized to be universal, somewhat contradicting decades of work showing species-level differences in how and when species grow. % This is hypothesized to be universal, somewhat contradicting decades of work showing local adaptation by populations, and species-level differences in `determinism' in growth x growing season length relationships. 
 
 \paragraph{Species-specific limits}
+Much internal programming that would affect growth responses varies by species, as evolution generally drives selection for different constraints and different strategies. Leaf strategies clearly vary strongly between evergreen and deciduous species, but also within each group---where variation in `determinism' defines a suite of choices on levels and timing of investment and leaf growth. Determinate species build most of their leaf material the season before and flush most leaf buds all at once at the start of season, while indeterminate species more continually produce new buds and flush them. Ideas of determinism, often used in forest sciences, intersect with ecological theories of different plant strategies along which species---especially within communities---assemble. Leaf, wood, fruit and other plant traits show trade-offs along a acquisitive to conservative axis: where some species can grow rapidly and more flexibly take advantage of resources, but are less defended against herbivores and compete poorly at low resource levels, whereas other species compete well at low resource levels, but at the expense of growing slower and conservatively \citep[][]{Grime:1977sw,diaz2016}. These ideas would predict indeterminate acquisitive species, such as poplar, to be far more likely to grow more with longer seasons, while conservative species, such as beech, may not. % Also say ring vs diffuse porous?
+% Such strategies may also make predictions for reproductive investment, which---along with species-level differences---is almost wholly ignored in the current debate on the relationship between growth and growing season length.
 
-Beyond genetic and developmental constraints, evolutionary history can constrain plant responses\todo{addcites}. The legacy of historical evolutionary pressures---including different external drivers---is not easily erased.  Thus, many species show evidence of previous selection, seen when evolutionary relationships (usually represented through phylogeny) predict plant responses and lead to clade-level similarities. Most studies testing for such historical effects on plant responses find them, though this is effectively unstudied currently as a controller of how growing season length may be limited in affecting growth. Further, many physiological syntheses find results suggestive of strong phylogenetic relationships, but fail to discuss or test them \citep[e.g., discussions of evergreen versus deciduous phenology without testing for whether this is actually correlated with the deep in time split between gymnosperms and angiosperms,][]{way2010differential}. 
-
-% Perhaps most remarkably unmentioned in the current debate is the prevalence of species-level differences ....
-Beyond phylogenetic patterns across clades, species can differ for a host of predictable reasons. Decades of plant ecology work has highlighted different plant strategies along which species---especially within communities---assemble. Leaf, wood and other plant traits show trade-offs along a acquisitive to conservative axis: where some species can grow rapidly and more flexibly take advantage of resources, but are less defended against herbivores and compete poorly at low resource levels, whereas other species compete well at low resource levels, but at the expense of growing slower and conservatively \citep[][]{Grime:1977sw,diaz2016}. This trade-off would predict certain species to be far more likely to grow more with longer seasons, while others may not. (\colorbox{yellow}{Fredi adds a little on determinate/indeterminate growth?}) (\colorbox{orange}{And somewhere we have to say ring vs diffuse porous?}). Such strategies may also make predictions for reproductive investment. % Such strategies may also make predictions for reproductive investment, which---along with species-level differences---is almost wholly ignored in the current debate on the relationship between growth and growing season length.
-
-Trade-offs between vegetative and reproductive investments are a paradigm of life history theory and produce differences across levels---from between species to within individuals. How trees invest in reproduction (seeds within cones and fruits), including how they vary across their lifetime and between years varies with species. Many species mast---producing abundant cones or fruits in only some years and thus massively shifting carbon allocation to reproduction in some years, which could impact measures of growth. Indeed, while research is still debating the proximate and ultimate mechanisms for masting, many hypotheses suggest higher summer temperatures could trigger masting in the following year \citep{hacket2016tree,hacket2016consistent}; if true, then reduced growth in years following warm summers may not indicate temperatures too high for growth, as often suggested \citep[e.g.,][]{gantois2022new,dow2022warm}, but instead shifting investment in reproduction.... 
-% Beyond genetic and developmental constraints, evolutionary history can constrain plant responses\todo{addcites}, though this is effectively unstudied currently as a controller of how growing season length may be limited in affecting growth. Yet most studies testing for such historical effects on plant responses find them. 
+Imprints of past selection, however, also drive species-level differences, producing phylogenetic patterns that may limit how well species are adapted to current conditions, and constrain plant responses \todo{addcites}. The legacy of historical evolutionary pressures---including different external drivers---is not easily erased.  Thus, many species show evidence of previous selection, seen when evolutionary relationships (usually represented through phylogeny) predict plant responses and lead to clade-level similarities. Most studies testing for such historical effects on plant responses find them, and even more physiological syntheses find results suggestive of strong phylogenetic relationships \citep[though they do not always test them, e.g.,][]{way2010differential}. 
 
 \paragraph{Population- \& individual-level limits}
+Below the species-level, variations from between-populations to within-individuals drive variation in growth and its relationship to growing season length. Populations often vary predictably in their end-of-season phenology, with more poleward populations tending to stop height growth (budset) earlier using locally adapted photoperiod cues \todo{addcites}. This means longer seasons---as defined by budset---are generally driven by spring phenology, which appears far more flexible, and has advanced more rapidly than fall events. Within populations, individual trees may also vary in how early or late they are for both spring and fall events. Within individuals maturity and shifting investment can drive inter-annual variation. Saplings tend to both grow more rapidly and have longer seasons relative to themselves as adult trees. Adult trees then vary depending on investment, most notably in reproduction. 
+
+Trade-offs between vegetative and reproductive investments are a paradigm of life history theory and produce important differences across years within individuals (as well as between species). Years of high reproductive output can reduce growth (CITES). For species that mast---producing abundant cones or fruits in only some years---high reproduction years could especially impact measures of wood growth. Many hypotheses suggest higher summer temperatures trigger masting in the following year \citep{hacket2016tree,hacket2016consistent}; if true, then reduced growth in years following warm summers may not indicate temperatures too high for growth, as often suggested \citep[e.g.,][]{gantois2022new,dow2022warm}, but instead shifting investment in reproduction.
+
+
 
 \section*{A cross-disciplinary framework for when longer seasons increase tree growth}
  
+ % Building a mechanistic framework of when and where... 
+ % These levels of complexity across diverse external and internal drivers make a suite of testable predictions.
+Predicting when and where longer seasons lead to increased growth may seem overwhelming given the diversity of potential drivers, but together they offer a set of testable hypotheses that could rapidly advance progress---if tackled with a more organized and cross-disciplinary approach. Our literature review highlighted how siloed research is in the drivers they consider (see Fig. XX), with entire suites of hypotheses missing from the literature. 
+
+Beyond failing to test a suite of highly relevant mechanisms, the lack of cross-disciplinary study means we lack coherent tests that compare multiple mechanisms. Dendrochronology considers almost exclusively external drivers, while physiological tests of constraints do not usually predict for which species, when and where constraints will be most important. Taken together, the current landscape of research suggests we may be testing a hypothesis for shifts with climate change that we never previously understood well in fundamental biology. 
+
+Below we outline a path towards building a mechanistic framework to predict when the longer growing seasons of anthropogenic climate change will increase plant growth. This path requires building fundamental biological knowledge in a suite of areas across physiology, life history, tree rings, ecology and evolutionary biology. These suggestions thus apply to understanding this relationship at the individual (organismal level), though we highlight where they may make predictions are larger (e.g., ecosystem scales). % These suggestions apply to those wanting to specifically address hypotheses about the relationship between growing season length, phenology and growth at the individual (organism) level
+
+\subsubsection*{Standardized measurements} % Box?
+
+While our lit review showed that this doesn't matter, we also struggled to make an quantitative estimates -- so it does matter!
+
+1.	What we measure should be standardized and common measurements (allow for communication across fields) for anyone who is interested in measuring growth and phenology at the individual level. This seems related having standard hypotheses and the graphs (Fredi and Ailene and Kavya’s table, Cat’s heat maps?). Specifically - 
+a.	Standardize measurements of response variables when working on this question (growth, growing season length) AND explanatory variables (climate). We could provide table of standard measurements / units / approaches (assuming we can agree on this). Seems related to Ailene’s document, and we can also cite Christian Korners paper…
+b.	Specific fields measuring relevant (individual) level metrics (growth, phenology) should ideally consider broadening what they measure (if easy) and / or addressing their biases. This will help future scientists conduct meta analyses. For example:
+i.	If tree rings studies expanded to more measurements of angiosperms, this would allow for greater synthesis with phenology databases like PEP.
+ii.	If phenological studies could focus more on both the start and end of the season (specifically, leafout and leaf fall), and make sure to focus on conifers / woody species, there would be more overlap with ITRDB.
+iii.	For long-term forest growth plots, ensuring annual growth measurements paired with phenological measurements would help (most permanent plot data I know of, e.g. FIA and PSP, is collected every 5 years, no phenology). 
+c.	We should also agree on a standardized set of analytical tools. E.g. tree ring analyses – average away a lot of the interesting things. I’m sure there are issues with phenological data, not sure what they are. 
+
+
+\paragraph{Extending disciplinary focus}
+
+\paragraph{Lags \& allocation}
+
+\paragraph{Quantify species/population/individual variation}
+
+
+\subsubsection*{Bridging the internal-external drivers divide}
+
+\section*{Where to go in the batmobile now!}
+
+
+Only a handful of studies mentioned species differences, and rarely made predictions based on existing theory. Shifting investment in growth versus reproduction, differences in plant strategies and phylogeny all predict testable variation in how growing season length impacts growth, but have been almost wholly ignored in the current debate. We argue this is because of a lack of cross-disciplinary study. For example, while evolutionary history, ecology and life history theory all predict differences across species, the two major disciplines currently studying this---physiology and dendrochronology---generally study either one species\todo{addcites}, lump all species in a site\todo{addcites}, or divide by one trait \citep[e.g.,][]{dow2022warm}. Research on trends over elevation, which seem foundational to understanding the growth x growing season length relationship, have been on a very limited species list---with almost no comparison across species. % Evolutionary history, ecology and life history theory all predict differences across species, but current analyses generally study either one species\todo{addcites}, or lump all species in a site\todo{addcites}.  
+
+% Climatic drivers can clearly affect plant growth, but because they are generally tested by a field developed to derive climate signals from tree rings (dendrochronology), they are usually studied in isolation, with no way to compare their effects to biotic drivers, or internal constraints. 
+
+
+
+But really predicting when the longer growing seasons of anthropogenic climate change will lead to increased growth requires building fundamental biological knowledge in a suite of areas across physiology, life history, tree rings, ecology and evolutionary biology. Careful cross-disciplinary is critical, but will benefit from shifts within disciplines. 
+
+
+
+
+
+
+
+
+Both these [BIOTIC] drivers though can be more episodic and harder to measure, making them more difficult to easily test as mechanisms for limiting growth. In contrast, proxies for competition (such as surrounding tree density and identity), can be more easily measured, but are rarely studied. Mechanistic physiology studies rarely measure (or even include) competition and, given dendrochronology's focus on climatic signal through growth, the field similarly tries to avoid the study or impact of plant competition, even though it is foundational to forest dynamics. And ...  the very established method of merging into average site chronology reduces the chance of seeing competition or biotic factors in play.
+
  
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -107,8 +157,15 @@ Trade-offs between vegetative and reproductive investments are a paradigm of lif
 
 % Text that I cut from the previous draft but may want to REVIEW to see if it's worth fitting in somewhere
 
-Both these [BIOTIC] drivers though can be more episodic and harder to measure, making them more difficult to easily test as mechanisms for limiting growth. In contrast, proxies for competition (such as surrounding tree density and identity), can be more easily measured, but are rarely studied. Mechanistic physiology studies rarely measure (or even include) competition and, given dendrochronology's focus on climatic signal through growth, the field similarly tries to avoid the study or impact of plant competition, even though it is foundational to forest dynamics. And ...  the very established method of merging into average site chronology reduces the chance of seeing competition or biotic factors in play.
+Internal/External drivers
 
+
+
+ ...though how much longer seasons are depends on what events define the start and end (CITES). 
+
+Perhaps most remarkably unmentioned in the current debate is the prevalence of species-level differences ....
+
+Beyond genetic and developmental constraints, evolutionary history can constrain plant responses\todo{addcites}, though this is effectively unstudied currently as a controller of how growing season length may be limited in affecting growth. Yet most studies testing for such historical effects on plant responses find them... though this is effectively unstudied currently as a controller of how growing season length may be limited in affecting growth. Further, many physiological syntheses find results suggestive of strong phylogenetic relationships, but fail to discuss or test them \citep[e.g., discussions of evergreen versus deciduous phenology without testing for whether this is actually correlated with the deep in time split between gymnosperms and angiosperms,][]{way2010differential}. '
 
 % Previous draft text ... 
 
@@ -134,9 +191,7 @@ This focus on climatic signals in tree growth (measured by ring width) is the ha
 
 
 
-Shifting investment in growth versus reproduction, differences in plant strategies and phylogeny all predict testable variation in how growing season length impacts growth, but have been almost wholly ignored in the current debate. We argue this is because of a lack of cross-disciplinary study. For example, while evolutionary history, ecology and life history theory all predict differences across species, the two major disciplines currently studying this---physiology and dendrochronology---generally study either one species\todo{addcites}, lump all species in a site\todo{addcites}, or divide by one trait \citep[e.g.,][]{dow2022warm}. Research on trends over elevation, which seem foundational to understanding the growth x growing season length relationship, have been on a very limited species list---with almost no comparison across species. % Evolutionary history, ecology and life history theory all predict differences across species, but current analyses generally study either one species\todo{addcites}, or lump all species in a site\todo{addcites}.  
 
-Beyond failing to test a suite of highly relevant mechanisms, the lack of cross-disciplinary study means we lack coherent tests that compare multiple mechanisms. Dendrochronology considers almost exclusively external drivers, while physiological tests of constraints do not usually predict for which species, when and where constraints will be most important. Taken together, the current landscape of research suggests we may be testing a hypothesis for shifts with climate change that we never previously understood well in fundamental biology. 
 
 \emph{To the bat-mobile Robin! How to tackle this cross-disciplinary framework}
 
@@ -146,7 +201,6 @@ Beyond failing to test a suite of highly relevant mechanisms, the lack of cross-
 
 (\colorbox{cyan}{Hoping Janneke or someone wants to jump in somewhere here ...} in this section with our opinions on what people should measure, and something about statistical approaches?)
 
-But really predicting when the longer growing seasons of anthropogenic climate change will lead to increased growth requires building fundamental biological knowledge in a suite of areas across physiology, life history, tree rings, ecology and evolutionary biology. Careful cross-disciplinary is critical, but will benefit from shifts within disciplines. 
 
 All fields would benefit from a deeper understanding of the physiological connections between growing season length and growth. Much work has focused on measures of growth and phenology without a clear mechanistic link. Similarly, many current suggestions of constraints lack any physiological mechanism. Physiological studies that follow carbohydrate and cell division versus expansion dynamics could yield insights. This is particularly important if want to include constraints in our projections, as extrapolating is especially dangerous when the underlying mechanistic model is wrong
 
