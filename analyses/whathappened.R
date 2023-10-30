@@ -26,6 +26,7 @@ d <- read.csv("output/grephontable.csv")
 ## code from growthgsl.R
 
 papernum <- length(unique(d$paper_id))
+studynum <- nrow(d)
 
 # Which papers have data but do not test it?
 d$paper_id[d$gsxgrowthourdef=="not tested but have data"]
@@ -39,6 +40,23 @@ substrRight <- function(x, n){
 
 d$year <- as.numeric(substrRight(d$paper_id, 4))
 plot(year~as.factor(gsxgrowthourdef), data=d)
+
+minyr <- min(d$year, na.rm=TRUE)
+maxyr <- max(d$year, na.rm=TRUE)
+totyr <- maxyr-minyr
+
+# Number of growth metrics and GSL metrics
+sort(unique(d$growthclean))
+sort(unique(d$gs_start_metricclean))
+sort(unique(d$gs_end_metricclean))
+d$gsstartendclean <- paste(d$gs_start_metricclean, d$gs_end_metricclean, sep="x")
+sort(unique(d$gsstartendclean))
+
+nstartmetrics <- length(unique(d$gs_start_metricclean))
+nendmetrics <- length(unique(d$gs_end_metricclean))
+ngslmetrics <- length(unique(d$gsstartendclean))
+ngrowthmetrics <- length(unique(d$growthclean))
+
 
 # What types of studies find evidence for this relationship in any way?
 table(d$gsxgrowth)

@@ -38,6 +38,23 @@ subset(d, growth_metric=="height,  root:shoot ratio") # Soolananayakanahally2013
 ## EMW replies to CJC: We planned on one row per response variable when they were similar like this, so leaving for now
 subset(d, growth_metric=="stem density; proportion flowering; proportion fruiting") #  Wheeler2016: going with stem density (emw reviewed this paper)
 
+# growth metric for counting unique metrics
+d$growthclean <- d$growth_metric
+d$growthclean[grep("circumference at breast height", d$growth_metric)] <- "dendrometer/circumference" 
+d$growthclean[grep("dendrometer", d$growth_metric)] <- "dendrometer/circumference" 
+d$growthclean[grep("carbon flux", d$growth_metric)] <- "carbon flux"
+d$growthclean[which(d$growth_metric=="intra-annual core (xylogeneis)")] <- "intra-annual core (xylogenesis)"
+d$growthclean[which(d$growth_metric=="intra-annual core (xylogenesis) ")] <- "intra-annual core (xylogenesis)"
+d$growthclean[which(d$growth_metric=="intra-annual cores (xylogenesis)")] <- "intra-annual core (xylogenesis)"
+d$growthclean[which(d$growth_metric=="intraannual cores (xylogenesis)")] <- "intra-annual core (xylogenesis)"
+d$growthclean[grep("NPP", d$growth_metric)] <- "NPP"
+d$growthclean[grep("(from Licor, but only for one of the two experiments)", d$growth_metric)] <- "photosynthesis"
+d$growthclean[grep("photosynthesis; measured at leaf level", d$growth_metric)] <- "photosynthesis"
+d$growthclean[grep("height,  root:shoot ratio", d$growth_metric)] <- "height"
+d$growthclean[grep("ring width", d$growth_metric)] <- "annual core"
+d$growthclean[which(d$growth_metric=="NEP (net ecosystem production, calculated from flux towers)")] <- "NEP"
+
+
 # growth metric
 d$growth <- d$growth_metric
 d$growth[grep("intra-annual", d$growth_metric)] <- "intra-annual core (xylogeneis)"
@@ -105,6 +122,21 @@ sort(unique(d$gsl_metric))
 sort(unique(d$gs_start_metric))
 sort(unique(d$gs_end_metric))
 # d$paper_id[which(d$gs_end_metric=="end vegetative")] # lots of these end vegetative, but they are across papers
+
+# start metric for counting unique metrics
+d$gs_start_metricclean <- d$gs_start_metric
+d$gs_start_metricclean[grep("onset vegetative", d$gs_start_metric)] <- "leafout"
+d$gs_start_metricclean[grep("leaf onset", d$gs_start_metric)] <- "leafout"
+d$gs_start_metricclean[grep("wood phenology", d$gs_start_metric)] <- "onset wood"
+d$gs_start_metricclean[grep("snowmelt day", d$gs_start_metric)] <- "meltout date"
+d$gs_start_metricclean[grep("SOS", d$gs_start_metric)] <- "SOS"
+
+# end metric for counting unique metrics
+d$gs_end_metricclean <- d$gs_end_metric
+d$gs_end_metricclean[grep("(senescence)", d$gs_end_metric)] <- "end vegetative (leaf senescence)"
+d$gs_end_metricclean[grep("wood phenology", d$gs_end_metric)] <- "end wood"
+d$gs_end_metricclean[grep("leaf coloring", d$gs_end_metric)] <- "end vegetative (leaf coloration)"
+d$gs_end_metricclean[grep("onset of leaf fall", d$gs_end_metric)] <- "onset of leaf fall"
 
 # GSL metric
 d$gsl <- d$gsl_metric

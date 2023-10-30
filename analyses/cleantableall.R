@@ -50,5 +50,8 @@ source("source/clean_methodexoendo.R")
 # Step 6: Clean species
 source("source/cleanspecies.R") 
 
-# Step 7 (prime!): Write it out ...
+# Step 7 (prime!): Let's remove bruening2017 as it's about tree line
+d <- subset(d, paper_id!="bruening2017")
+
+# Step 8: Write it out ...
 write.csv(d, "output/grephontable.csv", row.names=FALSE)
