@@ -22,7 +22,7 @@
 
 % See also: git/grants/crc2023/crc2023app/docs/crc_notes2023more.tex which has some reference notes
 
-\title{Supplement: Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?}
+\title{Supplement: Why longer seasons with climate change may\\ not increase tree growth}
 \author{Team Grephon}
 \date{\today}
 \maketitle
@@ -36,7 +36,8 @@ source("~/Documents/git/projects/grephon/grephon/analyses/whathappened.R")
 
 \section*{Literature review}
 
-We conducted a systematic review to find studies focused on relationships between growing season length and tree wood growth. After reviewing several recent papers \citep{dow2022warm,zohner2023effect}, we searched ISI Web of Science for ``growing season length" AND ``tree ring*" (ALL FIELDS) on 12 April 2023, which returned 33 citations. We next reviewed abstracts and discarded papers that did not mention the relationship between growing season length and growth. We further reviewed all citations within all papers for additionally relevant papers and included them in our review. In total we report on \Sexpr{papernum}, after discarding one paper \citep[][which used tree lines as a metric of both growth and growing season length]{bruening2017}. % These ISI methods in outline.tex % grephon_warmingexpts also has some ISI searches, but no date and is focused on warming experiments. 
+We conducted a review to find studies focused on relationships between growing season length and tree wood growth. After reviewing several recent papers \citep{dow2022warm,zohner2023effect}, we searched ISI Web of Science for ``growing season length" AND ``tree ring*" (ALL FIELDS) on 12 April 2023, which returned 33 citations. We next reviewed abstracts and discarded papers that did not mention the relationship between growing season length and growth. We further reviewed all citations within all papers for additionally relevant papers and included them in our review. In total we report on \Sexpr{papernum} papers after reviewing over 107 potentially relevant papers, after discarding one paper \citep[][which used tree lines as a metric of both growth and growing season length]{bruening2017}. % These ISI methods in outline.tex % grephon_warmingexpts also has some ISI searches, but no date and is focused on warming experiments. 107 is the number in the articles folder. 
+% on 31 Oct 2023, I tried ISI (Web of Science Core Collection) for SEARCH tree OR woody (All Fields) and growth (All Fields) and growing season length (All Fields), which returned 886 references. 
 
 Given the large diversity of metrics we found, we did not extract quantitative estimates of growing season length, growth, or their relationship. Instead, we extracted data on location, species, how they measured growing season length, growth, what relationship they found and what internal and external drivers they mentioned (full dataset with more details available on the Knowledge Network for Biocomplexity at publication).
 
@@ -57,7 +58,7 @@ While our lit review showed that the varying metrics of growth and growing seaso
 \end{enumerate}
 \end{enumerate}
 
-We should also agree on a standardized set of analytical tools. E.g. tree ring analyses --- average away a lot of the interesting things. I’m sure there are issues with phenological data, not sure what they are. ... and people should just report direct tests of the relationship so we don't end up with so many `did not measure' answers (Fig. \ref{fig:heatmaps}). 
+We should also agree on a standardized set of analytical tools. E.g. tree ring analyses --- average away a lot of the interesting things. I’m sure there are issues with phenological data, not sure what they are. ... and people should just report direct tests of the relationship so we don't end up with so many `did not measure' answers (Fig. \ref{fig:heatmaps}). And should we recommend tests for lag effects?
 
 \clearpage
 \section*{References}
@@ -68,10 +69,19 @@ We should also agree on a standardized set of analytical tools. E.g. tree ring a
 
 \clearpage
 \begin{figure}[h!]
-\includegraphics[width=1\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
-\includegraphics[width=1\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
-\caption{Heatmaps from our literature review.}
+\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
+\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
+\caption{Heatmaps from our literature review showing the prevalence of external (top) and internal drivers considered by method (in development).}
 \label{fig:heatmapssupp}
+\end{figure}
+
+
+
+\clearpage
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{..//figures/speciesnums_finds.pdf}
+\caption{Results are generally inconsistent across species (in development).}
+\label{fig:sppfinds}
 \end{figure}
 
 
