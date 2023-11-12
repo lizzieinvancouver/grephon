@@ -37,10 +37,10 @@ hypfig<-subset(h, select=c("group_final","wording_figure"))
 hypfigdist = hypfig%>% distinct(wording_figure,.keep_all = TRUE)
 colnames(hypfigdist)[2]<-"hypothesis"
 
-htab.df2<-left_join(htab.df,hypfigdist)
- htab.df2$num.studies<-as.integer(htab.df2$num.studies)
- htab.df3<-subset(htab.df2, select=c(hypothesis,num.studies,studnames))   
- htab.df4<-htab.df3[sort(htab.df3$num.studies,decreasing=TRUE),]
+# htab.df2<-left_join(htab.df,hypfigdist)
+htab.df$num.studies<-as.integer(htab.df$num.studies)
+#  htab.df3<-subset(htab.df2, select=c(hypothesis,num.studies,studnames))   
+
+ htab.df2<-htab.df[order(htab.df$num.studies,decreasing=TRUE),]
 # htab.df2
-write.csv(htab.df4,"analyses/output/hyp_summarytab.csv",row.names=FALSE)
 write.csv(htab.df2,"analyses/output/hyp_summarytab2.csv",row.names=FALSE)
