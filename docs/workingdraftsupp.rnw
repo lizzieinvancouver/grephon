@@ -45,6 +45,8 @@ Papers often reported dozens or more statistical tests that were variations of t
 
 \section*{Towards standardized measurements \& tests}
 
+ A common framework where researchers aim to report certain relevant drivers (e.g., several temperature and precipitation responses across the growing season) and broaden the metrics they use to encompass a standard set of growth and growing season length metrics....
+
 While our lit review showed that the varying metrics of growth and growing season length can similarly find---or not find---a relationship, we also struggled to make scrape any consistent quantitative estimates---so metrics do matter intensely to helping the field progress. To start the conversation on a standardized set of measurements, we propose:
 \begin{enumerate}
 \item Ideal measure of growth
