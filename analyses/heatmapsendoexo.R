@@ -25,6 +25,69 @@ library(tidyr)
 greph <- read.csv("output/grephontable.csv")
 
 
+### Update the heatmaps for Supp to better match the heatmaps in the main document
+
+grephsub <- greph %>%
+  select(paper_id, method, what.ext, what.endo) %>%
+  mutate(method = ifelse(method=="", "height", method)) %>%
+  distinct() %>%
+  group_by(method, what.ext) %>%
+  mutate(totcounts.ext = n()) %>%
+  ungroup() %>%
+  group_by(method, what.endo) %>%
+  mutate(totcounts.endo = n()) %>%
+  select(method, what.ext, what.endo, totcounts.ext, totcounts.endo) 
+
+totalpossible.ext <- grephsub %>%
+  ungroup() %>%
+  expand(method, what.ext) 
+
+totalpossible.endo <- grephsub %>%
+  ungroup() %>%
+  expand(method, what.endo) 
+
+allcombos.ext <- grephsub %>%
+  ungroup() %>%
+  select(method, what.ext, totcounts.ext) %>%
+  full_join(totalpossible.ext) %>%
+  mutate(totcounts.ext = ifelse(is.na(totcounts.ext), 0, totcounts.ext)) %>%
+  distinct() %>%
+  filter(!is.na(what.ext))
+
+allcombos.endo <- grephsub %>%
+  ungroup() %>%
+  select(method, what.endo, totcounts.endo) %>%
+  full_join(totalpossible.endo) %>%
+  mutate(totcounts.endo = ifelse(is.na(totcounts.endo), 0, totcounts.endo)) %>%
+  distinct() %>%
+  filter(!is.na(what.endo))
+
+ext <- ggplot(allcombos.ext, aes(x = what.ext, y = method, fill = totcounts.ext)) +
+  geom_tile(color = "black") + geom_text(aes(label=ifelse(totcounts.ext==0, "", totcounts.ext))) +
+  theme_classic() + 
+  scale_fill_continuous(low = "white", high = "#99000D")+ 
+  xlab("") + ylab("") + ggtitle("External factors") + 
+  theme(legend.position = "none") + 
+  scale_x_discrete(guide = guide_axis(angle = 45), expand=c(0,0)) +
+  scale_y_discrete(expand=c(0,0)) + coord_equal() 
+
+endo <- ggplot(allcombos.endo, aes(x = what.endo, y = method, fill = totcounts.endo)) +
+  geom_tile(color = "black") + geom_text(aes(label=ifelse(totcounts.endo==0, "", totcounts.endo))) +
+  theme_classic() + 
+  scale_fill_continuous(low = "white", high = "#084594")+ 
+  xlab("") + ylab("") + ggtitle("Internal factors") + 
+  theme(legend.position = "none",
+        axis.text.y=element_blank()) + 
+  scale_x_discrete(guide = guide_axis(angle = 45), expand=c(0,0)) +
+  scale_y_discrete(expand=c(0,0)) + coord_equal() 
+
+pdf(file=paste0("../figures/heatmaps/heatmap_combined_endo&exo.pdf"), width=11, height=8.5)
+grid::grid.draw(cbind(ggplotGrob(ext), ggplotGrob(endo)))
+dev.off()
+
+
+
+
 # For external...
 
 ## By growth ... 

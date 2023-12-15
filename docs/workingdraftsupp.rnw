@@ -71,9 +71,10 @@ We should also agree on a standardized set of analytical tools. E.g. tree ring a
 
 \clearpage
 \begin{figure}[h!]
-\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
-\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
-\caption{Heatmaps from our literature review showing the prevalence of external (top) and internal drivers considered by method (in development).}
+%\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
+%\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
+\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_combined_endo&exo.pdf}
+\caption{Heatmaps from our literature review showing the prevalence of external (left) and internal drivers considered by method (in development).}
 \label{fig:heatmapssupp}
 \end{figure}
 
