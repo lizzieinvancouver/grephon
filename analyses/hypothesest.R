@@ -44,3 +44,10 @@ htab.df$num.studies<-as.integer(htab.df$num.studies)
  htab.df2<-htab.df[order(htab.df$num.studies,decreasing=TRUE),]
 # htab.df2
 write.csv(htab.df2,"analyses/output/hyp_summarytab2.csv",row.names=FALSE)
+
+# Now make a simplified version to merge into other grephon data
+htab.tomerge <- subset(h, select=c("addressed.in.which.Grephon.paper", 
+  "hypothesis_for_fig", 
+  "wording_figure",
+  "group_final"))
+write.csv(htab.tomerge,"analyses/output/hyp_mergeable.csv",row.names=FALSE)
