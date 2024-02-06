@@ -1,3 +1,6 @@
+## Started by Ailene (later 2023) ##
+## Updates in Feb 2024 by Lizzie ##
+
 # housekeeping
 rm(list=ls()) 
 options(stringsAsFactors=FALSE)
@@ -13,10 +16,19 @@ if(length(grep("lizzie", getwd())>0)) {
 library(tidyverse)
 
 # get the data
-h <- read.csv("data/Grephon.hypotheses.csv")
-head(h)
-unique(h$hypothesis_for_fig)#10 hypotheses
-sort(unique(h$addressed.in.which.Grephon.paper))#35 grephon papers
+hall <- read.csv("data/Grephon.hypotheses.csv")
+head(hall)
+unique(hall$hypothesis_for_fig)#10 hypotheses
+
+# delete some papers we excluded or were not part of the Grephon analysis
+h <- hall
+# delete papers not part of GREPHON lit review (I think Fredi added them)
+h <- h[-which(h$addressed.in.which.Grephon.paper=="x"),] 
+# delete bruening2017 (which we remove because it was treeline)
+h <- h[-which(h$addressed.in.which.Grephon.paper=="bruening 2017"),] 
+
+# Now sort the papers and get numbers for figure
+sort(unique(h$addressed.in.which.Grephon.paper))# 35 grephon papers
 htab<-table(h$addressed.in.which.Grephon.paper,h$hypothesis_for_fig)
 #Calculate how many papers test each hypothesis
 #consolitdate duplicate hypotheses/paper: replace cells >1 with 1
