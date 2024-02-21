@@ -74,6 +74,7 @@ papersnumanyevi <- length(unique(eviany$paper_id))
 papersnumourevi <- length(unique(eviour$paper_id))
 
 perceanyevi <- round((length(unique(eviany$paper_id))/length(unique(d$paper_id)))*100, 0)
+percenoevi <- round((length(unique(noeviany$paper_id))/length(unique(d$paper_id)))*100, 0)
 
 
 papersnumnoevi <- length(unique(noeviany$paper_id))
