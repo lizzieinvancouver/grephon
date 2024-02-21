@@ -43,9 +43,9 @@ longer growing season != more growth,Longer growing season != more growth,effect
 longer growing season != more growth,Longer growing season != more growth,effect of growth rate not equal to growth duration,rate > duration,Growth depends on growth rates not on growing season length in region with limited soil-moisture conditions,,both,ren 2019,,,,,,FB,
 longer growing season != more growth,Longer growing season != more growth,effect of growth rate not equal to growth duration,T control over growth rate,,,,DeSauvage 2022,,,,,,FB,
 longer growing season != more growth,Longer growing season != more growth,effect of growth rate not equal to growth duration,T control over growth rate,growth is directly positively influenced by the accumulation of degree days received after the snow melt-out date,,external,francon2020,,,,,,,
-NA,,none,none,x,x,,brand 2022,,,,,,FB,
-NA,,none,none,x,x,x,chen 1998,x,,,,Photosynthesis,FB,
-NA,,none,none,x,x,x,zu et al 2021,x,,,,,FB,
+more temp = more drought (drought limitation),,none,none,x,x,,brand 2022,,,,,,FB,"entered by EMW Feb 2024, see github issue 29"
+NA,,none,none,x,x,x,chen 1998,x,,,,Photosynthesis,FB,EMW asked FB about this in Feb 2024 (githube issue #29) and he confirmed no hypothesis given
+more temp = more drought (drought limitation),,none,none,x,x,x,zu et al 2021,x,,,,,FB,"entered by EMW Feb 2024, see github issue 29"
 population-specific responses,population-specific responses,population adaptation to GS length,population adaptation to GS length,provenances are adapted to their GS length,southern provenances fail to complete their xylogenesis when transplanted to the north.,internal,Sebastian-Alconza 2020,,,testable,,Dendro,FB,
 population-specific responses,population-specific responses,population adaptation to GS length,population adaptation to GS length,Population level genetic differences that vary with climate affect growth and phenology,,internal,Vitasse et al. 2009,,"they explored whether
 steep temperature gradients have induced genetic gradients
@@ -72,3 +72,4 @@ species-specific responses,species-specific responses,species characteristics,sp
 NA,,,,bristlecone pine treeline position is a function of topoclimate.,,,bruening 2017,,,,,,,
 longer growing season != more growth,Longer growing season != more growth,,,spring productivity carry-over effects,,internal,Richardson2020,,,,barely,large scale physiology (flux towers),AKE,
 more temp = more drought (drought limitation),More temp = more drought (drought limitation),,,,,external,eckes-shephard2020,,,,,,FB,"entered by EMW Feb 2024, see github issue 29"
+earlier!= longer growing season,,,,,"Earlier/longer GLS != increased growth, ATLEAST NOT AS MUCH AS PREVIOUSLY PREDICTED due to interactive climate effects",,zohner2020,,,,,,AKE,"entered by EMW Feb 2024, see github issue 29"
