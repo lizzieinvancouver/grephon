@@ -1,0 +1,115 @@
+Started 4 July 2023
+Happy Independence Day America
+
+
+
+<><><><><><><><><><><><>
+January 2024 notes
+Ohgod, it's January somehow.
+
+WORKING on now ... 
+
+- 4 March 2024
+	- Test for positive/negative effects by year. 
+	- Cite new study saying we need more evol. Biology in soil-water plant studies (in downloads currently) 
+	- Finish updating based on JD edits
+	- Add citations from Cat
+
+...
+
+- Since last meeting (mid-November) I have gotten feedback and help from:
+	- Ailene
+	- Cat (but comments in text remain, we are meeting this week)
+	- Janneke (but has not done refs, and we're meeting this week)
+
+- Basically I need to:
+	- Figure out where the hypotheses numbers are ... and finalize that figure
+	- Get more #s from lit review in paper
+	- Feel good about closing out second round draft feedback: https://github.com/lizzieinvancouver/grephon/issues/36
+	- Get the figures finalized (see git issues and notes below)
+	- Get people to help me with refs (I feel like a git issue with check boxes .. though annoying could be easiest at this point? Or just update \addcites to have specific names (\addcitesAlana etc.)
+
+
+<><><><><><><><><><><><>
+October 2023 notes
+Lizzie worked on on a NEW draft
+
+- List of things I need help with for the call
+	- Alana's figure, incl. what is source/sink (https://github.com/lizzieinvancouver/grephon/issues/1)
+	- Finalizing and integrating the hypothesis figure (https://github.com/lizzieinvancouver/grephon/issues/29)
+	- Deciding on and writing the standardized methods section of supp	
+	- Better heat maps for supp (https://github.com/lizzieinvancouver/grephon/issues/28) 
+	- Methods vs. disciplines is sort of messy
+	- Our methods for finding studies is not great (heads-up only)
+	- If time allows:
+		- Where to put CO2 fert: https://github.com/lizzieinvancouver/grephon/issues/33
+
+Note to self: If we use the growth x elevation figure, we should work on a table to organize these refs -- maybe a list of all we checked (see what Britany did; incl. Neil's emails)
+
+
+<><><><><><><><><><><><>
+On 25 September 2023 call:
+
+Issues 26-30 and issue 23 (trends with elevation). Also, Janneke was going to fix bat mobile section.
+
+From the 9 September 2023 email:
+
+Figures:
+- Ruben on PEP/ITRB with Cat's and my help
+- Subfields relating -- Kavya
+- GREPHON table stuff, including heat map -- Cat and Lizzie
+- New version of growth x elevation -- Ailene
+
+Other
+- Measurement box -- Ailene
+- Fix the bat mobile section -- Janneke
+- List of all hypotheses and glossary: Frederik, Ailene, Kavya with Frederik in charge of scheduling/organizing this team
+
+
+
+<><><><><><><><><><><><>
+On 21 August (updated 23 September 2023 ... first day of fall, and 1 October 2023):
+
+Below are DONE: 
+(1) Add to manuscript: WHEN we should see the connection (currently in text without a home)
+(2) Deal with issue #25 (feedback on draft)
+(3) Deal with Rubén's comments in the PDF (docs/comments)
+(4) Re-do the bat mobile section (in docs/comments)
+
+<><><><><><><><><><><><>
+From July 2023, I think: 
+
+Send out a list of tasks:
+
+EVERYONE: Send statements/snippets you think we need to include in paper. 
+
+1. (Unlimited people) Fundamental lit on elevational gradients and tree rings -- what evidence is there for GSL to growth (two people, one of whom I think should be Janneke or Ailene) -- see issue #18
+
+2. Someone to check my work on how I relabeled the growth metrics (issue # 15 and check BOTH the output and my code)
+
+4. Someone to add to the code a sapling/adult column, including getting the info out of papers or people who are in charge of the papers. (Issue #17)
+
+3. Someone to take over external and endogenous factors affected growth or gsl issue (#11) including getting everyone to send me data, and ideally writing some code to summarize it. 
+
+5. Figure out summary for method (Alana?) 
+
+6. Start working on Rubén's suggested idea of simplifying exogenous factors (in issue 10 now, could be new issue; work with Alana who started on this).
+
+7. Simplify endogenous factors (please start an issue # ; work with Alana who started on this).
+
+
+7 people:
+Alana
+Ruben
+Kavya
+Cat
+Ailene
+Janneke
+Fredi
+
+Do later: 
+Refs and info on upper and temperature lower limits to tree growth and development.
+Work on figures summarizing table results
+Measurement diffs of growth -- in a box.
+	Measurement -- see box/figure  (include measurement only here or briefly so we move through it fast; Table results: What metrics of growth? could fit here)
+
