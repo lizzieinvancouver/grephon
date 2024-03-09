@@ -76,7 +76,6 @@ papersnumourevi <- length(unique(eviour$paper_id))
 perceanyevi <- round((length(unique(eviany$paper_id))/length(unique(d$paper_id)))*100, 0)
 percenoevi <- round((length(unique(noeviany$paper_id))/length(unique(d$paper_id)))*100, 0)
 
-
 papersnumnoevi <- length(unique(noeviany$paper_id))
 papersnumnoourevi <- length(unique(noeviour$paper_id))
 
@@ -144,6 +143,22 @@ table(exoyes$gslsimple)
 table(endoyes$gslsimple)
 # compare to these totals
 table(d$gslsimple)
+
+# Trends across years analysis
+quantile(noeviany$year)
+quantile(eviany$year)
+yesandnoeviany <- subset(d, gsxgrowth=="no"|gsxgrowth=="yes")
+yesandnoeviany$gsxgrowthdummy <- yesandnoeviany$gsxgrowth
+yesandnoeviany$gsxgrowthdummy[which(yesandnoeviany$gsxgrowth=="yes")] <- 1
+yesandnoeviany$gsxgrowthdummy[which(yesandnoeviany$gsxgrowth=="no")] <- 0
+yesandnoeviany$gsxgrowthdummy <- as.numeric(yesandnoeviany$gsxgrowthdummy)
+if(FALSE){
+library(rstanarm)
+fityr <- stan_glm(gsxgrowthdummy ~ year, family=binomial(link="logit"), data=yesandnoeviany)
+print(fityr)
+plot(gsxgrowthdummy~year, data= yesandnoeviany)
+curve(invlogit(coef(fityr)[1] + coef(fityr)[2]*x), add=TRUE)
+}
 
 ## Some stuff on latitude
 latitudestuff <- c("MAT in origin as related to adaptation to latitude/temperature",
