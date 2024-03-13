@@ -11,13 +11,13 @@ And then it was March.
 WORKING on now ... 
 
 - 9 March 2024: Basically, I need to read it again and do a bunch of small things, which include harassing people. So probably best to get stuff from Kavya, Rob Guy and Britany done soon. Then read again. Anyway, here's the list of it ALL: 
-	- Ask Kavya for that ref on EOS
-	- Ask Britany to fix Fig on elevation add some methods to supp for me. 
+	- Ask Kavya for that ref on EOS (emailed 13 March 2024)
+	- Asked Britany to fix Fig on elevation add some methods to supp for me. https://github.com/lizzieinvancouver/grephon/issues/24
 	- Read the whole new thing via paper ... and see how much I need to... fix the boxes!
 	- Cite new study saying we need more evol. Biology in soil-water plant studies (in downloads currently) 
 	- Double check I updated everything based on JD edits
-	- Add citations from Cat
-	- Add H20 ref around where I introduce 'Phylogenetic ecology'
+
+
 
 - Since last meeting (mid-November) I have gotten feedback and help from:
 	- Ailene
