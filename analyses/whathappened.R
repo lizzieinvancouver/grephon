@@ -282,6 +282,17 @@ treeringsdrought  <- subset(treerings, wording_figure=="More temp = more drought
 perdroughtreering <- round(length(unique(treeringsdrought$paper_id))/length(unique(treerings$paper_id))*100)
 round(length(unique(droughthyp$paper_id))/length(unique(radialgrowth$paper_id))*100)
 
+# internal contraints in xylo and lab studies
+xylostud <- dhyp[which(dhyp$growth %in% c("intra-annual core (xylogeneis)")),]
+labstud <- dhyp[which(dhyp$method %in% c("greenhouse or chamber")),]
+which(unique(xylostud$paper_id) %in% unique(labstud$paper_id))
+which(unique(labstud$paper_id) %in% unique(xylostud$paper_id)) # no overlap so rbind
+xylolabstud <- rbind(xylostud, labstud)
+internalconstraintsrelated  <- xylolabstud[which(xylolabstud$wording_figure %in% c("species-specific responses", 
+  "Longer growing season != more growth", "population-specific responses")),]
+intconslabxylo <- round(length(unique(internalconstraintsrelated$paper_id))/length(unique(xylolabstud$paper_id))*100)
+
+
 ## What types of studies report pop/sp specific responses?
 # Surprised soolananayakanahally2013 did not get pop-specific response (but I think it's because it did grow more with longer season)
 popsphyp  <- dhyp[which(dhyp$wording_figure %in% c("species-specific responses", "shift in allocation")),]
