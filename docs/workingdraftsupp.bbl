@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Bruening \emph{et~al.}(2017)Bruening, Tran, Bunn, Weiss \&
@@ -7,6 +7,20 @@ Bruening, J.B., Tran, T.J., Bunn, A.G., Weiss, S.B. \& Salzer, M.W. (2017)
   Fine-scale modeling of bristlecone pine treeline position in the great basin,
   usa. \emph{ENVIRONMENTAL RESEARCH LETTERS} \textbf{12}.
 
+\bibitem[{Cabon \emph{et~al.}(2022)Cabon, Kannenberg, Arain, Babst, Baldocchi,
+  Belmecheri, Delpierre, Guerrieri, Maxwell, McKenzie
+  \emph{et~al.}}]{cabon2022cross}
+Cabon, A., Kannenberg, S.A., Arain, A., Babst, F., Baldocchi, D., Belmecheri,
+  S., Delpierre, N., Guerrieri, R., Maxwell, J.T., McKenzie, S. \emph{et~al.}
+  (2022) Cross-biome synthesis of source versus sink limits to tree growth.
+  \emph{Science} \textbf{376}, 758--761.
+
+\bibitem[{Chen \emph{et~al.}(2000)Chen, Chen, Liu \&
+  Cihlar}]{chen2000approaches}
+Chen, W., Chen, J., Liu, J. \& Cihlar, J. (2000) Approaches for reducing
+  uncertainties in regional forest carbon balance. \emph{Global Biogeochemical
+  Cycles} \textbf{14}, 827--838.
+
 \bibitem[{Dow \emph{et~al.}(2022)Dow, Kim, D'Orangeville, Gonzalez-Akre,
   Helcoski, Herrmann, Harley, Maxwell, McGregor, McShea
   \emph{et~al.}}]{dow2022warm}
@@ -14,6 +28,17 @@ Dow, C., Kim, A.Y., D'Orangeville, L., Gonzalez-Akre, E.B., Helcoski, R.,
   Herrmann, V., Harley, G.L., Maxwell, J.T., McGregor, I.R., McShea, W.J.
   \emph{et~al.} (2022) Warm springs alter timing but not total growth of
   temperate deciduous trees. \emph{Nature} \textbf{608}, 552--557.
+
+\bibitem[{Green \& Keenan(2022)}]{green2022limits}
+Green, J.K. \& Keenan, T.F. (2022) The limits of forest carbon sequestration.
+  \emph{Science} \textbf{376}, 692--693.
+
+\bibitem[{Smith \emph{et~al.}(2014)Smith, W{\aa}rlind, Arneth, Hickler,
+  Leadley, Siltberg \& Zaehle}]{smith2014implications}
+Smith, B., W{\aa}rlind, D., Arneth, A., Hickler, T., Leadley, P., Siltberg, J.
+  \& Zaehle, S. (2014) Implications of incorporating n cycling and n
+  limitations on primary production in an individual-based dynamic vegetation
+  model. \emph{Biogeosciences} \textbf{11}, 2027--2054.
 
 \bibitem[{Zohner \emph{et~al.}(2023)Zohner, Mirzagholi, Renner, Mo, Rebindaine,
   Bucher, Palou{\v{s}}, Vitasse, Fu, Stocker \emph{et~al.}}]{zohner2023effect}
