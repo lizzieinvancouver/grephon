@@ -180,6 +180,30 @@ table(d$authorslooked_endogenousfactors)
 
 
 ##################################
+##  Species cleaning (from plotspecies.R)
+######################################
+
+#do some cleaning
+spd<-subset(d,select=c("paper_id","study_type","continent","species_num","species_list","authorsthink_evidence_gsxgrowth"))
+spd$species_list[which(spd$species_list=="ITRDB and ITPCAS")]<-NA
+spd$species_list[which(spd$species_list=="no specific species")]<-NA
+spd$species_list[which(spd$species_list=="BSI (broad leaved summer green shade-intolerant), BST (broad-leaved summer-green shade-tolerant), NS (needle-leaved summer green)")]<-NA
+spd$species_list[which(spd$species_list=="Quercus robur, Quercus petraea and Fagus sylvatica ")]<-"Quercus robur, Quercus petraea, Fagus sylvatica" 
+spd$species_list[which(spd$species_list=="Populus tremuloides (dominant), Populus balsamifera, Corylus cornuta (understorey), other shrubs")]<-"Populus tremuloides, Populus balsamifera, Corylus cornuta"
+spd$species_list[which(spd$species_list=="Pinus sylvestris (Scots pine), Norway spruce (Picea abies), Downy birch (Betula pubescens), European beech (Fagus sylvatica), European oak (Quercus robur), Betula pendula (Silver birch). First three species were used for tree ring analyses, all species for phenology assessment, but birch data merged.")]<-"Pinus sylvestris, Picea abies, Betula pubescens, Fagus sylvatica, Quercus robur, Betula pendula"
+spd$species_list[which(spd$species_list=="Aesculus hippocastanum, Betula pendula, Fagus sylvatic, Quercus robur")]<-"Aesculus hippocastanum, Betula pendula, Fagus sylvatica, Quercus robur" 
+spd$species_list[which(spd$species_list=="Rhododendron ferrugineum L")]<-"Rhododendron ferrugineum"
+
+allspp <- unlist(lapply(spd$species_list, function(x) strsplit(x, ", ")[[1]]))
+sort(unique(allspp, na.ignore=TRUE)) 
+allgenera <- gsub("^([^\\ ]+).*", "\\1", allspp)
+sort(unique(allgenera, na.ignore=TRUE)) 
+
+sppnum <- length(unique(allspp, na.ignore=TRUE))
+gennum <- length(unique(allgenera, na.ignore=TRUE))
+
+
+##################################
 ##  Code from clean_methodexoendo
 ######################################
 

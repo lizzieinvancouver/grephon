@@ -38,6 +38,7 @@ source("~/Documents/git/projects/grephon/grephon/analyses/whathappened.R")
 
 We conducted a review to find studies focused on relationships between growing season length and tree wood growth, though contrasting terminology made it challenging to identify papers through one search. After reviewing several recent papers \citep{dow2022warm,zohner2023effect}, we searched ISI Web of Science for ``growing season length" AND ``tree ring*" (ALL FIELDS) on 12 April 2023, which returned 33 citations. We next reviewed abstracts and discarded papers that did not mention the relationship between growing season length and growth. We further reviewed all citations within all papers for additionally relevant papers and included them in our review. In total we report on \Sexpr{papernum} papers after reviewing over 107 potentially relevant papers, after discarding one paper \citep[][which used tree lines as a metric of both growth and growing season length]{bruening2017}. % These ISI methods in outline.tex % grephon_warmingexpts also has some ISI searches, but no date and is focused on warming experiments. 107 is the number in the articles folder. 
 % on 31 Oct 2023, I tried ISI (Web of Science Core Collection) for SEARCH tree OR woody (All Fields) and growth (All Fields) and growing season length (All Fields), which returned 886 references. 
+% Average number of papers in ecological meta-analysis: 24 papers see https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3680
 
 Given the large diversity of metrics we found, we did not extract quantitative estimates of growing season length, growth, or their relationship. Instead, we extracted data on location, species, how they measured growing season length, growth, what relationship they found and what internal and external drivers they mentioned (full dataset with more details available on the Knowledge Network for Biocomplexity at publication).
 
@@ -45,6 +46,10 @@ Papers often reported dozens or more statistical tests that were variations of t
 
 \subsection*{Trends with year}
 Across studies which found support for or against a relationship between growth and growing season length (\Sexpr{nrow(yesandnoeviany)} of \Sexpr{nrow(d)} total studies) the range of years was very similar: spanning \Sexpr{quantile(eviany$year)[1]} to \Sexpr{quantile(eviany$year)[5]} with a mean of \Sexpr{round(mean(eviany$year),0)} for studies that found a positive relationship and spanning \Sexpr{quantile(noeviany$year)[1]} to \Sexpr{quantile(noeviany$year)[5]} with a mean of \Sexpr{round(mean(noeviany$year),0)} for studies that did not. Further, we found no trend through time for finding a positive or negative relationship through logistic regression (slope strongly overlapped 0). 
+
+\section{Growth $\times$ elevation relationships}
+
+Will add METHODS here ....
 
 \section{The challenge of metrics: Measuring growth}
 
@@ -79,6 +84,7 @@ We should also agree on a standardized set of analytical tools. E.g. tree ring a
 
 \section*{Figures}
 
+
 \clearpage
 \begin{figure}[h!]
 %\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
@@ -89,7 +95,6 @@ We should also agree on a standardized set of analytical tools. E.g. tree ring a
 \end{figure}
 
 
-
 \clearpage
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/speciesnums_finds.pdf}
@@ -97,5 +102,11 @@ We should also agree on a standardized set of analytical tools. E.g. tree ring a
 \label{fig:sppfinds}
 \end{figure}
 
+\clearpage
+\begin{figure}[h!]
+\includegraphics[width=0.7\textwidth]{..//analyses/growthxelevationetc/figures/grbyelev_rwvsbai_big}
+\caption{Growth by elevation relationships for Mount Rainier (in development).}
+\label{fig:growelevMORA}
+\end{figure}
 
 \end{document}

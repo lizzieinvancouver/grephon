@@ -42,6 +42,18 @@ mora$bai20cm<-mora$bai20/100
 # checks
 unique(delevsm$predictor_units)
 
+
+plotelevsm <- ggplot(data = delevsm, aes(x = predictor_value, y = growthmm, 
+    colour = spstudy, fill=spstudy)) +
+  geom_point() + 
+  geom_smooth(method="lm") +
+  xlab("Elevation (m)") + 
+  ylab("Ring growth (mm)") +
+  theme_classic() +
+  theme(legend.position = c(0.8,0.8))
+
+ggsave("figures/growthxelev4studies.pdf", plotelevsm, width=8, height=5)
+
 pdf("figures/growthxelev2part.pdf", width=8, height=5)
 par(mfrow=c(1,2))
 plot(growthmm~predictor_value, data=delevsm, type="n",
