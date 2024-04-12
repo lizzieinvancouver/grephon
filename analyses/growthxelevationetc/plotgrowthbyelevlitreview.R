@@ -8,13 +8,15 @@ options(stringsAsFactors=FALSE)
 # Setting working directory. Add in your own path in an if statement for your file structure
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/grephon/grephon/analyses/growthxelevationetc")
-} else if (length(grep("ailene", getwd()))>0) 
-{setwd("boomboom")
+} else if (length(grep("ailene", getwd()))>0) {
+  setwd("boomboom")
+} else if (length(grep("britanywuuu", getwd()))>0) {
+  setwd("~/Documents/ubc/year5/TemporalEcologyLab/grephon/analyses/growthxelevationetc")
 }
 
 # packages
 library(ggplot2)
-
+library(viridis)
 # get the data
 d <- read.csv("input/classicalrefs_datascraped.csv")
 
@@ -54,5 +56,15 @@ ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species, ymin = growthm
 
 # Latitude
 ggplot(dlat, aes(x=predictor_value, y=growthmm, color=species)) +
-    geom_point() +
-    geom_smooth(method="lm")
+    geom_smooth(method="lm", aes(group = species)) +
+  geom_point() +
+  scale_color_viridis_d(option = "viridis", name = "Species") +
+  xlab("Elevation (m)") +
+  ylab("Growth (mm)") +
+  scale_x_continuous(breaks = seq(46, 54.5, by = 2))+
+  ylim(c(0,3.2)) +
+  theme(legend.position = c(0.8,0.85), 
+        legend.key.size = unit(0.2, "cm"), 
+        legend.text = element_text(face = "italic"),
+        legend.title = element_text(size = 10))
+ggsave("output/growthbyelevation_plot.pdf", dpi = 300)
