@@ -46,7 +46,18 @@ delevsm <- subset(delev, dataset_id!="zhu2018" & dataset_id!="oleksyn1998")
 
 ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
     geom_point() +
-    geom_smooth(method="lm")
+  geom_smooth(method="lm", aes(group = species)) +
+  geom_point() +
+  scale_color_viridis_d(option = "viridis", name = "Species") +
+  xlab("Elevation (m)") +
+  ylab("Growth (mm)") +
+  theme(legend.position = c(0.8,0.85), 
+        legend.key.size = unit(0.2, "cm"), 
+        legend.text = element_text(face = "italic"),
+        legend.title = element_text(size = 10))
+ggsave("output/growthbyelevation_plot.pdf", dpi = 300)
+
+  
 
 # Hmm, the error we do have seems big
 ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species, ymin = growthmm-error, ymax = growthmm + error)) +
