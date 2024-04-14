@@ -48,12 +48,15 @@ ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
     geom_point() +
   geom_smooth(method="lm", aes(group = species)) +
   geom_point() +
-  scale_color_viridis_d(option = "viridis", name = "Species") +
+  scale_color_viridis_d(option = "viridis", name = "Species", 
+  labels = c(expression(italic("Fagus sylvatica L.") ~ " (cavin2016)"), 
+             expression(italic("Picea meyeri") ~ "(wang2017)"),
+             expression(italic("Pinus yunnanensis" ~ "(zhou2022)")))) +
   xlab("Elevation (m)") +
   ylab("Growth (mm)") +
   theme(legend.position = c(0.8,0.85), 
         legend.key.size = unit(0.2, "cm"), 
-        legend.text = element_text(face = "italic"),
+        legend.text.align = 0,
         legend.title = element_text(size = 10))
 ggsave("output/growthbyelevation_plot.pdf", dpi = 300)
 
@@ -78,4 +81,4 @@ ggplot(dlat, aes(x=predictor_value, y=growthmm, color=species)) +
         legend.key.size = unit(0.2, "cm"), 
         legend.text = element_text(face = "italic"),
         legend.title = element_text(size = 10))
-ggsave("output/growthbyelevation_plot.pdf", dpi = 300)
+
