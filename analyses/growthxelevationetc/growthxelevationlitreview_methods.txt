@@ -1,0 +1,14 @@
+<><><><><><><15/4/2024><><><><><><><>
+
+Grephon lit review methods
+By Britany
+<><><><><><><><><><><><><><><><><><>
+
+In this literature review included a total of 18 papers about tree growth. In the end, five papers were accepted for the data visualization. The accepted papers generally have clear raw tree data in either scatterplots or tables. The criteria of rejecting papers include:
+1) Absence of observational tree growth raw data: Some studies only presented the correlation or the data was modeled. 
+2) Measures other variables: Some studies examine leaf area index and forest NPP. 
+3) Standardization of tree growth with other variables: No raw data could be found and the data presented was calculated with other variables.
+4) Presence of overlapping data points: Data points in the plots presented were not visually identifiable for accurate data scraping.
+5) Line graphs: No discrete data points for image processing. 
+
+Tree growth data from the selected studies were scraped using the Fiji image processing package with the Figure Calibration plugin. The x and y axis were calibrated using the Figure Calibration plugin, followed by measurement of growth values at different elevation using the measure function in Fiji.
