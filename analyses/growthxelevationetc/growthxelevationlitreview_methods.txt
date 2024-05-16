@@ -1,14 +1,19 @@
-<><><><><><><15/4/2024><><><><><><><>
-
+<><><><><><><15/April/2024><><><><><><><>
 Grephon lit review methods
-By Britany
+By Britany with some edits by Lizzie
 <><><><><><><><><><><><><><><><><><>
 
-In this literature review included a total of 18 papers about tree growth. In the end, five papers were accepted for the data visualization. The accepted papers generally have clear raw tree data in either scatterplots or tables. The criteria of rejecting papers include:
+Using Google Scholar and ISI Web of Science, we searched the literature for studies of tree growth, especially via diameter or ring width, by elevation or latitude. Of 18 papers we found for these relationships, six included clear raw tree data in either scatterplots or tables that we scraped. 
+
+We could not scrape data from 13 papers for the following reasons: 
 1) Absence of observational tree growth raw data: Some studies only presented the correlation or the data was modeled. 
-2) Measures other variables: Some studies examine leaf area index and forest NPP. 
-3) Standardization of tree growth with other variables: No raw data could be found and the data presented was calculated with other variables.
+2) Measures other variables: Some studies examined leaf area index and forest NPP. 
+3) Standardization of tree growth with other variables: Papers did not present the raw data (e.g., papers presented the data calculated with other variables).
 4) Presence of overlapping data points: Data points in the plots presented were not visually identifiable for accurate data scraping.
 5) Line graphs: No discrete data points for image processing. 
 
-Tree growth data from the selected studies were scraped using the Fiji image processing package with the Figure Calibration plugin. The x and y axis were calibrated using the Figure Calibration plugin, followed by measurement of growth values at different elevation using the measure function in Fiji.
+We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated x and y axis using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for four, excluding huang2010 because it included only results for trends by latitude (and most other studies included only trends by elevation), and zhu2018 because the elevation co-varied with latitude. 
+
+
+See also: https://github.com/lizzieinvancouver/grephon/issues/24
+
