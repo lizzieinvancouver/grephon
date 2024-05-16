@@ -327,3 +327,8 @@ internalconstraintsrelated  <- xylolabstud[which(xylolabstud$hypothesis_in_paper
   "internal constraints (including pop, photo)", "shift of whole pheno sequence")),]
 intconslabxylo <- round(length(unique(internalconstraintsrelated$paper_id))/length(unique(xylolabstud$paper_id))*100)
 
+# How many papers had more than one hypothesis (in supp)?
+hypperpaper <- as.data.frame(table(hypd$paper_id))
+morethanonehyp <- subset(hypperpaper, Freq>1)
+nrow(hypperpaper) 
+papernum # just checking these agree
