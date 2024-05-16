@@ -267,10 +267,10 @@ hypdall <- read.csv("output/hyp_mergeable.csv") # built in hypothesest.R
 hypdall$paper_id <- tolower(gsub(" ", "", hypdall$addressed.in.which.Grephon.paper))
 
 # Make sure we don't have duplicate hypotheses, unless we should... 
-hypd <- subset(hypdall, select=c("paper_id", "wording_figure"))
+hypd <- subset(hypdall, select=c("paper_id", "hypothesis_in_paper"))
 hypd <- hypd[!duplicated(hypd), ] # many papers have more than 1 hypothesis
-sort(unique(hypd$wording_figure))
-subset(hypd, wording_figure=="") # three have no hypotheses?
+sort(unique(hypd$hypothesis_in_paper))
+subset(hypd, hypothesis_in_paper=="") # three have no hypotheses? (Some get fixed below.)
 
 # Match the names efforts so I can merge ...
 sort(unique(hypd$paper_id))
@@ -286,6 +286,11 @@ hypd$paper_id[hypd$paper_id=="zuetal2021"] <- "zhu2021"
 hypd$paper_id[hypd$paper_id=="soolanayakanahally2013"] <- "soolananayakanahally2013"
 hypd$paper_id[hypd$paper_id=="sebastian-alconza2020"] <- "sebastian-azcona2020"
 
+# Fix the ones that were missing but got fixed in the issue... (around 13 Feb 2024)
+hypd$hypothesis_in_paper[which(hypd$paper_id=="brand2022")] <- "More temp = more drought (drought limitation)"
+hypd$hypothesis_in_paper[which(hypd$paper_id=="zhu2021")] <- "More temp = more drought (drought limitation)"
+# I think chen1998 is not supposed to have one, see git issue ...
+
 # Now about to merge ... 
 sort(unique(d$paper_id))
 sort(unique(hypd$paper_id))
@@ -293,15 +298,21 @@ sort(unique(hypd$paper_id))
 dhyp <- merge(d, hypd, by=c("paper_id"))
 
 ## Now get numbers for the paper!
+moretimedf <- subset(dhyp, hypothesis_in_paper=="Longer growing season = more growth")
+moretimenum  <- length(unique(moretimedf$paper_id)) # number of studies reporting time as driver
+moretempdf <- subset(dhyp, hypothesis_in_paper=="Higher temp = more growth (temp limitation)")
+moretempnum  <- length(unique(moretempdf$paper_id)) # number of studies reporting warner as driver
+notfasterdf <- subset(dhyp, hypothesis_in_paper=="effect of growth rate not equal to growth duration")
+notfasternum  <- length(unique(notfasterdf$paper_id)) # number of studies saying rates may not change enough with longer seasons
 
 ## What percent of tree ring studies report the drought hypothesis? 
 
 treerings <- subset(dhyp, growth=="annual core")
 radialgrowth <- subset(dhyp, growthsimple=="radial growth")
 
-droughthyp <- subset(dhyp, wording_figure=="More temp = more drought (drought limitation)")
+droughthyp <- subset(dhyp, hypothesis_in_paper=="More temp = more drought (drought limitation)")
 unique(paste(droughthyp$paper_id, droughthyp$growth)) # only one study is NOT radial growth
-treeringsdrought  <- subset(treerings, wording_figure=="More temp = more drought (drought limitation)")
+treeringsdrought  <- subset(treerings, hypothesis_in_paper=="More temp = more drought (drought limitation)")
 # Same answer whether you look at % of radial growth or tree ring studies!
 perdroughtreering <- round(length(unique(treeringsdrought$paper_id))/length(unique(treerings$paper_id))*100)
 round(length(unique(droughthyp$paper_id))/length(unique(radialgrowth$paper_id))*100)
@@ -312,18 +323,7 @@ labstud <- dhyp[which(dhyp$method %in% c("greenhouse or chamber")),]
 which(unique(xylostud$paper_id) %in% unique(labstud$paper_id))
 which(unique(labstud$paper_id) %in% unique(xylostud$paper_id)) # no overlap so rbind
 xylolabstud <- rbind(xylostud, labstud)
-internalconstraintsrelated  <- xylolabstud[which(xylolabstud$wording_figure %in% c("species-specific responses", 
-  "Longer growing season != more growth", "population-specific responses")),]
+internalconstraintsrelated  <- xylolabstud[which(xylolabstud$hypothesis_in_paper %in% c("species-specific responses", 
+  "internal constraints (including pop, photo)", "shift of whole pheno sequence")),]
 intconslabxylo <- round(length(unique(internalconstraintsrelated$paper_id))/length(unique(xylolabstud$paper_id))*100)
-
-
-## What types of studies report pop/sp specific responses?
-# Surprised soolananayakanahally2013 did not get pop-specific response (but I think it's because it did grow more with longer season)
-popsphyp  <- dhyp[which(dhyp$wording_figure %in% c("species-specific responses", "shift in allocation")),]
-longernotmore  <- dhyp[which(dhyp$wording_figure %in% c("Longer growing season != more growth")),]
-# But these are rarely tree ring studies ....
-table(longernotmore$growth)
-table(popsphyp$growth)
-
-
 

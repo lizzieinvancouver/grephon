@@ -1,5 +1,5 @@
 ## Started by Ailene (later 2023) ##
-## Updates in Feb 2024 by Lizzie ##
+## Updates in Feb and May 2024 by Lizzie ##
 
 # housekeeping
 rm(list=ls()) 
@@ -18,7 +18,7 @@ library(tidyverse)
 # get the data
 hall <- read.csv("data/Grephon.hypotheses.csv")
 head(hall)
-unique(hall$hypothesis_for_fig)#10 hypotheses
+unique(hall$hypothesis_for_fig) # 10 hypotheses
 
 # delete some papers we excluded or were not part of the Grephon analysis
 h <- hall
@@ -26,6 +26,41 @@ h <- hall
 h <- h[-which(h$addressed.in.which.Grephon.paper=="x"),] 
 # delete bruening2017 (which we remove because it was treeline)
 h <- h[-which(h$addressed.in.which.Grephon.paper=="bruening 2017"),] 
+
+## On 16 May 2024, Lizzie built a new column more aligned with how we organized the hypotheses in the paper
+# Lots of related discussion in: https://github.com/lizzieinvancouver/grephon/issues/29
+
+# The following all work so start with a new column based off this one:
+# More temp = more drought (drought limitation)
+# Longer growing season = more growth
+# Higher temp = more growth (temp limitation)
+# population-specific responses
+# species-specific responses
+# "shift in allocation"
+h$hypothesis_in_paper <- h$wording_figure
+# Next, we want effect of growth rate not equal to growth duration (this is in group_final)
+h$hypothesis_in_paper[which(h$group_final=="effect of growth rate not equal to growth duration")] <- 
+  "effect of growth rate not equal to growth duration" # These were converted to: Longer growing season != more growth
+h$hypothesis_in_paper[which(h$group_final=="shift of whole pheno sequence")] <- 
+"shift of whole pheno sequence" # These were converted to: ..
+# Earlier!= longer growing season (and I just think this phrasing is easier to match to our figure)
+h$hypothesis_in_paper[which(h$group=="PP control over growth")] <- "internal constraints (including photoperiod)"
+# I reviewed Zani2020 and zohner and this is VERY similar to their language...
+# "plants to progress through their seasonal cycle more rapidly", and more informative to me than 'sink limitation'
+h$hypothesis_in_paper[which(h$addressed.in.which.Grephon.paper=="Zani2020")] <- "shift of whole pheno sequence"
+h$hypothesis_in_paper[which(h$addressed.in.which.Grephon.paper=="zohner2020")] <- "shift of whole pheno sequence"
+# I reviewed the below paper and it seems about sink limitation through soil moisture 
+h$hypothesis_in_paper[which(h$addressed.in.which.Grephon.paper=="oddi 2022" & 
+  h$wording_figure=="Longer growing season != more growth")] <- "More temp = more drought (drought limitation)"
+# This paper is about one species and does not seem to be a good fit to 'species-specific responses' 
+# ... especially compared to the others: michelot2012, cuny 2012, etzold2021 which really are about this. 
+# This leaves this paper as shift in allocation only. 
+h <- h[-which(h$addressed.in.which.Grephon.paper=="McKown 2016" & h$wording_figure=="species-specific responses"),] 
+# Finally, merge internal and population ... 
+h$hypothesis_in_paper[which(h$hypothesis_in_paper=="internal constraints (including photoperiod)")] <- "internal constraints (including pop, photo)"
+h$hypothesis_in_paper[which(h$hypothesis_in_paper=="population-specific responses")] <- "internal constraints (including pop, photo)"
+table(h$hypothesis_in_paper)
+unique(sort(h$hypothesis_in_paper))
 
 # Now sort the papers and get numbers for figure
 sort(unique(h$addressed.in.which.Grephon.paper))# 35 grephon papers
@@ -59,7 +94,7 @@ write.csv(htab.df2,"analyses/output/hyp_summarytab2.csv",row.names=FALSE)
 
 # Now make a simplified version to merge into other grephon data
 htab.tomerge <- subset(h, select=c("addressed.in.which.Grephon.paper", 
-  "hypothesis_for_fig", 
+  "hypothesis_in_paper", 
   "wording_figure",
   "group_final"))
 write.csv(htab.tomerge,"analyses/output/hyp_mergeable.csv",row.names=FALSE)
