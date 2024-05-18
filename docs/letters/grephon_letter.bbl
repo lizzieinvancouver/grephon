@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{friedlingstein2022global}
+\bibinfo{author}{Friedlingstein, P.} \emph{et~al.}
+\newblock \bibinfo{title}{Global carbon budget 2022}.
+\newblock \emph{\bibinfo{journal}{Earth System Science Data Discussions}}
+  \textbf{\bibinfo{volume}{2022}}, \bibinfo{pages}{1--159}
+  (\bibinfo{year}{2022}).
+
+\bibitem{dow2022warm}
+\bibinfo{author}{Dow, C.} \emph{et~al.}
+\newblock \bibinfo{title}{Warm springs alter timing but not total growth of
+  temperate deciduous trees}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{608}},
+  \bibinfo{pages}{552--557} (\bibinfo{year}{2022}).
+
+\bibitem{green2022limits}
+\bibinfo{author}{Green, J.~K.} \& \bibinfo{author}{Keenan, T.~F.}
+\newblock \bibinfo{title}{The limits of forest carbon sequestration}.
+\newblock \emph{\bibinfo{journal}{Science}} \textbf{\bibinfo{volume}{376}},
+  \bibinfo{pages}{692--693} (\bibinfo{year}{2022}).
+
+\bibitem{korner2023four}
+\bibinfo{author}{K{\"o}rner, C.}, \bibinfo{author}{M{\"o}hl, P.} \&
+  \bibinfo{author}{Hiltbrunner, E.}
+\newblock \bibinfo{title}{Four ways to define the growing season}.
+\newblock \emph{\bibinfo{journal}{Ecology Letters}}  (\bibinfo{year}{2023}).
+
+\end{thebibliography}

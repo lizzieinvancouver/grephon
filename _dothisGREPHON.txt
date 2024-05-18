@@ -13,9 +13,15 @@ Waiting on:
 	- Updated methods etc on elevation from Britany
 
 Need to do myself:
-	- Get in all the feedback in the PDF and send new version to JHRL (on Overleaf)
+	- Do something with new refs in this folder! And with docs/refsADD/
 	- Get names and affiliations (do names by first letter of first name? Me, Ailene, Alana, Cat, Fredi, Kavya, Janneke, Ruben)
-	- Cover letter... 
+
+
+Submission:
+https://www.nature.com/nclimate/content (no mention of abstract length)
+https://www.nature.com/nclimate/submission-guidelines/initial-formatting
+"Your initial submission does not need to be specially formatted, as long as the study is described in a way that is suitable for editorial assessment and peer review. "
+
 
 <><><><><><><><><><><><>
 January 2024 notes
