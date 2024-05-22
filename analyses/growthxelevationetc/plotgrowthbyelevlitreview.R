@@ -17,6 +17,7 @@ if(length(grep("lizzie", getwd())>0)) {
 # packages
 library(ggplot2)
 library(viridis)
+library(dplyr)
 # get the data
 d <- read.csv("input/classicalrefs_datascraped.csv")
 
@@ -42,20 +43,24 @@ ggplot(delev, aes(x=predictor_value, y=growthmm, color=dataset_id)) +
 # zhu2018 seems weird, but I think latitude may also vary with elevation according to Table 1?
 # Will confirm and for now remove ...
 
-delevsm <- subset(delev, dataset_id!="zhu2018" & dataset_id!="oleksyn1998")
+delevsm <- subset(delev, dataset_id!="zhu2018")
+
 
 ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
-    geom_point() +
-  geom_smooth(method="lm", aes(group = species)) +
+  geom_smooth(method = "lm", level = 0.89, aes(group = species, fill = "89% CI"), alpha = 0.3) +  # 89% CI
+  geom_smooth(method = "lm", level = 0.95, aes(group = species, fill = "95% CI"), alpha = 0.3) +  # 95% CI
   geom_point() +
-  scale_color_viridis_d(option = "viridis", name = "Species", 
-  labels = c(expression(italic("Fagus sylvatica L.") ~ " (cavin2016)"), 
-             expression(italic("Picea meyeri") ~ "(wang2017)"),
-             expression(italic("Pinus yunnanensis" ~ "(zhou2022)")))) +
+  scale_color_viridis_d(option = "viridis", name = "Species (reference)", 
+  labels = c(expression(italic("Fagus sylvatica") ~ " (Cavin and Jump 2016)"), 
+             expression(italic("Picea meyeri") ~ "(Wang et al. 2017)"),
+             expression(italic("Pinus yunnanensis") ~ "(Zhou et al. 2022)"),
+             expression(italic("Picea abies") ~ "Oleksyn et al. 1998"))) +
+  scale_fill_manual(name = "Confidence Interval", values = c("89% CI" = "lightblue", "95% CI" = "grey")) +
   xlab("Elevation (m)") +
   ylab("Growth (mm)") +
+  theme_classic() +
   theme(legend.position = c(0.8,0.85), 
-        legend.key.size = unit(0.2, "cm"), 
+        legend.key.size = unit(0.3, "cm"), 
         legend.text.align = 0,
         legend.title = element_text(size = 10))
 ggsave("output/growthbyelevation_plot.pdf", dpi = 300)
