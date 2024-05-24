@@ -332,3 +332,7 @@ hypperpaper <- as.data.frame(table(hypd$paper_id))
 morethanonehyp <- subset(hypperpaper, Freq>1)
 nrow(hypperpaper) 
 papernum # just checking these agree
+
+#adding another check of hypotheses across the table and our original summaries:
+write.csv(cbind(dhyp$paper_id,dhyp$authorslooked_externalfactors,dhyp$authorslooked_endogenousfactors,dhyp$hypothesis_in_paper),"output/checkhyps.csv")
+> 
