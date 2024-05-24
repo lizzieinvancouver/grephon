@@ -48,13 +48,12 @@ delevsm <- subset(delev, dataset_id!="zhu2018")
 
 ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
   geom_smooth(method = "lm", level = 0.89, aes(group = species, fill = "89% CI"), alpha = 0.3) +  # 89% CI
-  geom_smooth(method = "lm", level = 0.95, aes(group = species, fill = "95% CI"), alpha = 0.3) +  # 95% CI
   geom_point() +
   scale_color_viridis_d(option = "viridis", name = "Species (reference)", 
   labels = c(expression(italic("Fagus sylvatica") ~ " (Cavin and Jump 2016)"), 
-             expression(italic("Picea meyeri") ~ "(Wang et al. 2017)"),
-             expression(italic("Pinus yunnanensis") ~ "(Zhou et al. 2022)"),
-             expression(italic("Picea abies") ~ "Oleksyn et al. 1998"))) +
+             expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
+             expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"),
+             expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"))) +
   scale_fill_manual(name = "Confidence Interval", values = c("89% CI" = "lightblue", "95% CI" = "grey")) +
   xlab("Elevation (m)") +
   ylab("Growth (mm)") +
