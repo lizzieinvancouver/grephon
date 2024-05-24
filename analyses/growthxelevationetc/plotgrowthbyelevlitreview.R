@@ -21,6 +21,10 @@ library(dplyr)
 # get the data
 d <- read.csv("input/classicalrefs_datascraped.csv")
 
+# Check whether latitude and elevation are correlated for Calvin & Jump
+checkcalvin <- read.csv("input/calvinjump_subsetTableS1.csv")
+plot(elevation ~ latitude, checkcalvin)
+
 # fix the growth in cm and make error numeric, or 0
 d$growthmm <- d$growth_value
 d$growthmm[which(d$growth_units=="cm/yr-1")] <- d$growth_value[which(d$growth_units=="cm/yr-1")]*10
@@ -40,9 +44,8 @@ ggplot(delev, aes(x=predictor_value, y=growthmm, color=dataset_id)) +
     geom_point() +
     geom_smooth(method="lm")
 
-# zhu2018 seems weird, but I think latitude may also vary with elevation according to Table 1?
-# Will confirm and for now remove ...
-
+# zhu2018 seems weird, but I think latitude may also vary with elevation according to Table 1
+# also remove calvin & jump for same reason, sadly ... (Britany: ADD below)
 delevsm <- subset(delev, dataset_id!="zhu2018")
 
 
