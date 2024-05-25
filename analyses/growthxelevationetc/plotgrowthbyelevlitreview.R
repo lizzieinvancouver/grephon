@@ -46,18 +46,20 @@ ggplot(delev, aes(x=predictor_value, y=growthmm, color=dataset_id)) +
 
 # zhu2018 seems weird, but I think latitude may also vary with elevation according to Table 1
 # also remove calvin & jump for same reason, sadly ... (Britany: ADD below)
-delevsm <- subset(delev, dataset_id!="zhu2018")
+delevsm <- subset(delev, dataset_id!="zhu2018" & dataset_id!= "cavin2016")
 
 
-ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
-  geom_smooth(method = "lm", level = 0.89, aes(group = species, fill = "89% CI"), alpha = 0.3) +  # 89% CI
+ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species, fill = species)) +
   geom_point() +
   scale_color_viridis_d(option = "viridis", name = "Species (reference)", 
-  labels = c(expression(italic("Fagus sylvatica") ~ " (Cavin and Jump 2016)"), 
-             expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
+  labels = c(expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
              expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"),
              expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"))) +
-  scale_fill_manual(name = "Confidence Interval", values = c("89% CI" = "lightblue", "95% CI" = "grey")) +
+  geom_smooth(method = "lm", level = 0.89, aes(group = species), se = TRUE, alpha = 0.3) +  # 89% CI
+  scale_fill_viridis_d(option = "viridis", name = "Species (reference)", 
+                       labels = c(expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
+                                  expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"),
+                                  expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"))) +
   xlab("Elevation (m)") +
   ylab("Growth (mm)") +
   theme_classic() +
@@ -65,7 +67,7 @@ ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species)) +
         legend.key.size = unit(0.3, "cm"), 
         legend.text.align = 0,
         legend.title = element_text(size = 10))
-ggsave("output/growthbyelevation_plot.pdf", dpi = 300)
+ggsave("output/growthbyelevation_plot.pdf", width = 8, height = 5,dpi = 300)
 
   
 
