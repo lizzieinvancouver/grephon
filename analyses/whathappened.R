@@ -334,5 +334,6 @@ nrow(hypperpaper)
 papernum # just checking these agree
 
 #adding another check of hypotheses across the table and our original summaries:
-write.csv(cbind(dhyp$paper_id,dhyp$authorslooked_externalfactors,dhyp$authorslooked_endogenousfactors,dhyp$hypothesis_in_paper),"output/checkhyps.csv")
-> 
+checkhyps<-as.data.frame(cbind(dhyp$paper_id,dhyp$authorslooked_externalfactors,dhyp$authorslooked_endogenousfactors,dhyp$hypothesis_in_paper))
+colnames(checkhyps)<-c("paper_id","authorslooked_externalfactors","authorslooked_endogenousfactors","hypothesis_in_paper")
+write.csv(checkhyps,"output/checkhyps.csv")
