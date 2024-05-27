@@ -67,7 +67,7 @@ ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species, fill = species
         legend.key.size = unit(0.3, "cm"), 
         legend.text.align = 0,
         legend.title = element_text(size = 10))
-ggsave("output/growthbyelevation_plot.pdf", width = 8, height = 5,dpi = 300)
+ggsave("figures/growthbyelevation_plot.pdf", width = 7, height = 5,dpi = 300)
 
   
 
