@@ -13,7 +13,7 @@ Waiting on:
 	- Updated methods etc on elevation from Britany
 
 Need to do myself:
-	- Finalize elevation methods
+	- Finalize elevation methods -- and ADD cite to Oskelyn in fig capture. 
 	- Decide if we want MORA elevation x growth in supp
 	- Do something with new refs in this folder! And with docs/refsADD/
 	- Get names and affiliations (do names by first letter of first name? Me, Ailene, Alana, Cat, Fredi, Kavya, Janneke, Ruben)
