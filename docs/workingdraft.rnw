@@ -217,8 +217,8 @@ constraints \citep{baas2011wood,eckert2019makes,ensminger2015tree,juvany2013phot
 \end{figure}
 
 \begin{figure}[h!]
-\includegraphics[width=0.8\textwidth]{..//analyses/growthxelevationetc/figures/growthxelev4studies.pdf}
-\caption{Growth $\times$ elevation relationships from the literature, see Supplement for more methods details and Fig. \ref{fig:growelevMORA} for an example from one site.}
+\includegraphics[width=0.8\textwidth]{..//analyses/growthxelevationetc/figures/growthbyelevation_plot.pdf}
+\caption{Growth $\times$ elevation relationships from the literature with simple linear regression fits shown with 89\% confidence intervals. Oskelyn measured growth (mm) as diameter at breast height increments, while the other studied measured it ring width. See Supplement for more methods details and Fig. \ref{fig:growelevMORA} for an example from one site.}
 \label{fig:gxelev}
 \end{figure}
 
