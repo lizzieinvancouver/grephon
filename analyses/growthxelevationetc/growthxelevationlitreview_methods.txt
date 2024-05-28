@@ -11,17 +11,15 @@ We could not scrape data from 13 papers for the following reasons:
 3) Standardization of tree growth with other variables: Papers did not present the raw data (e.g., papers presented the data calculated with other variables).
 4) Presence of overlapping data points: Data points in the plots presented were not visually identifiable for accurate data scraping.
 5) Line graphs: No discrete data points for image processing. 
+6) Geographical scale: The locations of data collection spread across large longitudinal or latitudinal gradient. 
 
 We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated x and y axis using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for four, excluding huang2010 because it included only results for trends by latitude (and most other studies included only trends by elevation), and zhu2018 because the elevation co-varied with latitude. 
-
 
 Data from Wang et al. was collected in Luyashan Mountains in the North China (38°40′ - 38°50′N, 111°50′ - 112°00′E) (2017). A total of three 400 m^2 plots were identified and around 15 - 20 Picea meyeri tree were cored twice in August 2009. In total, there were 147 tree cores from 73 trees. We presented the tree ring width values from the collected cores in our study.
 
 Oleksyn et al. measured 54 populations of Picea abies along 8 altitudinal transect from 600m to 1500m  in Southern Poland (49°20'N - 50°18'N, 16°46'E - 20°06 E) in 1988 and 1989. The plots were 0.33 ha and every 5th tree was measured in each plot/population. We used DBH and height increment measurements from this study.
 
 Tree ring width of Pinus yunnar from 6 altitudinal transects between 1600m to 2500m in Yunnan, China (26°31′50″ N, 100°24′51″ E) were collected in Zhou et al.'s study (2022). At least 20 trees were measured from each site, and we used tree ring width for our visualization. 
-
-Cavin and Jump cored at least 16, and on average 29 Fagus sylvatica trees from 46 sites ranging in 58.5° to 40.8°N, and from 5.8° to 11.8°E in 2009 and 2010 (2016). The elevation gradient ranges from 20 to 1545m. We used the mean diameter from their study. 
 
 See also: https://github.com/lizzieinvancouver/grephon/issues/24
 
