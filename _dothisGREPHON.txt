@@ -15,7 +15,9 @@ Waiting on:
 Need to do myself:
 	- Finalize elevation methods -- and ADD cite to Oskelyn in fig capture. 
 	- Decide if we want MORA elevation x growth in supp
-	- Do something with new refs in this folder! And with docs/refsADD/
+	- Add table to supplement? Or just ... 
+	- Decide what data we will publish
+	- Add author contributions and data availability statement 
 	- Get names and affiliations (do names by first letter of first name? Me, Ailene, Alana, Cat, Fredi, Kavya, Janneke, Ruben)
 
 
