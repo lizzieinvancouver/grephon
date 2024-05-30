@@ -175,7 +175,7 @@ A common framework for explanatory and response variables would accelerate resea
 
 \newpage
 \section{Figures}
-
+% 30 May 2024: Ruben updated all figures to make them look better. I have kept the new paths and left the old paths below so we have them. 
 
 \clearpage
 \begin{figure}[h!]
@@ -186,28 +186,28 @@ A common framework for explanatory and response variables would accelerate resea
 \end{figure}
 
 \begin{figure}[h!]
-\includegraphics[width=0.8\textwidth]{..//analyses/growthxelevationetc/figures/growthbyelevation_plot.pdf}
+\includegraphics[width=0.8\textwidth]{..//figures/_allfiguresFromRuben/growthbyelevation.png}   % {..//analyses/growthxelevationetc/figures/growthbyelevation_plot.pdf}
 \caption{Growth $\times$ elevation relationships from the literature with simple linear regression fits shown with 89\% confidence intervals. Oskelyn measured growth (mm) as diameter at breast height increments, while the other studied measured it ring width. See Supplement for more methods details and Fig. \ref{fig:growelevMORA} for an example from one site.}
 \label{fig:gxelev}
 \end{figure}
 
 \clearpage
 \begin{figure}[h!]
-\includegraphics[width=1\textwidth]{..//figures/heatmaps/combinedheatmap_gslxgrowth_simple.pdf}
+\includegraphics[width=1\textwidth]{..//figures/_allfiguresFromRuben/heatmap.png} % {..//figures/heatmaps/combinedheatmap_gslxgrowth_simple.pdf}
 \caption{A review of growth $\times$ growing season length relationship studies spanned a diversity of methods, but there was no coherency in which methods did or did not find a positive relationship. Not directly testing for the relationship was surprisingly common across methods. See Supplement for review details.}
 \label{fig:heatmaps}
 \end{figure}
 
 \clearpage
 \begin{figure}[h!]
-\includegraphics[width=0.75\textwidth]{..//figures/tempresponse/drafttempfig.png}
+\includegraphics[width=0.5\textwidth]{..//figures/_allfiguresFromRuben/Tempresponses.png} %{..//figures/tempresponse/drafttempfig.png}
 \caption{Growth responses to temperature depends on a suite of complex factors and is often represented as net photosynthesis, which has a non-linear response to temperature. This non-linearity means that increases in lower temperatures---such as those in the spring when much of growing season extensions may happen--have a lower absolute increase in photosynthesis compared to increases in later-season warmer temperatures. Because there is no unified model of this relationships, we show two different versions of the relationship based on \citet{larcher2003,rezende2019thermal}.}
 \label{fig:temperaturecomplex}
 \end{figure}
 
 \clearpage
 \begin{figure}[h!]
-\includegraphics[width=1\textwidth]{..//figures/itrdbpep.png}
+\includegraphics[width=1\textwidth]{..//figures/_allfiguresFromRuben/itrdb_vs_pep.png} %{..//figures/itrdbpep.png}
 \caption{Data overlap between the two major databases of growth (International Tree Ring Data Bank, ITRDB, orange) and plant phenology (Pan European Phenology Project, PEP725, blue). Both databases are compared in terms of their spatial distributions (a), temporal overlaps (b), coverage of environmental conditions in climate space (c) and taxonomical representation (d). Note that the number of tree ring chronologies in (b) are composed by multiple trees per site, typically 10-20. Climatic data from Worldclim database ver. 2.1 at 2.5\degree grid resolution. PEP725 records in d) show the largest records for any given phenophase per species.}
 \label{fig:itrbdpep}
 \end{figure}
