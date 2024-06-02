@@ -145,3 +145,20 @@ While our lit review showed that the varying metrics of growth and growing seaso
 \end{enumerate}
 
 We should also agree on a standardized set of analytical tools. E.g. tree ring analyses --- average away a lot of the interesting things. I’m sure there are issues with phenological data, not sure what they are. ... and people should just report direct tests of the relationship so we don't end up with so many `did not measure' answers (Fig. \ref{fig:heatmaps}). And should we recommend tests for lag effects?
+
+<<label=xtablerefs, echo=FALSE, results=tex>>=
+library(xtable)
+#htabrefs created in whathappened.R
+reftable<-htabrefs
+colnames(reftable)<-c("Hypothesis","Number of Studies","References")
+reftable<-as.data.frame(reftable)
+
+ref.table <- xtable(reftable, caption="\\textbf{Hypotheses and references for studies in our database.}",
+      label="tab:ref",align=c(
+               "p{0.01\\textwidth}",
+               "p{0.15\\textwidth}",                 "p{0.15\\textwidth}",
+                "p{0.15\\textwidth}",
+               "p{0.30\\textwidth}"))
+
+print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,size="\\footnotesize",caption.placement="top",tabular.environment = "longtable", tabular="\\textwidth",include.colnames = TRUE, add.to.row = list(pos = list(0),command = "\\hline \\endhead "),sanitize.text.function = identity)
+@
