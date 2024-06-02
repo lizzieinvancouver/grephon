@@ -52,8 +52,19 @@ Across studies which found support for or against a relationship between growth 
 
 \section{Growth $\times$ elevation relationships}
 
-Will add METHODS here ....
+Using Google Scholar and ISI Web of Science, we searched the literature for studies of tree growth, especially via diameter or ring width, by elevation or latitude. Of 18 papers we found for these relationships, six included clear raw tree data in either scatterplots or tables that we scraped. 
 
+We could not scrape data from 13 papers for the following reasons: 
+\begin{enumerate}
+\item Absence of observational tree growth raw data: Some studies only presented the correlation or the data was modeled. 
+\item  Measures other variables: Some studies examined leaf area index and forest NPP. 
+\item  Standardization of tree growth with other variables: Papers did not present the raw data (e.g., papers presented the data calculated with other variables).
+\item  Presence of overlapping data points: Data points in the plots presented were not visually identifiable for accurate data scraping.
+\item Line graphs: No discrete data points for image processing. 
+\item Geographical scale: The locations of data collection spread across large longitudinal or latitudinal gradient. 
+\end{enumerate}
+
+We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated x and y axis using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for four, excluding huang2010 because it included only results for trends by latitude (and most other studies included only trends by elevation), and zhu2018 because the elevation co-varied with latitude. % Waiting for bibs from Britany so I can finish this!
 \section{The challenge of metrics: Measuring growth}
 
 Tree growth, which can be measured in a variety of ways, highlights how the diversity of current metrics slows a unified model of when growth increases with longer seasons. Our literature review found that most studies quantified growth by measuring radial growth (e.g., through increment cores or dendrometers, $n=$\Sexpr{boxradg}), but a number also looked at metrics related to C assimilation (e.g. net ecosystem productivity or gross primary productivity, $n=$\Sexpr{boxcaccg}), while a smaller number examined biomass, height, or number of stems ($n=$\Sexpr{boxbiomassg}), or root:shoot ratio ($n=$\Sexpr{boxrootshootg}). Some studies used modeled estimates of photosynthesis 
