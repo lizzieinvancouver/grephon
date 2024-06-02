@@ -60,10 +60,11 @@ h <- h[-which(h$addressed.in.which.Grephon.paper=="McKown 2016" & h$wording_figu
 h$hypothesis_in_paper[which(h$hypothesis_in_paper=="internal constraints (including photoperiod)")] <- "internal constraints (including pop, photo)"
 h$hypothesis_in_paper[which(h$hypothesis_in_paper=="population-specific responses")] <- "internal constraints (including pop, photo)"
 
-#25 May 2024 Ailene addressed questions in https://github.com/lizzieinvancouver/grephon/issues/29
+#25 May & 4 Jun 2024 Ailene addressed questions in https://github.com/lizzieinvancouver/grephon/issues/29
 h$hypothesis_in_paper[h$addressed.in.which.Grephon.paper=="chen 1998"]<-"Carbon fertilization"
 h$hypothesis_in_paper[h$addressed.in.which.Grephon.paper=="Richardson2020" & h$hypothesis_in_paper=="Longer growing season != more growth"]<-"shift of whole pheno sequence" 
-#newRichardsonhyp<-c(rep("",times=7),"Richardson2020",rep("",times=5),"AKE","entered by AKE May 2024, see github issue 29","species-specific responses")
+newFinzihyp<-rbind(c(rep("",times=7),"Finzi2020",rep("",times=5),"AKE","entered by AKE June 2024, see github issue 29","species-specific responses"),
+                   c(rep("",times=7),"Finzi2020",rep("",times=5),"AKE","entered by AKE June 2024, see github issue 29","shift in allocation"))
 #h<-rbind(h,newRichardsonhyp)
          
 table(h$hypothesis_in_paper)
@@ -88,7 +89,7 @@ for(i in 1:length(htab.df$studnames)){
   xst<-paste(names(x[x>0]), collapse=",")
 htab.df$studnames[i]<-xst
 }
-#add in hypohteses from figure
+#add in hypotheses from figure
 hypfig<-subset(h, select=c("group_final","wording_figure"))
 hypfigdist = hypfig%>% distinct(wording_figure,.keep_all = TRUE)
 colnames(hypfigdist)[2]<-"hypothesis"

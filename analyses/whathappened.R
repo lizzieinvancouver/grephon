@@ -337,3 +337,65 @@ papernum # just checking these agree
 checkhyps<-as.data.frame(cbind(dhyp$paper_id,dhyp$authorslooked_externalfactors,dhyp$authorslooked_endogenousfactors,dhyp$hypothesis_in_paper))
 colnames(checkhyps)<-c("paper_id","authorslooked_externalfactors","authorslooked_endogenousfactors","hypothesis_in_paper")
 write.csv(checkhyps,"output/checkhyps.csv")
+
+##########################################################
+##### Make a Ref table with hypotheses for Manuscript ####
+##########################################################
+htab2<-table(hypd$paper_id,hypd$hypothesis_in_paper)
+#Calculate how many papers test each hypothesis
+#consolitdate duplicate hypotheses/paper: replace cells >1 with 1
+htab2[htab2 > 1] <- 1 
+thtab2<-t(htab2)
+
+ht.df<-as.data.frame(cbind(names(colSums(htab2)),
+                           colSums(htab2)))
+colnames(ht.df)<-c("hypothesis","num.studies")
+ht.df$studnames<-NA
+for(i in 1:length(ht.df$studnames)){
+  x<-thtab2[i,]
+  xst<-paste(names(x[x>0]), collapse=",")
+  ht.df$studnames[i]<-xst
+}
+ht.df$num.studies<-as.integer(ht.df$num.studies)
+ht.df<-ht.df[order(ht.df$num.studies,decreasing=TRUE),]
+
+#sub in the citation names for the study names
+ht.df$ref<-ht.df$studnames
+ht.df$ref<-gsub("buermann2018","buermann2018widespread", ht.df$ref)
+ht.df$ref<-gsub("camarero2022","camarero2022decoupled", ht.df$ref)
+ht.df$ref<-gsub("chen 1998","chen1999effects", ht.df$ref)
+ht.df$ref<-gsub("cuny 2012","cuny2012life", ht.df$ref)
+ht.df$ref<-gsub("cufar2014","vcufar2015variations", ht.df$ref)
+ht.df$ref<-gsub("delpierre2017","delpierre2017tree", ht.df$ref)
+ht.df$ref<-gsub("desauvage2022","de2022temperature", ht.df$ref)
+ht.df$ref<-gsub("dow2022","dow2022warm", ht.df$ref)
+ht.df$ref<-gsub("drew & downes 2018","drew2018growth", ht.df$ref)
+ht.df$ref<-gsub("eckes-shephard2020","eckes2021", ht.df$ref)
+ht.df$ref<-gsub("etzold2021","etzold2022number", ht.df$ref)
+#finzi is all set
+#francon is all set
+ht.df$ref<-gsub("gao2022","gao2022earlier", ht.df$ref)
+ht.df$ref<-gsub("grossiord2022","grossiord2022warming", ht.df$ref)
+ht.df$ref<-gsub("keenan et al 2014","keenan2014net", ht.df$ref)
+ht.df$ref<-gsub("kolar2016","kolavr2016response", ht.df$ref)
+ht.df$ref<-gsub("michelot2012","michelot2012comparing", ht.df$ref)
+ht.df$ref<-gsub("mckown2016","mckown2016impacts", ht.df$ref)
+ht.df$ref<-gsub("moser2019","moser2010timing", ht.df$ref)
+ht.df$ref<-gsub("oddi2022","oddi2022contrasting", ht.df$ref)
+#ren is all set
+ht.df$ref<-gsub("richardson2020","richardson2010influence", ht.df$ref)
+ht.df$ref<-gsub("silvestro2023","silvestro2023longer", ht.df$ref)
+ht.df$ref<-gsub("soolananayakanahally2013","soolanayakanahally2013timing", ht.df$ref)
+ht.df$ref<-gsub("stridbeck2022","stridbeck2022", ht.df$ref)
+ht.df$ref<-gsub("vitasse2009","vitasse2009altitudinal", ht.df$ref)
+ht.df$ref<-gsub("wheeler2016","wheeler2016snow", ht.df$ref)
+ht.df$ref<-gsub("zhang2021","zhang2021drought", ht.df$ref)
+ht.df$ref<-gsub("zani2020","zani2020increased", ht.df$ref)
+ht.df$ref<-gsub("zohner2020","zohner2023effect", ht.df$ref)
+ht.df$ref<-gsub("zhu2021","zhu2021afm", ht.df$ref)
+ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
+
+#add text for citing refs in sweave:
+
+ht.df$ref<-paste("\\citep{",ht.df$ref,"}",sep="")
+
