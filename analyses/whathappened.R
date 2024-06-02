@@ -398,4 +398,5 @@ ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
 #add text for citing refs in sweave:
 
 ht.df$ref<-paste("\\citep{",ht.df$ref,"}",sep="")
-
+htabrefs<-subset(ht.df,select=c("hypothesis","num.studies","ref"))
+write.csv(htabrefs,"output/hyptable_withrefs.csv", row.names=FALSE)
