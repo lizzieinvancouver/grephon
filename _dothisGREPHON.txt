@@ -19,7 +19,10 @@ Need to do myself:
 	- Decide what data we will publish
 	- Add to supp methods what we considered 'physiology' studies
 	- Add author contributions and data availability statement 
-	- Get names and affiliations (do names by first letter of first name? Me, Ailene, Alana, Cat, Fredi, Kavya, Janneke, Ruben)
+	- Get names and affiliations (do names by first letter of first name, see below)
+
+Order: Ailene, Alana, Cat, Fredi, Kavya, Ruben & Janneke
+Acknowledgements: All authors conceived of the idea, prepared the literature review, edited the manuscript and contributed to designing figures; in addition EMW wrote the manuscript, AKE, CJC, AC and EMW synthesized the literature review, RD led developing Fig. 1 and 5, AKE and EMW developed Figure 2, CJC developed Fig 3, AC, RD and EMW led developing Fig. 4. 
 
 
 Submission:

@@ -63,10 +63,11 @@ ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species, fill = species
   xlab("Elevation (m)") +
   ylab("Growth (mm)") +
   theme_classic() +
-  theme(legend.position = c(0.8,0.85), 
-        legend.key.size = unit(0.3, "cm"), 
+  theme(legend.position = c(0.8,0.92), 
+        legend.key.size = unit(0.3, "cm"),
         legend.text.align = 0,
-        legend.title = element_text(size = 10))
+        legend.title = element_blank(),
+        panel.border = element_rect(colour="black", fill = NA))
 ggsave("figures/growthbyelevation_plot.pdf", width = 7, height = 5,dpi = 300)
 
   
