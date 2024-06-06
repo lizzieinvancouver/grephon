@@ -32,7 +32,6 @@ spd$species_list[which(spd$species_list=="Populus tremuloides (dominant), Populu
 spd$species_list[which(spd$species_list=="Pinus sylvestris (Scots pine), Norway spruce (Picea abies), Downy birch (Betula pubescens), European beech (Fagus sylvatica), European oak (Quercus robur), Betula pendula (Silver birch). First three species were used for tree ring analyses, all species for phenology assessment, but birch data merged.")]<-"Pinus sylvestris, Picea abies, Betula pubescens, Fagus sylvatica, Quercus robur, Betula pendula"
 spd$species_list[which(spd$species_list=="Aesculus hippocastanum, Betula pendula, Fagus sylvatic, Quercus robur")]<-"Aesculus hippocastanum, Betula pendula, Fagus sylvatica, Quercus robur" 
 spd$species_list[which(spd$species_list=="Rhododendron ferrugineum L")]<-"Rhododendron ferrugineum"
-
 #Pull out the species and genera to do answer the questions
 spd2<-spd %>%
   separate(species_list,c("sp1","sp2","sp3","sp4","sp5","sp6","sp7","sp8","sp9","sp10"),", ")
@@ -115,19 +114,39 @@ dev.off()
 
 #Nowlook at whether authors found relationship in atleast one instance
 #first do some cleaning
-spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="yes (only 1 / 2 sites)"]<-"yes"
-spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="yes (1 of 2 sites)"]<-"yes"
+#spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="yes (only 1 / 2 sites)"]<-"yes"
+#spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="yes (1 of 2 sites)"]<-"yes"
 spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="negative relationship"]<-"yes"
+unique(spd1_long$authorsthink_evidence_gsxgrowth)
+spd1_long$authorsthink_evidence_gsxgrowth[is.na(spd1_long$authorsthink_evidence_gsxgrowth)]<-"not tested"
+#what does NA mean? that either GSL or growth were not tested, i think
 findcols<-c("darkred","white","gray","darkblue")
-pdf("../figures/speciesnums_finds.pdf",width=14,height=8)
-par(mar=c(15,5,1,1))
-barplot(t(table(spd1_long$species_name,spd1_long$authorsthink_e)),
-        ylab="# of studies (rows)",xlab=" ",
-        col=findcols, ylim=c(0,20),
-        las=3,cex.lab=1.2, cex.axis=1.2, cex.names=1.2)
-legend("topright",legend=c("yes","no","not sure","not mentioned"),
-       fill =c("darkblue","darkred","gray","white"), cex=1.5, bty="n")
+spnames<-colnames(t(table(spd1_long$species_name,spd1_long$authorsthink_e)))
+spnames[which(spnames=="Acer")]<-"Acer sp."
+spnames[which(spnames=="Betula")]<-"Betula sp."
+spnames[which(spnames=="Carya")]<-"Carya sp."
+spnames[which(spnames=="Magnolia")]<-"Magnolia sp."
 
+spnames[which(spnames=="Magnolia")]<-"Magnolia sp."
+spnames[which(spnames=="Nyssa")]<-"Nyssa sp."
+spnames[which(spnames=="Populus")]<-"Populus sp."
+spnames[which(spnames=="Prunus")]<-"Prunus sp."
+spnames[which(spnames=="Quercus")]<-"Quercus sp."
+
+pdf("../figures/speciesnums_finds.pdf",width=14,height=8)
+#x11()
+par(mar=c(15,5,1,1))
+p<-barplot(t(table(spd1_long$species_name,spd1_long$authorsthink_e)),
+        ylab="# of studies",xlab=" ",
+        col=findcols, ylim=c(0,20),
+        names.arg=rep("", times=length(spnames)),
+        las=3,cex.lab=1.2, cex.axis=1.2, cex.names=1.2)
+
+legend("topright",legend=c("yes","no","not mentioned", "not tested"),
+       fill =c("darkblue","darkred","white","gray"), cex=1.5, bty="n")
+text(p, par("usr")[3]-0.25, 
+     srt = 60, adj = 1, xpd = TRUE,
+     labels = paste(spnames),font=3, cex = 1)
 dev.off()
 
 ##species nums by continent
