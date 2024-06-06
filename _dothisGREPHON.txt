@@ -10,24 +10,22 @@ Planning to submit as Perspective to NCC (no presubmission needed)
 
 Waiting on:
 	- Replies to issue #29 from Ailene
-	- Updated methods etc on elevation from Britany
+	- Updated methods etc on elevation from Britany (see https://github.com/lizzieinvancouver/grephon/issues/24) ... also Ailene asked: average? (across years? if so, what/how many years? if not, is it just one year of growth?)
 
 Need to do myself:
-	- Finalize elevation methods -- and ADD cite to Oskelyn in fig capture. 
-	- Decide if we want MORA elevation x growth in supp
+	- Finalize elevation methods -- and ADD cite to Oskelyn in fig capture and address Ailene's questions (potentially in caption to fig 1).  
 	- Add table to supplement? Or just ... 
 	- Decide what data we will publish
-	- Add to supp methods what we considered 'physiology' studies
-	- Add author contributions and data availability statement 
+	- Supp: add to methods what we considered 'physiology' studies
+	- Supp: Make sure we add hypothesis methods. 
+	- Supp: Deal with Ailene's edits to supp (in docs/comments/R4)
 	- Get names and affiliations (do names by first letter of first name, see below)
-
-Order: Ailene, Alana, Cat, Fredi, Kavya, Ruben & Janneke
-Acknowledgements: All authors conceived of the idea, prepared the literature review, edited the manuscript and contributed to designing figures; in addition EMW wrote the manuscript, AKE, CJC, AC and EMW synthesized the literature review, RD led developing Fig. 1 and 5, AKE and EMW developed Figure 2, CJC developed Fig 3, AC, RD and EMW led developing Fig. 4. 
 
 
 Submission:
-https://www.nature.com/nclimate/content (no mention of abstract length)
+https://www.nature.com/nclimate/content (no mention of abstract length, Perspective)
 https://www.nature.com/nclimate/submission-guidelines/initial-formatting
+
 "Your initial submission does not need to be specially formatted, as long as the study is described in a way that is suitable for editorial assessment and peer review. "
 
 

@@ -363,8 +363,8 @@ ht.df<-ht.df[order(ht.df$num.studies,decreasing=TRUE),]
 ht.df$ref<-ht.df$studnames
 ht.df$ref<-gsub("buermann2018","buermann2018widespread", ht.df$ref)
 ht.df$ref<-gsub("camarero2022","camarero2022decoupled", ht.df$ref)
-ht.df$ref<-gsub("chen 1998","chen1999effects", ht.df$ref)
-ht.df$ref<-gsub("cuny 2012","cuny2012life", ht.df$ref)
+ht.df$ref<-gsub("chen1998","chen1999effects", ht.df$ref)
+ht.df$ref<-gsub("cuny2012","cuny2012life", ht.df$ref)
 ht.df$ref<-gsub("cufar2014","vcufar2015variations", ht.df$ref)
 ht.df$ref<-gsub("delpierre2017","delpierre2017tree", ht.df$ref)
 ht.df$ref<-gsub("desauvage2022","de2022temperature", ht.df$ref)
@@ -400,3 +400,7 @@ ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
 ht.df$ref<-paste("\\citep{",ht.df$ref,"}",sep="")
 htabrefs<-subset(ht.df,select=c("hypothesis","num.studies","ref"))
 write.csv(htabrefs,"output/hyptable_withrefs.csv", row.names=FALSE)
+
+
+
+
