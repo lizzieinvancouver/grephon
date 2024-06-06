@@ -41,7 +41,7 @@ substrRight <- function(x, n){
 }
 
 d$year <- as.numeric(substrRight(d$paper_id, 4))
-plot(year~as.factor(gsxgrowthourdef), data=d)
+#plot(year~as.factor(gsxgrowthourdef), data=d)
 
 minyr <- min(d$year, na.rm=TRUE)
 maxyr <- max(d$year, na.rm=TRUE)
@@ -384,6 +384,7 @@ ht.df$ref<-gsub("moser2019","moser2010timing", ht.df$ref)
 ht.df$ref<-gsub("oddi2022","oddi2022contrasting", ht.df$ref)
 #ren is all set
 ht.df$ref<-gsub("richardson2020","richardson2010influence", ht.df$ref)
+ht.df$ref<-gsub("sebastian-azcona2020","sebazc2020", ht.df$ref)
 ht.df$ref<-gsub("silvestro2023","silvestro2023longer", ht.df$ref)
 ht.df$ref<-gsub("soolananayakanahally2013","soolanayakanahally2013timing", ht.df$ref)
 ht.df$ref<-gsub("stridbeck2022","stridbeck2022", ht.df$ref)
@@ -391,7 +392,7 @@ ht.df$ref<-gsub("vitasse2009","vitasse2009altitudinal", ht.df$ref)
 ht.df$ref<-gsub("wheeler2016","wheeler2016snow", ht.df$ref)
 ht.df$ref<-gsub("zhang2021","zhang2021drought", ht.df$ref)
 ht.df$ref<-gsub("zani2020","zani2020increased", ht.df$ref)
-ht.df$ref<-gsub("zohner2020","zohner2023effect", ht.df$ref)
+ht.df$ref<-gsub("zohner2020","zohner2020interactive", ht.df$ref)
 ht.df$ref<-gsub("zhu2021","zhu2021afm", ht.df$ref)
 ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
 
@@ -399,7 +400,8 @@ ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
 
 ht.df$ref<-paste("\\citep{",ht.df$ref,"}",sep="")
 htabrefs<-subset(ht.df,select=c("hypothesis","num.studies","ref"))
-write.csv(htabrefs,"output/hyptable_withrefs.csv", row.names=FALSE)
+
+#write.csv(htabrefs,"output/hyptable_withrefs.csv", row.names=FALSE)
 
 
 
