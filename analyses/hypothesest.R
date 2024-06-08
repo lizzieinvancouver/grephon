@@ -1,5 +1,6 @@
 ## Started by Ailene (later 2023) ##
 ## Updates in Feb and May 2024 by Lizzie ##
+##Updates in MAy-June 2024 by Ailene ###
 
 # housekeeping
 rm(list=ls()) 
@@ -63,8 +64,8 @@ h$hypothesis_in_paper[which(h$hypothesis_in_paper=="population-specific response
 #25 May & 4 Jun 2024 Ailene addressed questions in https://github.com/lizzieinvancouver/grephon/issues/29
 h$hypothesis_in_paper[h$addressed.in.which.Grephon.paper=="chen 1998"]<-"Carbon fertilization"
 h$hypothesis_in_paper[h$addressed.in.which.Grephon.paper=="Richardson2020" & h$hypothesis_in_paper=="Longer growing season != more growth"]<-"shift of whole pheno sequence" 
-newFinzihyp<-rbind(c(rep("",times=7),"Finzi2020",rep("",times=5),"AKE","entered by AKE June 2024, see github issue 29","species-specific responses"),
-                   c(rep("",times=7),"Finzi2020",rep("",times=5),"AKE","entered by AKE June 2024, see github issue 29","shift in allocation"))
+#newFinzihyp<-rbind(c(rep("",times=7),"Finzi2020",rep("",times=5),"AKE","entered by AKE June 2024, see github issue 29","species-specific responses"),
+#                   c(rep("",times=7),"Finzi2020",rep("",times=5),"AKE","entered by AKE June 2024, see github issue 29","shift in allocation"))
 #h<-rbind(h,newRichardsonhyp)
          
 table(h$hypothesis_in_paper)
