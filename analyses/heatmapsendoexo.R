@@ -52,7 +52,9 @@ allcombos.ext <- grephsub %>%
   full_join(totalpossible.ext) %>%
   mutate(totcounts.ext = ifelse(is.na(totcounts.ext), 0, totcounts.ext)) %>%
   distinct() %>%
-  filter(!is.na(what.ext))
+  filter(!is.na(what.ext)) %>%
+  mutate(method = paste0(toupper(substr(method, 1, 1)), substr(method, 2, nchar(method))),
+         what.ext = paste0(toupper(substr(what.ext, 1, 1)), substr(what.ext, 2, nchar(what.ext))))
 
 allcombos.endo <- grephsub %>%
   ungroup() %>%
@@ -60,28 +62,31 @@ allcombos.endo <- grephsub %>%
   full_join(totalpossible.endo) %>%
   mutate(totcounts.endo = ifelse(is.na(totcounts.endo), 0, totcounts.endo)) %>%
   distinct() %>%
-  filter(!is.na(what.endo))
+  filter(!is.na(what.endo))%>%
+  mutate(method = paste0(toupper(substr(method, 1, 1)), substr(method, 2, nchar(method))),
+         what.endo = paste0(toupper(substr(what.endo, 1, 1)), substr(what.endo, 2, nchar(what.endo))))
 
 ext <- ggplot(allcombos.ext, aes(x = what.ext, y = method, fill = totcounts.ext)) +
   geom_tile(color = "black") + geom_text(aes(label=ifelse(totcounts.ext==0, "", totcounts.ext))) +
   theme_classic() + 
-  scale_fill_continuous(low = "white", high = "#99000D")+ 
-  xlab("") + ylab("") + ggtitle("External factors") + 
-  theme(legend.position = "none") + 
+  scale_fill_continuous(low = "white", high = "salmon")+ 
+  xlab("") + ylab("Study type") + ggtitle("External factors") + 
+  theme(legend.position = "none",
+        axis.title.y = element_text(size = 15)) + 
   scale_x_discrete(guide = guide_axis(angle = 45), expand=c(0,0)) +
   scale_y_discrete(expand=c(0,0)) + coord_equal() 
 
 endo <- ggplot(allcombos.endo, aes(x = what.endo, y = method, fill = totcounts.endo)) +
   geom_tile(color = "black") + geom_text(aes(label=ifelse(totcounts.endo==0, "", totcounts.endo))) +
   theme_classic() + 
-  scale_fill_continuous(low = "white", high = "#084594")+ 
+  scale_fill_continuous(low = "white", high = "olivedrab4")+ 
   xlab("") + ylab("") + ggtitle("Internal factors") + 
   theme(legend.position = "none",
         axis.text.y=element_blank()) + 
   scale_x_discrete(guide = guide_axis(angle = 45), expand=c(0,0)) +
   scale_y_discrete(expand=c(0,0)) + coord_equal() 
 
-pdf(file=paste0("../figures/heatmaps/heatmap_combined_endo&exo.pdf"), width=11, height=8.5)
+pdf(file=paste0("../figures/heatmaps/heatmap_combined_endo&exo.pdf"), width=7, height=6)
 grid::grid.draw(cbind(ggplotGrob(ext), ggplotGrob(endo)))
 dev.off()
 

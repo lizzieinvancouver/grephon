@@ -105,7 +105,7 @@ constraints \citep{baas2011wood,eckert2019makes,ensminger2015tree,juvany2013phot
 %\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
 %\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
 \includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_combined_endo&exo.pdf}
-\caption{Heatmaps from our literature review showing the prevalence of external (left) and internal drivers considered by method (in development).}
+\caption{A review of the prevalence of external (left) and internal (right) drivers $\times$ study type, demonstrating biases across fields, methods, and metrics.}
 \label{fig:heatmapssupp}
 \end{figure}
 
