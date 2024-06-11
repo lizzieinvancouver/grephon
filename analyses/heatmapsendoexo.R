@@ -70,7 +70,7 @@ ext <- ggplot(allcombos.ext, aes(x = what.ext, y = method, fill = totcounts.ext)
   geom_tile(color = "black") + geom_text(aes(label=ifelse(totcounts.ext==0, "", totcounts.ext))) +
   theme_classic() + 
   scale_fill_continuous(low = "white", high = "salmon")+ 
-  xlab("") + ylab("Study type") + ggtitle("External factors") + 
+  xlab("") + ylab("Method") + ggtitle("External factors") + 
   theme(legend.position = "none",
         axis.title.y = element_text(size = 15)) + 
   scale_x_discrete(guide = guide_axis(angle = 45), expand=c(0,0)) +
