@@ -26,3 +26,9 @@ Answer: It depends ...
 
 Question: Help! I am trying to analyze the table, how do I start?
 Answer: Read in output/grephontable.csv and pay attention to columns at the END -- these have generally been cleaned already. 
+
+
+growthxelevationetc/ -- this is the folder for two growth x elevation analyses we did:
+1) A lit review (so there's a mix of data, analyses and methods in here -- oy!) which also included elevation. This is currently in the paper. Plus more notes on this in https://github.com/lizzieinvancouver/grephon/issues/24
+2) Mount Rainier 
+See _READMEgrowthxelevationetc.txt for more info. 

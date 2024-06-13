@@ -9,6 +9,8 @@ Mid-May! I am a year older and in Zurich again, time to get this puppy done!
 Planning to submit as Perspective to NCC (no presubmission needed) 
 
 Waiting on:
+	- (13 June 2024): Ailene has `not mentioned' and `not tested' in her species supp plot, but I am not sure how that is possible ... a quick glance at her code suggests she used (maybe?) the table before it was cleaned ... need to work on!
+	- New questions fro Britany. 
 	- Replies to issue #29 from Ailene
 	- Updated methods etc on elevation from Britany (see https://github.com/lizzieinvancouver/grephon/issues/24) ... also Ailene asked: average? (across years? if so, what/how many years? if not, is it just one year of growth?)
 
