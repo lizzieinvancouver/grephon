@@ -9,17 +9,16 @@ Mid-May! I am a year older and in Zurich again, time to get this puppy done!
 Planning to submit as Perspective to NCC (no presubmission needed) 
 
 Waiting on:
-	- (13 June 2024): Ailene has `not mentioned' and `not tested' in her species supp plot, but I am not sure how that is possible ... a quick glance at her code suggests she used (maybe?) the table before it was cleaned ... need to work on!
-	- New questions fro Britany. 
-	- Replies to issue #29 from Ailene
+	- Waiting on updating the table from Ailene.
+	- New questions from Britany. 
+	- Replies to issue #29 from Ailene and get figure back to Ruben
 	- Updated methods etc on elevation from Britany (see https://github.com/lizzieinvancouver/grephon/issues/24) ... also Ailene asked: average? (across years? if so, what/how many years? if not, is it just one year of growth?)
 
 Need to do myself:
-	- Finalize elevation methods -- and ADD cite to Oskelyn in fig capture and address Ailene's questions (potentially in caption to fig 1).  
+	- Finalize elevation methods
 	- Add table to supplement? Or just ... 
 	- Decide what data we will publish
 	- Supp: add to methods what we considered 'physiology' studies
-	- Supp: Make sure we add hypothesis methods. 
 	- Supp: Deal with Ailene's edits to supp (in docs/comments/R4)
 	- Get names and affiliations (do names by first letter of first name, see below)
 
