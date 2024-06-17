@@ -52,14 +52,14 @@ delevsm <- subset(delev, dataset_id!="zhu2018" & dataset_id!= "cavin2016")
 ggplot(delevsm, aes(x=predictor_value, y=growthmm, color=species, fill = species)) +
   geom_point() +
   scale_color_viridis_d(option = "viridis", name = "Species (reference)", 
-  labels = c(expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
-             expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"),
-             expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"))) +
+  labels = c(expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"),
+             expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
+             expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"))) +
   geom_smooth(method = "lm", level = 0.89, aes(group = species), se = TRUE, alpha = 0.3) +  # 89% CI
   scale_fill_viridis_d(option = "viridis", name = "Species (reference)", 
-                       labels = c(expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
-                                  expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"),
-                                  expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"))) +
+                       labels = c(expression(italic("Picea abies") ~ "(Oleksyn" ~ italic("et al.") ~ "1998)"),
+                                  expression(italic("Picea meyeri") ~ "(Wang" ~  italic("et al.") ~ "2017)"),
+                                  expression(italic("Pinus yunnanensis") ~ "(Zhou" ~ italic("et al.") ~ "2022)"))) +
   xlab("Elevation (m)") +
   ylab("Growth (mm)") +
   theme_classic() +
