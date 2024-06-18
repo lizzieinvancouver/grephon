@@ -1,5 +1,6 @@
 #### Create Reference table for Supp if useful
 ## Started 15 December 2023 by Cat
+## Update 18 June 2024: AKE ended up adding refs for hypotheses in supp, see whathappened.R
 
 # housekeeping
 rm(list=ls()) 

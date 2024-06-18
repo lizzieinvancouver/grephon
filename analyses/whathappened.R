@@ -401,8 +401,32 @@ ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
 ht.df$ref<-paste("\\citep{",ht.df$ref,"}",sep="")
 htabrefs<-subset(ht.df,select=c("hypothesis","num.studies","ref"))
 
-#write.csv(htabrefs,"output/hyptable_withrefs.csv", row.names=FALSE)
+# write.csv(htabrefs,"output/hyptable_withrefs.csv", row.names=FALSE)
 
+#################################
+##  Subsetting to data to post ## 
+#################################
+columnstokeep <- c( 
+  "paper_id",
+  "continent",
+  "year",
+  "method",
+  "species_list",
+  "species_num",
+  "age_class",
+  "gs_start_metricclean",
+  "gs_end_metricclean",
+  "gslsimple",
+  "growth",
+  "growthsimple",
+  "gslxgrowthsimple",
+  "gsxgrowth",
+  "gsxgrowthourdef",
+  "authorslooked_externalfactors",
+  "authorslooked_endogenousfactors",
+  "what.ext",
+  "what.endo")
 
-
-
+dpost <- d[,which(names(d) %in% columnstokeep)]
+dpost  <- d[,columnstokeep]
+write.csv(dpost,"output/grephontableKNB.csv", row.names=FALSE)
