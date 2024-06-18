@@ -84,16 +84,14 @@ unique(d$what.ext)
 
 
 ###fix method factors##
-
+## Lizzie updated these in June 2024, as they used to reference row numbers and were not correct
 #fix delpierre to not be blank
-reword <- "radial growth"
-d[45, 8] <- reword 
-reword <- "height"
-d[44, 8] <- reword 
+d$study_type[which(d$paper_id=="delpierre2017" & d$growth_metric=="circumference at breast height")] <- "radial growth"
+d$study_type[which(d$paper_id=="delpierre2017" & d$growth_metric=="height")] <- "height"
 
 #fix Zani to not say permanent plot
-reword <- "remote"# in this case remote photosynthesis with ground truthing??
-d[18, 8] <- reword
+d$study_type[which(d$paper_id=="zani2020" & 
+	d$growth_metric=="photosynthesis (total growing-season net daytime photosynthesis, modelled)")] <- "remote"
 
 d$method <- d$study_type
 unique(d$study_type)
