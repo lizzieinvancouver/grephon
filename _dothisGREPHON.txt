@@ -12,8 +12,7 @@ Waiting on:
 	- Replies to issue #29 from Ailene and to get figure back to Ruben (emailed him 14 June 2024)
 
 Need to do myself:
-	- Add table to supplement? Or just ... 
-	- Decide what data we will publish and publish (growth x elevation AND main grephon table)
+	- Publish BOTH datasets (growth x elevation AND main grephon table)
 	- Add KP affiliation -- and add umlauts on Zurich
 	- Decide on title and update in both main text and supp
 
