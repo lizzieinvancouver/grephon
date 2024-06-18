@@ -393,7 +393,7 @@ ht.df$ref<-gsub("wheeler2016","wheeler2016snow", ht.df$ref)
 ht.df$ref<-gsub("zhang2021","zhang2021drought", ht.df$ref)
 ht.df$ref<-gsub("zani2020","zani2020increased", ht.df$ref)
 ht.df$ref<-gsub("zohner2020","zohner2020interactive", ht.df$ref)
-ht.df$ref<-gsub("zhu2021","zhu2021afm", ht.df$ref)
+ht.df$ref<-gsub("zhu2021","zhu2021different", ht.df$ref)
 ht.df$ref<-gsub("zohner2023","zohner2023effect", ht.df$ref)
 
 #add text for citing refs in sweave:
