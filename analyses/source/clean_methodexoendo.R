@@ -15,8 +15,8 @@ unique (d$authorslooked_externalfactors)
 
 
 d$look.ext[grep("yes - length of growing season", d$authorslooked_externalfactors)] <- "yes - growing season"  
- d$look.ext[grep("yes - photosynthesis" , d$authorslooked_externalfactors)] <- "yes - photosythesis or carbon flux"
- d$look.ext[grep( "yes - carbon flux" , d$authorslooked_externalfactors)] <- "yes - photosythesis or carbon flux" 
+d$look.ext[grep("yes - photosynthesis" , d$authorslooked_externalfactors)] <- "yes - photosythesis or carbon flux"
+d$look.ext[grep( "yes - carbon flux" , d$authorslooked_externalfactors)] <- "yes - photosythesis or carbon flux" 
  
 # d$look.ext[grep("yes - length of growing season", d$authorslooked_externalfactors)] <- "yes.gsl"
 # #did I do that right?
@@ -55,39 +55,40 @@ d$what.ext[grep(  "high summer temperatures"  , d$ifyes_whichexternal)] <- "temp
 d$what.ext[grep(  "temperature (pre solstice)"   , d$ifyes_whichexternal)] <- "temperature"
 d$what.ext[grep(  "temperature at SOS"    , d$ifyes_whichexternal)] <- "temperature"
 
-d$what.ext[grep("temperature (summer, autumn), CO2", d$ifyes_whichexternal)] <- "temperature&CO2"
-d$what.ext[grep("temperature, CO2, N, disturbance" , d$ifyes_whichexternal)] <- "temperature&CO2"
-d$what.ext[grep( "CO2, warming and their interaction"  , d$ifyes_whichexternal)] <- "temperature&CO2"
+d$what.ext[grep("temperature (summer, autumn), CO2", d$ifyes_whichexternal)] <- "temperature & CO2"
+d$what.ext[grep("temperature, CO2, N, disturbance" , d$ifyes_whichexternal)] <- "temperature & CO2"
+d$what.ext[grep( "CO2, warming and their interaction"  , d$ifyes_whichexternal)] <- "temperature & CO2"
 
 d$what.ext[grep("soil water content"  , d$ifyes_whichexternal)] <- "water"
 d$what.ext[grep("reduced soil moisture"   , d$ifyes_whichexternal)] <- "water"
 d$what.ext[grep("timing of rainfall impacts growth not gsl"  , d$ifyes_whichexternal)] <- "water"
 d$what.ext[grep("mean GDD and mean growing-season precipitation"    , d$ifyes_whichexternal)] <- "water"
 
-d$what.ext[grep("Seasonal precip and May temp" , d$ifyes_whichexternal)] <- "temperature&precipitation"
-d$what.ext[grep("spring temperature mainly, but also elevation, precipication (they also looked at land cover and other climate variables)", d$ifyes_whichexternal)] <- "temperature&precipitation"
-d$what.ext[grep("VPD, SWP, Temp, Precip" , d$ifyes_whichexternal)] <- "temperature&precipitation"
-d$what.ext[grep("temperature and soil water content"  , d$ifyes_whichexternal)] <- "temperature&precipitation"
-d$what.ext[grep("temperature (pre solstice) , shade/light, nutrients, drought"   , d$ifyes_whichexternal)] <- "temperature&precipitation"
-d$what.ext[grep("Tmin, Tmax, Tmean, relative humidity, precipitation, vpd"  , d$ifyes_whichexternal)] <- "temperature&precipitation"
+d$what.ext[grep("Seasonal precip and May temp" , d$ifyes_whichexternal)] <- "temperature & precipitation"
+d$what.ext[grep("spring temperature mainly, but also elevation, precipication (they also looked at land cover and other climate variables)", d$ifyes_whichexternal)] <- "temperature & precipitation"
+d$what.ext[grep("VPD, SWP, Temp, Precip" , d$ifyes_whichexternal)] <- "temperature & precipitation"
+d$what.ext[grep("temperature and soil water content"  , d$ifyes_whichexternal)] <- "temperature & precipitation"
+d$what.ext[grep("temperature (pre solstice) , shade/light, nutrients, drought"   , d$ifyes_whichexternal)] <- "temperature & precipitation"
+d$what.ext[grep("Tmin, Tmax, Tmean, relative humidity, precipitation, vpd"  , d$ifyes_whichexternal)] <- "temperature & precipitation"
 
-d$what.ext[grep("latitude"  , d$ifyes_whichexternal)] <- "latitudeORelevation" 
-d$what.ext[grep("elevation"  , d$ifyes_whichexternal)] <- "latitudeORelevation" 
+d$what.ext[grep("latitude"  , d$ifyes_whichexternal)] <- "latitude or elevation" 
+d$what.ext[grep("elevation"  , d$ifyes_whichexternal)] <- "latitude or elevation" 
 
 d$what.ext[grep( "day length"  , d$ifyes_whichexternal)] <- "other"
 d$what.ext[grep( "sun vs. shade"    , d$ifyes_whichexternal)] <- "other"
 d$what.ext[grep("stand density and thinning method"   , d$ifyes_whichexternal)] <- "other"
 
-#did I do that right?
-unique(d$what.ext)
-#CHECK - can we merge  "latitudeORelevation" into   "site difference" ???
 
+# check
+unique(d$what.ext)
+sort(unique(paste(d$method, d$paper_id, d$study_type, d$growth_metric)))
+#CHECK - can we merge  "latitude or elevation" into   "site difference" ???
 
 ###fix method factors##
 ## Lizzie updated these in June 2024, as they used to reference row numbers and were not correct
 #fix delpierre to not be blank
-d$study_type[which(d$paper_id=="delpierre2017" & d$growth_metric=="circumference at breast height")] <- "radial growth"
-d$study_type[which(d$paper_id=="delpierre2017" & d$growth_metric=="height")] <- "height"
+d$study_type[which(d$paper_id=="delpierre2017" & d$growth_metric=="circumference at breast height")] <- "forest plots: radial growth"
+d$study_type[which(d$paper_id=="delpierre2017" & d$growth_metric=="height")] <- "forest plots: other"
 
 #fix Zani to not say permanent plot
 d$study_type[which(d$paper_id=="zani2020" & 
@@ -97,18 +98,18 @@ d$method <- d$study_type
 unique(d$study_type)
  
 
-##CHECK - this whole section is something we should all agree on the way in which factors are merged
+## Merging factors: First major work by Alana, then Lizzie checked in June 2024
 d$method[grep("tree ring \\(simulated , vs-lite model\\)", d$study_type)] <- "tree ring"# had to escape the damn parentheses
 d$method[grep("tree ring \\(growth\\), phenology observations \\(for GSL\\)", d$study_type)] <- "tree ring"
 d$method[grep("tree-ring", d$study_type)] <- "tree ring"
 
-d$method[grep("greenhouse or chamber (technically CHN terrace)", d$study_type)] <- "greenhouse or chamber"
-d$method[grep("greenhouse", d$study_type)] <- "greenhouse or chamber"
-d$method[grep("greenhouse or chamber experiment", d$study_type)] <- "greenhouse or chamber"
+d$method[grep("greenhouse or chamber (technically CHN terrace)", d$study_type)] <- "greenhouse or similar"
+d$method[grep("greenhouse", d$study_type)] <- "greenhouse or similar"
+d$method[grep("greenhouse or chamber experiment", d$study_type)] <- "greenhouse or similar"
 
-d$method[grep("permanent plot?" , d$study_type)] <- "radial growth" 
-d$method[grep("permanent plot"  , d$study_type)] <- "radial growth"  
-d$method[grep( "permanent plot"   , d$study_type)] <- "radial growth"
+d$method[grep("permanent plot?" , d$study_type)] <- "forest plots: radial growth" 
+d$method[grep("permanent plot"  , d$study_type)] <- "forest plots: radial growth"  
+d$method[grep( "permanent plot"   , d$study_type)] <- "forest plots: radial growth"
 
 d$method[grep("provenance"  , d$study_type)] <- "provenance trial"
 d$method[grep( "common garden"  , d$study_type)] <- "provenance trial"
@@ -120,13 +121,16 @@ d$method[grep( "remote sensing, flux tower"  , d$study_type)] <- "remote"
 d$method[grep(  "whole forest experiment \\(eddy covariance\\)" , d$study_type)] <- "eddy covariance"
 d$method[grep( "whole forest experiment, eddy covariance"   , d$study_type)] <- "eddy covariance"
 
-d$method[grep( "repeated measurements on individuals"  , d$study_type)] <- "phenology observation"
+d$method[grep( "repeated measurements on individuals"  , d$study_type)] <- "synthesis" # Lizzie renamed in June 2024 (this is Zohner merging LPJ model with long-term phenology observations)
+d$method[which(d$paper_id=="dow2022" & d$growth_metric=="annual core")] <- "tree ring" # Lizzie renamed in June 2024
+d$method[which(d$paper_id=="wheeler2016" & d$growth_metric=="stem density; proportion flowering; proportion fruiting")] <- "forest plots: other" # category covers height also
+d$method[which(d$paper_id=="zohner2023" & d$growth_metric=="GPP")] <- "eddy covariance" # 10 fluxnet sites mostly located in North America and Europe
 
-#did I do that right?
+#Check
 unique(d$method)
 
 
-###Fix endogenous factors ##CHECK - this whole section is new
+###Fix endogenous factors 
 names(d)
 d$endo_found <- d$"authorsfoundevidencefor_endogenousfactors"
 unique(d$authorsfoundevidencefor_endogenousfactors)
