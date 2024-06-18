@@ -3,24 +3,21 @@ Happy Independence Day America
 
 
 <><><><><><><><><><><><>
-May 2024 notes
+May-June 2024 notes
 
 Mid-May! I am a year older and in Zurich again, time to get this puppy done!
 Planning to submit as Perspective to NCC (no presubmission needed) 
 
 Waiting on:
-	- Waiting on updating the table from Ailene.
-	- New questions from Britany. 
-	- Replies to issue #29 from Ailene and get figure back to Ruben
-	- Updated methods etc on elevation from Britany (see https://github.com/lizzieinvancouver/grephon/issues/24) ... also Ailene asked: average? (across years? if so, what/how many years? if not, is it just one year of growth?)
+	- Replies to issue #29 from Ailene and to get figure back to Ruben (emailed him 14 June 2024)
+
 
 Need to do myself:
-	- Finalize elevation methods
 	- Add table to supplement? Or just ... 
-	- Decide what data we will publish
+	- Decide what data we will publish and publish (growth x elevation AND maingrephon table)
 	- Supp: add to methods what we considered 'physiology' studies
 	- Supp: Deal with Ailene's edits to supp (in docs/comments/R4)
-	- Get names and affiliations (do names by first letter of first name, see below)
+	- Add affiliations
 
 
 Submission:
