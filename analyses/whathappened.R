@@ -287,9 +287,8 @@ hypd$paper_id[hypd$paper_id=="soolanayakanahally2013"] <- "soolananayakanahally2
 hypd$paper_id[hypd$paper_id=="sebastian-alconza2020"] <- "sebastian-azcona2020"
 
 # Fix the ones that were missing but got fixed in the issue... (around 13 Feb 2024)
-hypd$hypothesis_in_paper[which(hypd$paper_id=="brand2022")] <- "More temp = more drought (drought limitation)"
-hypd$hypothesis_in_paper[which(hypd$paper_id=="zhu2021")] <- "More temp = more drought (drought limitation)"
-# I think chen1998 is not supposed to have one, see git issue ...
+hypd$hypothesis_in_paper[which(hypd$paper_id=="brand2022")] <- "warmer temperatures = more drought (drought limitation)"
+hypd$hypothesis_in_paper[which(hypd$paper_id=="zhu2021")] <- "warmer temperatures = more drought (drought limitation)"
 
 # Now about to merge ... 
 sort(unique(d$paper_id))
@@ -298,9 +297,9 @@ sort(unique(hypd$paper_id))
 dhyp <- merge(d, hypd, by=c("paper_id"))
 
 ## Now get numbers for the paper!
-moretimedf <- subset(dhyp, hypothesis_in_paper=="Longer growing season = more growth")
+moretimedf <- subset(dhyp, hypothesis_in_paper=="longer season = more growth")
 moretimenum  <- length(unique(moretimedf$paper_id)) # number of studies reporting time as driver
-moretempdf <- subset(dhyp, hypothesis_in_paper=="Higher temp = more growth (temp limitation)")
+moretempdf <- subset(dhyp, hypothesis_in_paper=="warmer temperatures = more growth")
 moretempnum  <- length(unique(moretempdf$paper_id)) # number of studies reporting warner as driver
 notfasterdf <- subset(dhyp, hypothesis_in_paper=="effect of growth rate not equal to growth duration")
 notfasternum  <- length(unique(notfasterdf$paper_id)) # number of studies saying rates may not change enough with longer seasons
@@ -310,9 +309,9 @@ notfasternum  <- length(unique(notfasterdf$paper_id)) # number of studies saying
 treerings <- subset(dhyp, growth=="annual core")
 radialgrowth <- subset(dhyp, growthsimple=="radial growth")
 
-droughthyp <- subset(dhyp, hypothesis_in_paper=="More temp = more drought (drought limitation)")
+droughthyp <- subset(dhyp, hypothesis_in_paper=="warmer temperatures = more drought (drought limitation)")
 unique(paste(droughthyp$paper_id, droughthyp$growth)) # only one study is NOT radial growth
-treeringsdrought  <- subset(treerings, hypothesis_in_paper=="More temp = more drought (drought limitation)")
+treeringsdrought  <- subset(treerings, hypothesis_in_paper=="warmer temperatures = more drought (drought limitation)")
 # Same answer whether you look at % of radial growth or tree ring studies!
 perdroughtreering <- round(length(unique(treeringsdrought$paper_id))/length(unique(treerings$paper_id))*100)
 round(length(unique(droughthyp$paper_id))/length(unique(radialgrowth$paper_id))*100)
@@ -324,7 +323,7 @@ which(unique(xylostud$paper_id) %in% unique(labstud$paper_id))
 which(unique(labstud$paper_id) %in% unique(xylostud$paper_id)) # no overlap so rbind
 xylolabstud <- rbind(xylostud, labstud)
 internalconstraintsrelated  <- xylolabstud[which(xylolabstud$hypothesis_in_paper %in% c("species-specific responses", 
-  "internal constraints (including pop, photo)", "shift of whole pheno sequence")),]
+  "internal constraints (including popl'n, photoperiod)", "shift of whole pheno sequence")),]
 intconslabxylo <- round(length(unique(internalconstraintsrelated$paper_id))/length(unique(xylolabstud$paper_id))*100)
 
 # How many papers had more than one hypothesis (in supp)?

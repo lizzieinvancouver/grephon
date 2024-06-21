@@ -9,13 +9,17 @@ Mid-May! I am a year older and in Zurich again, time to get this puppy done!
 Planning to submit as Perspective to NCC (no presubmission needed) 
 
 Waiting on:
-	- Replies to issue #29 from Ailene and to get figure back to Ruben (emailed him 14 June 2024)
+	- Get updated figure from Ruben with `studies' changed to 'papers' (issue #29) 
+	- Updated species figure from Ailene (issue #9)
 
 Need to do myself:
-	- Read the supp (main text is read as of 18 June 2024).
-	- Publish BOTH datasets (growth x elevation AND main grephon table)
-	- Add KP affiliation -- and add umlauts on Zurich
+	- Read the supp
+	- Quick check all issues
+	- Read ending of main text (the rest is already read, 18 June 2024)
+	- Add KP affiliation finalized from here
 	- Decide on title and update in both main text and supp
+	- Submit! Start at NCC, then Science, then GCB then see black and red notebook
+	- Publish BOTH datasets (growth x elevation AND main grephon table)
 
 
 Submission:
