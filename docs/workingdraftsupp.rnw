@@ -24,7 +24,7 @@
 % See also: git/grants/crc2023/crc2023app/docs/crc_notes2023more.tex which has some reference notes
 
 \title{Supplement: Why longer seasons with climate change may\\ not increase tree growth}
-\author{Team Grephon}
+% \author{Team Grephon}
 \date{\today}
 \maketitle
 
@@ -50,9 +50,10 @@ We returned to the papers to also assess them for which hypotheses they addresse
 (\Sexpr{nrow(morethanonehyp)} of \Sexpr{papernum} papers). 
 
 \subsection*{Trends with year}
-Across studies which found support for or against a relationship between growth and growing season length (\Sexpr{nrow(yesandnoeviany)} of \Sexpr{nrow(d)} total studies) the range of years was very similar: spanning \Sexpr{quantile(eviany$year)[1]} to \Sexpr{quantile(eviany$year)[5]} with a mean of \Sexpr{round(mean(eviany$year),0)} for studies that found a positive relationship and spanning \Sexpr{quantile(noeviany$year)[1]} to \Sexpr{quantile(noeviany$year)[5]} with a mean of \Sexpr{round(mean(noeviany$year),0)} for studies that did not. Further, we found no trend through time for finding a positive or negative relationship through logistic regression (slope strongly overlapped 0). 
+% See whathappened.R and look for # Trends across years analysis
+Across studies which found support for or against a relationship between growth and growing season length (\Sexpr{nrow(yesandnoeviany)} of \Sexpr{nrow(d)} total studies) the range of years was very similar: spanning \Sexpr{quantile(eviany$year)[1]} to \Sexpr{quantile(eviany$year)[5]} with a mean of \Sexpr{round(mean(eviany$year),0)} for studies that found a positive relationship and spanning \Sexpr{quantile(noeviany$year)[1]} to \Sexpr{quantile(noeviany$year)[5]} with a mean of \Sexpr{round(mean(noeviany$year),0)} for studies that did not. Further, we found no trend through time for finding a positive or negative relationship through logistic regression (slope overlapped 0). 
 
-\section{Growth $\times$ elevation relationships}
+\section*{Growth $\times$ elevation relationships}
 
 Using Google Scholar and ISI Web of Science, we searched the literature for studies of tree growth, especially via diameter or ring width, by elevation or latitude. Of 20 papers we found for these relationships, six included clear raw tree data in either scatterplots or tables that we scraped: \citet{oleksyn1998growth,huang2010radial,cavin2017highest,wang2017climatic,zhu2018spatial,zhou2022altitudinal}. 
 
@@ -66,18 +67,18 @@ We could not scrape data from 14 papers for the following reasons:
 \item Geographical scale: The locations of data collection spread across large longitudinal or latitudinal gradient. 
 \end{enumerate}
 
-We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated x and y axis using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for three, excluding \citet{huang2010radial} because it included only results for trends by latitude (and most other studies included only trends by elevation), and \citet{cavin2017highest,zhu2018spatial} because the elevation co-varied with latitude. % So the three we show are: \citep{oleksyn1998growth,wang2017climatic,zhou2022altitudinal}
+We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated $x$ and $y$ axes using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for three, excluding \citet{huang2010radial} because it included only results for trends by latitude (and most other studies included only trends by elevation), and \citet{cavin2017highest,zhu2018spatial} because the elevation co-varied with latitude. % So the three we show are: \citep{oleksyn1998growth,wang2017climatic,zhou2022altitudinal}
 
 Thus, we show data from: \citet{oleksyn1998growth}, which measured 54 populations of  \emph{Picea abies} along 8 altitudinal transects in Southern Poland, we present the mean DBH (cm yr$^{-1}$) of values collected from each population (although 54 populations were monitored, only 42 data points were clearly visible in Figure 2 in the paper); \citet{wang2017climatic}, which collected  tree cores (37-100 years) collected from 4 different sites across an elevation gradient in the Luyashan Mountains in North China, we present the median of tree ring width values from the collected cores (147 tree cores collected from 73 trees); and \citet{zhou2022altitudinal}, who collected tree ring width data (cores of 60-80 years) of \emph{Pinus yunnar} from 6 altitudinal transects in Yunnan, China; we present the median of tree ring width of each transect.
 
-\section{The challenge of metrics: Measuring growth}
+\section*{The challenge of metrics: Measuring growth}
 
-Tree growth, which can be measured in a variety of ways, highlights how the diversity of current metrics slows a unified model of when growth increases with longer seasons. Our literature review found that most studies quantified growth by measuring radial growth (e.g., through increment cores or dendrometers, $n=$\Sexpr{boxradg}), but a number also looked at metrics related to C assimilation (e.g. net ecosystem productivity or gross primary productivity, $n=$\Sexpr{boxcaccg}), while a smaller number examined biomass, height, or number of stems ($n=$\Sexpr{boxbiomassg}), or root:shoot ratio ($n=$\Sexpr{boxrootshootg}). Some studies used modeled estimates of photosynthesis 
+Tree growth, which can be measured in a variety of ways, highlights how the diversity of current metrics slows a unified model of when growth increases with longer seasons. Our literature review found that most studies quantified growth by measuring radial growth (e.g., through increment cores or dendrometers, $n=$\Sexpr{boxradg}), but a number also looked at metrics related to C assimilation (e.g. net ecosystem productivity or gross primary productivity, $n=$\Sexpr{boxcaccg}), while a smaller number examined biomass, height, or number of stems ($n=$\Sexpr{boxbiomassg}), or root:shoot ratio ($n =$\Sexpr{boxrootshootg}). Some studies used modeled estimates of photosynthesis 
 (e.g., \citet{smith2014implications} relied on daily photosynthesis estimates derived from the LPJ-GUESS photosynthesis model, while \citet{chen2000approaches} estimated photosynthese using the Integrated Terrestrial Ecosystem C-budget model, InTEC). Others measured photosynthesis at the leaf level, through flux towers, or used greenness metrics (NDVI). Growth measurements vary across disciplines and study types, posing a further challenge to an interdisciplinary approach to understanding how growing season length relates to growth. Greenhouse or growth chamber studies and provenance trials were more likely to measure height or biomass, whereas larger scale syntheses and remote-sensed studies are more likely to use metrics of carbon assimilation. 
 
 Aligning across the range and scale of growth metrics will be critical for an integrated understanding of growth-growing season length relationships and implications under continued climate change.  There is decoupling among some metrics of growth. For example, vegetation photosynthesis may be poorly correlated with tree radial growth, and this relationship can vary seasonally \citep{cabon2022cross}. Further, tree radial growth is not a perfect indicator of whole tree growth, since plants allocate carbon to their roots, leaves, reproductive structures, and stores in addition to aboveground biomass. Relationships among different metrics of growth are not simple, so selecting relevant ones and aligning across the most widely used ones will be necessary, though not easy: the relationship  between photosynthesis, radial growth, and carbon uptake has large implications for future carbon sequestration and it remains widely debated \citep{green2022limits}. Further, there is a need to understand how to scale up across these varying metrics- from leaf and individual level to populations, communities, and ecosystems- while incorporating the variation that exists within and across levels.
 
-\section{Extending disciplinary focus to help bridge the internal-external drivers divide} 
+\section*{Extending disciplinary focus to help bridge the internal-external drivers divide} 
 
 % Careful interdisciplinary is critical, but will benefit from shifts within disciplines. 
 % Standardized measurements will not yield fully comparable estimates---especially on the relative impacts of external and internal drivers---without larger shifts within fields. We found that dendrochronology considers almost exclusively external climatic drivers, while physiological tests of internal constraints do not usually make predictions that scale up easily beyond the lab or greenhouse. Major fields studying this relationship---dendrochronology, phenology research and physiology---all need to broaden in specific ways to overlap with one another to facilitate interdisciplinary work. At the same time, all fields have missed certain major hypotheses they could test (Fig. \ref{fig:hypotheses}), highlighting the need to integrate perspectives from other disciplines with relevant theory and methods. 
@@ -96,32 +97,9 @@ constraints \citep{baas2011wood,eckert2019makes,ensminger2015tree,juvany2013phot
 
 % All fields would benefit from a deeper understanding of the physiological and/or developmental connections between growing season length and growth. Much work has focused on measures of growth and phenology without a clear mechanistic link. Similarly, many current suggestions of constraints lack any physiological mechanism. Physiological studies that follow carbohydrate and cell division versus expansion dynamics could yield insights. This is particularly important if want to include constraints in our projections, as extrapolating is especially dangerous when the underlying mechanistic model is wrong
 
-
 \clearpage
-\section*{References}
-\bibliography{..//bibtex/grephonbib}
-\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+\section*{Figures \& Tables}
 
-\section*{Figures}
-
-
-\clearpage
-\begin{figure}[h!]
-%\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
-%\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
-\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_combined_endo&exo.pdf}
-\caption{A review of the prevalence of external (left) and internal (right) drivers mentioned in studies from our literature review, grouped by the general methods used. Many studies tested related hypotheses by measuring different drivers (e.g., latitude or elevation), so we combined similar external and internal factors for clearer comparisons.}
-\label{fig:heatmapssupp}
-\end{figure}
-
-\clearpage
-\begin{figure}[h!]
-\includegraphics[width=1\textwidth]{..//figures/speciesnums_finds.pdf}
-\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across  and within species. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly growth $\times$ growing season length, which are indicated by `not tested.'}
-\label{fig:sppfinds}
-\end{figure}
-
-\newpage
 <<label=xtablerefs, echo=FALSE, results=tex>>=
 library(xtable)
 reftable <- htabrefs
@@ -137,6 +115,28 @@ ref.table <- xtable(reftable, caption="\\textbf{Hypotheses and references for st
 
 print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,size="\\footnotesize",caption.placement="top",tabular.environment = "longtable", tabular="\\textwidth",include.colnames = TRUE, add.to.row = list(pos = list(0),command = "\\hline \\endhead "),sanitize.text.function = identity)
 @
+
+
+\begin{figure}[h!]
+%\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
+%\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
+\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_combined_endo&exo.pdf}
+\caption{A review of the prevalence of external (left) and internal (right) drivers mentioned in studies from our literature review, grouped by the general methods used. Many studies tested related hypotheses by measuring different drivers (e.g., latitude or elevation), so we combined similar external and internal factors for clearer comparisons.}
+\label{fig:heatmapssupp}
+\end{figure}
+
+\clearpage
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{..//figures/speciesnums_finds.pdf}
+\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across  and within species. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly growth $\times$ growing season length, which are indicated by `not tested.'}
+\label{fig:sppfinds}
+\end{figure}
+
+
+\clearpage
+\section*{References}
+\bibliography{..//bibtex/grephonbib}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
 
 \end{document}
 

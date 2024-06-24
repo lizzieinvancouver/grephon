@@ -46,7 +46,6 @@ unique(d$find.ext)
 d$what.ext <- d$ifyes_whichexternal
 unique (d$ifyes_whichexternal)
 
-##CHECK - I think this is another section to review as a group, definitely made some executive decisions in the recoding
 d$what.ext[grep("temp", d$ifyes_whichexternal)] <- "temperature"
 d$what.ext[grep("temperature, GDD", d$ifyes_whichexternal)] <- "temperature"
 d$what.ext[grep( "seasonal mean temp (separate from GSL)" , d$ifyes_whichexternal)] <- "temperature"
@@ -107,6 +106,7 @@ d$method[grep("greenhouse or chamber (technically CHN terrace)", d$study_type)] 
 d$method[grep("greenhouse", d$study_type)] <- "greenhouse or similar"
 d$method[grep("greenhouse or chamber experiment", d$study_type)] <- "greenhouse or similar"
 
+d$method[which(d$study_type=="radial growth")] <- "forest plots: radial growth" 
 d$method[grep("permanent plot?" , d$study_type)] <- "forest plots: radial growth" 
 d$method[grep("permanent plot"  , d$study_type)] <- "forest plots: radial growth"  
 d$method[grep( "permanent plot"   , d$study_type)] <- "forest plots: radial growth"
