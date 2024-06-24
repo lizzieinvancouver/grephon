@@ -14,8 +14,6 @@ Waiting on:
 Need to do myself:
 	- Quick check all issues (basically done)
 	- Submit! Start at NCC, then Science, then GCB, then see black and red notebook
-	- Publish BOTH datasets (growth x elevation AND main grephon table)
-
 
 Submission:
 https://www.nature.com/nclimate/content (no mention of abstract length, Perspective)

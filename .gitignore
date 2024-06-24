@@ -10,7 +10,12 @@
 analyses/.Rhistory
 *.Rapp.history
 
+*.log
+*.aux
+*.blg
+
 *Rplots.pdf
 *.DS_Store
 /notposting
 docs/comments
+notes/presentations
