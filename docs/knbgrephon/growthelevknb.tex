@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+{\bf Published} on 24 June 2024: \href{https://knb.ecoinformatics.org/submit/urn%3Auuid%3A3b7555df-a2fa-4a44-b150-b7786d4377bc}{see here}.
+
+Using Google Scholar and ISI Web of Science, we searched the literature for studies of tree growth, especially via diameter or ring width, by elevation or latitude. Of 20 papers \citep{babst2013site,bhuta2009climate,cavin2017highest,cook1991predicting,cook1998modeling,coomes2007effects,de2022temperature,gantois2022new,gillman2015latitude,hikosaka2021intraspecific,huang2010radial,king2013tree,klesse2020continental,liang2019forest,martin2015convergence,oleksyn1998growth,rapp2012intra,wang2017climatic,zhou2022altitudinal,zhu2018spatial} we found for these relationships, six included clear raw tree data in either scatterplots or tables that we scraped: \citet{oleksyn1998growth,huang2010radial,cavin2017highest,wang2017climatic,zhu2018spatial,zhou2022altitudinal}. 
+
+We could not scrape data from 14 papers for the following reasons: 
+\begin{enumerate}
+\item Absence of observational tree growth raw data: Some studies only presented the correlation or the data was modeled. 
+\item  Measures other variables: Some studies examined leaf area index and forest NPP. 
+\item  Standardization of tree growth with other variables: Papers did not present the raw data (e.g., papers presented the data calculated with other variables).
+\item  Presence of overlapping data points: Data points in the plots presented were not visually identifiable for accurate data scraping.
+\item Line graphs: No discrete data points for image processing. 
+\item Geographical scale: The locations of data collection spread across large longitudinal or latitudinal gradient. 
+\end{enumerate}
+
+We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated $x$ and $y$ axes using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for three, excluding \citet{huang2010radial} because it included only results for trends by latitude (and most other studies included only trends by elevation), and \citet{cavin2017highest,zhu2018spatial} because the elevation co-varied with latitude. % So the three we show are: \citep{oleksyn1998growth,wang2017climatic,zhou2022altitudinal}
+
+Thus, we show data from: \citet{oleksyn1998growth}, which measured 54 populations of  \emph{Picea abies} along 8 altitudinal transects in Southern Poland, we present the mean DBH (cm yr$^{-1}$) of values collected from each population (although 54 populations were monitored, only 42 data points were clearly visible in Figure 2 in the paper); \citet{wang2017climatic}, which collected  tree cores (37-100 years) collected from 4 different sites across an elevation gradient in the Luyashan Mountains in North China, we present the median of tree ring width values from the collected cores (147 tree cores collected from 73 trees); and \citet{zhou2022altitudinal}, who collected tree ring width data (cores of 60-80 years) of \emph{Pinus yunnar} from 6 altitudinal transects in Yunnan, China; we present the median of tree ring width of each transect.
+
+
+\bibliography{..//..//bibtex/growthxelev}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+
+\end{document}
+
+dataset_id: first author last name and year of paper
+species: species studied
+growth_type: how growth was measured (e.g., RWI is ring width index)
+growth_units: units for growth measurement
+growth_value: value of growth (scraped from paper)
+growth_errortype: type of error for growth measurement
+growth_errorvalue: value of error for growth measurement (scraped from paper)
+predictor_type: predictor for growth
+predictor_units: unites for predictor
+predictor_value:  value of predictor (scraped from paper)
+figtable: what figure or table we scraped data from
+notes

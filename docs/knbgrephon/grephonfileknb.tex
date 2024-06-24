@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
+\usepackage{Sweave}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+{\bf Published} on 24 June 2024: \href{https://knb.ecoinformatics.org/view/urn%3Auuid%3A8ade2a32-fd5f-467f-8d6e-231ca72876aa}{see here}.
+
+We conducted a review to find studies focused on relationships between growing season length and tree wood growth, though contrasting terminology made it challenging to identify papers through one search. After reviewing several recent papers \citep{dow2022warm,zohner2023effect}, we searched ISI Web of Science for ``growing season length" AND ``tree ring*" (ALL FIELDS) on 12 April 2023, which returned 33 citations. We next reviewed abstracts and discarded papers that did not mention the relationship between growing season length and growth. We further reviewed all citations within all papers for additionally relevant papers and included them in our review. In total we report on 36 papers after reviewing over 107 potentially relevant papers and discarding one paper \citep[][which used tree lines as a metric of both growth and growing season length]{bruening2017}. 
+
+Given the large diversity of metrics we found, we did not extract quantitative estimates of growing season length, growth, or their relationship. Instead, we extracted data on location, species, how they measured growing season length, growth, what relationship they found and what internal and external drivers they mentioned (full dataset with more details available on the Knowledge Network for Biocomplexity at publication).
+
+Papers often reported dozens or more statistical tests from different analyses of data or different types or subsets of data, thus we recorded a unique meta-analytic observation within each paper (which we call a `study') when papers reported: (1) distinctly different datasets (e.g., a global analyses of observations and a short-term experiment); (2) multiple distinctly different measures of growth (e.g., tree ring width and flux tower) and/or growing season length (e.g., they reported both end of season as budset and end of wood growth through xylogenesis); (3) distinctly different results for growth $\times$  growing season length depending on metric (e.g., using budset for growing season length they find a growth $\times$ growing season length relationship, but using leaf coloring they do not). 
+
+\nocite{camarero2022decoupled,chen2000,vcufar2015variations,delpierre2017tree,de2022temperature,gao2022earlier,grossiord2022warming,keenan2014net,silvestro2023longer,wheeler2016snow} \nocite{brand2022,buermann2018widespread,camarero2022decoupled,de2022temperature,drew2018growth,eckes2021,etzold2022number,kolavr2016response,oddi2022contrasting,zhu2021different} 
+\nocite{delpierre2017tree,de2022temperature,richardson2010influence,soolanayakanahally2013timing,zani2020increased,zohner2020interactive} \\ 
+\nocite{cuny2012life,de2022temperature,francon2020,michelot2012comparing,ren2019} \\ 
+\nocite{moser2010timing,sebazc2020,soolanayakanahally2013timing,vitasse2009altitudinal,zohner2023effect} \\ 
+\nocite{chen1999effects,finzi2020,oddi2022contrasting} \\ 
+\nocite{cuny2012life,etzold2022number,michelot2012comparing} \\ 
+\nocite{mckown2016impacts} 
+
+\bibliography{..//..//bibtex/grephonbib}
+\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+
+\end{document}
