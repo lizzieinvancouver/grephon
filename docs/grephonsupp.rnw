@@ -51,7 +51,7 @@ We returned to the papers to also assess them for which hypotheses they addresse
 
 \subsection*{Trends with year}
 % See whathappened.R and look for # Trends across years analysis
-Across studies which found support for or against a relationship between growth and growing season length (\Sexpr{nrow(yesandnoeviany)} of \Sexpr{nrow(d)} total studies) the range of years was very similar: spanning \Sexpr{quantile(eviany$year)[1]} to \Sexpr{quantile(eviany$year)[5]} with a mean of \Sexpr{round(mean(eviany$year),0)} for studies that found a positive relationship and spanning \Sexpr{quantile(noeviany$year)[1]} to \Sexpr{quantile(noeviany$year)[5]} with a mean of \Sexpr{round(mean(noeviany$year),0)} for studies that did not. Further, we found no trend through time for finding a positive or negative relationship through logistic regression (slope overlapped 0). 
+Across studies which found support for or against a relationship between growth and growing season length (\Sexpr{nrow(yesandnoeviany)} of \Sexpr{nrow(d)} total studies) the range of years was very similar: spanning \Sexpr{quantile(eviany$year)[1]} to \Sexpr{quantile(eviany$year)[5]} with a mean of \Sexpr{round(mean(eviany$year),0)} for studies that found a positive relationship and spanning \Sexpr{quantile(noeviany$year)[1]} to \Sexpr{quantile(noeviany$year)[5]} with a mean of \Sexpr{round(mean(noeviany$year),0)} for studies that did not. Further, we found no trend through time for finding a positive or negative relationship  (estimated slope from logistic regression overlapped 0). 
 
 \section*{Growth $\times$ elevation relationships}
 
@@ -128,7 +128,7 @@ print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,s
 \clearpage
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/speciesnums_finds.pdf}
-\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across  and within species. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly growth $\times$ growing season length, which are indicated by `not tested.'}
+\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across  and within species. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly tested growth $\times$ growing season length, which are indicated by `not tested.'}
 \label{fig:sppfinds}
 \end{figure}
 

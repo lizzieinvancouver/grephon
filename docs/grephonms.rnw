@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[top=1.00in, bottom=1.0in, left=1.1in, right=1.1in]{geometry}
 \usepackage{Sweave}
-\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\baselinestretch}{1.2}
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{amsmath}
@@ -25,7 +25,7 @@
 \title{Why longer seasons with climate change may \\ not increase tree growth} 
 % Climate change highlights fundamental gaps in\\ plant growth $\times$ growing season length relationships  
 % Do growing season length and growth relate? \\ And if not, why not? \\ And if we're not sure, why is that?
-\author{E.M. Wolkovich$^1$, Ailene K. Ettinger$^2$, Alana Chin$^3$, Catherine J. Chamberlain$^4$,\\ Frederik Baumgarten$^1$, Kavya Pradhan$^{5,6}$, Rub{\'e}n D. Manzanedo$^{7,8}$ \\ \& Janneke Hille Ris Lambers$^7$}
+\author{E.M. Wolkovich$^1$, Ailene K. Ettinger$^2$, Alana Chin$^3$, Catherine J. Chamberlain$^4$,\\ Frederik Baumgarten$^1$, Kavya Pradhan$^{5,6}$, Rub{\'e}n D. Manzanedo$^{7,8}$ \& \\ Janneke Hille Ris Lambers$^7$}
 \date{\today}
 \maketitle
 
