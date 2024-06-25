@@ -119,8 +119,10 @@ dev.off()
 spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="negative relationship"]<-"yes"
 unique(spd1_long$authorsthink_evidence_gsxgrowth)
 spd1_long$authorsthink_evidence_gsxgrowth[is.na(spd1_long$authorsthink_evidence_gsxgrowth)]<-"not tested"
+spd1_long$authorsthink_evidence_gsxgrowth[spd1_long$authorsthink_evidence_gsxgrowth=="not mentioned"]<-"not tested"
+
 #what does NA mean? that either GSL or growth were not tested, i think
-findcols<-c("darkred","white","gray","darkblue")
+findcols<-c("salmon","lightgray","darkblue")
 spnames<-colnames(t(table(spd1_long$species_name,spd1_long$authorsthink_e)))
 spnames[which(spnames=="Acer")]<-"Acer sp."
 spnames[which(spnames=="Betula")]<-"Betula sp."
@@ -140,10 +142,10 @@ p<-barplot(t(table(spd1_long$species_name,spd1_long$authorsthink_e)),
         ylab="# of studies",xlab=" ",
         col=findcols, ylim=c(0,20),
         names.arg=rep("", times=length(spnames)),
-        las=3,cex.lab=1.2, cex.axis=1.2, cex.names=1.2)
+        las=3,cex.lab=2, cex.axis=2, cex.names=1.2)
 
-legend("topright",legend=c("yes","no","not mentioned", "not tested"),
-       fill =c("darkblue","darkred","white","gray"), cex=1.5, bty="n")
+legend("topright",legend=c("yes","no","not tested"),
+       fill =c("darkblue","salmon","lightgray"), cex=2, bty="n")
 text(p, par("usr")[3]-0.25, 
      srt = 60, adj = 1, xpd = TRUE,
      labels = paste(spnames),font=3, cex = 1)
