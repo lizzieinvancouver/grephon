@@ -2,6 +2,78 @@ Started 4 July 2023
 Happy Independence Day America
 
 
+
+<><><><><><><><><><><><>
+December 2024 notes
+
+To do items (27 December 2024):
+(0) Save current version of ms so can do track changes if requested 
+(1) Draft figures and get feedback
+(2) Overhaul ms and work on response letter (same time)
+
+My next steps:
+- I will draft figure ideas and send for feedback 
+- New draft to co-authors by 13 January; send edits by 20 January so I can resubmit before end of month. (Alternative: edits out by 20 January, feedback by 27 January; and I resubmit by first week of February). 
+
+Try to make clear steps of what to do next -- see below (but not lose our point that dealing with species diversity will be critical? Community ecology offers a way to deal with this through phylogenetics and traits.) 
+
+
+<><><><><>
+PLAN for figures and overhaul of section 3
+Email to co-authors (late December 2024):
+<><><><><>
+
+Hi all,
+
+Apologies to be emailing about work during the holiday break. No worries if you cannot respond to this email as I will email again once break is over, but given my schedule in January (and February), I need to make some progress on our Grephon paper now and wanted to solicit feedback for those who have time now. 
+
+I chatted with Tegan in mid-December and my take-aways were that we do not have to remove the meta-analysis, they are interested, but need something new from our framework and they want something more opinionated with clearer steps forward (thus, the meta-analysis is less important because our new framework is more important and exciting). This need for more from our framework basically jives with the reviews and the conversation made me think we should resubmit. *We need to do it soon though -- so I am aiming to resubmit by end of January.* 
+
+To that end, I am going to dive in on edits starting around New Year's Eve so any thoughts on my plan below by *end of Monday, 30 December* would be appreciated. 
+
+How can you help now (*if you have time and want to, I assume most of you are offline and I support that*)? Share thoughts on my proposed overhaul of section 3, new figure ideas, and any ideas on what R2 wants. I have included these as separate sections below. Also, just any ideas on how to address the concerns of the reviewers are welcome! 
+
+I'll sign off here and if you have time, continue reading below.
+
+Happy holidays!
+L
+
+<><><><><>
+A) My proposal is to overhaul sections 2 a little and and especially section 3 (`Building a new framework for growth × season length relationships') to be a list of the most important things to answer and to say HOW to do it, which would be:
+
+i) What is the scale of variation in GSL x growth relationships across space and time. 
+
+To answer this: go out and observationally measure the same species across latitude or elevation and aim to measure the RATE and TIMING of primary and secondary growth (getting at total SUM across season). 
+
+ii) How prevalent are internal constraints across species and populations? New evidence suggests plants do not fully use longer seasons. If true, this would be critical to predicting future stuff, but it needs a lot more work to understand if (a) it is common across species, and populations (partition variance) and (b) holds up under different definitions of GSL (c) is backed up experimentally (Figure showing what we expect from experiments maybe?).
+
+To answer this: Use some of what is used for (i) and add experiments (I guess?). 
+
+iii) How do external drivers and internal constraints act together (or: how do they compare?)? 
+
+To answer this: I was just going to hammer that we can build on data from (i) with better models, but we will have to have experiments here and then talk about some with juvenile plants and large-scale (we have some of this text). 
+
+<><><><><>
+B) NEW FIGURE ideas: 
+(1) Figure to show variation in definitions of GSL while also touching on primary versus secondary growth: this could show some temperature data from Feb to October with phenological events and meteorological events layered on, then a panel showing primary and secondary growth accumulation under it, and then a panel under that showing the length of different GSL based on: phenological, meteorological and growth. 
+(2) Figure showing primary versus secondary growth over a couple seasons that emphasizes legacy effects (not sure how this should look)
+(3) Figure showing different species growing at different rates across seasons: could  show some temperature data from Feb to October with phenological events (different for each species) and then another panel showing rates and sums of growth over season for each one ... this is sort of similar to Fig 1, but different emphasis (and no GSL). It could also show legacy effects ... 
+(4) Figure emphasizing what to do next ... could be showing experiments that alter length and temperature of season and try to tease out rates versus length -- showing what we would find for internal constraints versus external constraints (this could combine with idea (3) above). 
+(5) Somehow combine current Fig 2 and 4 to emphasize complexity of season length and rates -- e.g., higher elevations have shorter season but also never get as warm....
+
+<><><><><>
+C) 
+I could use help interpreting Reviewer #2 (and just generally how to make them happy). This includes ideas beyond those proposed to address their concerns and I specifically am confused about what is meant:
+
+"For example, we don’t know how/whether climatic factors directly or indirectly alter growth seasons via internal constraints, and then affect growth." 
+
+"3. As shown in Fig. 1g in the manuscript, this hypothesis indicates that the growing season length and growth are unchanged due to internal constraints. However, this hypothesis may be wrong and is not supported by the listed References, (e.g., Zohner et al., 2023 SCIENCE). 1) the growth onset is not unchanged, and should be advanced under global warming. For example, recent research has suggested that warming-induced earlier spring phenology is driven by increased photosynthetic carbon assimilation in the previous growing season (see Gu et al., 2022 NATURE COMMUNICATIONS). 2) The peak growth and their timing should be increased and advanced due to source-sink balances/limitations under global change (see Korner et al., 2015; Green et al., 2022 SCIENCE). 3) the growth end timing is also changed and is jointly controlled by climatic factors and internal constraints (see Zohner et al., 2023 SCIENCE)."
+
+If anyone sees through this and can explain over email or has time for a call with me, please let me know. 
+
+
+
+
 <><><><><><><><><><><><>
 May-June 2024 notes
 
