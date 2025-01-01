@@ -41,11 +41,15 @@ L
 <><><><><>
 A) My proposal is to overhaul sections 2 a little and and especially section 3 (`Building a new framework for growth × season length relationships') to be a list of the most important things to answer and to say HOW to do it, which would be:
 
-i) What is the scale of variation in GSL x growth relationships across space and time. 
+i) What is the scale of variation in GSL x growth relationships across space (and time; or how does time compare). We don't know this and we need to. 
 
 To answer this: go out and observationally measure the same species across latitude or elevation and aim to measure the RATE and TIMING of primary and secondary growth (getting at total SUM across season). 
 
+ADDED (after email): Start with tree rings for this and then break it down by types of growth, GSL metrics etc. (Nail this pattern across space and species; and then fit in what we see/expect over time). 
+
 ii) How prevalent are internal constraints across species and populations? New evidence suggests plants do not fully use longer seasons. If true, this would be critical to predicting future stuff, but it needs a lot more work to understand if (a) it is common across species, and populations (partition variance) and (b) holds up under different definitions of GSL (c) is backed up experimentally (Figure showing what we expect from experiments maybe?).
+
+ADDED (after email): if you do different species in different places you're just learning about changes in species composition across space (and population dynamics), which might give you something but won't give you mechanism -- need models like Nacho's and Freckleton's
 
 To answer this: Use some of what is used for (i) and add experiments (I guess?). 
 
