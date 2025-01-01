@@ -119,3 +119,18 @@ plot(wepararecent[,2]~pararecmean$doy, type="l", ylim=c(0,40), xlab="day of year
 	ylab="Accumulated imaginary growth")
 lines(welongrecent[,2]~longrecmean$doy, col="orange")
 dev.off()
+
+# Also get GSL for days >5 C
+long80smean$daysabove5 <- ifelse(long80smean[["meantemp"]]>4.99, 1, 0)
+para80smean$daysabove5 <- ifelse(para80smean[["meantemp"]]>4.99, 1, 0)
+longrecmean$daysabove5 <- ifelse(longrecmean[["meantemp"]]>4.99, 1, 0)
+pararecmean$daysabove5 <- ifelse(pararecmean[["meantemp"]]>4.99, 1, 0)
+
+par(mfrow=c(1,2))
+plot(long80smean$daysabove5~long80smean$doy)
+points(para80smean$daysabove5~para80smean$doy, col="orange")
+
+sum(long80smean$daysabove5)
+sum(para80smean$daysabove5)
+sum(longrecmean$daysabove5)
+sum(pararecmean$daysabove5)
