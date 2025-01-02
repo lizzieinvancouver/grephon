@@ -7,9 +7,13 @@ Happy Independence Day America
 December 2024 notes
 
 To do items (27 December 2024):
-(0) Save current version of ms so can do track changes if requested 
-(1) Draft figures and get feedback
-(2) Overhaul ms and work on response letter (same time)
+(0) Save current version of ms so can do track changes if requested (DONE)
+(1) Draft figures and get feedback (done for now)
+(2) Overhaul ms and work on response letter (same time) -- STARTING NOW!
+
+Notes in .rnw
+NEWMORA Fig?
+%TODO 
 
 My next steps:
 - I will draft figure ideas and send for feedback 

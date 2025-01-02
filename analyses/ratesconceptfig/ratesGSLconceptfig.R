@@ -113,7 +113,6 @@ wepararecent <- WangEngelfx(0, 41, 30, 2.85, pararecmean$meantemp)
 welongrecent <- WangEngelfx(0, 41, 30, 2.85, longrecmean$meantemp) 
 plot(wepararecent[,1]~pararecmean$doy, type="l", ylim=c(0,0.55), xlab="day of year: mean of 2013-2023", 
 	ylab="Imaginary growth rate (temp curve figure)")
-lines(welong1980s[,1]~long80smean$doy, col="orange")
 lines(welongrecent[,1]~longrecmean$doy, col="orange")
 plot(wepararecent[,2]~pararecmean$doy, type="l", ylim=c(0,40), xlab="day of year: mean of 2013-2023", 
 	ylab="Accumulated imaginary growth")
@@ -121,10 +120,10 @@ lines(welongrecent[,2]~longrecmean$doy, col="orange")
 dev.off()
 
 # Also get GSL for days >5 C
-long80smean$daysabove5 <- ifelse(long80smean[["meantemp"]]>4.99, 1, 0)
-para80smean$daysabove5 <- ifelse(para80smean[["meantemp"]]>4.99, 1, 0)
-longrecmean$daysabove5 <- ifelse(longrecmean[["meantemp"]]>4.99, 1, 0)
-pararecmean$daysabove5 <- ifelse(pararecmean[["meantemp"]]>4.99, 1, 0)
+long80smean$daysabove5 <- ifelse(long80smean[["meantemp"]]>4.99, 22, "NA")
+para80smean$daysabove5 <- ifelse(para80smean[["meantemp"]]>4.99, 21, "NA")
+longrecmean$daysabove5 <- ifelse(longrecmean[["meantemp"]]>4.99, 22, "NA")
+pararecmean$daysabove5 <- ifelse(pararecmean[["meantemp"]]>4.99, 21, "NA")
 
 par(mfrow=c(1,2))
 plot(long80smean$daysabove5~long80smean$doy)
@@ -134,3 +133,44 @@ sum(long80smean$daysabove5)
 sum(para80smean$daysabove5)
 sum(longrecmean$daysabove5)
 sum(pararecmean$daysabove5)
+
+## Better version?
+# Plot comparing decades with GSL and temperatures...
+pdf("figures/moracomparedecades6panel.pdf", width=8, height=9)
+par(mfrow=c(3,2))
+
+plot(para80smean$meantemp~para80smean$doy, type="l", ylim=c(-5,22),  xlab="day of year", 
+	ylab="Mean daily temperature", main="1980s")
+text(110, -4, "Paradise (high elev)")
+text(60, 10, "Lomgmire (low elev)", col="orange")
+lines(long80smean$meantemp~long80smean$doy, col="orange")
+points(long80smean$daysabove5~long80smean$doy, col="orange", cex=0.5)
+points(para80smean$daysabove5~para80smean$doy, col="black", cex=0.5)
+
+plot(pararecmean$meantemp~pararecmean$doy, type="l", ylim=c(-5,22), xlab="day of year ", 
+	ylab="Mean daily temperature", main="2013-2023")
+lines(longrecmean$meantemp~longrecmean$doy, col="orange")
+points(longrecmean$daysabove5~longrecmean$doy, col="orange", cex=0.5)
+points(pararecmean$daysabove5~pararecmean$doy, col="black", cex=0.5)
+
+plot(wepara1980s[,1]~para80smean$doy, type="l", ylim=c(0,0.55), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)")
+lines(welong1980s[,1]~long80smean$doy, col="orange")
+
+plot(wepararecent[,1]~pararecmean$doy, type="l", ylim=c(0,0.55), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)")
+lines(welongrecent[,1]~longrecmean$doy, col="orange")
+
+plot(wepara1980s[,2]~para80smean$doy, type="l", ylim=c(0,40), xlab="day of year", 
+	ylab="Accumulated imaginary growth")
+lines(welong1980s[,2]~long80smean$doy, col="orange")
+
+plot(wepararecent[,2]~pararecmean$doy, type="l", ylim=c(0,40), xlab="day of year", 
+	ylab="Accumulated imaginary growth")
+lines(welongrecent[,2]~longrecmean$doy, col="orange")
+
+dev.off()
+
+
+
+
