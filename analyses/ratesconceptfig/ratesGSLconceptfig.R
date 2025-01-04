@@ -77,7 +77,11 @@ testclim.avg <- (testclim.min+testclim.max)/2
 wangeng <- WangEngelfx(0, 41, 30, 2.85, testclim.avg) 
 
 wangengclim <- data.frame(we=wangeng[,1], tempC=testclim.avg)
-plot(we~testclim.avg, data=wangengclim, type="l", xlim=c(0,40))
+pdf("figures/wecurve.pdf", width=8, height=6)
+par(mfrow=c(1,1))
+plot(we~testclim.avg, data=wangengclim, type="l", xlim=c(0,40), 
+	ylim=c(0,1), ylab="Rate", xlab="Temperature")
+dev.off()
 
 ## Plot comparing SINGLE years
 pdf("figures/mora1981vs2021.pdf", width=8, height=6)
@@ -119,20 +123,42 @@ plot(wepararecent[,2]~pararecmean$doy, type="l", ylim=c(0,40), xlab="day of year
 lines(welongrecent[,2]~longrecmean$doy, col="orange")
 dev.off()
 
-# Also get GSL for days >5 C
+# Also get GSL for days >5 C for PLOTTING
 long80smean$daysabove5 <- ifelse(long80smean[["meantemp"]]>4.99, 22, "NA")
 para80smean$daysabove5 <- ifelse(para80smean[["meantemp"]]>4.99, 21, "NA")
 longrecmean$daysabove5 <- ifelse(longrecmean[["meantemp"]]>4.99, 22, "NA")
 pararecmean$daysabove5 <- ifelse(pararecmean[["meantemp"]]>4.99, 21, "NA")
 
+# Also get GSL for days >5 C for summing
+long80smean$daysabove5forsum <- ifelse(long80smean[["meantemp"]]>4.99, 1, 0)
+para80smean$daysabove5forsum  <- ifelse(para80smean[["meantemp"]]>4.99, 1, 0)
+longrecmean$daysabove5forsum  <- ifelse(longrecmean[["meantemp"]]>4.99, 1, 0)
+pararecmean$daysabove5forsum  <- ifelse(pararecmean[["meantemp"]]>4.99, 1, 0)
+
 par(mfrow=c(1,2))
 plot(long80smean$daysabove5~long80smean$doy)
 points(para80smean$daysabove5~para80smean$doy, col="orange")
 
-sum(long80smean$daysabove5)
-sum(para80smean$daysabove5)
-sum(longrecmean$daysabove5)
-sum(pararecmean$daysabove5)
+sum(long80smean$daysabove5forsum)
+sum(para80smean$daysabove5forsum)
+sum(longrecmean$daysabove5forsum)
+sum(pararecmean$daysabove5forsum)
+
+# Get temp ranges over these windows ...
+min(long80smean$meantemp[which(long80smean$daysabove5forsum==1)])
+max(long80smean$meantemp[which(long80smean$daysabove5forsum==1)])
+mean(long80smean$meantemp[which(long80smean$daysabove5forsum==1)])
+
+min(para80smean$meantemp[which(para80smean$daysabove5forsum==1)])
+max(para80smean$meantemp[which(para80smean$daysabove5forsum==1)])
+mean(para80smean$meantemp[which(para80smean$daysabove5forsum==1)])
+
+min(longrecmean$meantemp[which(longrecmean$daysabove5forsum==1)])
+max(longrecmean$meantemp[which(longrecmean$daysabove5forsum==1)])
+
+min(pararecmean$meantemp[which(pararecmean$daysabove5forsum==1)])
+max(pararecmean$meantemp[which(pararecmean$daysabove5forsum==1)])
+
 
 ## Better version?
 # Plot comparing decades with GSL and temperatures...

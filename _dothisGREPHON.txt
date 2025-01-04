@@ -11,11 +11,15 @@ To do items (27 December 2024):
 (1) Draft figures and get feedback (done for now)
 (2) Overhaul ms and work on response letter (same time) -- STARTING NOW!
 
-Notes in .rnw
-NEWMORA Fig?
-%TODO 
-%CHECKREFSandINFO (lag GSL x growth effects in deciduous vs evergreen)
-EXAMPLE?
+Consider:
+- Delete 'expanding disciplinary focus' in supp
+- Sneak masting into elevation section?
+
+MUST do before submitting:
+(*) Update Author contributions
+(*) Notes in .rnw that I need to deal with ...
+	- (NeedCITES)
+	- %CHECKREFSandINFO (lag GSL x growth effects in deciduous vs evergreen)
 
 My next steps:
 - I will draft figure ideas and send for feedback 
