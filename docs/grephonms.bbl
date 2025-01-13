@@ -1,4 +1,4 @@
-\begin{thebibliography}{89}
+\begin{thebibliography}{91}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Aitken \& Bemmels(2016)}]{aitken2016}
@@ -23,6 +23,12 @@ Cabon, A., Kannenberg, S.A., Arain, A., Babst, F., Baldocchi, D., Belmecheri,
   S., Delpierre, N., Guerrieri, R., Maxwell, J.T., McKenzie, S. \emph{et~al.}
   (2022) Cross-biome synthesis of source versus sink limits to tree growth.
   \emph{Science} \textbf{376}, 758--761.
+
+\bibitem[{Cadotte \emph{et~al.}(2017)Cadotte, Davies \&
+  Peres-Neto}]{cadotte2017phylogenies}
+Cadotte, M.W., Davies, T.J. \& Peres-Neto, P.R. (2017) Why phylogenies do not
+  always predict ecological differences. \emph{Ecological Monographs}
+  \textbf{87}, 535--551.
 
 \bibitem[{Camarero \emph{et~al.}(2022)Camarero, Campelo, Colangelo, Valeriano,
   Knorre, Sol{\'e} \& Rubio-Cuadrado}]{camarero2022decoupled}
@@ -255,6 +261,10 @@ Hanson, P.J., Riggs, J.S., Nettles, W.R., Phillips, J.R., Krassovski, M.B.,
   \emph{et~al.} (2017) Attaining whole-ecosystem warming using air and
   deep-soil heating methods with an elevated co 2 atmosphere.
   \emph{Biogeosciences} \textbf{14}, 861--883.
+
+\bibitem[{Harmon(2024 (e-book))}]{harmonebook}
+Harmon, L. (2024 (e-book)) \emph{Phylogenetic Comparative Methods}. University
+  of Idaho.
 
 \bibitem[{Hilty \emph{et~al.}(2021)Hilty, Muller, Pantin \&
   Leuzinger}]{hilty2021plant}
