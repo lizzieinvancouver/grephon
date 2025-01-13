@@ -11,9 +11,19 @@ To do items (27 December 2024):
 (1) Draft figures and get feedback (done for now)
 (2) Overhaul ms and work on response letter (same time) -- STARTING NOW!
 
+
+- Add all the new figures
+- Decide about box and GSL/growth text
+- Move spp figure to main text and put on phylogeny?
+
 Consider:
 - Delete 'expanding disciplinary focus' in supp
 - Sneak masting into elevation section?
+
+
+Co-author feedback:
+- This sentence: These differences would suggest season length by growth relationships may bemore apparent in evergreen species, and more apparent via lagged effects in deciduous species(NeedCITES), though to date this has not been consistently reported.
+- The external and internal factors affecting growth are inherently interconnected (suggCITES)
 
 MUST do before submitting:
 (*) Update Author contributions
