@@ -1,0 +1,83 @@
+Box. Growth and the challenge of standardized metrics}
+
+Understanding the diverse drivers and testing underlying hypotheses (Fig. \ref{fig:hypotheses}) for growth $\times$ season length relationships requires a common language. We found \Sexpr{nstartmetrics} different metrics of start of season, \Sexpr{nendmetrics} metrics of end of season (\Sexpr{ngslmetrics} metrics of growing season length), and \Sexpr{ngrowthmetrics} different metrics of growth across \Sexpr{nrow(d)} studies---highlighting just part of the challenge. 
+Definitions and metrics for external and internal drivers were myriad, %CJC 15Dec - I think we could again add numbers for external and internal divers, clarifying these were after systematically assigning studies into groups
+with papers reporting dozens of tests of different types of growth -- and different aspects of climate-- over different temporal windows. 
+Although this is understandable given the differing goals of these papers, it also slows progress. 
+
+Tree growth can be defined and measured in a variety of ways. It is often divided into primary (growth from the root and shoot tips that results in increased height and length) versus secondary (growth that increases the thickness or girth of stems and branches above ground, as well as below ground parts), or leaf production versus wood production.  
+Of studies in our literature review, the largest proportion used metrics related to secondary growth, quantifying growth by measuring radial growth (e.g., through increment cores or dendrometers, $n=$\Sexpr{boxradg}), but a number also looked at metrics related to primary growth, including C assimilation (e.g. net ecosystem productivity or gross primary productivity, $n=$\Sexpr{boxcaccg}). A smaller number used metrics that reflect combined primary and secondary growth, including biomass, height, or number of stems ($n=$\Sexpr{boxbiomassg}), and root:shoot ratio ($n =$\Sexpr{boxrootshootg}). 
+Some studies used modeled estimates of photosynthesis (e.g., \citet{smith2014implications} relied on daily photosynthesis estimates derived from the LPJ-GUESS photosynthesis model, while \citet{chen2000approaches} estimated photosynthese using the Integrated Terrestrial Ecosystem C-budget model, InTEC). 
+Others measured photosynthesis at the leaf level, through flux towers, or used greenness metrics (NDVI). 
+
+Growth measurements vary across disciplines and study types, posing a further challenge to an interdisciplinary approach to understanding how growing season length relates to growth. 
+Greenhouse or growth chamber studies and provenance trials were more likely to measure height or biomass, whereas larger scale syntheses and remote-sensed studies are more likely to use metrics of carbon assimilation. 
+
+focus on different types of growth (leaf, shoot, wood, maybe flowers -- 
+how they have different timings within a season, and across seasons (and so may have different lag effects) and vary across species *and* touch on GSL definitions. 
+These seem related to me, since wood phenology is one definition of GSL, and leaf phenology another (and varies between evergreen and deciduous).
+%R1:  1) While the manuscript touches on the general concept of growth, it would benefit from a clearer differentiation between primary and secondary growth. Primary and secondary growth are processes with different temporal and environmental dependencies. 
+particular, primary growth is influenced by environmental conditions from previous growing seasons, while secondary growth is directly and exclusively responsive to current-year conditions. The manuscript discusses carbon allocation investments (e.g., on page 6, the competition between growth and reproduction). Still, it would be helpful to explicitly link these discussions to how primary and secondary growth might compete for resources differently. 
+In this framework, I wonder if the hypothesis that a lengthened growing season might affect these two growth processes differently should be clearly raised, as there is a significant gap in the current understanding. 
+Some recent studies suggest that extended growing seasons may enhance primary growth more than secondary growth due to the timing of carbon allocation and physiological constraints. 
+This aspect deserves a deeper discussion, as it could affect future predictions of carbon storage.
+
+%2) The authors rightly mention that the definition of "growing season" is debated, and this debate plays a critical role in understanding the relationship between season length and growth. 
+To date, studies have varied significantly in their definitions, with some focusing on temperature thresholds while others emphasize the onset and cessation of physiological activity. 
+This discrepancy complicates comparisons across studies. 
+A more detailed explanation of the different definitions and their implications would greatly enhance manuscript accessibility, particularly for readers less familiar with the concept of phenology. 
+Additionally, since the growing season length is a critical variable in models forecasting carbon sequestration, understanding its definition is crucial for interpreting results. 
+I recommend a dedicated section that elaborates on the current definitions, the ongoing debate, and how different interpretations could lead to divergent conclusions about tree growth under climate change.
+These seem related to me, since wood phenology is one definition of GSL, and leaf phenology another (and varies between evergreen and deciduous).
+
+
+and highlights how the diversity of current metrics slows a unified model of when growth increases with longer seasons
+
+Aligning across the range and scale of growth metrics will be critical for an integrated understanding of growth-growing season length relationships and implications under continued climate change.  
+There is decoupling among some metrics of growth. For example, vegetation photosynthesis may be poorly correlated with tree radial growth, and this relationship can vary seasonally \citep{cabon2022cross}. 
+Further, tree radial growth is not a perfect indicator of whole tree growth, since plants allocate carbon to their roots, leaves, reproductive structures, and stores in addition to aboveground biomass. 
+Relationships among different metrics of growth are not simple, so selecting relevant ones and aligning across the most widely used ones will be necessary, though not easy: the relationship  between photosynthesis, radial growth, and carbon uptake has large implications for future carbon sequestration and it remains widely debated \citep{green2022limits}. 
+Further, there is a need to understand how to scale up across these varying metrics- from leaf and individual level to populations, communities, and ecosystems- while incorporating the variation that exists within and across levels.
+
+
+A common framework for explanatory and response variables would accelerate research by easing communication between fields and providing a path to comparable quantitative estimates. 
+This should also include expected statistical tests, as we found a number of papers failed to directly test for growth $\times$ growing season length relationships (Fig. \ref{fig:heatmaps}), often instead testing only certain hypothesized indirect relationships \citep[e.g. spring temperature $\times$ growth in][]{dow2022warm}. 
+A fundamental need for any framework is comparable quantitative estimates---which we currently lack. 
+
+
+
+% Note from lizzie (via email): 
+expand the Box (Standardized measurements) to address types of growth and the GSL concern of R1.The box would then cover the need for standardized measurements but more from a focus on different types of growth (leaf, shoot, wood, maybe flowers -- see note below from Alana when I asked her about R1) and how they have different timings within a season, and across seasons (and so may have different lag effects) and vary across species *and* touch on GSL definitions. 
+These seem related to me, since wood phenology is one definition of GSL, and leaf phenology another (and varies between evergreen and deciduous).
+
+%From Alana (via email): I think we should be careful with how we use primary and secondary growth, and should maybe say ‘leaf production’ and ‘wood production’ (or trunk radial growth?) instead since that’s what is being talked about.All organ elongation (height growth/twig extension/root  elongation/leaf production) is primary. Secondary growth is increase in girth of woody above and below ground parts, but is also a common thing in the  veins of long-lived tropical leaves.
+%R1:  1) While the manuscript touches on the general concept of growth, it would benefit from a clearer differentiation between primary and secondary growth. Primary and secondary growth are processes with different temporal and environmental dependencies. In particular, primary growth is influenced by environmental conditions from previous growing seasons, while secondary growth is directly and exclusively responsive to current-year conditions. The manuscript discusses carbon allocation investments (e.g., on page 6, the competition between growth and reproduction). Still, it would be helpful to explicitly link these discussions to how primary and secondary growth might compete for resources differently. In this framework, I wonder if the hypothesis that a lengthened growing season might affect these two growth processes differently should be clearly raised, as there is a significant gap in the current understanding. Some recent studies suggest that extended growing seasons may enhance primary growth more than secondary growth due to the timing of carbon allocation and physiological constraints. This aspect deserves a deeper discussion, as it could affect future predictions of carbon storage.
+%2) The authors rightly mention that the definition of "growing season" is debated, and this debate plays a critical role in understanding the relationship between season length and growth. To date, studies have varied significantly in their definitions, with some focusing on temperature thresholds while others emphasize the onset and cessation of physiological activity. This discrepancy complicates comparisons across studies. A more detailed explanation of the different definitions and their implications would greatly enhance manuscript accessibility, particularly for readers less familiar with the concept of phenology. Additionally, since the growing season length is a critical variable in models forecasting carbon sequestration, understanding its definition is crucial for interpreting results. I recommend a dedicated section that elaborates on the current definitions, the ongoing debate, and how different interpretations could lead to divergent conclusions about tree growth under climate change.
+
+
+% R3: DIFFERENT ASPECTS OF GROWTH SHOULD BE DISCUSSED
+% Unless I am mistaken, photosynthesis is taken in the study as one metric of growth. 
+I can see the motivation for that, but because that is contradictory to the established use of these concepts in plant ecophysiology and ecology, this issue should be elaborated. 
+A failure to do that would not be a good start for the integrative approaches the authors are calling for  different aspect of growth as such should be better elaborated and discussed. 
+The discussion on determinate species on page 6, for instance, is relevant only for height growth, not for diameter growth, or accumulation of biomass. 
+Because of these reasons, a general theory between growing season length and ‘growth’ maybe even impossible, not only difficult to achieve. 
+In my view, this overall limitation should be addressed more clearly in the study. 
+What exactly is aimed at in this and the related studies? 
+If the aim is to examine carbon sequestration, then the discussion on determinate species is not relevant. 
+Those species fix carbon long after their height growth cessation has taken place.
+%2. As shown in Fig. 1d-e in the manuscript, climatic factors alter plant’s physiological process (i.e., growth rate) rather than growth season length, and then dominate plant growth. 
+This indicates that the physiological process plays a crucial role in regulating growth. 
+In  other words, if climate change reduces the growth rate, a longer growth season may induce higher, unchanged, or lower plant growth. In contrast, if climate change shortens the growth seasons, a higher growth rate may induce higher, unchanged, or lower plant growth.However, this review ignores the importance of growth rate, although some papers that they reviewed have mentioned the growth rate 
+
+New References
+
+@article{bowman2013detecting,
+  title={Detecting trends in tree growth: not so simple},
+  author={Bowman, David MJS and Brienen, Roel JW and Gloor, Emanuel and Phillips, Oliver L and Prior, Lynda D},
+  journal={Trends in plant science},
+  volume={18},
+  number={1},
+  pages={11--17},
+  year={2013},
+  publisher={Elsevier}
+}
