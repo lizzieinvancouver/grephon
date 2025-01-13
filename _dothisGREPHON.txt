@@ -4,7 +4,8 @@ Happy Independence Day America
 
 
 <><><><><><><><><><><><>
-December 2024 notes
+December 2024 & 
+January 2025 notes
 
 To do items (27 December 2024):
 (0) Save current version of ms so can do track changes if requested (DONE)
@@ -14,9 +15,6 @@ To do items (27 December 2024):
 Consider:
 - Delete 'expanding disciplinary focus' in supp
 - Sneak masting into elevation section?
-
-Tasks:
-
 
 Co-author feedback:
 - This sentence: These differences would suggest season length by growth relationships may bemore apparent in evergreen species, and more apparent via lagged effects in deciduous species(NeedCITES), though to date this has not been consistently reported.
@@ -29,12 +27,10 @@ MUST do before submitting:
 (*) Notes in .rnw that I need to deal with ...
 	- (NeedCITES)
 	- %CHECKREFSandINFO (lag GSL x growth effects in deciduous vs evergreen)
+	- SuggCites
+	- AddCITES for PCMs (Webb is all I have now)
 
-My next steps:
-- I will draft figure ideas and send for feedback 
-- New draft to co-authors by 13 January; send edits by 20 January so I can resubmit before end of month. (Alternative: edits out by 20 January, feedback by 27 January; and I resubmit by first week of February). 
-
-Try to make clear steps of what to do next -- see below (but not lose our point that dealing with species diversity will be critical? Community ecology offers a way to deal with this through phylogenetics and traits.) 
+New draft went to co-authors on 12 January; send edits by 20 January so I can resubmit before end of month. (Alternative: edits out by 20 January, feedback by 27 January; and I resubmit by first week of February). 
 
 
 <><><><><>

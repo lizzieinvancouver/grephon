@@ -169,3 +169,5 @@ barplot(countsppcont,beside=TRUE,
 
 dev.off()
 
+write.csv(countsppcont, "output/countsppcont.csv", row.names=TRUE)
+
