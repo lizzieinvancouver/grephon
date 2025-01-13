@@ -1,0 +1,57 @@
+"","1Europe","2North.America","3Asia","4Australia","5South.America","7Asia,North.America"
+"Abies alba",4,0,0,0,0,0
+"Abies balsamia",0,2,0,0,0,0
+"Acer",0,2,0,0,0,0
+"Acer pennsylvanicum",0,1,0,0,0,0
+"Acer pseudoplatanus",1,0,0,0,0,0
+"Acer rubra",0,2,0,0,0,0
+"Acer rubrum",0,1,0,0,0,0
+"Acer saccharum",0,1,0,0,0,0
+"Aesculus hippocastanum",2,0,0,0,0,0
+"Betula",0,2,0,0,0,0
+"Betula allegheniensis",0,1,0,0,0,0
+"Betula lenta",0,1,0,0,0,0
+"Betula pendula",5,0,0,0,0,0
+"Betula pubescens",2,0,0,0,0,0
+"Carya",0,1,0,0,0,0
+"Corylus cornuta",0,2,0,0,0,0
+"Fagus",0,2,0,0,0,0
+"Fagus grandifolia",0,1,0,0,0,0
+"Fagus sylvatica",16,0,0,0,0,0
+"Fraxinus",0,2,0,0,0,0
+"Fraxinus excelsior",3,0,0,0,0,0
+"Fraxinus mandshurica",0,0,2,0,0,0
+"Ilex aquifolium",1,0,0,0,0,0
+"Juniperus przewalskii",0,0,0,0,0,1
+"Juniperus przewlaskii",0,0,1,0,0,0
+"Larix decidua",5,0,0,0,0,0
+"Liriodendron",0,2,0,0,0,0
+"Magnolia",0,1,0,0,0,0
+"Nothofagus pomilio",0,0,0,0,1,0
+"Nyssa",0,1,0,0,0,0
+"Nyssa sylvatica",0,1,0,0,0,0
+"Picea abies",6,0,0,0,0,0
+"Picea glauca",0,1,0,0,0,0
+"Pinus halepensis",1,0,0,0,0,0
+"Pinus ponderosa",0,0,0,0,0,1
+"Pinus radiata",0,0,0,1,0,0
+"Pinus strobus",0,2,0,0,0,0
+"Pinus sylvestris",8,0,0,0,0,0
+"Populus",0,1,0,0,0,0
+"Populus balsamifera",0,5,0,0,0,0
+"Populus tremuloides",0,2,0,0,0,0
+"Populus trichocarpa",0,3,0,0,0,0
+"Prunus",0,1,0,0,0,0
+"Quercus",0,2,0,0,0,0
+"Quercus alba",0,1,0,0,0,0
+"Quercus petraea",6,0,0,0,0,0
+"Quercus petreaea",2,0,0,0,0,0
+"Quercus pubesence",3,0,0,0,0,0
+"Quercus robur",6,0,0,0,0,0
+"Quercus rubra",0,3,0,0,0,0
+"Quercus velutina",0,1,0,0,0,0
+"Rhododendron ferrugineum",1,0,0,0,0,0
+"Salix herbacea",1,0,0,0,0,0
+"Sorbus aucuparia",1,0,0,0,0,0
+"Spirea japonica",1,0,0,0,0,0
+"Tsuga canadensis",0,2,0,0,0,0
