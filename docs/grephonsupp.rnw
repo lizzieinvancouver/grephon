@@ -37,7 +37,7 @@ source("~/Documents/git/projects/grephon/grephon/analyses/whathappened.R")
 
 \section*{Literature review methods}
 
-We conducted a review to find studies focused on relationships between growing season length and tree wood growth, though contrasting terminology made it challenging to identify papers through one search. After reviewing several recent papers \citep{dow2022warm,zohner2023effect}, we searched ISI Web of Science for ``growing season length" AND ``tree ring*" (ALL FIELDS) on 12 April 2023, which returned 33 citations. We next reviewed abstracts and discarded papers that did not mention the relationship between growing season length and growth. We further reviewed all citations within all papers for additionally relevant papers and included them in our review. In total we report on \Sexpr{papernum} papers after reviewing over 107 potentially relevant papers and discarding one paper \citep[][which used tree lines as a metric of both growth and growing season length]{bruening2017}. % These ISI methods in outline.tex % grephon_warmingexpts also has some ISI searches, but no date and is focused on warming experiments. 107 is the number in the articles folder. 
+We conducted a review to find studies focused on relationships between growing season length and tree wood growth, though contrasting terminology made it challenging to identify papers through one search. After reviewing several recent papers \citep{dow2022warm,zohner2023effect}, we searched ISI Web of Science for ``growing season length" AND ``tree ring*" (ALL FIELDS) on 12 April 2023, which returned 33 citations. We next reviewed abstracts and discarded papers that did not mention the relationship between growing season length and growth. We further reviewed all citations within all papers for additionally relevant papers and included them in our review. In total we report on \Sexpr{papernum} papers after reviewing over 107 potentially relevant papers and discarding one paper \citep[][which used tree rings as a metric of both growth and growing season length]{bruening2017}. % These ISI methods in outline.tex % grephon_warmingexpts also has some ISI searches, but no date and is focused on warming experiments. 107 is the number in the articles folder. 
 % on 31 Oct 2023, I tried ISI (Web of Science Core Collection) for SEARCH tree OR woody (All Fields) and growth (All Fields) and growing season length (All Fields), which returned 886 references. 
 % Average number of papers in ecological meta-analysis: 24 papers see https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3680
 
@@ -84,7 +84,10 @@ Aligning across the range and scale of growth metrics will be critical for an in
 
 \subsection*{Measuring growing season length}
 
-....
+Growing season length is defined in myriad ways due to varying definitions and metrics for the start of season and the end of season. For example, the end of season could be defined as budset, representing the end of vegetative phenology, or as xylogensis, representing the end of wood phenology. Additionally, several studies leveraged climate data as a proxy for start or end of season metrics, such as snowmelt for start of season or growing season GDDs. We therefore grouped all reported growing season length metrics into four separate categories: 1) `Climate and date' simulated by climate data, 2) `Vegetative phenology' through field observations or satellite derived measurements, 3) `Wood phenology' measured by dendrometers and xylogenesis, and 4) not measured, which includes all studies that only measured start or end of seasons but not both. 
+
+Numerous studies in the review reported multiple metrics for end of season (e.g., budset versus leaf coloring) and found differing relationships between growth and growing season length depending on the end of season definition. We reported all combinations of assessments per study in our review. 
+
 
 \subsection*{Standardized measurements} % ``Growth", measured how, exactly? ...
 
