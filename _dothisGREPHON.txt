@@ -10,7 +10,11 @@ January 2025 notes
 To do items (27 December 2024):
 (0) Save current version of ms so can do track changes if requested (DONE)
 (1) Draft figures and get feedback (done for now)
-(2) Overhaul ms and work on response letter (same time) -- STARTING NOW!
+(2) Overhaul ms and work on response letter (same time) -- first pass DONE
+(3) Full draft of response letter (NOW)
+(4) Get Ruben to fix Fig 1 for R3 ... 
+(*) Work on final figures
+(*) Comments from co-authors integrated 
 
 Consider:
 - Delete 'expanding disciplinary focus' in supp
