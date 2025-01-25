@@ -11,10 +11,10 @@ To do items (27 December 2024):
 (0) Save current version of ms so can do track changes if requested (DONE)
 (1) Draft figures and get feedback (done for now)
 (2) Overhaul ms and work on response letter (same time) -- first pass DONE
-(3) Full draft of response letter (NOW)
-(4) Get Ruben to fix Fig 1 for R3 ... 
-(*) Work on final figures
-(*) Comments from co-authors integrated 
+(4) Asked Ruben to fix Fig 1 for R3 (24 Jan -- DONE)
+(*) Work on final figures, then final text, then finalize the letters!
+(*) Comments from co-authors integrated (pretty close to done, check one more time)
+(*) Go through text and work on comments (%FIXFIX ... harmonebook etc.)
 
 Consider:
 - Delete 'expanding disciplinary focus' in supp
