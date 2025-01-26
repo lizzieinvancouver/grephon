@@ -1,4 +1,4 @@
-\begin{thebibliography}{91}
+\begin{thebibliography}{97}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Aitken \& Bemmels(2016)}]{aitken2016}
@@ -67,10 +67,16 @@ Chen, W., Black, T., Yang, P., Barr, A., Neumann, H., Nesic, Z., Blanken, P.,
   variability on the annual carbon sequestration by a boreal aspen forest.
   \emph{Global Change Biology} \textbf{5}, 41--53.
 
-\bibitem[{Chin \emph{et~al.}()Chin, Gessler, La{\'\i}n, {\O}sterlund, Schaub,
-  Th{\'e}roux-Rancourt, Voggeneder \& Lambers}]{chinmemory}
+\bibitem[{Chen \emph{et~al.}(2000)Chen, Chen, Liu \&
+  Cihlar}]{chen2000approaches}
+Chen, W., Chen, J., Liu, J. \& Cihlar, J. (2000) Approaches for reducing
+  uncertainties in regional forest carbon balance. \emph{Global Biogeochemical
+  Cycles} \textbf{14}, 827--838.
+
+\bibitem[{Chin \emph{et~al.}(2025)Chin, Gessler, La{\'\i}n, {\O}sterlund,
+  Schaub, Th{\'e}roux-Rancourt, Voggeneder \& Lambers}]{chinmemory}
 Chin, A.R., Gessler, A., La{\'\i}n, O., {\O}sterlund, I., Schaub, M.,
-  Th{\'e}roux-Rancourt, G., Voggeneder, K. \& Lambers, J.H.R. (????) The memory
+  Th{\'e}roux-Rancourt, G., Voggeneder, K. \& Lambers, J.H.R. (2025) The memory
   of past water abundance shapes trees 7 years later. \emph{American Journal of
   Botany} p. e16452.
 
@@ -113,6 +119,12 @@ Cosgrove, D.J. (2005) Growth of the plant cell wall. \emph{Nature reviews
 Cosgrove, D.J. (2023) Structure and growth of plant cell walls. \emph{Nature
   Reviews Molecular Cell Biology} pp. 1--19.
 
+\bibitem[{Coulthard \emph{et~al.}(2020)Coulthard, George \&
+  Meko}]{coulthard2020limits}
+Coulthard, B.L., George, S.S. \& Meko, D.M. (2020) The limits of
+  freely-available tree-ring chronologies. \emph{Quaternary Science Reviews}
+  \textbf{234}, 106264.
+
 \bibitem[{Cuapio-Hern{\'a}ndez \emph{et~al.}(2022)Cuapio-Hern{\'a}ndez,
   Reyes-Ortiz, De~La~Rosa, Pav{\'o}n, L{\'o}pez-Herrera, Villanueva-D{\'\i}az
   \& S{\'a}nchez-Gonz{\'a}lez}]{cuapio2022there}
@@ -146,6 +158,13 @@ de~Sauvage, J.C., Vitasse, Y., Meier, M., Delzon, S. \& Bigler, C. (2022)
   Temperature rather than individual growing period length determines radial
   growth of sessile oak in the pyrenees. \emph{Agricultural and Forest
   Meteorology} \textbf{317}, 108885.
+
+\bibitem[{Delpierre \emph{et~al.}(2017)Delpierre, Guillemot, Dufr{\^e}ne,
+  Cecchini \& Nicolas}]{delpierre2017tree}
+Delpierre, N., Guillemot, J., Dufr{\^e}ne, E., Cecchini, S. \& Nicolas, M.
+  (2017) Tree phenological ranks repeat from year to year and correlate with
+  growth in temperate deciduous forests. \emph{Agricultural and Forest
+  Meteorology} \textbf{234}, 1--10.
 
 \bibitem[{Diaz \emph{et~al.}(2016)Diaz, Kattge, Cornelissen, Wright, Lavorel,
   Dray, Reu, Kleyer, Wirth, Prentice, Garnier, Bonisch, Westoby, Poorter,
@@ -262,14 +281,17 @@ Hanson, P.J., Riggs, J.S., Nettles, W.R., Phillips, J.R., Krassovski, M.B.,
   deep-soil heating methods with an elevated co 2 atmosphere.
   \emph{Biogeosciences} \textbf{14}, 861--883.
 
-\bibitem[{Harmon(2024 (e-book))}]{harmonebook}
-Harmon, L. (2024 (e-book)) \emph{Phylogenetic Comparative Methods}. University
-  of Idaho.
-
 \bibitem[{Hilty \emph{et~al.}(2021)Hilty, Muller, Pantin \&
   Leuzinger}]{hilty2021plant}
 Hilty, J., Muller, B., Pantin, F. \& Leuzinger, S. (2021) Plant growth: The
   what, the how, and the why. \emph{New Phytologist} \textbf{232}, 25--41.
+
+\bibitem[{Howe \emph{et~al.}(2003)Howe, Aitken, Neale, Jermstad, Wheeler \&
+  Chen}]{howe2003genotype}
+Howe, G.T., Aitken, S.N., Neale, D.B., Jermstad, K.D., Wheeler, N.C. \& Chen,
+  T.H. (2003) From genotype to phenotype: unraveling the complexities of cold
+  adaptation in forest trees. \emph{Canadian Journal of Botany} \textbf{81},
+  1247--1266.
 
 \bibitem[{Ito \emph{et~al.}(2020)Ito, Romanou, Kiang, Faluvegi, Aleinov, Ruedy,
   Russell, Lerner, Kelley \& Lo}]{ito2020global}
@@ -299,6 +321,13 @@ Kikuzawa, K. (1982) Leaf survival and evolution in betulaceae. \emph{Annals of
 King, G.M., Gugerli, F., Fonti, P. \& Frank, D.C. (2013) Tree growth response
   along an elevational gradient: climate or genetics? \emph{Oecologia}
   \textbf{173}, 1587--1600.
+
+\bibitem[{Klesse \emph{et~al.}(2023)Klesse, Babst, Evans, Hurley, Pappas \&
+  Peters}]{klesse2023legacy}
+Klesse, S., Babst, F., Evans, M.E., Hurley, A., Pappas, C. \& Peters, R.L.
+  (2023) Legacy effects in radial tree growth are rarely significant after
+  accounting for biological memory. \emph{Journal of Ecology} \textbf{111},
+  1188--1202.
 
 \bibitem[{Kol{\'a}{\v{r}} \emph{et~al.}(2016)Kol{\'a}{\v{r}}, Giagli, Trnka,
   Bedn{\'a}{\v{r}}ov{\'a}, Vavr{\v{c}}{\'\i}k \&
@@ -495,6 +524,13 @@ Silvestro, R., Zeng, Q., Butt{\`o}, V., Sylvain, J.D., Drolet, G., Mencuccini,
   does not lead to higher carbon sequestration. \emph{Scientific reports}
   \textbf{13}, 4059.
 
+\bibitem[{Smith \emph{et~al.}(2014)Smith, W{\aa}rlind, Arneth, Hickler,
+  Leadley, Siltberg \& Zaehle}]{smith2014implications}
+Smith, B., W{\aa}rlind, D., Arneth, A., Hickler, T., Leadley, P., Siltberg, J.
+  \& Zaehle, S. (2014) Implications of incorporating n cycling and n
+  limitations on primary production in an individual-based dynamic vegetation
+  model. \emph{Biogeosciences} \textbf{11}, 2027--2054.
+
 \bibitem[{Smith \emph{et~al.}(2016)Smith, Wilcox, Sala, Phillips, Luo, Knapp \&
   Lemoine}]{smith2016drought}
 Smith, M.D., Wilcox, K., Sala, O., Phillips, R., Luo, Y., Knapp, A. \& Lemoine,
@@ -567,6 +603,14 @@ Zhou, Y., Yi, Y., Liu, H., Song, J., Jia, W. \& Zhang, S. (2022) Altitudinal
   trends in climate change result in radial growth variation of pinus
   yunnanensis at an arid-hot valley of southwest china.
   \emph{Dendrochronologia} \textbf{71}, 125914.
+
+\bibitem[{Zhu \emph{et~al.}(2021)Zhu, Liu, Arzac, Cooper, Jin, Yuan, Zhu,
+  Zhang, Li, Zhang \emph{et~al.}}]{zhu2021different}
+Zhu, L., Liu, S., Arzac, A., Cooper, D.J., Jin, Y., Yuan, D., Zhu, Y., Zhang,
+  X., Li, Z., Zhang, Y. \emph{et~al.} (2021) Different response of earlywood
+  vessel features of fraxinus mandshurica to rapid warming in warm-dry and
+  cold-wet areas. \emph{Agricultural and Forest Meteorology} \textbf{307},
+  108523.
 
 \bibitem[{Zohner \emph{et~al.}(2023)Zohner, Mirzagholi, Renner, Mo, Rebindaine,
   Bucher, Palou{\v{s}}, Vitasse, Fu, Stocker \emph{et~al.}}]{zohner2023effect}

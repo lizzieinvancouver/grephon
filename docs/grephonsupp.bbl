@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Baas \& Wheeler(2011)}]{baas2011wood}
@@ -47,11 +47,10 @@ Cavin, L. \& Jump, A.S. (2017) {Highest drought sensitivity and lowest
   \emph{Fagus sylvatica L.} not the equatorial range edge}. \emph{Global change
   biology} \textbf{23}, 362--379.
 
-\bibitem[{Chen \emph{et~al.}(2000{\natexlab{a}})Chen, Chen, Liu, Cihlar \&
-  Gray}]{chen2000}
-Chen, J., Chen, W., Liu, J., Cihlar, J. \& Gray, S. (2000{\natexlab{a}}) Annual
-  carbon balance of canada's forests during 1895-1996. \emph{Global
-  Biogeochemical Cycles} \textbf{14}, 839--849.
+\bibitem[{Chen \emph{et~al.}(2000)Chen, Chen, Liu, Cihlar \& Gray}]{chen2000}
+Chen, J., Chen, W., Liu, J., Cihlar, J. \& Gray, S. (2000) Annual carbon
+  balance of canada's forests during 1895-1996. \emph{Global Biogeochemical
+  Cycles} \textbf{14}, 839--849.
 
 \bibitem[{Chen \emph{et~al.}(1999)Chen, Black, Yang, Barr, Neumann, Nesic,
   Blanken, Novak, Eley, Ketler \emph{et~al.}}]{chen1999effects}
@@ -59,12 +58,6 @@ Chen, W., Black, T., Yang, P., Barr, A., Neumann, H., Nesic, Z., Blanken, P.,
   Novak, M., Eley, J., Ketler, R. \emph{et~al.} (1999) Effects of climatic
   variability on the annual carbon sequestration by a boreal aspen forest.
   \emph{Global Change Biology} \textbf{5}, 41--53.
-
-\bibitem[{Chen \emph{et~al.}(2000{\natexlab{b}})Chen, Chen, Liu \&
-  Cihlar}]{chen2000approaches}
-Chen, W., Chen, J., Liu, J. \& Cihlar, J. (2000{\natexlab{b}}) Approaches for
-  reducing uncertainties in regional forest carbon balance. \emph{Global
-  Biogeochemical Cycles} \textbf{14}, 827--838.
 
 \bibitem[{{\v{C}}ufar \emph{et~al.}(2015){\v{C}}ufar, De~Luis, Prislan,
   Gri{\v{c}}ar, {\v{C}}repin{\v{s}}ek, Merela \&
@@ -312,13 +305,6 @@ Simard, S., Giovannelli, A., Treydte, K., Traversi, M.L., King, G.M., Frank, D.
   \& Fonti, P. (2013) Intra-annual dynamics of non-structural carbohydrates in
   the cambium of mature conifer trees reflects radial growth demands.
   \emph{Tree Physiology} \textbf{33}, 913--923.
-
-\bibitem[{Smith \emph{et~al.}(2014)Smith, W{\aa}rlind, Arneth, Hickler,
-  Leadley, Siltberg \& Zaehle}]{smith2014implications}
-Smith, B., W{\aa}rlind, D., Arneth, A., Hickler, T., Leadley, P., Siltberg, J.
-  \& Zaehle, S. (2014) Implications of incorporating n cycling and n
-  limitations on primary production in an individual-based dynamic vegetation
-  model. \emph{Biogeosciences} \textbf{11}, 2027--2054.
 
 \bibitem[{Soolanayakanahally \emph{et~al.}(2013)Soolanayakanahally, Guy, Silim
   \& Song}]{soolanayakanahally2013timing}

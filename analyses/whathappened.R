@@ -257,6 +257,13 @@ boxbiomassg <- unname(boxmetrics["biomass height stems"])
 boxcaccg <- unname(boxmetrics["putative C assimilation"])
 boxrootshootg <- unname(boxmetrics["root:shoot ratio"])
 
+###looking at GSL a bit more for Box on measurements!
+gslbox <- as.data.frame(table(d$gslsimple))
+boxveg <- subset(gslbox, Var1=="vegtative phenology")
+boxwood <- subset(gslbox, Var1=="wood phenology")
+boxclim <- subset(gslbox, Var1=="climate and date")
+boxnotmeas <- subset(gslbox, Var1=="not measured") # zhu2021, zohner2023, dow2022
+
 
 
 ######################################
