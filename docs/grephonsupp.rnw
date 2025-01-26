@@ -153,6 +153,13 @@ print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,s
 \label{fig:sppfinds}
 \end{figure}
 
+\clearpage
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{..//figures/_figuresFromRuben/itrdb_vs_pep.png} %{..//figures/itrdbpep.png}
+\caption{Data overlap between the two major databases of growth (International Tree Ring Data Bank, ITRDB, orange) and plant phenology (Pan European Phenology Project, PEP725, blue). Both databases are compared in terms of their spatial distributions (a), temporal overlaps (b), coverage of environmental conditions in climate space (c) and taxonomical representation (d). Note that the number of tree ring chronologies in (b) are composed by multiple trees per site, typically 10-20. Climatic data from Worldclim database ver. 2.1 at 2.5\degree grid resolution. PEP725 records in d) show the largest records for any given phenophase per species.}
+\label{fig:itrbdpep}
+\end{figure}
+
 
 \clearpage
 \section*{References}

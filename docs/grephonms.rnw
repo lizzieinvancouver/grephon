@@ -225,14 +225,13 @@ For growing season length, the largest number of studies used vegetative (e.g., 
 \label{fig:heatmaps}
 \end{figure}
 
-
+\iffalse
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/phylo.pdf}
 \caption{We could switch Fig. \ref{fig:sppfinds} from Supp to main text and plot on phylogeny ... I just had time to plot the phylogeny quickly so did not layer on yes/no or find the missing species, like Fagus.}
 \label{fig:sppphylo}
 \end{figure}
-
-
+\fi 
 
 \clearpage
 \begin{figure}[h!]
@@ -252,15 +251,10 @@ For growing season length, the largest number of studies used vegetative (e.g., 
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/phylomodel/phylomodel.png}
 \caption{A trait-based phylogenetic model provides a way to naturally organize species (and, not shown, population) responses to predict how they respond to longer seasons. This approach estimates a universal model that is then shaped by species evolutionary history (shown at left via a phylogenetic tree) and traits to estimate how each species should uniquely respond. We argue this framework can organize and guide experiments that separate out changes in temperature from changes in growing season length (\degree C and GSL in see middle panels) to better integrate observational data and identify different responses by species that can help forecast (see `Building a new framework for growth $\times$ season length relationships' section for more details). In this example, we show how this approach can identify one clade (top) with a common response to longer seasons that also shares a suite of similar traits, and can identify a unique response in by one species in a clade where that species also has a unique trait compared to other species with the same common ancestor (lower clade). Estimating responses across species through a phylogenetic model has the additional benefit of robustly estimating responses given uneven sampling and missing data (the dashed red lines represent that the model will predict a response for each species, informed to various degrees---with the degree determined by the model---by the traits and phylogeny). }  % Similarly traits that co-vary with different responses can be more quickly identified by identifying the common ancestor to species with similar responses!
+% Caption could add that traits might include sensitivity to day length, chilling requirements, forcing temperature, deciduous nature, or bud formation. Observational data includes both phenology networks and remote sensing products. 
 \label{fig:phylomodel}
 \end{figure}
 
-\clearpage
-\begin{figure}[h!]
-\includegraphics[width=1\textwidth]{..//figures/_figuresFromRuben/itrdb_vs_pep.png} %{..//figures/itrdbpep.png}
-\caption{Data overlap between the two major databases of growth (International Tree Ring Data Bank, ITRDB, orange) and plant phenology (Pan European Phenology Project, PEP725, blue). Both databases are compared in terms of their spatial distributions (a), temporal overlaps (b), coverage of environmental conditions in climate space (c) and taxonomical representation (d). Note that the number of tree ring chronologies in (b) are composed by multiple trees per site, typically 10-20. Climatic data from Worldclim database ver. 2.1 at 2.5\degree grid resolution. PEP725 records in d) show the largest records for any given phenophase per species.}
-\label{fig:itrbdpep}
-\end{figure}
 
 
 \end{document}
