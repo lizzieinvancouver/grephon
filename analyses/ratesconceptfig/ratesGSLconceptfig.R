@@ -83,6 +83,7 @@ plot(we~testclim.avg, data=wangengclim, type="l", xlim=c(0,40),
 	ylim=c(0,1), ylab="Rate", xlab="Temperature")
 dev.off()
 
+
 ## Plot comparing SINGLE years
 pdf("figures/mora1981vs2021.pdf", width=8, height=6)
 par(mfrow=c(2,2))
@@ -197,6 +198,139 @@ lines(welongrecent[,2]~longrecmean$doy, col="orange")
 
 dev.off()
 
+## Plot with different curves for different species
 
+ABAMopt <- 21 # 18
+THPLopt <- 23 # 20
 
+# First, set up the Wang & Engel
+wangengABAM <- WangEngelfx(0, 35, ABAMopt, 2.85, testclim.avg) 
+wangengABAMclim <- data.frame(we=wangengABAM[,1], tempC=testclim.avg)
 
+wangengTHPL <- WangEngelfx(0, 35, THPLopt, 2.85, testclim.avg) 
+wangengwangengTHPLclim <- data.frame(we=wangengTHPL[,1], tempC=testclim.avg)
+
+wepara1980sABAM <- WangEngelfx(0, 35, ABAMopt, 2.85, para80smean$meantemp) 
+wepara1980sTHPL <- WangEngelfx(0, 35, THPLopt, 2.85, para80smean$meantemp) 
+welong1980sABAM <- WangEngelfx(0, 35, ABAMopt, 2.85, long80smean$meantemp) 
+welong1980sTHPL <- WangEngelfx(0, 35, THPLopt, 2.85, long80smean$meantemp) 
+wepararecentABAM <- WangEngelfx(0, 35, ABAMopt, 2.85, pararecmean$meantemp) 
+wepararecentTHPL <- WangEngelfx(0, 35, THPLopt, 2.85, pararecmean$meantemp) 
+welongrecentABAM <- WangEngelfx(0, 35, ABAMopt, 2.85, longrecmean$meantemp) 
+welongrecentTHPL <- WangEngelfx(0, 35, THPLopt, 2.85, longrecmean$meantemp) 
+
+library(ggplot2) # for alpha
+colz <- c("springgreen4", alpha("springgreen4", 0.45), # THPL
+	"steelblue4", alpha("steelblue4", 0.45)) # ABAM
+
+pdf("figures/wecurve2spp.pdf", width=8, height=6)
+par(mfrow=c(1,1))
+plot(we~testclim.avg, data=wangengwangengTHPLclim, type="l", xlim=c(0,31), 
+	ylim=c(0,1), ylab="Rate", xlab="Temperature", col=colz[1])
+lines(we~testclim.avg, data=wangengABAMclim, 
+	col=colz[3])
+dev.off()
+
+# Could add different season lengths for each sp. but seems like to TMI
+long80smean$daysaboveTHPL <- ifelse(long80smean[["meantemp"]]>5.99, 1.1, "NA")
+para80smean$daysaboveTHPL  <- ifelse(para80smean[["meantemp"]]>5.99, 1.05, "NA")
+long80smean$daysaboveABAM <- ifelse(long80smean[["meantemp"]]>2.99, 1, "NA")
+para80smean$daysaboveABAM  <- ifelse(para80smean[["meantemp"]]>2.99, 0.95, "NA")
+
+pdf("figures/moracomparedecades4panelwspp.pdf", width=8, height=7)
+par(mfrow=c(2,2))
+# Rates 1980s
+plot(wepara1980sTHPL[,1]~para80smean$doy, type="l", ylim=c(0,1), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[2])
+lines(welong1980sTHPL[,1]~long80smean$doy, , col=colz[1])
+lines(wepara1980sABAM[,1]~para80smean$doy, , col=colz[4])
+lines(welong1980sABAM[,1]~long80smean$doy, , col=colz[3])
+if(FALSE){ # make ylim up to 1.1 if adding this back in 
+points(long80smean$daysaboveTHPL~long80smean$doy, col=colz[1], cex=0.5)
+points(para80smean$daysaboveTHPL~para80smean$doy, col=colz[2], cex=0.5)
+points(long80smean$daysaboveABAM~long80smean$doy, col=colz[3], cex=0.5)
+points(para80smean$daysaboveABAM~para80smean$doy, col=colz[4], cex=0.5)
+}
+
+# Rates recent
+plot(wepararecentTHPL[,1]~pararecmean$doy, type="l", ylim=c(0,1.1), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[2])
+lines(welongrecentTHPL[,1]~longrecmean$doy, , col=colz[1])
+lines(wepararecentABAM[,1]~pararecmean$doy, , col=colz[4])
+lines(welongrecentABAM[,1]~longrecmean$doy, , col=colz[3])
+
+# Accumulated 1980s
+plot(wepara1980sTHPL[,2]~para80smean$doy, type="l", ylim=c(0,100), xlab="day of year", 
+	ylab="Accumulated imaginary growth", col=colz[2])
+lines(welong1980sTHPL[,2]~long80smean$doy, , col=colz[1])
+lines(wepara1980sABAM[,2]~para80smean$doy, , col=colz[4])
+lines(welong1980sABAM[,2]~long80smean$doy, , col=colz[3])
+
+# Accumulated recent
+plot(wepararecentTHPL[,2]~pararecmean$doy, type="l", ylim=c(0,100), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[2])
+lines(welongrecentTHPL[,2]~longrecmean$doy, , col=colz[1])
+lines(wepararecentABAM[,2]~pararecmean$doy, , col=colz[4])
+lines(welongrecentABAM[,2]~longrecmean$doy, , col=colz[3])
+dev.off()
+
+colz <- c("springgreen3","springgreen4",  # THPL
+	"steelblue3", "steelblue4") # ABAM
+
+pdf("figures/wecurve2sppaltcol.pdf", width=8, height=6)
+par(mfrow=c(1,1))
+plot(we~testclim.avg, data=wangengwangengTHPLclim, type="l", xlim=c(0,31), 
+	ylim=c(0,1), ylab="Rate", xlab="Temperature", col=colz[1])
+lines(we~testclim.avg, data=wangengABAMclim, 
+	col=colz[3])
+dev.off()
+
+## Comparing elevations with 1980s data
+pdf("figures/moracompareelevations1980s4panelwspp.pdf", width=8, height=7)
+par(mfrow=c(2,2))
+# Rates 1980s, low elevation
+plot(welong1980sTHPL[,1]~long80smean$doy, type="l", ylim=c(0,0.9), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[1])
+lines(welong1980sABAM[,1]~long80smean$doy, , col=colz[3])
+
+# Rates 1980s, high elevation
+plot(wepara1980sTHPL[,1]~para80smean$doy, type="l", ylim=c(0,0.9), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[2])
+lines(wepara1980sABAM[,1]~para80smean$doy, , col=colz[4])
+
+# Accumulated 1980s, low 
+plot(welong1980sTHPL[,2]~long80smean$doy, type="l", ylim=c(0,80), xlab="day of year", 
+	ylab="Accumulated imaginary growth", col=colz[1])
+lines(welong1980sABAM[,2]~long80smean$doy, , col=colz[3])
+
+# Accumulated 1980s, high 
+plot(wepara1980sTHPL[,2]~para80smean$doy, type="l", ylim=c(0,80), xlab="day of year", 
+	ylab="Accumulated imaginary growth", col=colz[1])
+lines(wepara1980sABAM[,2]~para80smean$doy, , col=colz[3])
+
+dev.off()
+
+## Comparing elevations with recent data
+pdf("figures/moracompareelevationsrec4panelwspp.pdf", width=8, height=7)
+par(mfrow=c(2,2))
+# Rates recent, low elevation
+plot(welongrecentTHPL[,1]~longrecmean$doy, type="l", ylim=c(0,1), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[1])
+lines(welongrecentABAM[,1]~longrecmean$doy, , col=colz[3])
+
+# Rates recent, high elevation
+plot(wepararecentTHPL[,1]~pararecmean$doy, type="l", ylim=c(0,1), xlab="day of year", 
+	ylab="Imaginary growth rate (temp curve figure)", col=colz[2])
+lines(wepararecentABAM[,1]~pararecmean$doy, , col=colz[4])
+
+# Accumulated recent, low 
+plot(welongrecentTHPL[,2]~longrecmean$doy, type="l", ylim=c(0,100), xlab="day of year", 
+	ylab="Accumulated imaginary growth", col=colz[1])
+lines(welongrecentABAM[,2]~longrecmean$doy, , col=colz[3])
+
+# Accumulated recent, high 
+plot(wepararecentTHPL[,2]~pararecmean$doy, type="l", ylim=c(0,100), xlab="day of year", 
+	ylab="Accumulated imaginary growth", col=colz[2])
+lines(wepararecentABAM[,2]~pararecmean$doy, , col=colz[4])
+
+dev.off()

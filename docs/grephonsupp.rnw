@@ -81,10 +81,12 @@ This should also include expected statistical tests, as we found a number of pap
 
 \subsection*{Measuring growth}
 
-Tree growth can be defined and measured in a variety of ways. It is often divided into primary (growth from the root and shoot tips that results in increased height and length) versus secondary (growth that increases the thickness or girth of stems and branches above ground, as well as below ground parts), or leaf production versus wood production.  
+Tree growth can be defined and measured in a variety of ways. It is often divided into primary (growth from the root and shoot tips that results in increased height and length) versus secondary (growth that increases the thickness or girth of stems and branches above ground, as well as below ground parts), or leaf production versus wood production. Across studies, we found the largest proportion used metrics related to secondary growth ($n=$\Sexpr{boxradg}), followed by primary growth ($n=$\Sexpr{boxcaccg}), with a smaller number using metrics that reflected combined primary and secondary growth ($n=$\Sexpr{boxbiomassg}), and root:shoot ratio ($n=$\Sexpr{boxrootshootg}, see also Box: Growth, growing season length and the challenge of standardized metrics in the main text).  Some studies used modeled estimates of photosynthesis (e.g., \citet{smith2014implications} relied on daily photosynthesis estimates derived from the LPJ-GUESS photosynthesis model, while \citet{chen2000approaches} estimated photosynthesis using the Integrated Terrestrial Ecosystem C-budget model, InTEC). 
+Others measured photosynthesis at the leaf level, through flux towers, or used greenness metrics (NDVI). 
+
 Growth measurements vary across disciplines and study types, posing further challenges to an interdisciplinary approach to understanding how growing season length relates to growth. 
 Greenhouse or growth chamber studies and provenance trials were more likely to measure height or biomass, whereas larger scale syntheses and remote-sensed studies are more likely to use metrics of carbon assimilation. 
-The inconsistency of current metrics across fields is not surprising, but may be confusing-- including photosynthesis as a metric of growth may seem unconventional for ecophysiologists, for example, who may interpret the process of photosynthesis as distinct from growth-- and also stalls progress toward a unified model across disciplines.
+The inconsistency of current metrics across fields is not surprising, but may be confusing---including photosynthesis as a metric of growth may seem unconventional for ecophysiologists, for example, who may interpret the process of photosynthesis as distinct from growth---and also stalls progress toward a unified model across disciplines.
 
 Aligning across the range and scale of growth metrics will be critical for an integrated understanding of growth-growing season length relationships and implications under continued climate change.  
 There is decoupling among some metrics of growth, as different types of growth (leaves, shoots, wood) have different phenologies within a season, and may vary across years, as well (e.g., with different lags, Fig. \ref{fig:gxelev}).
@@ -137,6 +139,11 @@ ref.table <- xtable(reftable, caption="\\textbf{Hypotheses and references for st
 print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,size="\\footnotesize",caption.placement="top",tabular.environment = "longtable", tabular="\\textwidth",include.colnames = TRUE, add.to.row = list(pos = list(0),command = "\\hline \\endhead "),sanitize.text.function = identity)
 @
 
+\begin{figure}[h!]
+\includegraphics[width=0.7\textwidth]{..//analyses/growthxelevationetc/figures/growthbyelevation_plot.pdf} % {..//figures/_allfiguresFromRuben/growthbyelevation.png}   
+\caption{Growth $\times$ elevation relationships from the literature with simple linear regression fits shown with 89\% confidence intervals. \citet{oleksyn1998growth} measured growth (mm) as diameter at breast height increments, while the other studies \citep{wang2017climatic,zhou2022altitudinal} measured growth (mm) as ring width. See Supplement for more methods details.} % and Fig. \ref{fig:growelevMORA} for an example from one site.
+\label{fig:gxelev}
+\end{figure}
 
 \begin{figure}[h!]
 %\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
