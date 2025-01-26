@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1500 1500">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16 {
+        fill: none;
+      }
+
+      .st17, .st1, .st2, .st18, .st19, .st3, .st4, .st20, .st5, .st6, .st7, .st21, .st8, .st22, .st23, .st24, .st9, .st10, .st25, .st26, .st27, .st11, .st12, .st13, .st28, .st29, .st30, .st14, .st15, .st16 {
+        stroke-linejoin: round;
+      }
+
+      .st17, .st22, .st25, .st26, .st28, .st29 {
+        stroke-width: 1.13px;
+      }
+
+      .st17, .st22, .st29 {
+        fill: #2b3990;
+        stroke: #2b3990;
+      }
+
+      .st31 {
+        fill: #662d91;
+      }
+
+      .st1 {
+        stroke-width: 4px;
+      }
+
+      .st1, .st7, .st23, .st24, .st26, .st28, .st14, .st15, .st16 {
+        stroke: #010101;
+      }
+
+      .st2 {
+        stroke: #faa31b;
+      }
+
+      .st2, .st18, .st19, .st20, .st7, .st24, .st14, .st15, .st16 {
+        stroke-linecap: round;
+      }
+
+      .st2, .st7 {
+        stroke-width: .75px;
+      }
+
+      .st32, .st33 {
+        fill: #010101;
+      }
+
+      .st18 {
+        stroke-width: 5.02px;
+      }
+
+      .st18, .st19, .st20 {
+        stroke: #fff;
+      }
+
+      .st18, .st19, .st20, .st24, .st30 {
+        fill: #fff;
+      }
+
+      .st19 {
+        stroke-width: 4.77px;
+      }
+
+      .st3, .st4 {
+        stroke: #333;
+      }
+
+      .st3, .st5, .st21, .st8, .st9, .st10, .st11, .st14 {
+        stroke-width: 2.83px;
+      }
+
+      .st4, .st12 {
+        stroke-width: 4.39px;
+      }
+
+      .st20 {
+        stroke-width: 4.37px;
+      }
+
+      .st5, .st6 {
+        stroke-dasharray: 2.83 2.83;
+      }
+
+      .st5, .st6, .st30 {
+        stroke: #be1e2d;
+      }
+
+      .st6 {
+        stroke-width: 2.83px;
+      }
+
+      .st21 {
+        fill: #676767;
+      }
+
+      .st21, .st10 {
+        stroke: #676767;
+      }
+
+      .st8 {
+        stroke: #4e4e4e;
+      }
+
+      .st22 {
+        opacity: .8;
+      }
+
+      .st23 {
+        fill: #a7a9ac;
+      }
+
+      .st23, .st27 {
+        stroke-width: 1.13px;
+      }
+
+      .st34 {
+        opacity: .4;
+      }
+
+      .st34, .st35, .st36 {
+        fill: #009db5;
+      }
+
+      .st35 {
+        opacity: .6;
+      }
+
+      .st37 {
+        fill: #b4b4b4;
+      }
+
+      .st38, .st33 {
+        isolation: isolate;
+      }
+
+      .st24, .st16 {
+        stroke-width: 4.25px;
+      }
+
+      .st39 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st9 {
+        stroke: #818181;
+      }
+
+      .st33 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 21.35px;
+        font-weight: 700;
+      }
+
+      .st25 {
+        fill: #006838;
+        stroke: #006838;
+      }
+
+      .st40 {
+        fill: #a97c50;
+      }
+
+      .st26 {
+        fill: #e6e7e8;
+      }
+
+      .st27 {
+        fill: #f7941d;
+        stroke: #f15a29;
+      }
+
+      .st11, .st12, .st13 {
+        stroke: #181818;
+      }
+
+      .st13 {
+        stroke-width: 4.41px;
+      }
+
+      .st28 {
+        fill: #4e4e4e;
+      }
+
+      .st41 {
+        fill: #989898;
+      }
+
+      .st29 {
+        opacity: .72;
+      }
+
+      .st30 {
+        stroke-dasharray: 1.13 3.4;
+        stroke-width: 2px;
+      }
+
+      .st15 {
+        stroke-width: 2.83px;
+      }
+
+      .st42 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x="1274.7" y="1135.66" width=".05" height="3"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="st0" x="785.45" y="1107.53" width="6" height=".56"/>
+    </clipPath>
+  </defs>
+  <rect id="rect259" class="st37" x="276.94" y="362.31" width="152.95" height="67.05"/>
+  <rect id="rect260" class="st37" x="477.89" y="362.31" width="207.19" height="67.05"/>
+  <rect id="rect261" class="st37" x="716.34" y="362.31" width="152.95" height="67.05"/>
+  <rect id="rect262" class="st37" x="993.97" y="362.31" width="152.95" height="67.05"/>
+  <rect id="rect258" class="st37" x="115.34" y="362.31" width="152.95" height="67.05"/>
+  <path id="path230" class="st16" d="M844.07,487.1h26.5"/>
+  <path id="path232" class="st16" d="M839.98,757.35h30.58"/>
+  <path id="path238" class="st16" d="M839.98,935.6h30.58"/>
+  <path id="path239" class="st16" d="M839.98,1025.6h30.58"/>
+  <rect id="rect247" class="st19" x="252.49" y="453.7" width="189.03" height="613.78"/>
+  <rect id="rect249" class="st20" x="592.55" y="441.84" width="108.92" height="625.66"/>
+  <rect id="rect250" class="st18" x="694.96" y="453.61" width="149.1" height="613.56"/>
+  <g class="st42">
+    <g id="g1118">
+      <path id="path1116" class="st7" d="M1273.19,1138.09l-.12.1-1.24-.29-.35-.38-.14-.71.21-.24.55-.14.8.13.51.51v.65l-.2.37Z"/>
+    </g>
+  </g>
+  <g class="st39">
+    <g id="g226636">
+      <path id="path226634" class="st2" d="M790.99,1111.06c0,2.88-4.32,2.88-4.32,0s4.32-2.88,4.32,0"/>
+    </g>
+  </g>
+  <g id="text77-0" class="st38">
+    <text class="st33" transform="translate(122.87 388.06)"><tspan x="0" y="0">Phylogenetic</tspan></text>
+    <text class="st33" transform="translate(129.97 414.75)"><tspan x="0" y="0">relatedness</tspan></text>
+  </g>
+  <g id="text77-6" class="st38">
+    <text class="st33" transform="translate(328.11 390)"><tspan x="0" y="0">Trait </tspan></text>
+    <text class="st33" transform="translate(288.39 416.69)"><tspan x="0" y="0">Composition</tspan></text>
+  </g>
+  <g id="text77-60" class="st38">
+    <text class="st33" transform="translate(509.04 388.06)"><tspan x="0" y="0">Experimental </tspan></text>
+    <text class="st33" transform="translate(555.91 414.75)"><tspan x="0" y="0">Data</tspan></text>
+  </g>
+  <g id="text77-3" class="st38">
+    <text class="st33" transform="translate(721.89 390)"><tspan x="0" y="0">Observational</tspan></text>
+    <text class="st33" transform="translate(769.95 416.69)"><tspan x="0" y="0">Data</tspan></text>
+  </g>
+  <g id="text77-77" class="st38">
+    <text class="st33" transform="translate(1016.72 387.78)"><tspan x="0" y="0">Forecasted</tspan></text>
+    <text class="st33" transform="translate(1020.28 414.47)"><tspan x="0" y="0">responses</tspan></text>
+  </g>
+  <g id="text77-77-7" class="st38">
+    <text class="st33" transform="translate(509.61 1095.85)"><tspan x="0" y="0">°C</tspan></text>
+  </g>
+  <path id="path64-6" class="st14" d="M479.31,527.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path6" class="st14" d="M599.31,527.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path7" class="st14" d="M748.81,527.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path10" class="st14" d="M479.31,617.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path12" class="st14" d="M599.31,617.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path13" class="st14" d="M748.81,617.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path14" class="st14" d="M479.31,707.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path15" class="st14" d="M599.31,707.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path16" class="st14" d="M748.81,707.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path18" class="st14" d="M479.31,797.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path19" class="st14" d="M599.31,797.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path20" class="st14" d="M748.81,797.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path21" class="st14" d="M479.31,887.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path22" class="st14" d="M599.31,887.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path24" class="st14" d="M748.81,887.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path25" class="st14" d="M479.31,977.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path26" class="st14" d="M599.31,977.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path28" class="st14" d="M748.81,977.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path30" class="st14" d="M479.31,1067.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path31" class="st14" d="M599.31,1067.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path33" class="st14" d="M748.81,1067.56h84.36v-84.36h-84.36v84.36Z"/>
+  <path id="path37" class="st8" d="M763.9,511.47l54.18-52.19"/>
+  <path id="path39" class="st21" d="M771.46,516.39l39.06-62.03"/>
+  <path id="path40" class="st11" d="M762.92,496.88l56.14-23.02"/>
+  <path id="path43" class="st8" d="M614.4,511.47l54.18-52.19"/>
+  <path id="path45" class="st21" d="M621.96,516.39l39.06-62.03"/>
+  <path id="path46" class="st11" d="M622.5,509.97l43.24-37.42"/>
+  <path id="path48" class="st11" d="M492.13,505.59c20.19-50.06,38.62-55.05,58.7-.82"/>
+  <path id="path55" class="st8" d="M763.9,601.47l54.18-52.19"/>
+  <path id="path61" class="st8" d="M763.9,601.47l54.18-52.19"/>
+  <path id="path76" class="st10" d="M771.46,696.39c9.77-32.16,21.85-54.87,39.06-62.03"/>
+  <path id="path76-3" class="st21" d="M766.96,606.39l39.06-62.03"/>
+  <path id="path118" class="st9" d="M762.92,856.88l48.8-35.34"/>
+  <path id="path120" class="st3" d="M767.54,869.16c1.22-38.52,31.26-44.05,48.13-46.21"/>
+  <path id="path139" class="st11" d="M762.92,946.88l56.14-9.54"/>
+  <path id="path158" class="st10" d="M621.96,696.39c12.95-20.68,10.99-42.61,39.06-62.03"/>
+  <path id="path160" class="st11" d="M622.5,689.97l43.24-37.42"/>
+  <path id="path161" class="st8" d="M620.52,854.91c7.06-10.64,9.92-25.4,41.02-30.59"/>
+  <path id="path163" class="st10" d="M613.42,861.98c6.03-22.56,19.34-36.01,40.37-39.82"/>
+  <path id="path164" class="st11" d="M625.69,858.64l36.76-24.95"/>
+  <path id="path166" class="st8" d="M618.71,936.51l27.09-2.26"/>
+  <path id="path172" class="st21" d="M620.76,1041.98l17.06-6.01"/>
+  <path id="path173" class="st11" d="M620.76,1025.38h45.91"/>
+  <path id="path175" class="st11" d="M492.13,595.59c33.92-46.92,56.58-50.93,58.7-.82"/>
+  <path id="path176" class="st11" d="M492.13,775.59c9.9-18.1,60.03-97.5,58.7-.82"/>
+  <path id="path178" class="st11" d="M492.13,865.59q9.9-14.33,29.36-34.11"/>
+  <path id="path179" class="st11" d="M492.13,955.59c11.21-7.53,33.21-16.93,58.7-.82"/>
+  <path id="path181" class="st8" d="M770.26,685.14c-.4-21.28,17.97-33.8,45.62-42"/>
+  <path id="path182" class="st8" d="M492.13,595.59c28.83-54.77,47.35-65.2,58.7-.82"/>
+  <path id="path184" class="st3" d="M496.9,776.37c7.13-14.28,14.19-26.81,25.7-29.09"/>
+  <g id="text188" class="st38">
+    <text class="st33" transform="translate(619.64 1095.85)"><tspan x="0" y="0">GSL</tspan></text>
+  </g>
+  <g id="text188-8" class="st38">
+    <text class="st33" transform="translate(470.5 767.64) rotate(-90)"><tspan x="0" y="0">Growth</tspan></text>
+  </g>
+  <g id="text189" class="st38">
+    <text class="st33" transform="translate(725.84 1095.85)"><tspan x="0" y="0">Environment</tspan></text>
+  </g>
+  <g id="text192" class="st38">
+    <text class="st33" transform="translate(729.5 767.64) rotate(-90)"><tspan x="0" y="0">Growth</tspan></text>
+  </g>
+  <rect id="rect194" class="st22" x="288.35" y="469.95" width="34.79" height="34.79"/>
+  <circle id="path194" class="st30" cx="353.46" cy="487.35" r="17.4"/>
+  <path id="path196" class="st30" d="M420.23,501.85h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+  <rect id="rect200" class="st29" x="288.35" y="559.95" width="34.79" height="34.79"/>
+  <rect id="rect201" class="st17" x="288.35" y="649.95" width="34.79" height="34.79"/>
+  <circle id="circle201" class="st35" cx="353.46" cy="667.35" r="17.4"/>
+  <path id="path202" class="st23" d="M420.23,681.85h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+  <rect id="rect203" class="st27" x="288.35" y="829.95" width="34.79" height="34.79"/>
+  <circle id="circle203" class="st40" cx="353.46" cy="847.35" r="17.4"/>
+  <path id="path205" class="st28" d="M420.23,861.85h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+  <circle id="circle205" class="st31" cx="353.46" cy="937.35" r="17.4"/>
+  <path id="path206" class="st26" d="M420.23,951.85h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+  <rect id="rect206" class="st25" x="288.35" y="1009.95" width="34.79" height="34.79"/>
+  <circle id="circle206" class="st31" cx="353.46" cy="1027.35" r="17.4"/>
+  <path id="path208" class="st26" d="M420.23,1041.85h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+  <path id="path250" class="st24" d="M870.57,487.1v268.28h0"/>
+  <path id="path252" class="st24" d="M873.09,935.6v90"/>
+  <g id="g265">
+    <g id="g190">
+      <path id="path187" class="st41" d="M1031.48,1000.64v51.82c28.55-22.37,50.86-15.26,71.45,0v-54.92c-20.69,19.1-44.2,21.89-71.45,3.09h0Z"/>
+      <path id="path31-2" class="st15" d="M1001.57,1091.36h131.28v-131.28h-131.28v131.28Z"/>
+      <path id="path173-2" class="st12" d="M1031.48,1025.72h71.45"/>
+    </g>
+    <g id="text194" class="st38">
+      <text class="st33" transform="translate(1007.35 1119.81)"><tspan x="0" y="0">°C increase</tspan></text>
+    </g>
+    <g id="text230" class="st38">
+      <text class="st33" transform="translate(998.68 958.13)"><tspan x="0" y="0">Unresponsive</tspan></text>
+    </g>
+    <g id="text262" class="st38">
+      <text class="st33" transform="translate(987.54 1046.61) rotate(-90)"><tspan x="0" y="0">Growth</tspan></text>
+    </g>
+  </g>
+  <g id="g266">
+    <g id="g191">
+      <g id="g192">
+        <path id="path188" class="st41" d="M1111.42,547.35v-20.5c-54.53-4.85-74.66,12.85-77.39,51.44l-.13,30.3c16.39-.23,13.36-.61,16.39-.23,8.8,1.11,11.51-56.23,61.13-61.01h0Z"/>
+        <path id="path7-5" class="st15" d="M1007.08,637.21h131.28v-131.28h-131.28v131.28Z"/>
+        <path id="path42-2" class="st4" d="M1036.23,608.59c.29-9.05,1.6-16.93,3.7-23.8,11.85-38.63,48.91-45.26,71.2-48.12"/>
+      </g>
+    </g>
+    <g id="text193" class="st38">
+      <text class="st33" transform="translate(993.05 610.13) rotate(-90)"><tspan x="0" y="0">Growth</tspan></text>
+    </g>
+    <g id="text229" class="st38">
+      <text class="st33" transform="translate(1022 503.65)"><tspan x="0" y="0">Saturating</tspan></text>
+    </g>
+    <g id="text264" class="st38">
+      <text class="st33" transform="translate(1012.87 660.84)"><tspan x="0" y="0">°C increase</tspan></text>
+    </g>
+  </g>
+  <g id="g267">
+    <g id="g189">
+      <path id="path185" class="st41" d="M1029.02,828.37v54.52c19.34-25.38,38.09-51.8,70.18-54.52v-63.62c-20.9,23.24-28.35,57.4-70.18,63.62Z"/>
+      <path id="path15-0" class="st14" d="M999.1,888.28h131.28v-131.28h-131.28v131.28Z"/>
+      <path id="path160-7" class="st13" d="M1028.96,858.99l70.29-61.23"/>
+    </g>
+    <g id="text194-3" class="st38">
+      <text class="st33" transform="translate(1035.97 754.39)"><tspan x="0" y="0">Linear</tspan></text>
+    </g>
+    <g id="text263" class="st38">
+      <text class="st33" transform="translate(985.08 857.87) rotate(-90)"><tspan x="0" y="0">Growth</tspan></text>
+    </g>
+    <g id="text265" class="st38">
+      <text class="st33" transform="translate(1004.89 908.58)"><tspan x="0" y="0">°C increase</tspan></text>
+    </g>
+  </g>
+  <circle id="circle1" class="st36" cx="353.46" cy="577.35" r="17.4"/>
+  <rect id="rect1" class="st17" x="288.35" y="739.95" width="34.79" height="34.79"/>
+  <circle id="circle2" class="st34" cx="353.46" cy="757.35" r="17.4"/>
+  <rect id="rect2" class="st25" x="288.35" y="919.95" width="34.79" height="34.79"/>
+  <path id="path3" class="st6" d="M614.4,601.47c11.72-48.13,31.87-48.31,54.18-52.19"/>
+  <path id="path4" class="st5" d="M492.13,685.59c20.19-50.06,38.62-53.55,58.7.68"/>
+  <path id="path8" class="st5" d="M493.63,1041.09c11.21-7.53,33.21-16.93,58.7-.82"/>
+  <path id="path9" class="st5" d="M765.73,1030.8l51.93.6"/>
+  <path id="path27" class="st5" d="M622.5,779.97c7.48-36.53,25.27-39.05,41.75-45.87"/>
+  <path id="path34" class="st5" d="M770.26,775.14c3.19-22.78,18.06-37.03,45.62-42"/>
+  <path id="path209" class="st16" d="M110.44,762.51h24.18l105.94-278.87h11.93"/>
+  <path id="path212" class="st16" d="M252.49,571.92h-12.6"/>
+  <path id="path214" class="st16" d="M252.49,661.92h-12.6"/>
+  <path id="path215" class="st16" d="M252.49,751.92h-12.6"/>
+  <path id="path217" class="st16" d="M252.49,841.92h-12.6"/>
+  <path id="path218" class="st16" d="M252.49,931.92h-12.6"/>
+  <path id="path220" class="st16" d="M252.49,1021.92h-12.6"/>
+  <path id="path221" class="st16" d="M134.62,762.51l105.28,259.41"/>
+  <path id="path223" class="st16" d="M239.9,931.92l-22.83,33.76"/>
+  <path id="path224" class="st16" d="M239.9,841.92l-45.65,67.51"/>
+  <path id="path226" class="st16" d="M239.9,751.92l-56.93-110.84"/>
+  <path id="path227" class="st16" d="M239.9,661.92l-41.85-61.89"/>
+  <path id="path229" class="st16" d="M239.9,571.92l-19.57-28.95"/>
+  <g>
+    <line class="st1" x1="868.62" y1="591.85" x2="930.86" y2="591.85"/>
+    <polygon class="st32" points="952.04 591.85 922.19 604.05 929.27 591.85 922.19 579.66 952.04 591.85"/>
+  </g>
+  <g>
+    <line class="st1" x1="868.62" y1="839.21" x2="930.86" y2="839.21"/>
+    <polygon class="st32" points="952.04 839.21 922.19 851.41 929.27 839.21 922.19 827.02 952.04 839.21"/>
+  </g>
+  <g>
+    <line class="st1" x1="874.09" y1="983.2" x2="936.33" y2="983.2"/>
+    <polygon class="st32" points="957.51 983.2 927.66 995.39 934.75 983.2 927.66 971 957.51 983.2"/>
+  </g>
+  <path id="path2391" data-name="path239" class="st16" d="M846.5,839.61h24.07"/>
+  <path id="path1961" data-name="path196" class="st30" d="M422.04,589.6h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+  <path id="path1962" data-name="path196" class="st30" d="M422.04,769.94h-41.63l10.41-18.03,10.41-18.03,10.41,18.03,10.41,18.03Z"/>
+</svg>
