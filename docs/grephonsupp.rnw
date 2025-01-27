@@ -6,10 +6,11 @@
 \usepackage{natbib}
 \usepackage{amsmath}
 \usepackage{gensymb}
+\usepackage[utf8]{inputenc}
 \usepackage{parskip}
 \usepackage{xcolor}
 \usepackage{xr-hyper}
-\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 \externaldocument{grephonms}
 \usepackage{longtable}
 
@@ -45,7 +46,7 @@ Once a paper was included, we aimed to record all studies from it related to sea
 Papers often reported dozens or more statistical tests from different analyses of data or different types or subsets of data, thus we recorded a unique observation (that is, one recorded row of data for our literature review) within each study when papers reported: (1) distinctly different datasets (e.g., a global analyses of observations and a short-term experiment); (2) multiple distinctly different measures of growth (e.g., tree ring width and flux tower) and/or growing season length (e.g., they reported both end of season as budset and end of wood growth through xylogenesis); (3) distinctly different results for growth $\times$  growing season length depending on metric (e.g., using budset for growing season length they find a growth $\times$ growing season length relationship, but using leaf coloring they do not). % Numerous studies in the review reported multiple metrics of growth and for end of season (e.g., budset versus leaf coloring) and found differing relationships between growth and growing season length depending on the  definition; in these cases we reported all combinations per study. 
 
 % Methods below adapted from https://github.com/lizzieinvancouver/grephon/issues/29
-We returned to the papers to also assess them for which hypotheses they addressed. For this, we reviewed papers for stated hypotheses and/or analogous research questions that were specifically addressed in the results (e.g. hypothesis testing).  After this we grouped each hypothesis to a broader main hypothesis (or hypothesis cluster) displayed in Fig. 1, save for hypotheses including $CO_2$ limitation, which is not shown but mentioned in three papers (see Table \ref{tab:ref}). We extracted all hypotheses/questions from each paper, resulting in many papers addressing multiple hypotheses (\Sexpr{nrow(morethanonehyp)} of \Sexpr{papernum} papers). 
+We returned to the papers to also assess them for which hypotheses they addressed. For this, we reviewed papers for stated hypotheses and/or analogous research questions that were specifically addressed in the results (e.g. hypothesis testing).  After this we grouped each hypothesis to a broader main hypothesis (or hypothesis cluster) displayed in \ref{fig:hypotheses}, save for hypotheses including $CO_2$ limitation, which is not shown but mentioned in three papers (see Table \ref{tab:ref}). We extracted all hypotheses/questions from each paper, resulting in many papers addressing multiple hypotheses (\Sexpr{nrow(morethanonehyp)} of \Sexpr{papernum} papers). 
 
 \subsection*{Trends with year}
 % See whathappened.R and look for # Trends across years analysis
@@ -71,11 +72,11 @@ Thus, we show data from: \citet{oleksyn1998growth}, which measured 54 population
 
 \section*{The challenge of metrics: Measuring growth and growing season length}
 
-Understanding the diverse drivers and testing underlying hypotheses (Fig. 1) for growth $\times$ season length relationships requires a common language. We found \Sexpr{nstartmetrics} different metrics of start of season, \Sexpr{nendmetrics} metrics of end of season (\Sexpr{ngslmetrics} metrics of growing season length), and \Sexpr{ngrowthmetrics} different metrics of growth across \Sexpr{nrow(d)} studies---highlighting just part of the problem (see also \emph{Box: Growth, season length and the challenge of standardized metrics} in the main text). Definitions and metrics for external and internal drivers were myriad, %CJC 15Dec - I think we could again add numbers for external and internal divers, clarifying these were after systematically assigning studies into groups
+Understanding the diverse drivers and testing underlying hypotheses (Fig. \ref{fig:hypotheses}) for growth $\times$ season length relationships requires a common language. We found \Sexpr{nstartmetrics} different metrics of start of season, \Sexpr{nendmetrics} metrics of end of season (\Sexpr{ngslmetrics} metrics of growing season length), and \Sexpr{ngrowthmetrics} different metrics of growth across \Sexpr{nrow(d)} studies---highlighting just part of the problem (see also \emph{Box: Growth, season length and the challenge of standardized metrics} in the main text). Definitions and metrics for external and internal drivers were myriad, %CJC 15Dec - I think we could again add numbers for external and internal divers, clarifying these were after systematically assigning studies into groups
 with papers reporting dozens of tests of different aspects of climate over different temporal windows. Although this is understandable given the differing goals of these papers, it also slows progress. 
 
 A common framework for explanatory and response variables would accelerate research by easing communication between fields and providing a path to comparable quantitative estimates. 
-This should also include expected statistical tests, as we found a number of papers failed to directly test for growth $\times$ growing season length relationships (Fig. 2), often instead testing only certain hypothesized indirect relationships \citep[e.g. spring temperature $\times$ growth in][]{dow2022warm}. % A first fundamental need for any framework is comparable quantitative estimates---which we currently lack. 
+This should also include expected statistical tests, as we found a number of papers failed to directly test for growth $\times$ growing season length relationships (Fig. \ref{fig:heatmaps}), often instead testing only certain hypothesized indirect relationships \citep[e.g. spring temperature $\times$ growth in][]{dow2022warm}. % A first fundamental need for any framework is comparable quantitative estimates---which we currently lack. 
 
 \subsection*{Measuring growth}
 

@@ -31,9 +31,6 @@ MUST do before submitting:
 
 MAYBE do before submitting:
 (*) Make phylo version of species figure and add GSL and growth metrics
-(*) Fix whatever is wrong in supp that figures refs are giving WHOLE caption:
-Fig. 1 -> \ref{fig:hypotheses}
-Fig. 2 -> \ref{fig:heatmaps} 
 
 
 <><><><><>
