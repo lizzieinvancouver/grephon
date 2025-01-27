@@ -28,14 +28,14 @@ Co-author feedback:
 
 
 MUST do before submitting:
-(*) Update Author contributions
-(*) Notes in .rnw that I need to deal with ...
-	- (NeedCITES)
-	- %CHECKREFSandINFO (lag GSL x growth effects in deciduous vs evergreen)
-	- SuggCites
-	- AddCITES for PCMs (Webb is all I have now)
+(*) Update Author contributions (done as of 26 Jan 2025)
+(*) Make sure we adjust Fig 1 for R3 some. 
 
-New draft went to co-authors on 12 January; send edits by 20 January so I can resubmit before end of month. (Alternative: edits out by 20 January, feedback by 27 January; and I resubmit by first week of February). 
+MAYBE do before submitting:
+(*) Make phylo version of species figure and add GSL and growth metrics
+(*) Fix whatever is wrong in supp that figures refs are giving WHOLE caption:
+Fig. 1 -> \ref{fig:hypotheses}
+Fig. 2 -> \ref{fig:heatmaps} 
 
 
 <><><><><>
