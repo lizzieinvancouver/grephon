@@ -49,12 +49,40 @@ phy.genera.uniq<-sort(unique(phy.genera))
 ## how many grephon species are in the phylogeny?
 phenosp.genus.inphylo <- genus.list[which(genus.list %in% phy.genera.uniq)]
 
+# All genera are in tree
+length(phenosp.genus.inphylo)
+length(unique(spp$genus))
+
 ## first prune the phylogeny to include only these genera
 phy.genera.grephon <- drop.tip(phy.plants,
                             which(!phy.genera %in% phenosp.genus.inphylo)) 
 
 rm(phy.plants)
 View(sort(phy.genera.grephon$tip.label))
+
+# What's not going to merge?
+sps.list[which(!sps.list %in% phy.genera.grephon$tip.label)]
+phy.genera.grephon$tip.label[grep("sylvatic", phy.genera.grephon$tip.label)]
+
+sps.list.tomerge <- sps.list
+sps.list.tomerge[which(sps.list.tomerge=="Fagus_sylvatica")] <- "Fagus_sylvatica_subsp._orientalis"
+sps.list.tomerge[which(sps.list.tomerge=="Abies_balsamia")] <- "Abies_balsamea"
+sps.list.tomerge[which(sps.list.tomerge=="Acer_rubra")] <- "Acer_rubrum"
+sps.list.tomerge[which(sps.list.tomerge=="Quercus_pubesence")] <- "Quercus_pubescens_subsp._pubescens"
+sps.list.tomerge[which(sps.list.tomerge=="Quercus_petraea")] <- "Quercus_petraea_subsp._petraea" # 3 options; should check paper! 
+sps.list.tomerge[which(sps.list.tomerge=="Quercus_petreaea")] <- "Quercus_petraea_subsp._petraea" # 3 options; should check paper! 
+sps.list.tomerge[which(sps.list.tomerge=="Quercus_robur")] <- "Quercus_robur_subsp._robur"
+sps.list.tomerge[which(sps.list.tomerge=="Acer_pennsylvanicum")] <- "Acer_pensylvanicum" 
+sps.list.tomerge[which(sps.list.tomerge=="Betula_allegheniensis")] <- "Betula_alleghaniensis"
+sps.list.tomerge[which(sps.list.tomerge=="Fagus_grandifolia")] <- "Fagus_grandifolia_var._caroliniana"
+sps.list.tomerge[which(sps.list.tomerge=="Juniperus_przewlaskii")] <- "Juniperus_przewalskii"
+sps.list.tomerge[which(sps.list.tomerge=="Nothofagus_pomilio")] <- "Nothofagus_pumilio" # fix!
+sps.list.tomerge[which(sps.list.tomerge=="Spirea_japonica")] <- "Spirea_montana" # close enough...
+sps.list.tomerge[which(sps.list.tomerge=="xxx")] <- "xxx"
+
+sps.list.tomerge[which(!sps.list.tomerge %in% phy.genera.grephon$tip.label)] 
+# of these remaining, the following genera are unique (so we could splice in a sp.)
+# "Carya_" Liriodendron_" "Magnolia_" "Prunus_"
 
 # now prune just the species I want
 phy.plants.grephon <-  drop.tip(phy.genera.grephon,
