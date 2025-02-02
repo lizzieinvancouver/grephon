@@ -169,5 +169,8 @@ barplot(countsppcont,beside=TRUE,
 
 dev.off()
 
+countsppfinds <- table(spd1_long$species_name,spd1_long$authorsthink_e)
+
+write.csv(countsppfinds, "output/countsppfinds.csv", row.names=TRUE)
 write.csv(countsppcont, "output/countsppcont.csv", row.names=TRUE)
 

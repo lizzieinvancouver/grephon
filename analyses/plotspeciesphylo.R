@@ -25,12 +25,39 @@ library(geiger)
 # library(phangorn)
 
 
-colnames <- c("latbi", "Europe", "NorthAm", "Asia", "Australia", "SouthAmerica", "NorthAmAsia")
-spp <- read.csv("output/countsppcont.csv")
-names(spp) <- colnames
+colnames <- c("latbi", "no", "not.tested", "yes")
+sppfull <- read.csv("output/countsppfinds.csv")
+names(sppfull) <- colnames
 
-temp <- str_split_fixed(spp$latbi, " ", 2)
-spp$phylo.name <- paste(temp[,1], temp[,2], sep="_")
+temp <- str_split_fixed(sppfull$latbi, " ", 2)
+sppfull$phylo.name <- paste(temp[,1], temp[,2], sep="_")
+
+# Fix things that won't merge with tree 
+sppfull$phylo.name[which(sppfull$phylo.name=="Fagus_sylvatica")] <- "Fagus_sylvatica_subsp._orientalis"
+sppfull$phylo.name[which(sppfull$phylo.name=="Abies_balsamia")] <- "Abies_balsamea"
+sppfull$phylo.name[which(sppfull$phylo.name=="Acer_rubra")] <- "Acer_rubrum"
+sppfull$phylo.name[which(sppfull$phylo.name=="Quercus_pubesence")] <- "Quercus_pubescens_subsp._pubescens"
+sppfull$phylo.name[which(sppfull$phylo.name=="Quercus_petraea")] <- "Quercus_petraea_subsp._petraea" # 3 options; should check paper! 
+sppfull$phylo.name[which(sppfull$phylo.name=="Quercus_petreaea")] <- "Quercus_petraea_subsp._petraea" # 3 options; should check paper! 
+sppfull$phylo.name[which(sppfull$phylo.name=="Quercus_robur")] <- "Quercus_robur_subsp._robur"
+sppfull$phylo.name[which(sppfull$phylo.name=="Acer_pennsylvanicum")] <- "Acer_pensylvanicum" 
+sppfull$phylo.name[which(sppfull$phylo.name=="Betula_allegheniensis")] <- "Betula_alleghaniensis"
+sppfull$phylo.name[which(sppfull$phylo.name=="Fagus_grandifolia")] <- "Fagus_grandifolia_var._caroliniana"
+sppfull$phylo.name[which(sppfull$phylo.name=="Juniperus_przewlaskii")] <- "Juniperus_przewalskii"
+sppfull$phylo.name[which(sppfull$phylo.name=="Nothofagus_pomilio")] <- "Nothofagus_pumilio" # fix!
+sppfull$phylo.name[which(sppfull$phylo.name=="Spirea_japonica")] <- "Spirea_montana" # close enough...
+
+# But now we need to re-summarize because some of these corrected names already existed!
+library(plyr)
+spp <-
+      ddply(sppfull, c("phylo.name"), summarise,
+      no = sum(no),
+      not.tested = sum(not.tested),
+      yes = sum(yes))
+
+
+# Okay, back to where I was ...
+temp <- str_split_fixed(spp$phylo.name, "_", 2)
 spp$genus <- temp[,1]
 spp$species <- temp[,2]
 
@@ -60,29 +87,17 @@ phy.genera.grephon <- drop.tip(phy.plants,
 rm(phy.plants)
 View(sort(phy.genera.grephon$tip.label))
 
-# What's not going to merge?
+# What's not going to merge? I fix most of these ABOVE ... but here's how I did it.
 sps.list[which(!sps.list %in% phy.genera.grephon$tip.label)]
 phy.genera.grephon$tip.label[grep("sylvatic", phy.genera.grephon$tip.label)]
-
-sps.list.tomerge <- sps.list
-sps.list.tomerge[which(sps.list.tomerge=="Fagus_sylvatica")] <- "Fagus_sylvatica_subsp._orientalis"
-sps.list.tomerge[which(sps.list.tomerge=="Abies_balsamia")] <- "Abies_balsamea"
-sps.list.tomerge[which(sps.list.tomerge=="Acer_rubra")] <- "Acer_rubrum"
-sps.list.tomerge[which(sps.list.tomerge=="Quercus_pubesence")] <- "Quercus_pubescens_subsp._pubescens"
-sps.list.tomerge[which(sps.list.tomerge=="Quercus_petraea")] <- "Quercus_petraea_subsp._petraea" # 3 options; should check paper! 
-sps.list.tomerge[which(sps.list.tomerge=="Quercus_petreaea")] <- "Quercus_petraea_subsp._petraea" # 3 options; should check paper! 
-sps.list.tomerge[which(sps.list.tomerge=="Quercus_robur")] <- "Quercus_robur_subsp._robur"
-sps.list.tomerge[which(sps.list.tomerge=="Acer_pennsylvanicum")] <- "Acer_pensylvanicum" 
-sps.list.tomerge[which(sps.list.tomerge=="Betula_allegheniensis")] <- "Betula_alleghaniensis"
-sps.list.tomerge[which(sps.list.tomerge=="Fagus_grandifolia")] <- "Fagus_grandifolia_var._caroliniana"
-sps.list.tomerge[which(sps.list.tomerge=="Juniperus_przewlaskii")] <- "Juniperus_przewalskii"
-sps.list.tomerge[which(sps.list.tomerge=="Nothofagus_pomilio")] <- "Nothofagus_pumilio" # fix!
-sps.list.tomerge[which(sps.list.tomerge=="Spirea_japonica")] <- "Spirea_montana" # close enough...
-sps.list.tomerge[which(sps.list.tomerge=="xxx")] <- "xxx"
-
-sps.list.tomerge[which(!sps.list.tomerge %in% phy.genera.grephon$tip.label)] 
 # of these remaining, the following genera are unique (so we could splice in a sp.)
 # "Carya_" Liriodendron_" "Magnolia_" "Prunus_"
+
+sps.list.tomerge <- sps.list
+spp.inphylo  <- spp[which(spp$phylo.name %in% phy.genera.grephon$tip.label),]
+
+sps.list.tomerge[which(!sps.list.tomerge %in% phy.genera.grephon$tip.label)] 
+
 
 # now prune just the species I want
 phy.plants.grephon <-  drop.tip(phy.genera.grephon,
@@ -91,6 +106,18 @@ phy.plants.grephon <-  drop.tip(phy.genera.grephon,
 # Some QUICK plots ... # figures/phylo.pdf
 plot(phy.plants.grephon,cex=1.25)
 plot(phy.plants.grephon,cex=1.25, type="f")
+
+# Now try to make stacked barplot
+# Trying to crib off http://blog.phytools.org/2017/01/plottreebarplot-with-more-user-options.html
+cols <- c("darkblue","salmon","lightgray")
+tree <- phy.plants.grephon
+Z <- spp.inphylo[,2:4]
+row.names(Z) <- spp.inphylo$phylo.name
+
+pdf("..//figures/speciesnumsphylo/phylosppcounts.pdf", width=12, height=8)
+plotTree.barplot(tree, Z[,1:3], args.barplot=list(col=cols, 
+    legend.text=TRUE))
+dev.off()
 
 
 # save phylogeny

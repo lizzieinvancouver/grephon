@@ -1,6 +1,13 @@
 Started 4 July 2023
 Happy Independence Day America
 
+<><><><><><><><><><><><>
+2 February 2025 notes
+
+On next draft ...
+(*) Add funding info from Ruben and my own funding info!
+Me: ETH Rubel Foundation, Killam Grant, CRC in Temporal Ecology and NSERC Discovery Grant
+R. Manzanedo was supported with funding from the Swiss State Secretariat for education, Research and Innovation (SERI) by a SERI-funded ERC Starting Grant #MB23.00011
 
 
 <><><><><><><><><><><><>
@@ -11,27 +18,12 @@ To do items (27 December 2024):
 (0) Save current version of ms so can do track changes if requested (DONE)
 (1) Draft figures and get feedback (done for now)
 (2) Overhaul ms and work on response letter (same time) -- first pass DONE
-(4) Asked Ruben to fix Fig 1 for R3 (24 Jan -- DONE)
-(*) Work on letter part 1
-(*) Comments from co-authors integrated (pretty close to done, check one more time)
-(*) Ask everyone about funding they want mentioned. 
+(3) Comments from co-authors integrated (pretty close to done)
+(4) Ask everyone about funding they want mentioned; done -- no one replied so need to ADD mine and RUBEN's on next draft
 
 Consider:
 - Delete 'expanding disciplinary focus' in supp
 - Sneak masting into elevation section?
-
-Co-author feedback:
-- This sentence: These differences would suggest season length by growth relationships may bemore apparent in evergreen species, and more apparent via lagged effects in deciduous species(NeedCITES), though to date this has not been consistently reported.
-- The external and internal factors affecting growth are inherently interconnected (suggCITES)
-- Address R3's concerns about methods (in the supp). 
-
-MUST do before submitting:
-(*) Update Author contributions (done as of 26 Jan 2025)
-(*) Make sure we adjust Fig 1 for R3 some. 
-
-MAYBE do before submitting:
-(*) Make phylo version of species figure and add GSL and growth metrics
-
 
 <><><><><>
 PLAN for figures and overhaul of section 3
