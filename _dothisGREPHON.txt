@@ -12,7 +12,7 @@ Schedule:
 Submit first week of June
 
 
-On next draft ...
+Stuff I need to do
 (*) Abstract needs to be shorter
 (*) Get refs in # format
 (1) Deal with %ADDCITES! FIXME
@@ -24,13 +24,65 @@ On next draft ...
 \R{forbigKNUTS2}
 
 
+Stuff that I have done: 
+- Edited the 'Building a framework' section to have a new question for the phylogeny part
+- Edited the Box to have more of the comprehensive framework and mechanism stuff that I think R2 wants.
+- Made some small edits throughout to add citations and mentions of comprehensive framework and mechanism stuff.
+- Edited the abstract to be closer (but not yet) 120 words and more of the 'progress article' feel they want. 
+- Started editing all headers to be 60 characters or less. 
 
 HEADERS: 
 Evidence that longer seasons increase plant growth, or not
 Controllers on growth $\times$ season length relationships
 <><><><><><><><><><><><>
+Grephon update: Your help needed by MONDAY, 19 May
 
-1) Do you have funding to report? I will try to add it this round, but they may refuse as I have found journals have gotten pickier on adding this later than the initial submission. 
+Dear co-authors,
+
+Thanks for your patience while I tracked down Tegan for some additional feedback. I met with her last week and the basic feedback was (in short):
+(a) They seem interested in publishing it but we need to make it sound more like a progress article, and tighten it up in some specific ways and ... 
+(b) They need another reviewer to sign on so we need to try to make R2 happy (any they will try R3 again and if all that fails we get a new reviewer -- ugh), but they recognize we cannot list all mechanisms or give a comprehensive mechanistic framework, but we need to add some citations about this and nod to it more (somehow). 
+
+To address all this, I have started working on edits and am now looking for help from you. I have given most people a task that I hope you can work on to complete by end of *next Monday (19 May)*? I know that is short but I have frittered away some time tracking down Tegan (and I have a busy summer so it's either get it in by first week or June, or it will be mid-July and I don't think NCC sounded good on that). 
+
+My proposed timeline is thus:
+19 May (Monday) -- you all email me back 
+23 May -- I send you a new draft with letter
+29 May -- You send any edits back to me. 
+I submit first week of June.
+
+Also, I have tried to assign tasks that I hope will take maybe an hour (though I realize that depends on your style and some may take longer). 
+
+Here's what I need help on (in general we need to keep the text short, so if I ask you to add, add the MINIMAL and suggest cuts if you see them):
+
+* Cat: I have tried to add something about extreme events and/or interactions of climatic factors to the last paragraph of the external drivers section per a request of Tegan, can you see what you think and add any citations or more important points (look for 'Cat, can you help here?' in the tex file)? 
+* Alana: Can you work on my new text for the box, especially the last paragraph and add any citations that you think are critical to have there? (And maybe I will cut the new first paragraph I added, see if you have any thoughts). 
+* Kavya (and anyone who has ideas here): Can you find 2-4 good citations for the last sentence of the box: "but a full framework would benefit from an improved understanding of how stress operates at the cellular and molecular levels NEEDCITES."
+* Rubén: Can you try to add some larger text or symbols or such I can reference to the figure in the box including something like:
+	- Drought inhibits cell growth and tissue formation
+	- Low temperature stops cell growth in meristems
+* Ailene: I was asked to make sure each question section in 'Building a new framework for growth $\times$ season length' section (each subheader basically) follows: problem then solution. Some sections are better than others and I'd also love your help to CUT down the 'What is the pattern of responses across species?' sub-section (and see if you have any ideas of a better subheader).
+* Fredi: Can you make citation suggestions for how there are now debates on source vs. sink control (currently first paragraph of box)?  
+* Janneke (and anyone who has ideas here!): in the 'How prevalent are constraints across species and populations?' Tegan said we need 'more detail on what sort of internal constraints experiments we need (and why focusing on those is really easy). Could you add a sentence or two to that section that does this? 
+
+Can you please let me know if you have any conflicts with the timeline (and suggestions for how to work around them, such as I work on your task and go ahead without you, or you just need an extra day or such)? Also, do you have funding to report? I will try to add it this round (but they may refuse as I have found journals have gotten pickier on adding this later than the initial submission). 
+
+Attached is the current ms in tex and Word (PDF here: ). Edits on the tex file are appreciated, but I will make it work however so do what works for you. Feel free to push edits on the repo. 
+
+A short list of changes I have already made is below. Please let me know if you need anything else and otherwise, I hope to hear from you by *end of Monday, 19 May.*
+
+And, happy first day of Eurovision (https://www.youtube.com/watch?v=WK3HOMhAeQY ... if you enjoy this, find the acoustic version)!
+
+All the best,
+L
+
+Stuff that I have done: 
+- Edited the 'Building a framework' section to have a new question for the phylogeny part
+- Edited the Box to have more of the comprehensive framework and mechanism stuff that I think R2 wants.
+- Made some small edits throughout to add citations and mentions of comprehensive framework and mechanism stuff.
+- Edited the abstract to be closer (but not yet) 120 words and more of the 'progress article' feel they want. 
+- Started editing all headers to be 60 characters or less. 
+
 
 
 <><><><><><><><><><><><>
