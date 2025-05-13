@@ -67,7 +67,7 @@ Here's what I need help on (in general we need to keep the text short, so if I a
 
 Can you please let me know if you have any conflicts with the timeline (and suggestions for how to work around them, such as I work on your task and go ahead without you, or you just need an extra day or such)? Also, do you have funding to report? I will try to add it this round (but they may refuse as I have found journals have gotten pickier on adding this later than the initial submission). 
 
-Attached is the current ms in tex and Word (PDF here: ). Edits on the tex file are appreciated, but I will make it work however so do what works for you. Feel free to push edits on the repo. 
+Attached is the current ms in tex, PDF and Word. Edits on the tex file are appreciated, but I will make it work however so do what works for you. Feel free to push edits on the repo. 
 
 A short list of changes I have already made is below. Please let me know if you need anything else and otherwise, I hope to hear from you by *end of Monday, 19 May.*
 
