@@ -1,4 +1,4 @@
-\begin{thebibliography}{93}
+\begin{thebibliography}{108}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Aitken \& Bemmels(2016)}]{aitken2016}
@@ -38,6 +38,13 @@ Camarero, J.J., Campelo, F., Colangelo, M., Valeriano, C., Knorre, A.,
   mean more radial growth. \emph{Agricultural and Forest Meteorology}
   \textbf{327}, 109223.
 
+\bibitem[{Camarero \emph{et~al.}(2015)Camarero, Gazol, Sang{\"u}esa-Barreda,
+  Oliva \& Vicente-Serrano}]{camarero2015or}
+Camarero, J.J., Gazol, A., Sang{\"u}esa-Barreda, G., Oliva, J. \&
+  Vicente-Serrano, S.M. (2015) To die or not to die: early warnings of tree
+  dieback in response to a severe drought. \emph{Journal of Ecology}
+  \textbf{103}, 44--57.
+
 \bibitem[{Canadell \emph{et~al.}(2021)Canadell, Monteiro, Costa, Cotrim~da
   Cunha, Cox, Eliseev, Henson, Ishii, Jaccard, Koven, Lohila, Patra, Piao,
   Rogelj, Syampungani, Zaehle \& Zickfeld}]{ipcc2021}
@@ -53,6 +60,13 @@ Canadell, J., Monteiro, P., Costa, M., Cotrim~da Cunha, L., Cox, P., Eliseev,
 Chamberlain, C.J., Cook, B.I., Morales-Castilla, I. \& Wolkovich, E.M. (2021)
   Climate change reshapes the drivers of false spring risk across european
   trees. \emph{New Phytologist} \textbf{229}, 323--334.
+
+\bibitem[{Charrier \emph{et~al.}(2021)Charrier, Martin-StPaul, Damesin,
+  Delpierre, H{\"a}nninen, Torres-Ruiz \& Davi}]{charrier2021interaction}
+Charrier, G., Martin-StPaul, N., Damesin, C., Delpierre, N., H{\"a}nninen, H.,
+  Torres-Ruiz, J.M. \& Davi, H. (2021) Interaction of drought and frost in tree
+  ecophysiology: rethinking the timing of risks. \emph{Annals of Forest
+  Science} \textbf{78}, 1--15.
 
 \bibitem[{Chave \emph{et~al.}(2009)Chave, Coomes, Jansen, Lewis, Swenson \&
   Zanne}]{Chave2009}
@@ -182,6 +196,10 @@ Dow, C., Kim, A.Y., D'Orangeville, L., Gonzalez-Akre, E.B., Helcoski, R.,
   \emph{et~al.} (2022) Warm springs alter timing but not total growth of
   temperate deciduous trees. \emph{Nature} \textbf{608}, 552--557.
 
+\bibitem[{El~Omari(2022)}]{el2022accumulation}
+El~Omari, B. (2022) Accumulation versus storage of total non-structural
+  carbohydrates in woody plants. \emph{Trees} pp. 1--13.
+
 \bibitem[{Etzold \emph{et~al.}(2022)Etzold, Sterck, Bose, Braun, Buchmann,
   Eugster, Gessler, Kahmen, Peters, Vitasse \emph{et~al.}}]{etzold2022number}
 Etzold, S., Sterck, F., Bose, A.K., Braun, S., Buchmann, N., Eugster, W.,
@@ -232,6 +250,19 @@ Friedlingstein, P., O'sullivan, M., Jones, M.W., Andrew, R.M., Gregor, L.,
   \emph{et~al.} (2022) Global carbon budget 2022. \emph{Earth System Science
   Data Discussions} \textbf{2022}, 1--159.
 
+\bibitem[{Friend \emph{et~al.}(2022)Friend, Eckes-Shephard \&
+  Tupker}]{friend2022wood}
+Friend, A.D., Eckes-Shephard, A.H. \& Tupker, Q. (2022) Wood structure
+  explained by complex spatial source-sink interactions. \emph{Nature
+  Communications} \textbf{13}, 7824.
+
+\bibitem[{Fu \emph{et~al.}(2019)Fu, Piao, Delpierre, Hao, H{\"a}nninen, Geng,
+  Pe{\~n}uelas, Zhang, Janssens \& Campioli}]{fu2019nutrient}
+Fu, Y.H., Piao, S., Delpierre, N., Hao, F., H{\"a}nninen, H., Geng, X.,
+  Pe{\~n}uelas, J., Zhang, X., Janssens, I.A. \& Campioli, M. (2019) Nutrient
+  availability alters the correlation between spring leaf-out and autumn leaf
+  senescence dates. \emph{Tree physiology} \textbf{39}, 1277--1284.
+
 \bibitem[{Gantois(2022)}]{gantois2022new}
 Gantois, J. (2022) New tree-level temperature response curves document
   sensitivity of tree growth to high temperatures across a us-wide climatic
@@ -277,6 +308,11 @@ Hanson, P.J., Riggs, J.S., Nettles, W.R., Phillips, J.R., Krassovski, M.B.,
 
 \bibitem[{Harmon(2024)}]{harmonebook}
 Harmon, L. (2024) \emph{Phylogenetic Comparative Methods}. University of Idaho.
+
+\bibitem[{Hartmann \& Trumbore(2016)}]{hartmann2016understanding}
+Hartmann, H. \& Trumbore, S. (2016) Understanding the roles of nonstructural
+  carbohydrates in forest trees--from what we can measure to what we want to
+  know. \emph{New phytologist} \textbf{211}, 386--403.
 
 \bibitem[{Hilty \emph{et~al.}(2021)Hilty, Muller, Pantin \&
   Leuzinger}]{hilty2021plant}
@@ -334,6 +370,22 @@ Kol{\'a}{\v{r}}, T., Giagli, K., Trnka, M., Bedn{\'a}{\v{r}}ov{\'a}, E.,
   phenology and tree-ring width of european beech to climate variability.
   \emph{Silva Fennica} \textbf{50}.
 
+\bibitem[{K{\"o}rner(1998)}]{korner1998re}
+K{\"o}rner, C. (1998) A re-assessment of high elevation treeline positions and
+  their explanation. \emph{Oecologia} \textbf{115}, 445--459.
+
+\bibitem[{K{\"o}rner(2015)}]{korner2015paradigm}
+K{\"o}rner, C. (2015) Paradigm shift in plant growth control. \emph{Current
+  opinion in plant biology} \textbf{25}, 107--114.
+
+\bibitem[{K{\"o}rner(2021)}]{korner2021tools}
+K{\"o}rner, C. (2021) Tools shape paradigms of plant-environment interactions.
+  \emph{Progress in Botany Vol. 82} pp. 1--41.
+
+\bibitem[{K{\"o}rner(2022)}]{korner2022forest}
+K{\"o}rner, C. (2022) The forest's nutrient cycle drives its carbon cycle.
+  \emph{Tree Physiology} \textbf{42}, 425--427.
+
 \bibitem[{K{\"o}rner \emph{et~al.}(2023)K{\"o}rner, M{\"o}hl \&
   Hiltbrunner}]{korner2023four}
 K{\"o}rner, C., M{\"o}hl, P. \& Hiltbrunner, E. (2023) Four ways to define the
@@ -374,6 +426,14 @@ Luo, Y., Zohner, C., Crowther, T.W., Feng, J., Hoch, G., Li, P., Richardson,
   leaf development in trees: Understanding the relationship between
   non-structural carbohydrates and leaf phenology. \emph{Functional Ecology} .
 
+\bibitem[{Manzanedo \emph{et~al.}(2024)Manzanedo, Chin, Ettinger, Pederson,
+  Pradhan, Guiterman, Su, Baumgarten \& Lambers}]{manzanedo2024moving}
+Manzanedo, R.D., Chin, A.R., Ettinger, A.K., Pederson, N., Pradhan, K.,
+  Guiterman, C.H., Su, J., Baumgarten, F. \& Lambers, J.H.R. (2024) Moving
+  ecological tree-ring big data forwards: Limitations, data integration, and
+  multidisciplinarity. \emph{Science of The Total Environment} \textbf{955},
+  177244.
+
 \bibitem[{Marchand \emph{et~al.}(2021)Marchand, Dox, Gri{\v{c}}ar, Prislan,
   Van~den Bulcke, Fonti \& Campioli}]{marchand2021timing}
 Marchand, L.J., Dox, I., Gri{\v{c}}ar, J., Prislan, P., Van~den Bulcke, J.,
@@ -387,6 +447,13 @@ Martinez-Meier, A., Sanchez, L., Pastorino, M., Gallo, L. \& Rozenberg, P.
   (2008) What is hot in tree rings? the wood density of surviving douglas-firs
   to the 2003 drought and heat wave. \emph{Forest Ecology and Management}
   \textbf{256}, 837--843.
+
+\bibitem[{Mart{\'\i}nez-Vilalta \emph{et~al.}(2016)Mart{\'\i}nez-Vilalta, Sala,
+  Asensio, Galiano, Hoch, Palacio, Piper \& Lloret}]{martinez2016dynamics}
+Mart{\'\i}nez-Vilalta, J., Sala, A., Asensio, D., Galiano, L., Hoch, G.,
+  Palacio, S., Piper, F.I. \& Lloret, F. (2016) Dynamics of non-structural
+  carbohydrates in terrestrial plants: a global synthesis. \emph{Ecological
+  monographs} \textbf{86}, 495--516.
 
 \bibitem[{McKown \emph{et~al.}(2014)McKown, Guy, Klapste, Geraldes, Friedmann,
   Cronk, El-Kassaby, Mansfield \& Douglas}]{mckown2014np}
@@ -459,6 +526,12 @@ Peters, R.L., Steppe, K., Cuny, H.E., De~Pauw, D.J., Frank, D.C., Schaub, M.,
   radial growth in mature conifers along an elevational gradient. \emph{New
   Phytologist} \textbf{229}, 213--229.
 
+\bibitem[{Pucha{\l}ka \emph{et~al.}(2024)Pucha{\l}ka, Prislan, Klisz, Koprowski
+  \& Gri{\v{c}}ar}]{puchalka2024tree}
+Pucha{\l}ka, R., Prislan, P., Klisz, M., Koprowski, M. \& Gri{\v{c}}ar, J.
+  (2024) Tree-ring formation dynamics in fagus sylvatica and quercus petraea in
+  a dry and a wet year. \emph{Dendrobiology} \textbf{91}, 1--15.
+
 \bibitem[{Puletti \emph{et~al.}(2020)Puletti, Grotti, Ferrara \&
   Chianucci}]{puletti2020lidar}
 Puletti, N., Grotti, M., Ferrara, C. \& Chianucci, F. (2020) Lidar-based
@@ -483,6 +556,13 @@ Ren, P., Ziaco, E., Rossi, S., Biondi, F., Prislan, P. \& Liang, E. (2019)
 Rezende, E.L. \& Bozinovic, F. (2019) Thermal performance across levels of
   biological organization. \emph{Philosophical Transactions of the Royal
   Society B} \textbf{374}, 20180549.
+
+\bibitem[{Rossi \emph{et~al.}(2008)Rossi, Deslauriers, Gri{\c{c}}ar, Seo,
+  Rathgeber, Anfodillo, Morin, Levanic, Oven \& Jalkanen}]{rossi2008critical}
+Rossi, S., Deslauriers, A., Gri{\c{c}}ar, J., Seo, J.W., Rathgeber, C.B.,
+  Anfodillo, T., Morin, H., Levanic, T., Oven, P. \& Jalkanen, R. (2008)
+  Critical temperatures for xylogenesis in conifers of cold climates.
+  \emph{Global Ecology and Biogeography} \textbf{17}, 696--707.
 
 \bibitem[{Schaber \& Badeck(2002)}]{schaber2002evaluation}
 Schaber, J. \& Badeck, F.W. (2002) Evaluation of methods for the combination of
@@ -539,11 +619,18 @@ Thomas, S.C. (2011) Age-related changes in tree growth and functional biology:
   Structure and Function} (eds. F.C. MEINZER, B.~Lachenbruch \& T.E. Dawson),
   chap.~2, pp. 33--64, Springer.
 
-\bibitem[{Waring \& Franklin(1979)}]{waring1979evergreen}
-Waring, R.H. \& Franklin, J.F. (1979) Evergreen coniferous forests of the
-  pacific northwest: Massive long-lived conifers dominating these forests are
-  adapted to a winter-wet, summer-dry environment. \emph{Science} \textbf{204},
-  1380--1386.
+\bibitem[{Tixier \emph{et~al.}(2020)Tixier, Guzm{\'a}n-Delgado, Sperling,
+  Amico~Roxas, Laca \& Zwieniecki}]{tixier2020comparison}
+Tixier, A., Guzm{\'a}n-Delgado, P., Sperling, O., Amico~Roxas, A., Laca, E. \&
+  Zwieniecki, M.A. (2020) Comparison of phenological traits, growth patterns,
+  and seasonal dynamics of non-structural carbohydrate in mediterranean tree
+  crop species. \emph{Scientific Reports} \textbf{10}, 347.
+
+\bibitem[{Vieira \emph{et~al.}(2020)Vieira, Carvalho \&
+  Campelo}]{vieira2020tree}
+Vieira, J., Carvalho, A. \& Campelo, F. (2020) Tree growth under climate
+  change: evidence from xylogenesis timings and kinetics. \emph{Frontiers in
+  Plant Science} \textbf{11}, 90.
 
 \bibitem[{Webb \emph{et~al.}(2002)Webb, Ackerly, McPeek \&
   Donoghue}]{Webb:2002or}

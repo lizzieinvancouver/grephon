@@ -2,12 +2,35 @@ Started 4 July 2023
 Happy Independence Day America
 
 <><><><><><><><><><><><>
-2 February 2025 notes
+12 May 2025
+
+Schedule: 
+13 May -- request for help out!
+19 May (Monday) -- deadline to meet request
+23 May -- new draft to co-authors
+29 May -- edits back (from co-authors)
+Submit first week of June
+
 
 On next draft ...
-(*) Add funding info from Ruben and my own funding info!
-Me: ETH Rubel Foundation, Killam Grant, CRC in Temporal Ecology and NSERC Discovery Grant
-R. Manzanedo was supported with funding from the Swiss State Secretariat for education, Research and Innovation (SERI) by a SERI-funded ERC Starting Grant #MB23.00011
+(*) Abstract needs to be shorter
+(*) Get refs in # format
+(1) Deal with %ADDCITES! FIXME
+(*) Get the section headers down to 60 char (list below)
+(*) Right now I have all edits as \R{forbigK} and \R{forncc} -- so update! And work on letter. 
+\R{forbigKref1}
+\R{morebox}
+\R{forbigKNUTS1}
+\R{forbigKNUTS2}
+
+
+
+HEADERS: 
+Evidence that longer seasons increase plant growth, or not
+Controllers on growth $\times$ season length relationships
+<><><><><><><><><><><><>
+
+1) Do you have funding to report? I will try to add it this round, but they may refuse as I have found journals have gotten pickier on adding this later than the initial submission. 
 
 
 <><><><><><><><><><><><>
