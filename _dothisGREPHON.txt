@@ -2,6 +2,59 @@ Started 4 July 2023
 Happy Independence Day America
 
 <><><><><><><><><><><><>
+20 May 2025
+
+- Try to cut down section on species framework
+- Fix internal constraints in path forward section (see text JHRL sent, which is in tex)
+- Fix the box text!
+- email Alana (and email Ruben and cc Alana, with new draft of BOX with it included and all citations)
+- Consider where to put external constraints section (last section) -- I moved it based on feedback from JHRL so check if it works.  
+- Get cites in Kavya's and Fredi's emails and add
+- Add some of Cat's point to the box and email her (if possible)
+
+
+- Write the letter! Include in letter to Tegan that we made many edits throughout to do ...  (list stuff she asked for) and that we tried hard to come up with a new figure, but in the end it was too similar to what we already had. Instead, we edited the figure we added in the last round of revision. 
+
+
+
+------
+To all (on 23rd):
+
+* Please make sure I got in your major edits correctly. 
+* Please make edits in the tex of PDF. 
+* Edits for typos or to make things tighter (i.e., shorter!) are especially appreciated. (Stylistic edits or edits that clarify by adding words are harder for me to deal with, and I reserve the right to ignore them). 
+
+
+------
+Thanks for your this! Some of your edits I did not include because they feel like small style differences that reasonable people could disagree on and others because Tegan flagged them as texts she seemed to like. But I reviewed them all. 
+
+L
+
+------
+EMAILS:
+
+Hi Cat, 
+
+Thanks for this! This is super cool (though I don't fully believe chilling is reduced, as we don't know what it is) research. It makes me want to ask Charrier what he thinks of the Kovaleski work. We have (for good or bad) restricted the discussion of NSCs to the box, so I don't think we can reasonably discuss them outside of the box in the main text. But I tried to tuck some of your point into the box. 
+
+All the best,
+L
+
+------
+
+
+Hi Alana,
+
+Thanks for this! I agree meteorological sounds weird, but it's Korner language so I will leave it for now. 
+
+The one last thing you could do is see if you are okay with the new figure by Ruben. 
+
+L
+
+PS: I am too lazy to change e.g., and the journals always seem to have one preference or the other ... so I am leaving it and hoping it doesn't really drive you uts. 
+
+
+<><><><><><><><><><><><>
 12 May 2025
 
 Schedule: 
