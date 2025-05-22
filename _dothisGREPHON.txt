@@ -2,14 +2,20 @@ Started 4 July 2023
 Happy Independence Day America
 
 <><><><><><><><><><><><>
-20 May 2025
+22 May 2025
 
-- Try to cut down section on species framework
+STILL to do... 
+- Add more citations to last sentence of box? 
+- Check citation formatting
+- Maybe send Tegan an email saying I did best to integrate her edits ... but did not always understand them
+
+- Try to cut down section on species framework (DONE)
+- Made abstract (120 words) subheaders shorter (60 char)
+
 - Fix internal constraints in path forward section (see text JHRL sent, which is in tex)
-- Fix the box text!
+
 - email Alana (and email Ruben and cc Alana, with new draft of BOX with it included and all citations)
-- Consider where to put external constraints section (last section) -- I moved it based on feedback from JHRL so check if it works.  
-- Get cites in Kavya's and Fredi's emails and add
+ 
 - Add some of Cat's point to the box and email her (if possible)
 
 
@@ -33,6 +39,18 @@ L
 ------
 EMAILS:
 
+
+
+Hi Kavya, 
+
+Thanks for your work on this! 
+
+I didn't use the MDPI journal citations as I consider MDPI journals predatory and don't feel comfortable aiding their success and spread by citing papers from them unless there is really no other equivalent paper. 
+
+All the best,
+L
+
+------
 Hi Cat, 
 
 Thanks for this! This is super cool (though I don't fully believe chilling is reduced, as we don't know what it is) research. It makes me want to ask Charrier what he thinks of the Kovaleski work. We have (for good or bad) restricted the discussion of NSCs to the box, so I don't think we can reasonably discuss them outside of the box in the main text. But I tried to tuck some of your point into the box. 
@@ -72,6 +90,7 @@ Stuff I need to do
 (*) Get the section headers down to 60 char (list below)
 (*) Right now I have all edits as \R{forbigK} and \R{forncc} -- so update! And work on letter. 
 \R{forbigKref1}
+\R{forbigKref2}
 \R{morebox}
 \R{forbigKNUTS1}
 \R{forbigKNUTS2}

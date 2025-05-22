@@ -1,677 +1,698 @@
-\begin{thebibliography}{108}
-\providecommand{\natexlab}[1]{#1}
+\begin{thebibliography}{100}
 
-\bibitem[{Aitken \& Bemmels(2016)}]{aitken2016}
-Aitken, S.N. \& Bemmels, J.B. (2016) Time to get moving: assisted gene flow of
-  forest trees. \emph{Evol Appl} \textbf{9}, 271--90.
+\bibitem{nobel1983biophysical}
+Nobel, P.~S. et~al.
+\newblock {\em Biophysical plant physiology and ecology.}
+\newblock WH Freeman and company,  (1983).
 
-\bibitem[{{\'A}vila-Lovera \emph{et~al.}(2023){\'A}vila-Lovera, Winter \&
-  Goldsmith}]{avila2023evidence}
-{\'A}vila-Lovera, E., Winter, K. \& Goldsmith, G.R. (2023) Evidence for
-  phylogenetic signal and correlated evolution in plant--water relation traits.
-  \emph{New Phytologist} \textbf{237}, 392--407.
+\bibitem{frank2022dendrochronology}
+Frank, D., Fang, K., and Fonti, P.
+\newblock Dendrochronology: Fundamentals and innovations.
+\newblock In {\em Stable Isotopes in Tree Rings: Inferring Physiological,
+  Climatic and Environmental Responses},  21--59. Springer International
+  Publishing Cham (2022).
 
-\bibitem[{Berdanier \& Klein(2011)}]{berdanier2011growing}
-Berdanier, A.B. \& Klein, J.A. (2011) Growing season length and soil moisture
-  interactively constrain high elevation aboveground net primary production.
-  \emph{Ecosystems} \textbf{14}, 963--974.
+\bibitem{ito2020global}
+Ito, G., Romanou, A., Kiang, N.~Y., Faluvegi, G., Aleinov, I., Ruedy, R.,
+  Russell, G., Lerner, P., Kelley, M., and Lo, K.
+\newblock Global carbon cycle and climate feedbacks in the nasa giss modele2.
+  1.
+\newblock {\em Journal of Advances in Modeling Earth Systems}{ \bf 12}(10),
+  e2019MS002030 (2020).
 
-\bibitem[{Cabon \emph{et~al.}(2022)Cabon, Kannenberg, Arain, Babst, Baldocchi,
-  Belmecheri, Delpierre, Guerrieri, Maxwell, McKenzie
-  \emph{et~al.}}]{cabon2022cross}
-Cabon, A., Kannenberg, S.A., Arain, A., Babst, F., Baldocchi, D., Belmecheri,
-  S., Delpierre, N., Guerrieri, R., Maxwell, J.T., McKenzie, S. \emph{et~al.}
-  (2022) Cross-biome synthesis of source versus sink limits to tree growth.
-  \emph{Science} \textbf{376}, 758--761.
+\bibitem{friedlingstein2022global}
+Friedlingstein, P., O'sullivan, M., Jones, M.~W., Andrew, R.~M., Gregor, L.,
+  Hauck, J., Le~Qu{\'e}r{\'e}, C., Luijkx, I.~T., Olsen, A., Peters, G.~P.,
+  et~al.
+\newblock Global carbon budget 2022.
+\newblock {\em Earth System Science Data Discussions}{ \bf 2022}, 1--159
+  (2022).
 
-\bibitem[{Cadotte \emph{et~al.}(2017)Cadotte, Davies \&
-  Peres-Neto}]{cadotte2017phylogenies}
-Cadotte, M.W., Davies, T.J. \& Peres-Neto, P.R. (2017) Why phylogenies do not
-  always predict ecological differences. \emph{Ecological Monographs}
-  \textbf{87}, 535--551.
+\bibitem{chen1999effects}
+Chen, W., Black, T., Yang, P., Barr, A., Neumann, H., Nesic, Z., Blanken, P.,
+  Novak, M., Eley, J., Ketler, R., et~al.
+\newblock Effects of climatic variability on the annual carbon sequestration by
+  a boreal aspen forest.
+\newblock {\em Global Change Biology}{ \bf 5}(1), 41--53 (1999).
 
-\bibitem[{Camarero \emph{et~al.}(2022)Camarero, Campelo, Colangelo, Valeriano,
-  Knorre, Sol{\'e} \& Rubio-Cuadrado}]{camarero2022decoupled}
-Camarero, J.J., Campelo, F., Colangelo, M., Valeriano, C., Knorre, A.,
-  Sol{\'e}, G. \& Rubio-Cuadrado, {\'A}. (2022) Decoupled leaf-wood phenology
-  in two pine species from contrasting climates: Longer growing seasons do not
-  mean more radial growth. \emph{Agricultural and Forest Meteorology}
-  \textbf{327}, 109223.
+\bibitem{keenan2014net}
+Keenan, T.~F., Gray, J., Friedl, M.~A., Toomey, M., Bohrer, G., Hollinger,
+  D.~Y., Munger, J.~W., O'Keefe, J., Schmid, H.~P., Wing, I.~S., et~al.
+\newblock Net carbon uptake has increased through warming-induced changes in
+  temperate forest phenology.
+\newblock {\em Nature Climate Change}{ \bf 4}(7), 598--604 (2014).
 
-\bibitem[{Camarero \emph{et~al.}(2015)Camarero, Gazol, Sang{\"u}esa-Barreda,
-  Oliva \& Vicente-Serrano}]{camarero2015or}
-Camarero, J.J., Gazol, A., Sang{\"u}esa-Barreda, G., Oliva, J. \&
-  Vicente-Serrano, S.M. (2015) To die or not to die: early warnings of tree
-  dieback in response to a severe drought. \emph{Journal of Ecology}
-  \textbf{103}, 44--57.
+\bibitem{finzi2020}
+Finzi, A.~C., Giasson, M.-A., Plotkin, A. A.~B., Aber, J.~D., Boose, E.~R.,
+  Davidson, E.~A., Dietze, M.~C., Ellison, A.~M., Frey, S.~D., Goldman, E.,
+  Keenan, T.~F., Melillo, J.~M., Munger, J.~W., Nadelhoffer, K.~J., Ollinger,
+  V, S., Orwig, D.~A., Pederson, N., Richardson, A.~D., Savage, K., Tang, J.,
+  Thompson, J.~R., Williams, C.~A., Wofsy, S.~C., Zhou, Z., and Foster, D.~R.
+\newblock Carbon budget of the harvard forest long-term ecological research
+  site: pattern, process, and response to global change.
+\newblock {\em Ecological Monographs}{ \bf 90}(4), NOV  (2020).
 
-\bibitem[{Canadell \emph{et~al.}(2021)Canadell, Monteiro, Costa, Cotrim~da
-  Cunha, Cox, Eliseev, Henson, Ishii, Jaccard, Koven, Lohila, Patra, Piao,
-  Rogelj, Syampungani, Zaehle \& Zickfeld}]{ipcc2021}
+\bibitem{dow2022warm}
+Dow, C., Kim, A.~Y., D'Orangeville, L., Gonzalez-Akre, E.~B., Helcoski, R.,
+  Herrmann, V., Harley, G.~L., Maxwell, J.~T., McGregor, I.~R., McShea, W.~J.,
+  et~al.
+\newblock Warm springs alter timing but not total growth of temperate deciduous
+  trees.
+\newblock {\em Nature}{ \bf 608}(7923), 552--557 (2022).
+
+\bibitem{green2022limits}
+Green, J.~K. and Keenan, T.~F.
+\newblock The limits of forest carbon sequestration.
+\newblock {\em Science}{ \bf 376}(6594), 692--693 (2022).
+
+\bibitem{silvestro2023longer}
+Silvestro, R., Zeng, Q., Butt{\`o}, V., Sylvain, J.-D., Drolet, G., Mencuccini,
+  M., Thiffault, N., Yuan, S., and Rossi, S.
+\newblock A longer wood growing season does not lead to higher carbon
+  sequestration.
+\newblock {\em Scientific reports}{ \bf 13}(1), 4059 (2023).
+
+\bibitem{myneni1997increased}
+Myneni, R.~B., Keeling, C., Tucker, C.~J., Asrar, G., and Nemani, R.~R.
+\newblock Increased plant growth in the northern high latitudes from 1981 to
+  1991.
+\newblock {\em Nature}{ \bf 386}(6626), 698--702 (1997).
+
+\bibitem{berdanier2011growing}
+Berdanier, A.~B. and Klein, J.~A.
+\newblock Growing season length and soil moisture interactively constrain high
+  elevation aboveground net primary production.
+\newblock {\em Ecosystems}{ \bf 14}, 963--974 (2011).
+
+\bibitem{king2013tree}
+King, G.~M., Gugerli, F., Fonti, P., and Frank, D.~C.
+\newblock Tree growth response along an elevational gradient: climate or
+  genetics?
+\newblock {\em Oecologia}{ \bf 173}, 1587--1600 (2013).
+
+\bibitem{cuapio2022there}
+Cuapio-Hern{\'a}ndez, L., Reyes-Ortiz, J.~L., De~La~Rosa, A.~B., Pav{\'o}n,
+  N.~P., L{\'o}pez-Herrera, M., Villanueva-D{\'\i}az, J., and
+  S{\'a}nchez-Gonz{\'a}lez, A.
+\newblock Is there a response pattern between radial growth of trees and
+  elevation gradient?
+\newblock {\em Tree-Ring Research}{ \bf  (2022).
+
+\bibitem{went1957experimental}
+Went, F.~W.
+\newblock The experimental control of plant growth.
+\newblock {\em The experimental control of plant growth.}{ \bf 17} (1957).
+
+\bibitem{zohner2023effect}
+Zohner, C.~M., Mirzagholi, L., Renner, S.~S., Mo, L., Rebindaine, D., Bucher,
+  R., Palou{\v{s}}, D., Vitasse, Y., Fu, Y.~H., Stocker, B.~D., et~al.
+\newblock Effect of climate warming on the timing of autumn leaf senescence
+  reverses after the summer solstice.
+\newblock {\em Science}{ \bf 381}(6653), eadf5098 (2023).
+
+\bibitem{korner2015paradigm}
+K{\"o}rner, C.
+\newblock Paradigm shift in plant growth control.
+\newblock {\em Current opinion in plant biology}{ \bf 25}, 107--114 (2015).
+
+\bibitem{Grime:1977sw}
+Grime, J.~P.
+\newblock Evidence for existence of 3 primary strategies in plants and its
+  relevance to ecological and evolutionary theory.
+\newblock {\em American Naturalist}{ \bf 111}(982), 1169--1194 (1977).
+
+\bibitem{Webb:2002or}
+Webb, C.~O., Ackerly, D.~D., McPeek, M., and Donoghue, M.~J.
+\newblock Phylogenies and community ecology.
+\newblock {\em Annual Review of Ecology and Systematics}{ \bf 33}, 475--505
+  (2002).
+
+\bibitem{avila2023evidence}
+{\'A}vila-Lovera, E., Winter, K., and Goldsmith, G.~R.
+\newblock Evidence for phylogenetic signal and correlated evolution in
+  plant--water relation traits.
+\newblock {\em New Phytologist}{ \bf 237}(2), 392--407 (2023).
+
+\bibitem{cosgrove2005growth}
+Cosgrove, D.~J.
+\newblock Growth of the plant cell wall.
+\newblock {\em Nature reviews molecular cell biology}{ \bf 6}(11), 850--861
+  (2005).
+
+\bibitem{hilty2021plant}
+Hilty, J., Muller, B., Pantin, F., and Leuzinger, S.
+\newblock Plant growth: The what, the how, and the why.
+\newblock {\em New Phytologist}{ \bf 232}(1), 25--41 (2021).
+
+\bibitem{Cleland:2012}
+Cleland, E.~E., Allen, J.~M., Crimmins, T.~M., Dunne, J.~A., Pau, S., Travers,
+  S.~E., Zavaleta, E.~S., and Wolkovich, E.~M.
+\newblock Phenological tracking enables positive species responses to climate
+  change.
+\newblock {\em Ecology}{ \bf 93}(8), 1765--1771 (2012).
+
+\bibitem{korner2023four}
+K{\"o}rner, C., M{\"o}hl, P., and Hiltbrunner, E.
+\newblock Four ways to define the growing season.
+\newblock {\em Ecology Letters}{ \bf  (2023).
+
+\bibitem{kolavr2016response}
+Kol{\'a}{\v{r}}, T., Giagli, K., Trnka, M., Bedn{\'a}{\v{r}}ov{\'a}, E.,
+  Vavr{\v{c}}{\'\i}k, H., and Rybn{\'\i}{\v{c}}ek, M.
+\newblock Response of the leaf phenology and tree-ring width of european beech
+  to climate variability.
+\newblock {\em Silva Fennica}{ \bf 50}(2) (2016).
+
+\bibitem{de2022temperature}
+de~Sauvage, J.~C., Vitasse, Y., Meier, M., Delzon, S., and Bigler, C.
+\newblock Temperature rather than individual growing period length determines
+  radial growth of sessile oak in the pyrenees.
+\newblock {\em Agricultural and Forest Meteorology}{ \bf 317}, 108885 (2022).
+
+\bibitem{camarero2022decoupled}
+Camarero, J.~J., Campelo, F., Colangelo, M., Valeriano, C., Knorre, A.,
+  Sol{\'e}, G., and Rubio-Cuadrado, {\'A}.
+\newblock Decoupled leaf-wood phenology in two pine species from contrasting
+  climates: Longer growing seasons do not mean more radial growth.
+\newblock {\em Agricultural and Forest Meteorology}{ \bf 327}, 109223 (2022).
+
+\bibitem{cuny2012life}
+Cuny, H.~E., Rathgeber, C.~B., Lebourgeois, F., Fortin, M., and Fournier, M.
+\newblock Life strategies in intra-annual dynamics of wood formation: example
+  of three conifer species in a temperate forest in north-east france.
+\newblock {\em Tree physiology}{ \bf 32}(5), 612--625 (2012).
+
+\bibitem{michelot2012comparing}
+Michelot, A., Simard, S., Rathgeber, C., Dufr{\^e}ne, E., and Damesin, C.
+\newblock {Comparing the intra-annual wood formation of three European species
+  (\emph{Fagus sylvatica, Quercus petraea and Pinus sylvestris}) as related to
+  leaf phenology and non-structural carbohydrate dynamics}.
+\newblock {\em Tree physiology}{ \bf 32}(8), 1033--1045 (2012).
+
+\bibitem{soolanayakanahally2013timing}
+Soolanayakanahally, R.~Y., Guy, R.~D., Silim, S.~N., and Song, M.
+\newblock Timing of photoperiodic competency causes phenological mismatch in
+  balsam poplar (populus balsamifera l.).
+\newblock {\em Plant, cell \& environment}{ \bf 36}(1), 116--127 (2013).
+
+\bibitem{martinez2008hot}
+Martinez-Meier, A., Sanchez, L., Pastorino, M., Gallo, L., and Rozenberg, P.
+\newblock What is hot in tree rings? the wood density of surviving douglas-firs
+  to the 2003 drought and heat wave.
+\newblock {\em Forest Ecology and Management}{ \bf 256}(4), 837--843 (2008).
+
+\bibitem{cabon2022cross}
+Cabon, A., Kannenberg, S.~A., Arain, A., Babst, F., Baldocchi, D., Belmecheri,
+  S., Delpierre, N., Guerrieri, R., Maxwell, J.~T., McKenzie, S., et~al.
+\newblock Cross-biome synthesis of source versus sink limits to tree growth.
+\newblock {\em Science}{ \bf 376}(6594), 758--761 (2022).
+
+\bibitem{larcher1980}
+Larcher, W.
+\newblock {\em Plant Physiological Ecology}.
+\newblock Springer-Verlag,  (1980).
+
+\bibitem{kramer2012book}
+Kramer, P.
+\newblock {\em Physiology of woody plants}.
+\newblock Elsevier, New York,  (2012).
+
+\bibitem{cat2021pep}
+Chamberlain, C.~J., Cook, B.~I., Morales-Castilla, I., and Wolkovich, E.~M.
+\newblock Climate change reshapes the drivers of false spring risk across
+  european trees.
+\newblock {\em New Phytologist}{ \bf 229}(1), 323--334 (2021).
+
+\bibitem{leuning2002temperature}
+Leuning, R.
+\newblock Temperature dependence of two parameters in a photosynthesis model.
+\newblock {\em Plant, Cell \& Environment}{ \bf 25}(9), 1205--1210 (2002).
+
+\bibitem{gantois2022new}
+Gantois, J.
+\newblock New tree-level temperature response curves document sensitivity of
+  tree growth to high temperatures across a us-wide climatic gradient.
+\newblock {\em Global Change Biology}{ \bf 28}(20), 6002--6020 (2022).
+
+\bibitem{schaber2002evaluation}
+Schaber, J. and Badeck, F.-W.
+\newblock Evaluation of methods for the combination of phenological time series
+  and outlier detection.
+\newblock {\em Tree Physiology}{ \bf 22}(14), 973--982 (2002).
+
+\bibitem{ren2019}
+Ren, P., Ziaco, E., Rossi, S., Biondi, F., Prislan, P., and Liang, E.
+\newblock Growth rate rather than growing season length determines wood biomass
+  in dry environments.
+\newblock {\em Agricultural and Forest Meteorology}{ \bf 271}, 46--53, JUN 15
+  (2019).
+
+\bibitem{etzold2022number}
+Etzold, S., Sterck, F., Bose, A.~K., Braun, S., Buchmann, N., Eugster, W.,
+  Gessler, A., Kahmen, A., Peters, R.~L., Vitasse, Y., et~al.
+\newblock Number of growth days and not length of the growth period determines
+  radial stem growth of temperate trees.
+\newblock {\em Ecology Letters}{ \bf 25}(2), 427--439 (2022).
+
+\bibitem{peters2021turgor}
+Peters, R.~L., Steppe, K., Cuny, H.~E., De~Pauw, D.~J., Frank, D.~C., Schaub,
+  M., Rathgeber, C.~B., Cabon, A., and Fonti, P.
+\newblock Turgor--a limiting factor for radial growth in mature conifers along
+  an elevational gradient.
+\newblock {\em New Phytologist}{ \bf 229}(1), 213--229 (2021).
+
+\bibitem{cosgrove2023structure}
+Cosgrove, D.~J.
+\newblock Structure and growth of plant cell walls.
+\newblock {\em Nature Reviews Molecular Cell Biology}{ \bf , 1--19 (2023).
+
+\bibitem{charrier2021interaction}
+Charrier, G., Martin-StPaul, N., Damesin, C., Delpierre, N., H{\"a}nninen, H.,
+  Torres-Ruiz, J.~M., and Davi, H.
+\newblock Interaction of drought and frost in tree ecophysiology: rethinking
+  the timing of risks.
+\newblock {\em Annals of Forest Science}{ \bf 78}, 1--15 (2021).
+
+\bibitem{mitton2012mountain}
+Mitton, J.~B. and Ferrenberg, S.~M.
+\newblock Mountain pine beetle develops an unprecedented summer generation in
+  response to climate warming.
+\newblock {\em The American Naturalist}{ \bf 179}(5), E163--E171 (2012).
+
+\bibitem{lange2006thresholds}
+Lange, H., {\O}kland, B., and Krokene, P.
+\newblock Thresholds in the life cycle of the spruce bark beetle under climate
+  change.
+\newblock {\em Interjournal for Complex Systems}{ \bf 1648}, 1--10 (2006).
+
+\bibitem{cleland2024effects}
+Cleland, E.~E. and Wolkovich, E.
+\newblock Effects of phenology on plant community assembly and structure.
+\newblock {\em Annual Review of Ecology, Evolution, and Systematics}{ \bf
+  55}(1), 471--492 (2024).
+
+\bibitem{sturrock2011climate}
+Sturrock, R., Frankel, S., Brown, A., Hennon, P., Kliejunas, J., Lewis, K.,
+  Worrall, J., and Woods, A.
+\newblock Climate change and forest diseases.
+\newblock {\em Plant pathology}{ \bf 60}(1), 133--149 (2011).
+
+\bibitem{la2008forest}
+La~Porta, N., Capretti, P., Thomsen, I., Kasanen, R., Hietala, A., and
+  Von~Weissenberg, K.
+\newblock Forest pathogens with higher damage potential due to climate change
+  in europe.
+\newblock {\em Canadian Journal of Plant Pathology}{ \bf 30}(2), 177--195
+  (2008).
+
+\bibitem{senf2017remote}
+Senf, C., Seidl, R., and Hostert, P.
+\newblock Remote sensing of forest insect disturbances: Current state and
+  future directions.
+\newblock {\em International journal of applied earth observation and
+  geoinformation}{ \bf 60}, 49--60 (2017).
+
+\bibitem{howe2003genotype}
+Howe, G.~T., Aitken, S.~N., Neale, D.~B., Jermstad, K.~D., Wheeler, N.~C., and
+  Chen, T.~H.
+\newblock From genotype to phenotype: unraveling the complexities of cold
+  adaptation in forest trees.
+\newblock {\em Canadian Journal of Botany}{ \bf 81}(12), 1247--1266 (2003).
+
+\bibitem{aitken2016}
+Aitken, S.~N. and Bemmels, J.~B.
+\newblock Time to get moving: assisted gene flow of forest trees.
+\newblock {\em Evol Appl}{ \bf 9}(1), 271--90 (2016).
+
+\bibitem{Journe2024}
+Journ{\'e}, V., Szymkowiak, J., Foest, J., Hacket-Pain, A., Kelly, D., and
+  Bogdziewicz, M.
+\newblock Summer solstice orchestrates the subcontinental-scale synchrony of
+  mast seeding.
+\newblock {\em Nature Plants}{ \bf 10}(3), 367--373, March  (2024).
+
+\bibitem{thomas2011bookchptr}
+Thomas, S.~C.
+\newblock Age-related changes in tree growth and functional biology: The role
+  of reproduction.
+\newblock In Size- and Age-Related Changes in Tree Structure and Function,
+  MEINZER, F.~C., Lachenbruch, B., and Dawson, T.~E., editors, chapter~2,
+  33--64. Springer (2011).
+
+\bibitem{hacket2016tree}
+Hacket-Pain, A., Friend, A., Lageard, J., and Thomas, P.
+\newblock Tree rings and masting: considering reproductive phenomena when
+  interpreting tree rings?
+\newblock {\em Tree Rings in Archaeology, Climatology and Ecology}{ \bf 14},
+  78--85 (2016).
+
+\bibitem{hacket2016consistent}
+Hacket-Pain, A.~J., Cavin, L., Friend, A.~D., and Jump, A.
+\newblock Consistent limitation of growth by high temperature and low
+  precipitation from range core to southern edge of european beech indicates
+  widespread vulnerability to changing climate.
+\newblock {\em European Journal of Forest Research}{ \bf 135}, 897--909 (2016).
+
+\bibitem{camarero2015or}
+Camarero, J.~J., Gazol, A., Sang{\"u}esa-Barreda, G., Oliva, J., and
+  Vicente-Serrano, S.~M.
+\newblock To die or not to die: early warnings of tree dieback in response to a
+  severe drought.
+\newblock {\em Journal of Ecology}{ \bf 103}(1), 44--57 (2015).
+
+\bibitem{fu2019nutrient}
+Fu, Y.~H., Piao, S., Delpierre, N., Hao, F., H{\"a}nninen, H., Geng, X.,
+  Pe{\~n}uelas, J., Zhang, X., Janssens, I.~A., and Campioli, M.
+\newblock Nutrient availability alters the correlation between spring leaf-out
+  and autumn leaf senescence dates.
+\newblock {\em Tree physiology}{ \bf 39}(8), 1277--1284 (2019).
+
+\bibitem{puchalka2024tree}
+Pucha{\l}ka, R., Prislan, P., Klisz, M., Koprowski, M., and Gri{\v{c}}ar, J.
+\newblock Tree-ring formation dynamics in fagus sylvatica and quercus petraea
+  in a dry and a wet year.
+\newblock {\em Dendrobiology}{ \bf 91}, 1--15 (2024).
+
+\bibitem{day2011regulation}
+Day, M.~E. and Greenwood, M.~S.
+\newblock Regulation of ontogeny in temperate conifers.
+\newblock In {\em Size-and age-related changes in tree structure and function},
+   91--119. Springer (2011).
+
+\bibitem{gordon1968seasonal}
+Gordon, J.~C. and Larson, P.~R.
+\newblock Seasonal course of photosynthesis, respiration, and distribution of
+  14c in young pinus resinosa trees as related to wood formation.
+\newblock {\em Plant Physiology}{ \bf 43}(10), 1617--1624 (1968).
+
+\bibitem{monson2018finding}
+Monson, R.~K., Szejner, P., Belmecheri, S., Morino, K.~A., and Wright, W.~E.
+\newblock Finding the seasons in tree ring stable isotope ratios.
+\newblock {\em American journal of botany}{ \bf 105}(5), 819--821 (2018).
+
+\bibitem{coulthard2020limits}
+Coulthard, B.~L., George, S.~S., and Meko, D.~M.
+\newblock The limits of freely-available tree-ring chronologies.
+\newblock {\em Quaternary Science Reviews}{ \bf 234}, 106264 (2020).
+
+\bibitem{klesse2023legacy}
+Klesse, S., Babst, F., Evans, M.~E., Hurley, A., Pappas, C., and Peters, R.~L.
+\newblock Legacy effects in radial tree growth are rarely significant after
+  accounting for biological memory.
+\newblock {\em Journal of Ecology}{ \bf 111}(6), 1188--1202 (2023).
+
+\bibitem{kikuzawa1982leaf}
+Kikuzawa, K.
+\newblock Leaf survival and evolution in betulaceae.
+\newblock {\em Annals of Botany}{ \bf 50}(3), 345--353 (1982).
+
+\bibitem{Lechowicz:1984cr}
+Lechowicz, M.~J.
+\newblock Why do temperate deciduous trees leaf out at different times -
+  adaptation and ecology of forest communities.
+\newblock {\em American Naturalist}{ \bf 124}(6), 821--842 (1984).
+
+\bibitem{mckown2016impacts}
+McKown, A.~D., Guy, R.~D., and Quamme, L.~K.
+\newblock Impacts of bud set and lammas phenology on root: shoot biomass
+  partitioning and carbon gain physiology in poplar.
+\newblock {\em Trees}{ \bf 30}, 2131--2141 (2016).
+
+\bibitem{delpierre2017tree}
+Delpierre, N., Guillemot, J., Dufr{\^e}ne, E., Cecchini, S., and Nicolas, M.
+\newblock Tree phenological ranks repeat from year to year and correlate with
+  growth in temperate deciduous forests.
+\newblock {\em Agricultural and Forest Meteorology}{ \bf 234}, 1--10 (2017).
+
+\bibitem{rossi2008critical}
+Rossi, S., Deslauriers, A., Gri{\c{c}}ar, J., Seo, J.-W., Rathgeber, C.~B.,
+  Anfodillo, T., Morin, H., Levanic, T., Oven, P., and Jalkanen, R.
+\newblock Critical temperatures for xylogenesis in conifers of cold climates.
+\newblock {\em Global Ecology and Biogeography}{ \bf 17}(6), 696--707 (2008).
+
+\bibitem{rademacher2022insights}
+Rademacher, T., Fonti, P., LeMoine, J.~M., Fonti, M.~V., Bowles, F., Chen, Y.,
+  Eckes-Shephard, A.~H., Friend, A.~D., and Richardson, A.~D.
+\newblock Insights into source/sink controls on wood formation and
+  photosynthesis from a stem chilling experiment in mature red maple.
+\newblock {\em New Phytologist}{ \bf 236}(4), 1296--1309 (2022).
+
+\bibitem{cornwell2017phylogenetic}
+Cornwell, W. and Nakagawa, S.
+\newblock Phylogenetic comparative methods.
+\newblock {\em Current Biology}{ \bf 27}(9), R333--R336 (2017).
+
+\bibitem{harmonebook}
+Harmon, L.
+\newblock {\em Phylogenetic Comparative Methods}.
+\newblock University of Idaho,  (2024).
+
+\bibitem{pearse2019interaction}
+Pearse, W.~D., Legendre, P., Peres-Neto, P.~R., and Davies, T.~J.
+\newblock The interaction of phylogeny and community structure: Linking the
+  community composition and trait evolution of clades.
+\newblock {\em Global Ecology and Biogeography}{ \bf 28}(10), 1499--1511
+  (2019).
+
+\bibitem{morales2024phylogenetic}
+Morales-Castilla, I., Davies, T., Legault, G., Buonaiuto, D., Chamberlain,
+  C.~J., Ettinger, A.~K., Garner, M., Jones, F.~A., Loughnan, D., Pearse,
+  W.~D., et~al.
+\newblock Phylogenetic estimates of species-level phenology improve ecological
+  forecasting.
+\newblock {\em Nature Climate Change}{ \bf , 1--7 (2024).
+
+\bibitem{davies2019phylogenetically}
+Davies, T.~J., Regetz, J., Wolkovich, E.~M., and McGill, B.~J.
+\newblock Phylogenetically weighted regression: A method for modelling
+  non-stationarity on evolutionary trees.
+\newblock {\em Global ecology and biogeography}{ \bf 28}(2), 275--285 (2019).
+
+\bibitem{willis2008phylogenetic}
+Willis, C.~G., Ruhfel, B., Primack, R.~B., Miller-Rushing, A.~J., and Davis,
+  C.~C.
+\newblock Phylogenetic patterns of species loss in thoreau's woods are driven
+  by climate change.
+\newblock {\em Proceedings of the National Academy of Sciences}{ \bf 105}(44),
+  17029--17033 (2008).
+
+\bibitem{cornwell2014functional}
+Cornwell, W.~K., Westoby, M., Falster, D.~S., FitzJohn, R.~G., O'Meara, B.~C.,
+  Pennell, M.~W., McGlinn, D.~J., Eastman, J.~M., Moles, A.~T., Reich, P.~B.,
+  et~al.
+\newblock Functional distinctiveness of major plant lineages.
+\newblock {\em Journal of Ecology}{ \bf 102}(2), 345--356 (2014).
+
+\bibitem{westoby2023phylogenetically}
+Westoby, M., Yates, L., Holland, B., and Halliwell, B.
+\newblock Phylogenetically conservative trait correlation: quantification and
+  interpretation.
+\newblock {\em Journal of Ecology}{ \bf 111}(10), 2105--2117 (2023).
+
+\bibitem{marchand2021timing}
+Marchand, L.~J., Dox, I., Gri{\v{c}}ar, J., Prislan, P., Van~den Bulcke, J.,
+  Fonti, P., and Campioli, M.
+\newblock Timing of spring xylogenesis in temperate deciduous tree species
+  relates to tree growth characteristics and previous autumn phenology.
+\newblock {\em Tree Physiology}{ \bf 41}(7), 1161--1170 (2021).
+
+\bibitem{luo2024internal}
+Luo, Y., Zohner, C., Crowther, T.~W., Feng, J., Hoch, G., Li, P., Richardson,
+  A.~D., Vitasse, Y., and Gessler, A.
+\newblock Internal physiological drivers of leaf development in trees:
+  Understanding the relationship between non-structural carbohydrates and leaf
+  phenology.
+\newblock {\em Functional Ecology}{ \bf  (2024).
+
+\bibitem{Colautti:2010}
+Colautti, R.~I., Eckert, C.~G., and Barrett, S. C.~H.
+\newblock Evolutionary constraints on adaptive evolution during range expansion
+  in an invasive plant.
+\newblock {\em Proceedings of the Royal Society B-Biological Sciences}{ \bf
+  277}(1689), 1799--1806 (2010).
+\newblock Colautti, Robert I. Eckert, Christopher G. Barrett, Spencer C. H.
+
+\bibitem{mckown2014np}
+McKown, A.~D., Guy, R.~D., Klapste, J., Geraldes, A., Friedmann, M., Cronk, Q.
+  C.~B., El-Kassaby, Y.~A., Mansfield, S.~D., and Douglas, C.~J.
+\newblock Geographical and environmental gradients shape phenotypic trait
+  variation and genetic structure in populus trichocarpa.
+\newblock {\em New Phytologist}{ \bf 201}(4), 1263--1276 (2014).
+\newblock McKown, Athena D. Guy, Robert D. Klapste, Jaroslav Geraldes, Armando
+  Friedmann, Michael Cronk, Quentin C. B. El-Kassaby, Yousry A. Mansfield,
+  Shawn D. Douglas, Carl J.
+
+\bibitem{zeng2024weak}
+Zeng, Z.~A. and Wolkovich, E.~M.
+\newblock Weak evidence of provenance effects in spring phenology across europe
+  and north america.
+\newblock {\em New Phytologist}{ \bf  (2024).
+
+\bibitem{manzanedo2024moving}
+Manzanedo, R.~D., Chin, A.~R., Ettinger, A.~K., Pederson, N., Pradhan, K.,
+  Guiterman, C.~H., Su, J., Baumgarten, F., and Lambers, J. H.~R.
+\newblock Moving ecological tree-ring big data forwards: Limitations, data
+  integration, and multidisciplinarity.
+\newblock {\em Science of The Total Environment}{ \bf 955}, 177244 (2024).
+
+\bibitem{puletti2020lidar}
+Puletti, N., Grotti, M., Ferrara, C., and Chianucci, F.
+\newblock Lidar-based estimates of aboveground biomass through ground, aerial,
+  and satellite observation: a case study in a mediterranean forest.
+\newblock {\em Journal of Applied Remote Sensing}{ \bf 14}(4), 044501--044501
+  (2020).
+
+\bibitem{sillett2024ground}
+Sillett, S.~C., Graham, M.~E., Montague, J.~P., Antoine, M.~E., and Koch, G.~W.
+\newblock Ground-based calibration for remote sensing of biomass in the tallest
+  forests.
+\newblock {\em Forest Ecology and Management}{ \bf 561}, 121879 (2024).
+
+\bibitem{radville2016}
+Radville, L., McCormack, M.~L., Post, E., and Eissenstat, D.~M.
+\newblock Root phenology in a changing climate.
+\newblock {\em Journal of Experimental Botany}{ \bf 67}(12), 3617--3628 (2016).
+
+\bibitem{ipcc2021}
 Canadell, J., Monteiro, P., Costa, M., Cotrim~da Cunha, L., Cox, P., Eliseev,
   A., Henson, S., Ishii, M., Jaccard, S., Koven, C., Lohila, A., Patra, P.,
-  Piao, S., Rogelj, J., Syampungani, S., Zaehle, S. \& Zickfeld, K. (2021)
-  \emph{Climate Change 2021: The Physical Science Basis. Contribution of
+  Piao, S., Rogelj, J., Syampungani, S., Zaehle, S., and Zickfeld, K.
+\newblock {\em Climate Change 2021: The Physical Science Basis. Contribution of
   Working Group I to the Sixth Assessment Report of the Intergovernmental Panel
-  on Climate Change}. Cambridge University Press, New York, NY.
-
-\bibitem[{Chamberlain \emph{et~al.}(2021)Chamberlain, Cook, Morales-Castilla \&
-  Wolkovich}]{cat2021pep}
-Chamberlain, C.J., Cook, B.I., Morales-Castilla, I. \& Wolkovich, E.M. (2021)
-  Climate change reshapes the drivers of false spring risk across european
-  trees. \emph{New Phytologist} \textbf{229}, 323--334.
-
-\bibitem[{Charrier \emph{et~al.}(2021)Charrier, Martin-StPaul, Damesin,
-  Delpierre, H{\"a}nninen, Torres-Ruiz \& Davi}]{charrier2021interaction}
-Charrier, G., Martin-StPaul, N., Damesin, C., Delpierre, N., H{\"a}nninen, H.,
-  Torres-Ruiz, J.M. \& Davi, H. (2021) Interaction of drought and frost in tree
-  ecophysiology: rethinking the timing of risks. \emph{Annals of Forest
-  Science} \textbf{78}, 1--15.
-
-\bibitem[{Chave \emph{et~al.}(2009)Chave, Coomes, Jansen, Lewis, Swenson \&
-  Zanne}]{Chave2009}
-Chave, J., Coomes, D., Jansen, S., Lewis, S.L., Swenson, N.G. \& Zanne, A.E.
-  (2009) Towards a worldwide wood economics spectrum. \emph{Ecology Letters}
-  \textbf{12}, 351--366.
-
-\bibitem[{Chen \emph{et~al.}(1999)Chen, Black, Yang, Barr, Neumann, Nesic,
-  Blanken, Novak, Eley, Ketler \emph{et~al.}}]{chen1999effects}
-Chen, W., Black, T., Yang, P., Barr, A., Neumann, H., Nesic, Z., Blanken, P.,
-  Novak, M., Eley, J., Ketler, R. \emph{et~al.} (1999) Effects of climatic
-  variability on the annual carbon sequestration by a boreal aspen forest.
-  \emph{Global Change Biology} \textbf{5}, 41--53.
-
-\bibitem[{Chin \emph{et~al.}(2025)Chin, Gessler, La{\'\i}n, {\O}sterlund,
-  Schaub, Th{\'e}roux-Rancourt, Voggeneder \& Lambers}]{chinmemory}
-Chin, A.R., Gessler, A., La{\'\i}n, O., {\O}sterlund, I., Schaub, M.,
-  Th{\'e}roux-Rancourt, G., Voggeneder, K. \& Lambers, J.H.R. (2025) The memory
-  of past water abundance shapes trees 7 years later. \emph{American Journal of
-  Botany} p. e16452.
-
-\bibitem[{Cleland \emph{et~al.}(2012)Cleland, Allen, Crimmins, Dunne, Pau,
-  Travers, Zavaleta \& Wolkovich}]{Cleland:2012}
-Cleland, E.E., Allen, J.M., Crimmins, T.M., Dunne, J.A., Pau, S., Travers,
-  S.E., Zavaleta, E.S. \& Wolkovich, E.M. (2012) Phenological tracking enables
-  positive species responses to climate change. \emph{Ecology} \textbf{93},
-  1765--1771.
-
-\bibitem[{Cleland \& Wolkovich(2024)}]{cleland2024effects}
-Cleland, E.E. \& Wolkovich, E. (2024) Effects of phenology on plant community
-  assembly and structure. \emph{Annual Review of Ecology, Evolution, and
-  Systematics} \textbf{55}, 471--492.
-
-\bibitem[{Colautti \emph{et~al.}(2010)Colautti, Eckert \&
-  Barrett}]{Colautti:2010}
-Colautti, R.I., Eckert, C.G. \& Barrett, S.C.H. (2010) Evolutionary constraints
-  on adaptive evolution during range expansion in an invasive plant.
-  \emph{Proceedings of the Royal Society B-Biological Sciences} \textbf{277},
-  1799--1806, colautti, Robert I. Eckert, Christopher G. Barrett, Spencer C. H.
-
-\bibitem[{Cornwell \& Nakagawa(2017)}]{cornwell2017phylogenetic}
-Cornwell, W. \& Nakagawa, S. (2017) Phylogenetic comparative methods.
-  \emph{Current Biology} \textbf{27}, R333--R336.
-
-\bibitem[{Cornwell \emph{et~al.}(2014)Cornwell, Westoby, Falster, FitzJohn,
-  O'Meara, Pennell, McGlinn, Eastman, Moles, Reich
-  \emph{et~al.}}]{cornwell2014functional}
-Cornwell, W.K., Westoby, M., Falster, D.S., FitzJohn, R.G., O'Meara, B.C.,
-  Pennell, M.W., McGlinn, D.J., Eastman, J.M., Moles, A.T., Reich, P.B.
-  \emph{et~al.} (2014) Functional distinctiveness of major plant lineages.
-  \emph{Journal of Ecology} \textbf{102}, 345--356.
-
-\bibitem[{Cosgrove(2005)}]{cosgrove2005growth}
-Cosgrove, D.J. (2005) Growth of the plant cell wall. \emph{Nature reviews
-  molecular cell biology} \textbf{6}, 850--861.
-
-\bibitem[{Cosgrove(2023)}]{cosgrove2023structure}
-Cosgrove, D.J. (2023) Structure and growth of plant cell walls. \emph{Nature
-  Reviews Molecular Cell Biology} pp. 1--19.
-
-\bibitem[{Coulthard \emph{et~al.}(2020)Coulthard, George \&
-  Meko}]{coulthard2020limits}
-Coulthard, B.L., George, S.S. \& Meko, D.M. (2020) The limits of
-  freely-available tree-ring chronologies. \emph{Quaternary Science Reviews}
-  \textbf{234}, 106264.
-
-\bibitem[{Cuapio-Hern{\'a}ndez \emph{et~al.}(2022)Cuapio-Hern{\'a}ndez,
-  Reyes-Ortiz, De~La~Rosa, Pav{\'o}n, L{\'o}pez-Herrera, Villanueva-D{\'\i}az
-  \& S{\'a}nchez-Gonz{\'a}lez}]{cuapio2022there}
-Cuapio-Hern{\'a}ndez, L., Reyes-Ortiz, J.L., De~La~Rosa, A.B., Pav{\'o}n, N.P.,
-  L{\'o}pez-Herrera, M., Villanueva-D{\'\i}az, J. \& S{\'a}nchez-Gonz{\'a}lez,
-  A. (2022) Is there a response pattern between radial growth of trees and
-  elevation gradient? \emph{Tree-Ring Research} .
-
-\bibitem[{Cuny \emph{et~al.}(2012)Cuny, Rathgeber, Lebourgeois, Fortin \&
-  Fournier}]{cuny2012life}
-Cuny, H.E., Rathgeber, C.B., Lebourgeois, F., Fortin, M. \& Fournier, M. (2012)
-  Life strategies in intra-annual dynamics of wood formation: example of three
-  conifer species in a temperate forest in north-east france. \emph{Tree
-  physiology} \textbf{32}, 612--625.
-
-\bibitem[{Davies \emph{et~al.}(2019)Davies, Regetz, Wolkovich \&
-  McGill}]{davies2019phylogenetically}
-Davies, T.J., Regetz, J., Wolkovich, E.M. \& McGill, B.J. (2019)
-  Phylogenetically weighted regression: A method for modelling non-stationarity
-  on evolutionary trees. \emph{Global ecology and biogeography} \textbf{28},
-  275--285.
-
-\bibitem[{Day \& Greenwood(2011)}]{day2011regulation}
-Day, M.E. \& Greenwood, M.S. (2011) Regulation of ontogeny in temperate
-  conifers. \emph{Size-and age-related changes in tree structure and function},
-  pp. 91--119, Springer.
-
-\bibitem[{de~Sauvage \emph{et~al.}(2022)de~Sauvage, Vitasse, Meier, Delzon \&
-  Bigler}]{de2022temperature}
-de~Sauvage, J.C., Vitasse, Y., Meier, M., Delzon, S. \& Bigler, C. (2022)
-  Temperature rather than individual growing period length determines radial
-  growth of sessile oak in the pyrenees. \emph{Agricultural and Forest
-  Meteorology} \textbf{317}, 108885.
-
-\bibitem[{Delpierre \emph{et~al.}(2017)Delpierre, Guillemot, Dufr{\^e}ne,
-  Cecchini \& Nicolas}]{delpierre2017tree}
-Delpierre, N., Guillemot, J., Dufr{\^e}ne, E., Cecchini, S. \& Nicolas, M.
-  (2017) Tree phenological ranks repeat from year to year and correlate with
-  growth in temperate deciduous forests. \emph{Agricultural and Forest
-  Meteorology} \textbf{234}, 1--10.
-
-\bibitem[{Diaz \emph{et~al.}(2016)Diaz, Kattge, Cornelissen, Wright, Lavorel,
-  Dray, Reu, Kleyer, Wirth, Prentice, Garnier, Bonisch, Westoby, Poorter,
-  Reich, Moles, Dickie, Gillison, Zanne, Chave, Wright, Sheremet'ev, Jactel,
-  Baraloto, Cerabolini, Pierce, Shipley, Kirkup, Casanoves, Joswig, Gunther,
-  Falczuk, Ruger, Mahecha \& Gorne}]{diaz2016}
-Diaz, S., Kattge, J., Cornelissen, J.H.C., Wright, I.J., Lavorel, S., Dray, S.,
-  Reu, B., Kleyer, M., Wirth, C., Prentice, I.C., Garnier, E., Bonisch, G.,
-  Westoby, M., Poorter, H., Reich, P.B., Moles, A.T., Dickie, J., Gillison,
-  A.N., Zanne, A.E., Chave, J., Wright, S.J., Sheremet'ev, S.N., Jactel, H.,
-  Baraloto, C., Cerabolini, B., Pierce, S., Shipley, B., Kirkup, D., Casanoves,
-  F., Joswig, J.S., Gunther, A., Falczuk, V., Ruger, N., Mahecha, M.D. \&
-  Gorne, L.D. (2016) The global spectrum of plant form and function.
-  \emph{Nature} \textbf{529}, 167--U73.
-
-\bibitem[{Dow \emph{et~al.}(2022)Dow, Kim, D'Orangeville, Gonzalez-Akre,
-  Helcoski, Herrmann, Harley, Maxwell, McGregor, McShea
-  \emph{et~al.}}]{dow2022warm}
-Dow, C., Kim, A.Y., D'Orangeville, L., Gonzalez-Akre, E.B., Helcoski, R.,
-  Herrmann, V., Harley, G.L., Maxwell, J.T., McGregor, I.R., McShea, W.J.
-  \emph{et~al.} (2022) Warm springs alter timing but not total growth of
-  temperate deciduous trees. \emph{Nature} \textbf{608}, 552--557.
-
-\bibitem[{El~Omari(2022)}]{el2022accumulation}
-El~Omari, B. (2022) Accumulation versus storage of total non-structural
-  carbohydrates in woody plants. \emph{Trees} pp. 1--13.
-
-\bibitem[{Etzold \emph{et~al.}(2022)Etzold, Sterck, Bose, Braun, Buchmann,
-  Eugster, Gessler, Kahmen, Peters, Vitasse \emph{et~al.}}]{etzold2022number}
-Etzold, S., Sterck, F., Bose, A.K., Braun, S., Buchmann, N., Eugster, W.,
-  Gessler, A., Kahmen, A., Peters, R.L., Vitasse, Y. \emph{et~al.} (2022)
-  Number of growth days and not length of the growth period determines radial
-  stem growth of temperate trees. \emph{Ecology Letters} \textbf{25}, 427--439.
-
-\bibitem[{Finzi \emph{et~al.}(2020)Finzi, Giasson, Plotkin, Aber, Boose,
-  Davidson, Dietze, Ellison, Frey, Goldman, Keenan, Melillo, Munger,
-  Nadelhoffer, Ollinger, V, Orwig, Pederson, Richardson, Savage, Tang,
-  Thompson, Williams, Wofsy, Zhou \& Foster}]{finzi2020}
-Finzi, A.C., Giasson, M.A., Plotkin, A.A.B., Aber, J.D., Boose, E.R., Davidson,
-  E.A., Dietze, M.C., Ellison, A.M., Frey, S.D., Goldman, E., Keenan, T.F.,
-  Melillo, J.M., Munger, J.W., Nadelhoffer, K.J., Ollinger, V, S., Orwig, D.A.,
-  Pederson, N., Richardson, A.D., Savage, K., Tang, J., Thompson, J.R.,
-  Williams, C.A., Wofsy, S.C., Zhou, Z. \& Foster, D.R. (2020) Carbon budget of
-  the harvard forest long-term ecological research site: pattern, process, and
-  response to global change. \emph{Ecological Monographs} \textbf{90}.
-
-\bibitem[{Fischer \emph{et~al.}(2019)Fischer, Traub
-  \emph{et~al.}}]{fischer2019swiss}
-Fischer, C., Traub, B. \emph{et~al.} (2019) \emph{Swiss National Forest
-  Inventory-methods and models of the fourth assessment}. Springer.
-
-\bibitem[{Flinker \emph{et~al.}(2021)Flinker, Cardenas, Caldwell, Flerchinger,
-  Roy \& Reich}]{flinker2021promise}
-Flinker, R.H., Cardenas, M.B., Caldwell, T.G., Flerchinger, G.N., Roy, R. \&
-  Reich, P.B. (2021) Promise and pitfalls of modeling grassland soil moisture
-  in a free-air co2 enrichment experiment (biocon) using the shaw model.
-  \emph{Pedosphere} \textbf{31}, 783--795.
-
-\bibitem[{{Forest Service - United States Department of Agriculture}()}]{FIA}
-{Forest Service - United States Department of Agriculture} (????) {Forest
-  Inventory and Analysis (FIA) database}.
-
-\bibitem[{Frank \emph{et~al.}(2022)Frank, Fang \&
-  Fonti}]{frank2022dendrochronology}
-Frank, D., Fang, K. \& Fonti, P. (2022) Dendrochronology: Fundamentals and
-  innovations. \emph{Stable Isotopes in Tree Rings: Inferring Physiological,
-  Climatic and Environmental Responses}, pp. 21--59, Springer International
-  Publishing Cham.
-
-\bibitem[{Friedlingstein \emph{et~al.}(2022)Friedlingstein, O'sullivan, Jones,
-  Andrew, Gregor, Hauck, Le~Qu{\'e}r{\'e}, Luijkx, Olsen, Peters
-  \emph{et~al.}}]{friedlingstein2022global}
-Friedlingstein, P., O'sullivan, M., Jones, M.W., Andrew, R.M., Gregor, L.,
-  Hauck, J., Le~Qu{\'e}r{\'e}, C., Luijkx, I.T., Olsen, A., Peters, G.P.
-  \emph{et~al.} (2022) Global carbon budget 2022. \emph{Earth System Science
-  Data Discussions} \textbf{2022}, 1--159.
-
-\bibitem[{Friend \emph{et~al.}(2022)Friend, Eckes-Shephard \&
-  Tupker}]{friend2022wood}
-Friend, A.D., Eckes-Shephard, A.H. \& Tupker, Q. (2022) Wood structure
-  explained by complex spatial source-sink interactions. \emph{Nature
-  Communications} \textbf{13}, 7824.
-
-\bibitem[{Fu \emph{et~al.}(2019)Fu, Piao, Delpierre, Hao, H{\"a}nninen, Geng,
-  Pe{\~n}uelas, Zhang, Janssens \& Campioli}]{fu2019nutrient}
-Fu, Y.H., Piao, S., Delpierre, N., Hao, F., H{\"a}nninen, H., Geng, X.,
-  Pe{\~n}uelas, J., Zhang, X., Janssens, I.A. \& Campioli, M. (2019) Nutrient
-  availability alters the correlation between spring leaf-out and autumn leaf
-  senescence dates. \emph{Tree physiology} \textbf{39}, 1277--1284.
-
-\bibitem[{Gantois(2022)}]{gantois2022new}
-Gantois, J. (2022) New tree-level temperature response curves document
-  sensitivity of tree growth to high temperatures across a us-wide climatic
-  gradient. \emph{Global Change Biology} \textbf{28}, 6002--6020.
-
-\bibitem[{Gordon \& Larson(1968)}]{gordon1968seasonal}
-Gordon, J.C. \& Larson, P.R. (1968) Seasonal course of photosynthesis,
-  respiration, and distribution of 14c in young pinus resinosa trees as related
-  to wood formation. \emph{Plant Physiology} \textbf{43}, 1617--1624.
-
-\bibitem[{Green \& Keenan(2022)}]{green2022limits}
-Green, J.K. \& Keenan, T.F. (2022) The limits of forest carbon sequestration.
-  \emph{Science} \textbf{376}, 692--693.
-
-\bibitem[{Grime(1977)}]{Grime:1977sw}
-Grime, J.P. (1977) Evidence for existence of 3 primary strategies in plants and
-  its relevance to ecological and evolutionary theory. \emph{American
-  Naturalist} \textbf{111}, 1169--1194.
-
-\bibitem[{Hacket-Pain \emph{et~al.}(2016{\natexlab{a}})Hacket-Pain, Friend,
-  Lageard \& Thomas}]{hacket2016tree}
-Hacket-Pain, A., Friend, A., Lageard, J. \& Thomas, P. (2016{\natexlab{a}})
-  Tree rings and masting: considering reproductive phenomena when interpreting
-  tree rings? \emph{Tree Rings in Archaeology, Climatology and Ecology}
-  \textbf{14}, 78--85.
-
-\bibitem[{Hacket-Pain \emph{et~al.}(2016{\natexlab{b}})Hacket-Pain, Cavin,
-  Friend \& Jump}]{hacket2016consistent}
-Hacket-Pain, A.J., Cavin, L., Friend, A.D. \& Jump, A. (2016{\natexlab{b}})
-  Consistent limitation of growth by high temperature and low precipitation
-  from range core to southern edge of european beech indicates widespread
-  vulnerability to changing climate. \emph{European Journal of Forest Research}
-  \textbf{135}, 897--909.
-
-\bibitem[{Hanson \emph{et~al.}(2017)Hanson, Riggs, Nettles, Phillips,
-  Krassovski, Hook, Gu, Richardson, Aubrecht, Ricciuto
-  \emph{et~al.}}]{hanson2017attaining}
-Hanson, P.J., Riggs, J.S., Nettles, W.R., Phillips, J.R., Krassovski, M.B.,
-  Hook, L.A., Gu, L., Richardson, A.D., Aubrecht, D.M., Ricciuto, D.M.
-  \emph{et~al.} (2017) Attaining whole-ecosystem warming using air and
-  deep-soil heating methods with an elevated co 2 atmosphere.
-  \emph{Biogeosciences} \textbf{14}, 861--883.
-
-\bibitem[{Harmon(2024)}]{harmonebook}
-Harmon, L. (2024) \emph{Phylogenetic Comparative Methods}. University of Idaho.
-
-\bibitem[{Hartmann \& Trumbore(2016)}]{hartmann2016understanding}
-Hartmann, H. \& Trumbore, S. (2016) Understanding the roles of nonstructural
-  carbohydrates in forest trees--from what we can measure to what we want to
-  know. \emph{New phytologist} \textbf{211}, 386--403.
-
-\bibitem[{Hilty \emph{et~al.}(2021)Hilty, Muller, Pantin \&
-  Leuzinger}]{hilty2021plant}
-Hilty, J., Muller, B., Pantin, F. \& Leuzinger, S. (2021) Plant growth: The
-  what, the how, and the why. \emph{New Phytologist} \textbf{232}, 25--41.
-
-\bibitem[{Howe \emph{et~al.}(2003)Howe, Aitken, Neale, Jermstad, Wheeler \&
-  Chen}]{howe2003genotype}
-Howe, G.T., Aitken, S.N., Neale, D.B., Jermstad, K.D., Wheeler, N.C. \& Chen,
-  T.H. (2003) From genotype to phenotype: unraveling the complexities of cold
-  adaptation in forest trees. \emph{Canadian Journal of Botany} \textbf{81},
-  1247--1266.
-
-\bibitem[{Ito \emph{et~al.}(2020)Ito, Romanou, Kiang, Faluvegi, Aleinov, Ruedy,
-  Russell, Lerner, Kelley \& Lo}]{ito2020global}
-Ito, G., Romanou, A., Kiang, N.Y., Faluvegi, G., Aleinov, I., Ruedy, R.,
-  Russell, G., Lerner, P., Kelley, M. \& Lo, K. (2020) Global carbon cycle and
-  climate feedbacks in the nasa giss modele2. 1. \emph{Journal of Advances in
-  Modeling Earth Systems} \textbf{12}, e2019MS002030.
-
-\bibitem[{Journ{\'e} \emph{et~al.}(2024)Journ{\'e}, Szymkowiak, Foest,
-  Hacket-Pain, Kelly \& Bogdziewicz}]{Journe2024}
-Journ{\'e}, V., Szymkowiak, J., Foest, J., Hacket-Pain, A., Kelly, D. \&
-  Bogdziewicz, M. (2024) Summer solstice orchestrates the subcontinental-scale
-  synchrony of mast seeding. \emph{Nature Plants} \textbf{10}, 367--373.
-
-\bibitem[{Keenan \emph{et~al.}(2014)Keenan, Gray, Friedl, Toomey, Bohrer,
-  Hollinger, Munger, O'Keefe, Schmid, Wing \emph{et~al.}}]{keenan2014net}
-Keenan, T.F., Gray, J., Friedl, M.A., Toomey, M., Bohrer, G., Hollinger, D.Y.,
-  Munger, J.W., O'Keefe, J., Schmid, H.P., Wing, I.S. \emph{et~al.} (2014) Net
-  carbon uptake has increased through warming-induced changes in temperate
-  forest phenology. \emph{Nature Climate Change} \textbf{4}, 598--604.
-
-\bibitem[{Kikuzawa(1982)}]{kikuzawa1982leaf}
-Kikuzawa, K. (1982) Leaf survival and evolution in betulaceae. \emph{Annals of
-  Botany} \textbf{50}, 345--353.
-
-\bibitem[{King \emph{et~al.}(2013)King, Gugerli, Fonti \& Frank}]{king2013tree}
-King, G.M., Gugerli, F., Fonti, P. \& Frank, D.C. (2013) Tree growth response
-  along an elevational gradient: climate or genetics? \emph{Oecologia}
-  \textbf{173}, 1587--1600.
-
-\bibitem[{Klesse \emph{et~al.}(2023)Klesse, Babst, Evans, Hurley, Pappas \&
-  Peters}]{klesse2023legacy}
-Klesse, S., Babst, F., Evans, M.E., Hurley, A., Pappas, C. \& Peters, R.L.
-  (2023) Legacy effects in radial tree growth are rarely significant after
-  accounting for biological memory. \emph{Journal of Ecology} \textbf{111},
-  1188--1202.
-
-\bibitem[{Kol{\'a}{\v{r}} \emph{et~al.}(2016)Kol{\'a}{\v{r}}, Giagli, Trnka,
-  Bedn{\'a}{\v{r}}ov{\'a}, Vavr{\v{c}}{\'\i}k \&
-  Rybn{\'\i}{\v{c}}ek}]{kolavr2016response}
-Kol{\'a}{\v{r}}, T., Giagli, K., Trnka, M., Bedn{\'a}{\v{r}}ov{\'a}, E.,
-  Vavr{\v{c}}{\'\i}k, H. \& Rybn{\'\i}{\v{c}}ek, M. (2016) Response of the leaf
-  phenology and tree-ring width of european beech to climate variability.
-  \emph{Silva Fennica} \textbf{50}.
-
-\bibitem[{K{\"o}rner(1998)}]{korner1998re}
-K{\"o}rner, C. (1998) A re-assessment of high elevation treeline positions and
-  their explanation. \emph{Oecologia} \textbf{115}, 445--459.
-
-\bibitem[{K{\"o}rner(2015)}]{korner2015paradigm}
-K{\"o}rner, C. (2015) Paradigm shift in plant growth control. \emph{Current
-  opinion in plant biology} \textbf{25}, 107--114.
-
-\bibitem[{K{\"o}rner(2021)}]{korner2021tools}
-K{\"o}rner, C. (2021) Tools shape paradigms of plant-environment interactions.
-  \emph{Progress in Botany Vol. 82} pp. 1--41.
-
-\bibitem[{K{\"o}rner(2022)}]{korner2022forest}
-K{\"o}rner, C. (2022) The forest's nutrient cycle drives its carbon cycle.
-  \emph{Tree Physiology} \textbf{42}, 425--427.
-
-\bibitem[{K{\"o}rner \emph{et~al.}(2023)K{\"o}rner, M{\"o}hl \&
-  Hiltbrunner}]{korner2023four}
-K{\"o}rner, C., M{\"o}hl, P. \& Hiltbrunner, E. (2023) Four ways to define the
-  growing season. \emph{Ecology Letters} .
-
-\bibitem[{Kramer(2012)}]{kramer2012book}
-Kramer, P. (2012) \emph{Physiology of woody plants}. Elsevier, New York.
-
-\bibitem[{La~Porta \emph{et~al.}(2008)La~Porta, Capretti, Thomsen, Kasanen,
-  Hietala \& Von~Weissenberg}]{la2008forest}
-La~Porta, N., Capretti, P., Thomsen, I., Kasanen, R., Hietala, A. \&
-  Von~Weissenberg, K. (2008) Forest pathogens with higher damage potential due
-  to climate change in europe. \emph{Canadian Journal of Plant Pathology}
-  \textbf{30}, 177--195.
-
-\bibitem[{Lange \emph{et~al.}(2006)Lange, {\O}kland \&
-  Krokene}]{lange2006thresholds}
-Lange, H., {\O}kland, B. \& Krokene, P. (2006) Thresholds in the life cycle of
-  the spruce bark beetle under climate change. \emph{Interjournal for Complex
-  Systems} \textbf{1648}, 1--10.
-
-\bibitem[{Larcher(1980)}]{larcher1980}
-Larcher, W. (1980) \emph{Plant Physiological Ecology}. Springer-Verlag.
-
-\bibitem[{Lechowicz(1984)}]{Lechowicz:1984cr}
-Lechowicz, M.J. (1984) Why do temperate deciduous trees leaf out at different
-  times - adaptation and ecology of forest communities. \emph{American
-  Naturalist} \textbf{124}, 821--842.
-
-\bibitem[{Leuning(2002)}]{leuning2002temperature}
-Leuning, R. (2002) Temperature dependence of two parameters in a photosynthesis
-  model. \emph{Plant, Cell \& Environment} \textbf{25}, 1205--1210.
-
-\bibitem[{Luo \emph{et~al.}(2024)Luo, Zohner, Crowther, Feng, Hoch, Li,
-  Richardson, Vitasse \& Gessler}]{luo2024internal}
-Luo, Y., Zohner, C., Crowther, T.W., Feng, J., Hoch, G., Li, P., Richardson,
-  A.D., Vitasse, Y. \& Gessler, A. (2024) Internal physiological drivers of
-  leaf development in trees: Understanding the relationship between
-  non-structural carbohydrates and leaf phenology. \emph{Functional Ecology} .
-
-\bibitem[{Manzanedo \emph{et~al.}(2024)Manzanedo, Chin, Ettinger, Pederson,
-  Pradhan, Guiterman, Su, Baumgarten \& Lambers}]{manzanedo2024moving}
-Manzanedo, R.D., Chin, A.R., Ettinger, A.K., Pederson, N., Pradhan, K.,
-  Guiterman, C.H., Su, J., Baumgarten, F. \& Lambers, J.H.R. (2024) Moving
-  ecological tree-ring big data forwards: Limitations, data integration, and
-  multidisciplinarity. \emph{Science of The Total Environment} \textbf{955},
-  177244.
-
-\bibitem[{Marchand \emph{et~al.}(2021)Marchand, Dox, Gri{\v{c}}ar, Prislan,
-  Van~den Bulcke, Fonti \& Campioli}]{marchand2021timing}
-Marchand, L.J., Dox, I., Gri{\v{c}}ar, J., Prislan, P., Van~den Bulcke, J.,
-  Fonti, P. \& Campioli, M. (2021) Timing of spring xylogenesis in temperate
-  deciduous tree species relates to tree growth characteristics and previous
-  autumn phenology. \emph{Tree Physiology} \textbf{41}, 1161--1170.
-
-\bibitem[{Martinez-Meier \emph{et~al.}(2008)Martinez-Meier, Sanchez, Pastorino,
-  Gallo \& Rozenberg}]{martinez2008hot}
-Martinez-Meier, A., Sanchez, L., Pastorino, M., Gallo, L. \& Rozenberg, P.
-  (2008) What is hot in tree rings? the wood density of surviving douglas-firs
-  to the 2003 drought and heat wave. \emph{Forest Ecology and Management}
-  \textbf{256}, 837--843.
-
-\bibitem[{Mart{\'\i}nez-Vilalta \emph{et~al.}(2016)Mart{\'\i}nez-Vilalta, Sala,
-  Asensio, Galiano, Hoch, Palacio, Piper \& Lloret}]{martinez2016dynamics}
+  on Climate Change}.
+\newblock Cambridge University Press, New York, NY,  (2021).
+
+\bibitem{flinker2021promise}
+Flinker, R.~H., Cardenas, M.~B., Caldwell, T.~G., Flerchinger, G.~N., Roy, R.,
+  and Reich, P.~B.
+\newblock Promise and pitfalls of modeling grassland soil moisture in a
+  free-air co2 enrichment experiment (biocon) using the shaw model.
+\newblock {\em Pedosphere}{ \bf 31}(5), 783--795 (2021).
+
+\bibitem{schweiger2022transgenerational}
+Schweiger, A., Awdamet, F.~T., Drenckhan, W., and Berauer, B.~J.
+\newblock Transgenerational effects of elevated co 2: Downregulation of
+  photosynthetic efficiency and stomatal sensitivity to drought.
+\newblock { \bf  (2022).
+
+\bibitem{chinmemory}
+Chin, A.~R., Gessler, A., La{\'\i}n, O., {\O}sterlund, I., Schaub, M.,
+  Th{\'e}roux-Rancourt, G., Voggeneder, K., and Lambers, J. H.~R.
+\newblock The memory of past water abundance shapes trees 7 years later.
+\newblock {\em American Journal of Botany}{ \bf , e16452 (2025).
+
+\bibitem{norby2011ecological}
+Norby, R.~J. and Zak, D.~R.
+\newblock Ecological lessons from free-air co2 enrichment (face) experiments.
+\newblock {\em Annual review of ecology, evolution, and systematics}{ \bf
+  42}(1), 181--203 (2011).
+
+\bibitem{hanson2017attaining}
+Hanson, P.~J., Riggs, J.~S., Nettles, W.~R., Phillips, J.~R., Krassovski,
+  M.~B., Hook, L.~A., Gu, L., Richardson, A.~D., Aubrecht, D.~M., Ricciuto,
+  D.~M., et~al.
+\newblock Attaining whole-ecosystem warming using air and deep-soil heating
+  methods with an elevated co 2 atmosphere.
+\newblock {\em Biogeosciences}{ \bf 14}(4), 861--883 (2017).
+
+\bibitem{smith2016drought}
+Smith, M.~D., Wilcox, K., Sala, O., Phillips, R., Luo, Y., Knapp, A., and
+  Lemoine, N.~P.
+\newblock Drought-net: A global network merging observations, experiments, and
+  modeling to forecast terrestrial ecosystem sensitivity to drought.
+\newblock In {\em AGU Fall Meeting Abstracts}, volume 2016,  B11J--06,  (2016).
+
+\bibitem{cadotte2017phylogenies}
+Cadotte, M.~W., Davies, T.~J., and Peres-Neto, P.~R.
+\newblock Why phylogenies do not always predict ecological differences.
+\newblock {\em Ecological Monographs}{ \bf 87}(4), 535--551 (2017).
+
+\bibitem{fatichi2019modelling}
+Fatichi, S., Pappas, C., Zscheischler, J., and Leuzinger, S.
+\newblock Modelling carbon sources and sinks in terrestrial vegetation.
+\newblock {\em New Phytologist}{ \bf 221}(2), 652--668 (2019).
+
+\bibitem{hartmann2016understanding}
+Hartmann, H. and Trumbore, S.
+\newblock Understanding the roles of nonstructural carbohydrates in forest
+  trees--from what we can measure to what we want to know.
+\newblock {\em New phytologist}{ \bf 211}(2), 386--403 (2016).
+
+\bibitem{martinez2016dynamics}
 Mart{\'\i}nez-Vilalta, J., Sala, A., Asensio, D., Galiano, L., Hoch, G.,
-  Palacio, S., Piper, F.I. \& Lloret, F. (2016) Dynamics of non-structural
-  carbohydrates in terrestrial plants: a global synthesis. \emph{Ecological
-  monographs} \textbf{86}, 495--516.
+  Palacio, S., Piper, F.~I., and Lloret, F.
+\newblock Dynamics of non-structural carbohydrates in terrestrial plants: a
+  global synthesis.
+\newblock {\em Ecological monographs}{ \bf 86}(4), 495--516 (2016).
 
-\bibitem[{McKown \emph{et~al.}(2014)McKown, Guy, Klapste, Geraldes, Friedmann,
-  Cronk, El-Kassaby, Mansfield \& Douglas}]{mckown2014np}
-McKown, A.D., Guy, R.D., Klapste, J., Geraldes, A., Friedmann, M., Cronk,
-  Q.C.B., El-Kassaby, Y.A., Mansfield, S.D. \& Douglas, C.J. (2014)
-  Geographical and environmental gradients shape phenotypic trait variation and
-  genetic structure in populus trichocarpa. \emph{New Phytologist}
-  \textbf{201}, 1263--1276, mcKown, Athena D. Guy, Robert D. Klapste, Jaroslav
-  Geraldes, Armando Friedmann, Michael Cronk, Quentin C. B. El-Kassaby, Yousry
-  A. Mansfield, Shawn D. Douglas, Carl J.
+\bibitem{tixier2020comparison}
+Tixier, A., Guzm{\'a}n-Delgado, P., Sperling, O., Amico~Roxas, A., Laca, E.,
+  and Zwieniecki, M.~A.
+\newblock Comparison of phenological traits, growth patterns, and seasonal
+  dynamics of non-structural carbohydrate in mediterranean tree crop species.
+\newblock {\em Scientific Reports}{ \bf 10}(1), 347 (2020).
 
-\bibitem[{McKown \emph{et~al.}(2016)McKown, Guy \& Quamme}]{mckown2016impacts}
-McKown, A.D., Guy, R.D. \& Quamme, L.K. (2016) Impacts of bud set and lammas
-  phenology on root: shoot biomass partitioning and carbon gain physiology in
-  poplar. \emph{Trees} \textbf{30}, 2131--2141.
+\bibitem{zhu2021different}
+Zhu, L., Liu, S., Arzac, A., Cooper, D.~J., Jin, Y., Yuan, D., Zhu, Y., Zhang,
+  X., Li, Z., Zhang, Y., et~al.
+\newblock Different response of earlywood vessel features of fraxinus
+  mandshurica to rapid warming in warm-dry and cold-wet areas.
+\newblock {\em Agricultural and Forest Meteorology}{ \bf 307}, 108523 (2021).
 
-\bibitem[{Michelot \emph{et~al.}(2012)Michelot, Simard, Rathgeber, Dufr{\^e}ne
-  \& Damesin}]{michelot2012comparing}
-Michelot, A., Simard, S., Rathgeber, C., Dufr{\^e}ne, E. \& Damesin, C. (2012)
-  {Comparing the intra-annual wood formation of three European species
-  (\emph{Fagus sylvatica, Quercus petraea and Pinus sylvestris}) as related to
-  leaf phenology and non-structural carbohydrate dynamics}. \emph{Tree
-  physiology} \textbf{32}, 1033--1045.
+\bibitem{korner2021tools}
+K{\"o}rner, C.
+\newblock Tools shape paradigms of plant-environment interactions.
+\newblock {\em Progress in Botany Vol. 82}{ \bf , 1--41 (2021).
 
-\bibitem[{Mitton \& Ferrenberg(2012)}]{mitton2012mountain}
-Mitton, J.B. \& Ferrenberg, S.M. (2012) Mountain pine beetle develops an
-  unprecedented summer generation in response to climate warming. \emph{The
-  American Naturalist} \textbf{179}, E163--E171.
+\bibitem{vieira2020tree}
+Vieira, J., Carvalho, A., and Campelo, F.
+\newblock Tree growth under climate change: evidence from xylogenesis timings
+  and kinetics.
+\newblock {\em Frontiers in Plant Science}{ \bf 11}, 90 (2020).
 
-\bibitem[{Monson \emph{et~al.}(2018)Monson, Szejner, Belmecheri, Morino \&
-  Wright}]{monson2018finding}
-Monson, R.K., Szejner, P., Belmecheri, S., Morino, K.A. \& Wright, W.E. (2018)
-  Finding the seasons in tree ring stable isotope ratios. \emph{American
-  journal of botany} \textbf{105}, 819--821.
+\bibitem{korner1998re}
+K{\"o}rner, C.
+\newblock A re-assessment of high elevation treeline positions and their
+  explanation.
+\newblock {\em Oecologia}{ \bf 115}, 445--459 (1998).
 
-\bibitem[{Morales-Castilla \emph{et~al.}(2024)Morales-Castilla, Davies,
-  Legault, Buonaiuto, Chamberlain, Ettinger, Garner, Jones, Loughnan, Pearse
-  \emph{et~al.}}]{morales2024phylogenetic}
-Morales-Castilla, I., Davies, T., Legault, G., Buonaiuto, D., Chamberlain,
-  C.J., Ettinger, A.K., Garner, M., Jones, F.A., Loughnan, D., Pearse, W.D.
-  \emph{et~al.} (2024) Phylogenetic estimates of species-level phenology
-  improve ecological forecasting. \emph{Nature Climate Change} pp. 1--7.
+\bibitem{korner2022forest}
+K{\"o}rner, C.
+\newblock The forest's nutrient cycle drives its carbon cycle.
+\newblock {\em Tree Physiology}{ \bf 42}(3), 425--427 (2022).
 
-\bibitem[{Myneni \emph{et~al.}(1997)Myneni, Keeling, Tucker, Asrar \&
-  Nemani}]{myneni1997increased}
-Myneni, R.B., Keeling, C., Tucker, C.J., Asrar, G. \& Nemani, R.R. (1997)
-  Increased plant growth in the northern high latitudes from 1981 to 1991.
-  \emph{Nature} \textbf{386}, 698--702.
+\bibitem{el2022accumulation}
+El~Omari, B.
+\newblock Accumulation versus storage of total non-structural carbohydrates in
+  woody plants.
+\newblock {\em Trees}{ \bf , 1--13 (2022).
 
-\bibitem[{Nobel \emph{et~al.}(1983)}]{nobel1983biophysical}
-Nobel, P.S. \emph{et~al.} (1983) \emph{Biophysical plant physiology and
-  ecology.} WH Freeman and company.
+\bibitem{nilsson2008dissecting}
+Nilsson, J., Karlberg, A., Antti, H., Lopez-Vernaza, M., Mellerowicz, E.,
+  Perrot-Rechenmann, C., Sandberg, G., and Bhalerao, R.~P.
+\newblock Dissecting the molecular basis of the regulation of wood formation by
+  auxin in hybrid aspen.
+\newblock {\em The Plant Cell}{ \bf 20}(4), 843--855 (2008).
 
-\bibitem[{Norby \& Zak(2011)}]{norby2011ecological}
-Norby, R.J. \& Zak, D.R. (2011) Ecological lessons from free-air co2 enrichment
-  (face) experiments. \emph{Annual review of ecology, evolution, and
-  systematics} \textbf{42}, 181--203.
+\bibitem{ye2015molecular}
+Ye, Z.-H. and Zhong, R.
+\newblock Molecular control of wood formation in trees.
+\newblock {\em Journal of experimental botany}{ \bf 66}(14), 4119--4131 (2015).
 
-\bibitem[{Pearse \emph{et~al.}(2019)Pearse, Legendre, Peres-Neto \&
-  Davies}]{pearse2019interaction}
-Pearse, W.D., Legendre, P., Peres-Neto, P.R. \& Davies, T.J. (2019) The
-  interaction of phylogeny and community structure: Linking the community
-  composition and trait evolution of clades. \emph{Global Ecology and
-  Biogeography} \textbf{28}, 1499--1511.
+\bibitem{rezende2019thermal}
+Rezende, E.~L. and Bozinovic, F.
+\newblock Thermal performance across levels of biological organization.
+\newblock {\em Philosophical Transactions of the Royal Society B}{ \bf
+  374}(1778), 20180549 (2019).
 
-\bibitem[{Peters \emph{et~al.}(2021)Peters, Steppe, Cuny, De~Pauw, Frank,
-  Schaub, Rathgeber, Cabon \& Fonti}]{peters2021turgor}
-Peters, R.L., Steppe, K., Cuny, H.E., De~Pauw, D.J., Frank, D.C., Schaub, M.,
-  Rathgeber, C.B., Cabon, A. \& Fonti, P. (2021) Turgor--a limiting factor for
-  radial growth in mature conifers along an elevational gradient. \emph{New
-  Phytologist} \textbf{229}, 213--229.
+\bibitem{FIA}
+{Forest Service - United States Department of Agriculture}.
+\newblock {Forest Inventory and Analysis (FIA) database}.
 
-\bibitem[{Pucha{\l}ka \emph{et~al.}(2024)Pucha{\l}ka, Prislan, Klisz, Koprowski
-  \& Gri{\v{c}}ar}]{puchalka2024tree}
-Pucha{\l}ka, R., Prislan, P., Klisz, M., Koprowski, M. \& Gri{\v{c}}ar, J.
-  (2024) Tree-ring formation dynamics in fagus sylvatica and quercus petraea in
-  a dry and a wet year. \emph{Dendrobiology} \textbf{91}, 1--15.
-
-\bibitem[{Puletti \emph{et~al.}(2020)Puletti, Grotti, Ferrara \&
-  Chianucci}]{puletti2020lidar}
-Puletti, N., Grotti, M., Ferrara, C. \& Chianucci, F. (2020) Lidar-based
-  estimates of aboveground biomass through ground, aerial, and satellite
-  observation: a case study in a mediterranean forest. \emph{Journal of Applied
-  Remote Sensing} \textbf{14}, 044501--044501.
-
-\bibitem[{Radville \emph{et~al.}(2016)Radville, McCormack, Post \&
-  Eissenstat}]{radville2016}
-Radville, L., McCormack, M.L., Post, E. \& Eissenstat, D.M. (2016) Root
-  phenology in a changing climate. \emph{Journal of Experimental Botany}
-  \textbf{67}, 3617--3628.
-
-\bibitem[{Ren \emph{et~al.}(2019)Ren, Ziaco, Rossi, Biondi, Prislan \&
-  Liang}]{ren2019}
-Ren, P., Ziaco, E., Rossi, S., Biondi, F., Prislan, P. \& Liang, E. (2019)
-  Growth rate rather than growing season length determines wood biomass in dry
-  environments. \emph{Agricultural and Forest Meteorology} \textbf{271},
-  46--53.
-
-\bibitem[{Rezende \& Bozinovic(2019)}]{rezende2019thermal}
-Rezende, E.L. \& Bozinovic, F. (2019) Thermal performance across levels of
-  biological organization. \emph{Philosophical Transactions of the Royal
-  Society B} \textbf{374}, 20180549.
-
-\bibitem[{Rossi \emph{et~al.}(2008)Rossi, Deslauriers, Gri{\c{c}}ar, Seo,
-  Rathgeber, Anfodillo, Morin, Levanic, Oven \& Jalkanen}]{rossi2008critical}
-Rossi, S., Deslauriers, A., Gri{\c{c}}ar, J., Seo, J.W., Rathgeber, C.B.,
-  Anfodillo, T., Morin, H., Levanic, T., Oven, P. \& Jalkanen, R. (2008)
-  Critical temperatures for xylogenesis in conifers of cold climates.
-  \emph{Global Ecology and Biogeography} \textbf{17}, 696--707.
-
-\bibitem[{Schaber \& Badeck(2002)}]{schaber2002evaluation}
-Schaber, J. \& Badeck, F.W. (2002) Evaluation of methods for the combination of
-  phenological time series and outlier detection. \emph{Tree Physiology}
-  \textbf{22}, 973--982.
-
-\bibitem[{Schweiger \emph{et~al.}(2022)Schweiger, Awdamet, Drenckhan \&
-  Berauer}]{schweiger2022transgenerational}
-Schweiger, A., Awdamet, F.T., Drenckhan, W. \& Berauer, B.J. (2022)
-  Transgenerational effects of elevated co 2: Downregulation of photosynthetic
-  efficiency and stomatal sensitivity to drought .
-
-\bibitem[{Senf \emph{et~al.}(2017)Senf, Seidl \& Hostert}]{senf2017remote}
-Senf, C., Seidl, R. \& Hostert, P. (2017) Remote sensing of forest insect
-  disturbances: Current state and future directions. \emph{International
-  journal of applied earth observation and geoinformation} \textbf{60}, 49--60.
-
-\bibitem[{Sillett \emph{et~al.}(2024)Sillett, Graham, Montague, Antoine \&
-  Koch}]{sillett2024ground}
-Sillett, S.C., Graham, M.E., Montague, J.P., Antoine, M.E. \& Koch, G.W. (2024)
-  Ground-based calibration for remote sensing of biomass in the tallest
-  forests. \emph{Forest Ecology and Management} \textbf{561}, 121879.
-
-\bibitem[{Silvestro \emph{et~al.}(2023)Silvestro, Zeng, Butt{\`o}, Sylvain,
-  Drolet, Mencuccini, Thiffault, Yuan \& Rossi}]{silvestro2023longer}
-Silvestro, R., Zeng, Q., Butt{\`o}, V., Sylvain, J.D., Drolet, G., Mencuccini,
-  M., Thiffault, N., Yuan, S. \& Rossi, S. (2023) A longer wood growing season
-  does not lead to higher carbon sequestration. \emph{Scientific reports}
-  \textbf{13}, 4059.
-
-\bibitem[{Smith \emph{et~al.}(2016)Smith, Wilcox, Sala, Phillips, Luo, Knapp \&
-  Lemoine}]{smith2016drought}
-Smith, M.D., Wilcox, K., Sala, O., Phillips, R., Luo, Y., Knapp, A. \& Lemoine,
-  N.P. (2016) Drought-net: A global network merging observations, experiments,
-  and modeling to forecast terrestrial ecosystem sensitivity to drought.
-  \emph{AGU Fall Meeting Abstracts}, vol. 2016, pp. B11J--06.
-
-\bibitem[{Soolanayakanahally \emph{et~al.}(2013)Soolanayakanahally, Guy, Silim
-  \& Song}]{soolanayakanahally2013timing}
-Soolanayakanahally, R.Y., Guy, R.D., Silim, S.N. \& Song, M. (2013) Timing of
-  photoperiodic competency causes phenological mismatch in balsam poplar
-  (populus balsamifera l.). \emph{Plant, cell \& environment} \textbf{36},
-  116--127.
-
-\bibitem[{Sturrock \emph{et~al.}(2011)Sturrock, Frankel, Brown, Hennon,
-  Kliejunas, Lewis, Worrall \& Woods}]{sturrock2011climate}
-Sturrock, R., Frankel, S., Brown, A., Hennon, P., Kliejunas, J., Lewis, K.,
-  Worrall, J. \& Woods, A. (2011) Climate change and forest diseases.
-  \emph{Plant pathology} \textbf{60}, 133--149.
-
-\bibitem[{Thomas(2011)}]{thomas2011bookchptr}
-Thomas, S.C. (2011) Age-related changes in tree growth and functional biology:
-  The role of reproduction. \emph{Size- and Age-Related Changes in Tree
-  Structure and Function} (eds. F.C. MEINZER, B.~Lachenbruch \& T.E. Dawson),
-  chap.~2, pp. 33--64, Springer.
-
-\bibitem[{Tixier \emph{et~al.}(2020)Tixier, Guzm{\'a}n-Delgado, Sperling,
-  Amico~Roxas, Laca \& Zwieniecki}]{tixier2020comparison}
-Tixier, A., Guzm{\'a}n-Delgado, P., Sperling, O., Amico~Roxas, A., Laca, E. \&
-  Zwieniecki, M.A. (2020) Comparison of phenological traits, growth patterns,
-  and seasonal dynamics of non-structural carbohydrate in mediterranean tree
-  crop species. \emph{Scientific Reports} \textbf{10}, 347.
-
-\bibitem[{Vieira \emph{et~al.}(2020)Vieira, Carvalho \&
-  Campelo}]{vieira2020tree}
-Vieira, J., Carvalho, A. \& Campelo, F. (2020) Tree growth under climate
-  change: evidence from xylogenesis timings and kinetics. \emph{Frontiers in
-  Plant Science} \textbf{11}, 90.
-
-\bibitem[{Webb \emph{et~al.}(2002)Webb, Ackerly, McPeek \&
-  Donoghue}]{Webb:2002or}
-Webb, C.O., Ackerly, D.D., McPeek, M. \& Donoghue, M.J. (2002) Phylogenies and
-  community ecology. \emph{Annual Review of Ecology and Systematics}
-  \textbf{33}, 475--505.
-
-\bibitem[{Went(1957)}]{went1957experimental}
-Went, F.W. (1957) The experimental control of plant growth. \emph{The
-  experimental control of plant growth.} \textbf{17}.
-
-\bibitem[{Westoby \emph{et~al.}(2023)Westoby, Yates, Holland \&
-  Halliwell}]{westoby2023phylogenetically}
-Westoby, M., Yates, L., Holland, B. \& Halliwell, B. (2023) Phylogenetically
-  conservative trait correlation: quantification and interpretation.
-  \emph{Journal of Ecology} \textbf{111}, 2105--2117.
-
-\bibitem[{Willis \emph{et~al.}(2008)Willis, Ruhfel, Primack, Miller-Rushing \&
-  Davis}]{willis2008phylogenetic}
-Willis, C.G., Ruhfel, B., Primack, R.B., Miller-Rushing, A.J. \& Davis, C.C.
-  (2008) Phylogenetic patterns of species loss in thoreau's woods are driven by
-  climate change. \emph{Proceedings of the National Academy of Sciences}
-  \textbf{105}, 17029--17033.
-
-\bibitem[{Zeng \& Wolkovich(2024)}]{zeng2024weak}
-Zeng, Z.A. \& Wolkovich, E.M. (2024) Weak evidence of provenance effects in
-  spring phenology across europe and north america. \emph{New Phytologist} .
-
-\bibitem[{Zhu \emph{et~al.}(2021)Zhu, Liu, Arzac, Cooper, Jin, Yuan, Zhu,
-  Zhang, Li, Zhang \emph{et~al.}}]{zhu2021different}
-Zhu, L., Liu, S., Arzac, A., Cooper, D.J., Jin, Y., Yuan, D., Zhu, Y., Zhang,
-  X., Li, Z., Zhang, Y. \emph{et~al.} (2021) Different response of earlywood
-  vessel features of fraxinus mandshurica to rapid warming in warm-dry and
-  cold-wet areas. \emph{Agricultural and Forest Meteorology} \textbf{307},
-  108523.
-
-\bibitem[{Zohner \emph{et~al.}(2023)Zohner, Mirzagholi, Renner, Mo, Rebindaine,
-  Bucher, Palou{\v{s}}, Vitasse, Fu, Stocker \emph{et~al.}}]{zohner2023effect}
-Zohner, C.M., Mirzagholi, L., Renner, S.S., Mo, L., Rebindaine, D., Bucher, R.,
-  Palou{\v{s}}, D., Vitasse, Y., Fu, Y.H., Stocker, B.D. \emph{et~al.} (2023)
-  Effect of climate warming on the timing of autumn leaf senescence reverses
-  after the summer solstice. \emph{Science} \textbf{381}, eadf5098.
+\bibitem{fischer2019swiss}
+Fischer, C., Traub, B., et~al.
+\newblock {\em Swiss National Forest Inventory-methods and models of the fourth
+  assessment}.
+\newblock Springer,  (2019).
 
 \end{thebibliography}
