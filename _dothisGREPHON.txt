@@ -2,72 +2,52 @@ Started 4 July 2023
 Happy Independence Day America
 
 <><><><><><><><><><><><>
-22 May 2025
+23 May 2025 (edits due to 29 May)
 
 STILL to do... 
 - Add more citations to last sentence of box? 
-- Check citation formatting
-- Maybe send Tegan an email saying I did best to integrate her edits ... but did not always understand them
+- Check citation formatting -- fix it! It's all BOLD now.
+- Note the DIFF file in cover letter?
+- Update the diff (and bibtex it and cross-ref it)
 
 
- 
+<><><><><><><><><><><><>
+23 May 2025 email
 
-- Write the letter! Include in letter to Tegan that we made many edits throughout to do ...  (list stuff she asked for) and that we tried hard to come up with a new figure, but in the end it was too similar to what we already had. Instead, we edited the figure we added in the last round of revision. 
+Your edits requested by *next Thursday* 
 
+Hi all,
 
+Thank you *all* for your help on edits to this ms! I much appreciated everyone's help and getting back to me on such a tight schedule -- I feel lucky for this team. I am thus turning this around on our tight-schedule. 
 
-------
-To all (on 23rd):
+Attached please find the updated Grephon ms with:
+- Main text* -- if you prefer to look at a diff version (but without the citations working), you can find it here: https://github.com/lizzieinvancouver/grephon/blob/main/docs/grephondiff.pdf
+- Part 1 of the cover letter, which includes a point by point response to Tegan's comments (as requested it is in this part of the cover letter)
+- Part 2 of the letter, which includes a point by point response to R2
+- I have not changed the supp much but you can find it here: https://github.com/lizzieinvancouver/grephon/blob/main/docs/grephonsupp.pdf
+* I will fix the references (somehow being bolded at 44) later. 
 
+What's changed?
+- I tried to cut down the section on phylo-traits framework and moved around some sections in the final part (I cut the conclusions)
+- Made abstract (120 words) subheaders shorter (60 char) per NCC requirements
+- Tried to add verbiage Tegan wanted throughout (let me know if now something sounds stupid or repetitive)
+- Lots of edits to figure in box and box (for R2)
+
+What I could use from you by **29 May (next Thursday)**
 * Please make sure I got in your major edits correctly. 
-* Please make edits in the tex of PDF. 
-* Edits for typos or to make things tighter (i.e., shorter!) are especially appreciated. (Stylistic edits or edits that clarify by adding words are harder for me to deal with, and I reserve the right to ignore them). 
+* Please make edits in the tex of PDF files for problems you see. 
+* Edits for typos or to make things tighter (i.e., shorter!) are especially appreciated. (Stylistic edits or edits that clarify by adding words are harder for me to deal with, and I reserve the right to ignore them.)
 
-Here's what's now done:
-- Try to cut down section on species framework 
-- Made abstract (120 words) subheaders shorter (60 char)
-- Tried to add verbiage Tegan wanted 
+If I do not hear from you by the 29th I assume you are okay with the revisions.
 
-I will fix the references (somehow being bolded at 44) later. 
+I will aim to get all revisions from you in starting 30 May and then I resubmit the next week (week of 2 June). *If you want to see the submitted version after your edits are in, please tell me by 29 May.* Otherwise, I will assume you're okay not seeing the absolute last draft (if major edits are being made, I will tell everyone).  
 
-
-------
-Thanks for your this! Some of your edits I did not include because they feel like small style differences that reasonable people could disagree on and others because Tegan flagged them as texts she seemed to like. But I reviewed them all. 
-
-L
-
-------
-EMAILS:
-
-
-
-Hi Kavya, 
-
-Thanks for your work on this! I added some of the refs you sent. (I didn't use the MDPI journal citations as I consider MDPI journals predatory and don't feel comfortable aiding their success and spread by citing papers from them unless there is really no other equivalent paper.) 
+Thank you again for all your help and if you have any questions or concerns, let me know.
 
 All the best,
-L
+Lizzie
 
 ------
-Hi Cat, 
-
-Thanks for this! This is super cool (though I don't fully believe we know if chilling is reduced, as we don't know what it is) research. It makes me want to ask Charrier what he thinks of the Kovaleski work. We have (for good or bad) restricted the discussion of NSCs to the box, so I don't think we can reasonably discuss them outside of the box in the main text, but I tried to tuck some of your point into the paths forward section. 
-
-All the best,
-L
-
-------
-
-
-Hi Alana,
-
-Thanks for this! I agree meteorological sounds weird, but it's Korner language so I will leave it for now. 
-
-The one last thing you could do is see if you are okay with the tweaks to the box figure by Ruben and that it makes sense with the text. 
-
-L
-
-PS: I am too lazy to change e.g., and the journals always seem to have one preference or the other ... so I am leaving it and hoping it doesn't really drive you uts. 
 
 
 <><><><><><><><><><><><>
