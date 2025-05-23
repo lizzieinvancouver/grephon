@@ -1,0 +1,2 @@
+cd projects/grephon/grephon/docs
+latexdiff grephonms_ncc_rev1.tex grephonms.tex > grephondiff.tex
