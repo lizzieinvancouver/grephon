@@ -51,7 +51,7 @@ Across studies that found support for or against a relationship between growth a
 
 \section*{Growth $\times$ elevation relationships}
 
-Using Google Scholar and ISI Web of Science, we searched the literature for studies of tree growth, especially via diameter or ring width, by elevation or latitude. Of 20 papers we found for these relationships, six included clear raw tree data in either scatterplots or tables that we scraped: \citet{oleksyn1998growth,huang2010radial,cavin2017highest,wang2017climatic,zhu2018spatial,zhou2022altitudinal}. 
+Using Google Scholar and ISI Web of Science, we searched the literature for studies of tree growth, especially via diameter or ring width, by elevation or latitude. Of 20 papers we found for these relationships, six included clear raw tree data in either scatterplots or tables that we scraped: \cite{oleksyn1998growth,huang2010radial,cavin2017highest,wang2017climatic,zhu2018spatial,zhou2022altitudinal}. 
 
 We could not scrape data from 14 papers for the following reasons: 
 \begin{enumerate}
@@ -63,9 +63,9 @@ We could not scrape data from 14 papers for the following reasons:
 \item Geographical scale: The locations of data collection spread across large longitudinal or latitudinal gradient. 
 \end{enumerate}
 
-We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated $x$ and $y$ axes using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for three, excluding \citet{huang2010radial} because it included only results for trends by latitude (and most other studies included only trends by elevation), and \citet{cavin2017highest,zhu2018spatial} because the elevation co-varied with latitude. % So the three we show are: \citep{oleksyn1998growth,wang2017climatic,zhou2022altitudinal}
+We scraped tree growth data from the selected studies using the Fiji image processing package with the Figure Calibration plugin. We calibrated $x$ and $y$ axes using the Figure Calibration plugin, followed by measuring growth values at different elevation using the measure function in Fiji. Of the six remaining papers, we show results for three, excluding \cite{huang2010radial} because it included only results for trends by latitude (and most other studies included only trends by elevation), and \cite{cavin2017highest,zhu2018spatial} because the elevation co-varied with latitude. % So the three we show are: \citep{oleksyn1998growth,wang2017climatic,zhou2022altitudinal}
 
-Thus, we show data from: \citet{oleksyn1998growth}, which measured 54 populations of  \emph{Picea abies} along 8 altitudinal transects in Southern Poland, we present the mean DBH (cm yr$^{-1}$) of values collected from each population (although 54 populations were monitored, only 42 data points were clearly visible in Figure 2 in the paper); \citet{wang2017climatic}, which collected  tree cores (37-100 years) collected from 4 different sites across an elevation gradient in the Luyashan Mountains in North China, we present the median of tree ring width values from the collected cores (147 tree cores collected from 73 trees); and \citet{zhou2022altitudinal}, who collected tree ring width data (cores of 60-80 years) of \emph{Pinus yunnar} from 6 altitudinal transects in Yunnan, China; we present the median of tree ring width of each transect.
+Thus, we show data from: \cite{oleksyn1998growth}, which measured 54 populations of  \emph{Picea abies} along 8 altitudinal transects in Southern Poland, we present the mean DBH (cm yr$^{-1}$) of values collected from each population (although 54 populations were monitored, only 42 data points were clearly visible in Figure 2 in the paper); \cite{wang2017climatic}, which collected  tree cores (37-100 years) collected from 4 different sites across an elevation gradient in the Luyashan Mountains in North China, we present the median of tree ring width values from the collected cores (147 tree cores collected from 73 trees); and \cite{zhou2022altitudinal}, who collected tree ring width data (cores of 60-80 years) of \emph{Pinus yunnar} from 6 altitudinal transects in Yunnan, China; we present the median of tree ring width of each transect.
 
 \section*{The challenge of metrics: Measuring growth and growing season length}
 
@@ -77,7 +77,7 @@ This should also include expected statistical tests, as we found a number of pap
 
 \subsection*{Measuring growth}
 
-Tree growth can be defined and measured in a variety of ways. It is often divided into primary (growth from the root and shoot tips that results in increased height and length) versus secondary (growth that increases the thickness or girth of stems and branches above ground, as well as below ground parts), or leaf production versus wood production. Across studies, we found the largest proportion used metrics related to secondary growth ($n=$28), followed by primary growth ($n=$20), with a smaller number used metrics that reflect combined primary and secondary growth, including biomass, height, or number of stems ($n=$9), and root:shoot ratio ($n =$1).  Other studies used modeled estimates of photosynthesis (e.g., \citet{smith2014implications} relied on daily photosynthesis estimates derived from the LPJ-GUESS photosynthesis model, while \citet{chen2000approaches} estimated photosynthesis using the Integrated Terrestrial Ecosystem C-budget model, InTEC). 
+Tree growth can be defined and measured in a variety of ways. It is often divided into primary (growth from the root and shoot tips that results in increased height and length) versus secondary (growth that increases the thickness or girth of stems and branches above ground, as well as below ground parts), or leaf production versus wood production. Across studies, we found the largest proportion used metrics related to secondary growth ($n=$28), followed by primary growth ($n=$20), with a smaller number used metrics that reflect combined primary and secondary growth, including biomass, height, or number of stems ($n=$9), and root:shoot ratio ($n =$1).  Other studies used modeled estimates of photosynthesis (e.g., \cite{smith2014implications} relied on daily photosynthesis estimates derived from the LPJ-GUESS photosynthesis model, while \cite{chen2000approaches} estimated photosynthesis using the Integrated Terrestrial Ecosystem C-budget model, InTEC). 
 Others measured photosynthesis at the leaf level, through flux towers, or used greenness metrics (NDVI). 
 
 Growth measurements varied across disciplines and study types, posing further challenges to an interdisciplinary approach to understanding how growing season length relates to growth. 
@@ -118,7 +118,7 @@ constraints \citep{baas2011wood,eckert2019makes,ensminger2015tree,juvany2013phot
 \section*{Figures \& Tables}
 
 % latex table generated in R 4.4.3 by xtable 1.8-4 package
-% Thu May 22 16:09:10 2025
+% Sun Jun  1 12:54:14 2025
 \begingroup\footnotesize
 \begin{longtable}{p{0.3\textwidth}p{0.1\textwidth}p{0.40\textwidth}}
 \caption{\textbf{Hypotheses and references for studies in our database.}} \\ 
@@ -140,7 +140,7 @@ longer season = more growth &  10 & \citep{camarero2022decoupled,chen2000,vcufar
 \endgroup
 \begin{figure}[h!]
 \includegraphics[width=0.7\textwidth]{..//analyses/growthxelevationetc/figures/growthbyelevation_plot.pdf} % {..//figures/_allfiguresFromRuben/growthbyelevation.png}   
-\caption{Growth $\times$ elevation relationships from the literature with simple linear regression fits shown with 89\% confidence intervals. \citet{oleksyn1998growth} measured growth (mm) as diameter at breast height increments, while the other studies \citep{wang2017climatic,zhou2022altitudinal} measured growth (mm) as ring width. See `Growth $\times$ elevation relationships' section for more methods details.} % and Fig. \ref{fig:growelevMORA} for an example from one site.
+\caption{Growth $\times$ elevation relationships from the literature with simple linear regression fits shown with 89\% confidence intervals. \cite{oleksyn1998growth} measured growth (mm) as diameter at breast height increments, while the other studies \citep{wang2017climatic,zhou2022altitudinal} measured growth (mm) as ring width. See `Growth $\times$ elevation relationships' section for more methods details.} % and Fig. \ref{fig:growelevMORA} for an example from one site.
 \label{fig:gxelev}
 \end{figure}
 
@@ -155,7 +155,7 @@ longer season = more growth &  10 & \citep{camarero2022decoupled,chen2000,vcufar
 \clearpage
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/speciesnumsphylo/phylosppcountsadj.png}  % was figures/speciesnums_finds.pdf
-\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across and within species, with species shown on the phylogenetic tree from \citet{smith2018constructing}. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly tested growth $\times$ growing season length, which are indicated by `not tested.' We do not show studies which reported species identity only to the genus level.}
+\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across and within species, with species shown on the phylogenetic tree from \cite{smith2018constructing}. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly tested growth $\times$ growing season length, which are indicated by `not tested.' We do not show studies which reported species identity only to the genus level.}
 \label{fig:sppfinds}
 \end{figure}
 
@@ -170,7 +170,7 @@ longer season = more growth &  10 & \citep{camarero2022decoupled,chen2000,vcufar
 \clearpage
 \section*{References}
 \bibliography{..//bibtex/grephonbib}
-\bibliographystyle{/Users/Lizzie/Documents/git/bibtex/styles/besjournals.bst}
+\bibliographystyle{naturemag}
 
 \end{document}
 
