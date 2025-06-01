@@ -19,6 +19,10 @@ CURRENT (119/120): Most climate change forecasts assume that longer growing seas
 ALTERNATIVE (118/120 words): Most climate change forecasts assume that longer growing seasons increase carbon storage through increased tree growth, but recent findings have challenged this assumption. Here we highlight divergent findings across studies, suggesting a major need to understand the causes of variation. Current hypotheses for why longer seasons may not increase tree growth include external (e.g., drought) drivers and internal constraints. These hypotheses, however, are generally tested in different ways by different fields on different species. We outline how integrating trait and phylogenetic perspectives with new studies to test how external drivers and internal constraints interact could yield new advances and build a unified model across species for when longer seasons will---or will not---lead to greater tree growth.
 
 
+NEWEST: Most climate change forecasts assume that longer growing seasons increase carbon storage through increased tree growth, but recent findings have challenged this assumption. Here we highlight divergent findings across studies, which apply different methods and disciplinary perspectives, suggesting a major gap in our understanding. Current hypotheses for why longer growing seasons may not always increase tree growth include drought-related effects and internal constraints. These hypotheses, however, are generally tested in different ways by different fields on different species. We outline how bridging current divides while simultaneously integrating evolutionary history and ecological theory could yield new advances and build a unified model across species for when longer seasons will---or will not---lead to greater tree growth, with major forecasting implications.
+
+
+
 
 <><><><><><><><><><><><>
 23 May 2025 email
