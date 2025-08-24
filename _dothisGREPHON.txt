@@ -1,6 +1,50 @@
 Started 4 July 2023
 Happy Independence Day America
 
+
+
+<><><><><><><><><><><><>
+24 August 2025
+
+OMG, paper was accepted. Time to sift through what they want ...
+
+
+
+---------
+Titles
+
+Suggested to Tegan: Why longer growing seasons with climate change do not always increase tree growth
+
+All suggestions: 
+* Why longer seasons with climate change do not consistently increase tree growth
+* When longer isn’t larger: Integrating mechanisms behind conflicting findings
+(but I prefer our initial suggestion)
+* Why longer growing seasons with climate change do not always increase tree growth
+* Why longer growing seasons with climate change have divergent effects on tree growth
+* Reconciling divergent tree growth responses to longer growing seasons with climate change 
+* Why [carbon?] forecasts of longer seasons with climate change may be wrong 
+
+---------
+ORCIDs
+
+Baumgarten: 0000-0002-8284-8384
+Chamberlain: 0000-0001-5495-3219
+Chin: 0000-0002-3862-9563
+Delgado Manzanedo: 0000-0001-6592-7235
+Ettinger: 0000-0002-6228-6732
+Janneke: 0000-0001-5523-0354
+Kavya: 0000-0002-3930-8964
+
+
+---------
+From Cat for text:
+As for the climate change story question:
+Effective climate mitigation strategies require a solid understanding of what the current conditions are in order to implement an intervention to enhance GHG emission reductions and removals. Often, GHG emission reduction and removal estimates rely on growth and yield models. If assumptions underlying these growth and yield models are incorrect, there can be cascading effects on our climate mitigation strategy success. Additionally, improving our understanding of how climate change will impact tree growth in the future, will augment our ability to ensure durable and resilient climate solutions (Ellis et al, 2024).
+
+Ellis, P.W., Page, A.M., Wood, S. et al. The principles of natural climate solutions. Nat Commun 15, 547 (2024). https://doi.org/10.1038/s41467-023-44425-2 
+
+
+
 <><><><><><><><><><><><>
 1 June 2025
 
