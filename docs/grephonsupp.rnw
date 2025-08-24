@@ -23,7 +23,7 @@
 
 % See also: git/grants/crc2023/crc2023app/docs/crc_notes2023more.tex which has some reference notes
 
-\title{Supplement: Why longer seasons with climate change may\\ not increase tree growth}
+\title{Supplement: Why longer seasons with climate change may\\ not always increase tree growth}
 % \author{Team Grephon}
 \date{\today}
 \maketitle
@@ -138,7 +138,7 @@ print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,s
 
 \begin{figure}[h!]
 \includegraphics[width=0.7\textwidth]{..//analyses/growthxelevationetc/figures/growthbyelevation_plot.pdf} % {..//figures/_allfiguresFromRuben/growthbyelevation.png}   
-\caption{Growth $\times$ elevation relationships from the literature with simple linear regression fits shown with 89\% confidence intervals. \cite{oleksyn1998growth} measured growth (mm) as diameter at breast height increments, while the other studies \citep{wang2017climatic,zhou2022altitudinal} measured growth (mm) as ring width. See `Growth $\times$ elevation relationships' section for more methods details.} % and Fig. \ref{fig:growelevMORA} for an example from one site.
+\caption{\emph{Growth $\times$ elevation relationships from the literature.} Simple linear regression fits with 89\% confidence intervals have been added to each dataset. Note that \cite{oleksyn1998growth} measured growth (mm) as diameter at breast height increments, while other studies \citep{wang2017climatic,zhou2022altitudinal} measured growth (mm) as ring width. See `Growth $\times$ elevation relationships' section for more methods details.} % and Fig. \ref{fig:growelevMORA} for an example from one site.
 \label{fig:gxelev}
 \end{figure}
 
@@ -146,21 +146,21 @@ print(ref.table, include.rownames=FALSE, hline.after = c(-1,0),floating= FALSE,s
 %\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_extbymethod.pdf}
 %\includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_endobymethod.pdf}
 \includegraphics[width=0.8\textwidth]{..//figures/heatmaps/heatmap_combined_endo&exo.pdf}
-\caption{A review of the prevalence of external (left) and internal (right) drivers mentioned in studies from our literature review, grouped by the general methods used. Many studies tested related hypotheses by measuring different drivers (e.g., latitude or elevation), so we combined similar external and internal factors for clearer comparisons.}
+\caption{\emph{External and internal drivers are ferquently but inconsistently studied in the literature.} Review of the prevalence of external (left) and internal (right) drivers mentioned in studies from our literature review, grouped by the general methods used. Many studies tested related hypotheses by measuring different drivers (e.g., latitude or elevation), so we combined similar external and internal factors for clearer comparisons.}
 \label{fig:heatmapssupp}
 \end{figure}
 
 \clearpage
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/speciesnumsphylo/phylosppcountsadj.png}  % was figures/speciesnums_finds.pdf
-\caption{Results of whether studies found a relationship between growth and growing season length were generally inconsistent across and within species, with species shown on the phylogenetic tree from \cite{smith2018constructing}. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., they tested how spring temperatures related to growth) but never directly tested growth $\times$ growing season length, which are indicated by `not tested.' We do not show studies which reported species identity only to the genus level.}
+\caption{\emph{Relationship between growth and growing season length were generally inconsistent across and within species.} Species are shown on the phylogenetic tree from \cite{smith2018constructing}. `Yes' indicates a study found a positive growth $\times$ growing season length relationship, while a `no' means they did not. A number of studies tested relationships possibly related to growth $\times$ growing season length (e.g., spring temperatures relation to growth) but never directly tested growth $\times$ growing season length, which are indicated by `not tested.' We do not show studies which reported species identity only to the genus level.}
 \label{fig:sppfinds}
 \end{figure}
 
 \clearpage
 \begin{figure}[h!]
 \includegraphics[width=1\textwidth]{..//figures/_figuresFromRuben/itrdb_vs_pep.png} %{..//figures/itrdbpep.png}
-\caption{Data overlap between the two major databases of growth (International Tree Ring Data Bank, ITRDB, orange) and plant phenology (Pan European Phenology Project, PEP725, blue). Both databases are compared in terms of their spatial distributions (a), temporal overlaps (b), coverage of environmental conditions in climate space (c) and taxonomical representation (d). Note that the number of tree ring chronologies in (b) are composed by multiple trees per site, typically 10-20. Climatic data from Worldclim database ver. 2.1 at 2.5\degree grid resolution. PEP725 records in d) show the largest records for any given phenophase per species.}
+\caption{\emph{Data overlap between major growth and phenology databases.} Overlap between two major databases of growth (International Tree Ring Data Bank, ITRDB, orange) and plant phenology (Pan European Phenology Project, PEP725, blue). Both databases are compared in terms of their spatial distributions (a), temporal overlaps (b), coverage of environmental conditions in climate space (c) and taxonomical representation (d). Note that the number of tree ring chronologies in (b) are composed by multiple trees per site, typically 10-20. Climatic data from Worldclim database ver. 2.1 at 2.5\degree grid resolution. PEP725 records in d) show the largest records for any given phenophase per species.}
 \label{fig:itrbdpep}
 \end{figure}
 
