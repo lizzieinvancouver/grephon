@@ -5,6 +5,20 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{ipcc2021}
+\bibinfo{author}{Canadell, J.} \emph{et~al.}
+\newblock \emph{\bibinfo{title}{Climate Change 2021: The Physical Science
+  Basis. Contribution of Working Group I to the Sixth Assessment Report of the
+  Intergovernmental Panel on Climate Change}} (\bibinfo{publisher}{Cambridge
+  University Press}, \bibinfo{address}{New York, NY}, \bibinfo{year}{2021}).
+
+\bibitem{friedlingstein2022global}
+\bibinfo{author}{Friedlingstein, P.} \emph{et~al.}
+\newblock \bibinfo{title}{Global carbon budget 2022}.
+\newblock \emph{\bibinfo{journal}{Earth System Science Data Discussions}}
+  \textbf{\bibinfo{volume}{2022}}, \bibinfo{pages}{1--159}
+  (\bibinfo{year}{2022}).
+
 \bibitem{nobel1983biophysical}
 \bibinfo{author}{Nobel, P.~S.} \emph{et~al.}
 \newblock \emph{\bibinfo{title}{Biophysical plant physiology and ecology.}}
@@ -26,13 +40,6 @@
 \newblock \emph{\bibinfo{journal}{Journal of Advances in Modeling Earth
   Systems}} \textbf{\bibinfo{volume}{12}}, \bibinfo{pages}{e2019MS002030}
   (\bibinfo{year}{2020}).
-
-\bibitem{friedlingstein2022global}
-\bibinfo{author}{Friedlingstein, P.} \emph{et~al.}
-\newblock \bibinfo{title}{Global carbon budget 2022}.
-\newblock \emph{\bibinfo{journal}{Earth System Science Data Discussions}}
-  \textbf{\bibinfo{volume}{2022}}, \bibinfo{pages}{1--159}
-  (\bibinfo{year}{2022}).
 
 \bibitem{chen1999effects}
 \bibinfo{author}{Chen, W.} \emph{et~al.}
@@ -736,13 +743,6 @@
   \textbf{\bibinfo{volume}{67}}, \bibinfo{pages}{3617--3628}
   (\bibinfo{year}{2016}).
 
-\bibitem{ipcc2021}
-\bibinfo{author}{Canadell, J.} \emph{et~al.}
-\newblock \emph{\bibinfo{title}{Climate Change 2021: The Physical Science
-  Basis. Contribution of Working Group I to the Sixth Assessment Report of the
-  Intergovernmental Panel on Climate Change}} (\bibinfo{publisher}{Cambridge
-  University Press}, \bibinfo{address}{New York, NY}, \bibinfo{year}{2021}).
-
 \bibitem{flinker2021promise}
 \bibinfo{author}{Flinker, R.~H.} \emph{et~al.}
 \newblock \bibinfo{title}{Promise and pitfalls of modeling grassland soil
@@ -797,6 +797,12 @@
 \newblock \emph{\bibinfo{journal}{Ecological Monographs}}
   \textbf{\bibinfo{volume}{87}}, \bibinfo{pages}{535--551}
   (\bibinfo{year}{2017}).
+
+\bibitem{ellis2024principles}
+\bibinfo{author}{Ellis, P.~W.} \emph{et~al.}
+\newblock \bibinfo{title}{The principles of natural climate solutions}.
+\newblock \emph{\bibinfo{journal}{Nature Communications}}
+  \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{547} (\bibinfo{year}{2024}).
 
 \bibitem{hartmann2016understanding}
 \bibinfo{author}{Hartmann, H.} \& \bibinfo{author}{Trumbore, S.}

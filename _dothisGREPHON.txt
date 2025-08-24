@@ -9,6 +9,29 @@ Happy Independence Day America
 OMG, paper was accepted. Time to sift through what they want ...
 
 
+---------
+What's done?
+
+* Changed the title
+* Removed the date
+* Told everyone to update their ORCID
+* Changed the headings 
+* Changed the captions
+* Added COI 
+* Moved author contributions 
+
+---------
+What's NOT done?
+
+* Remove the ref to line numbers! 
+* Remove mechanistic model as much as possible
+* Shorten the text (it's at least 600 over)
+* Requested edits to main text ('only a few small points')
+* Highlight refs
+* Double-check the changed the headings 
+* Double-check the changed intro/concl
+* Point by point letter 
+* Check list of what they want again
 
 ---------
 Titles
@@ -25,7 +48,7 @@ All suggestions:
 * Why [carbon?] forecasts of longer seasons with climate change may be wrong 
 
 ---------
-ORCIDs
+ORCIDs -- arghh! They need to do it themselves, so I emailed folks (everyone but Ailene apparently) 
 
 Baumgarten: 0000-0002-8284-8384
 Chamberlain: 0000-0001-5495-3219
@@ -35,15 +58,57 @@ Ettinger: 0000-0002-6228-6732
 Janneke: 0000-0001-5523-0354
 Kavya: 0000-0002-3930-8964
 
-
 ---------
-From Cat for text:
-As for the climate change story question:
-Effective climate mitigation strategies require a solid understanding of what the current conditions are in order to implement an intervention to enhance GHG emission reductions and removals. Often, GHG emission reduction and removal estimates rely on growth and yield models. If assumptions underlying these growth and yield models are incorrect, there can be cascading effects on our climate mitigation strategy success. Additionally, improving our understanding of how climate change will impact tree growth in the future, will augment our ability to ensure durable and resilient climate solutions (Ellis et al, 2024).
-
-Ellis, P.W., Page, A.M., Wood, S. et al. The principles of natural climate solutions. Nat Commun 15, 547 (2024). https://doi.org/10.1038/s41467-023-44425-2 
+Papers to highlight
 
 
+6. Keenan, T. F. et al. Net carbon uptake has increased through warming-induced changes in temperate forest phenology. Nature Climate Change 4, 598–604 (2014).
+
+8. Dow, C. et al. Warm springs alter timing but not total growth of temperate deciduous trees. Nature 608, 552–557 (2022).
+
+20. Webb, C. O., Ackerly, D. D., McPeek, M. & Donoghue, M. J. Phylogenies and community ecology. Annual Review of Ecology and Systematics 33, 475–505 (2002).
+
+29. Cuny, H. E., Rathgeber, C. B., Lebourgeois, F., Fortin, M. & Fournier, M. Life strategies in intra-annual dynamics of wood formation: example of three conifer species in a temperate forest in north-east france. Tree physiology 32, 612–625 (2012).
+
+31. Soolanayakanahally, R. Y., Guy, R. D., Silim, S. N. & Song, M. Timing of photoperi- odic competency causes phenological mismatch in balsam poplar (populus balsamifera l.). Plant, cell & environment 36, 116–127 (2013).
+
+66. Kikuzawa, K. Leaf survival and evolution in betulaceae. Annals of Botany 50, 345–353 (1982).
+
+75. Morales-Castilla, I. et al. Phylogenetic estimates of species-level phenology improve eco- logical forecasting. Nature Climate Change 1–7 (2024).
+
+MAYBE: 
+
+NSC one? Pick:
+
+Michelot, A., Simard, S., Rathgeber, C., Dufrˆene, E. & Damesin, C. Comparing the intra- annual wood formation of three European species (Fagus sylvatica, Quercus petraea and Pinus sylvestris) as related to leaf phenology and non-structural carbohydrate dynamics. Tree physiology 32, 1033–1045 (2012).
+
+Hartmann, H. & Trumbore, S. Understanding the roles of nonstructural carbohydrates in forest trees–from what we can measure to what we want to know. New phytologist 211, 386–403 (2016).
+
+Mart ́ınez-Vilalta, J. et al. Dynamics of non-structural carbohydrates in terrestrial plants: a global synthesis. Ecological monographs 86, 495–516 (2016).
+
+Tixier, A. et al. Comparison of phenological traits, growth patterns, and seasonal dynamics of non-structural carbohydrate in mediterranean tree crop species. Scientific Reports 10, 347 (2020).
+
+Luo, Y. et al. Internal physiological drivers of leaf development in trees: Understanding the relationship between non-structural carbohydrates and leaf phenology. Functional Ecology (2024).
+
+MAYBE: Check and pick ....
+
+26. Kol ́aˇr, T. et al. Response of the leaf phenology and tree-ring width of european beech to climate variability. Silva Fennica 50 (2016).
+
+32. Martinez-Meier, A., Sanchez, L., Pastorino, M., Gallo, L. & Rozenberg, P. What is hot in tree rings? the wood density of surviving douglas-firs to the 2003 drought and heat wave. Forest Ecology and Management 256, 837–843 (2008).
+
+45. Charrier, G. et al. Interaction of drought and frost in tree ecophysiology: rethinking the timing of risks. Annals of Forest Science 78, 1–15 (2021).
+
+52. Howe, G. T. et al. From genotype to phenotype: unraveling the complexities of cold adaptation in forest trees. Canadian Journal of Botany 81, 1247–1266 (2003).
+
+69. Delpierre, N., Guillemot, J., Dufrˆene, E., Cecchini, S. & Nicolas, M. Tree phenological ranks repeat from year to year and correlate with growth in temperate deciduous forests. Agricultural and Forest Meteorology 234, 1–10 (2017).
+
+70. Rossi, S. et al. Critical temperatures for xylogenesis in conifers of cold climates. Global Ecology and Biogeography 17, 696–707 (2008).
+
+71. Rademacher, T. et al. Insights into source/sink controls on wood formation and pho- tosynthesis from a stem chilling experiment in mature red maple. New Phytologist 236, 1296–1309 (2022).
+
+80. Marchand, L. J. et al. Timing of spring xylogenesis in temperate deciduous tree species relates to tree growth characteristics and previous autumn phenology. Tree Physiology 41, 1161–1170 (2021).
+
+95. Norby, R. J. & Zak, D. R. Ecological lessons from free-air co2 enrichment (face) experi- ments. Annual review of ecology, evolution, and systematics 42, 181–203 (2011).
 
 <><><><><><><><><><><><>
 1 June 2025
