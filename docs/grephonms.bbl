@@ -836,50 +836,6 @@
 \newblock \emph{\bibinfo{journal}{Progress in Botany Vol. 82}}
   \bibinfo{pages}{1--41} (\bibinfo{year}{2021}).
 
-\bibitem{vieira2020tree}
-\bibinfo{author}{Vieira, J.}, \bibinfo{author}{Carvalho, A.} \&
-  \bibinfo{author}{Campelo, F.}
-\newblock \bibinfo{title}{Tree growth under climate change: evidence from
-  xylogenesis timings and kinetics}.
-\newblock \emph{\bibinfo{journal}{Frontiers in Plant Science}}
-  \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{90} (\bibinfo{year}{2020}).
-
-\bibitem{korner1998re}
-\bibinfo{author}{K{\"o}rner, C.}
-\newblock \bibinfo{title}{A re-assessment of high elevation treeline positions
-  and their explanation}.
-\newblock \emph{\bibinfo{journal}{Oecologia}} \textbf{\bibinfo{volume}{115}},
-  \bibinfo{pages}{445--459} (\bibinfo{year}{1998}).
-
-\bibitem{korner2022forest}
-\bibinfo{author}{K{\"o}rner, C.}
-\newblock \bibinfo{title}{The forest's nutrient cycle drives its carbon cycle}.
-\newblock \emph{\bibinfo{journal}{Tree Physiology}}
-  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{425--427}
-  (\bibinfo{year}{2022}).
-
-\bibitem{el2022accumulation}
-\bibinfo{author}{El~Omari, B.}
-\newblock \bibinfo{title}{Accumulation versus storage of total non-structural
-  carbohydrates in woody plants}.
-\newblock \emph{\bibinfo{journal}{Trees}} \bibinfo{pages}{1--13}
-  (\bibinfo{year}{2022}).
-
-\bibitem{nilsson2008dissecting}
-\bibinfo{author}{Nilsson, J.} \emph{et~al.}
-\newblock \bibinfo{title}{Dissecting the molecular basis of the regulation of
-  wood formation by auxin in hybrid aspen}.
-\newblock \emph{\bibinfo{journal}{The Plant Cell}}
-  \textbf{\bibinfo{volume}{20}}, \bibinfo{pages}{843--855}
-  (\bibinfo{year}{2008}).
-
-\bibitem{ye2015molecular}
-\bibinfo{author}{Ye, Z.-H.} \& \bibinfo{author}{Zhong, R.}
-\newblock \bibinfo{title}{Molecular control of wood formation in trees}.
-\newblock \emph{\bibinfo{journal}{Journal of experimental botany}}
-  \textbf{\bibinfo{volume}{66}}, \bibinfo{pages}{4119--4131}
-  (\bibinfo{year}{2015}).
-
 \bibitem{rezende2019thermal}
 \bibinfo{author}{Rezende, E.~L.} \& \bibinfo{author}{Bozinovic, F.}
 \newblock \bibinfo{title}{Thermal performance across levels of biological

@@ -23,10 +23,11 @@
 
 % See also: git/grants/crc2023/crc2023app/docs/crc_notes2023more.tex which has some reference notes
 
-\title{Supplement: Why longer seasons with climate change may\\ not always increase tree growth}
-% \author{Team Grephon}
-\date{\today}
-\maketitle
+\begin{center}
+{\sc Supplementary Information for:} {\Large Why longer seasons with climate change \\ may not always increase tree growth} \\
+\vspace{5ex}
+{\sc Authors:} E.M. Wolkovich$^1$, Ailene K. Ettinger$^2$, Alana Chin$^3$, Catherine J. Chamberlain$^4$,\\ Frederik Baumgarten$^1$, Kavya Pradhan$^{5,6}$, Rub{\'e}n D. Manzanedo$^{7-9}$ \&  Janneke Hille Ris Lambers$^7$
+\end{center}
 
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}

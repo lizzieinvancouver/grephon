@@ -20,16 +20,18 @@ What's done?
 * Added COI 
 * Moved author contributions 
 
----------
-What's NOT done?
-
 * Remove the ref to line numbers! 
 * Remove mechanistic model as much as possible
 * Shorten the text (it's at least 600 over)
 * Requested edits to main text ('only a few small points')
+* Double-check the changed intro/concl
+
+---------
+What's NOT done?
+
+
 * Highlight refs
 * Double-check the changed the headings 
-* Double-check the changed intro/concl
 * Point by point letter 
 * Check list of what they want again
 
