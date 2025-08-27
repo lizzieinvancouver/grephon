@@ -52,7 +52,7 @@ ORCIDs -- arghh! They need to do it themselves, so I emailed folks (everyone but
 
 Baumgarten: 0000-0002-8284-8384
 Chamberlain: 0000-0001-5495-3219
-Chin: 0000-0002-3862-9563
+Chin: 0000-0002-3862-9563 ** She fixed it!
 Delgado Manzanedo: 0000-0001-6592-7235
 Ettinger: 0000-0002-6228-6732
 Janneke: 0000-0001-5523-0354

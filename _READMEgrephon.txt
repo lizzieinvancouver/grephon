@@ -12,3 +12,7 @@ https://knb.ecoinformatics.org/view/urn%3Auuid%3A8ade2a32-fd5f-467f-8d6e-231ca72
 
 (2) Tree growth x elevation and latitude relationships from the literature
 https://knb.ecoinformatics.org/view/urn%3Auuid%3A39be03f4-14ff-4c6e-9c42-f3bcfbf5eea8
+
+<><><><><><><>
+docs/ cleanup in August 2025
+
