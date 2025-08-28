@@ -8,6 +8,8 @@ Happy Independence Day America
 
 OMG, paper was accepted. Time to sift through what they want ...
 
+3877 main text
+404 in box
 
 ---------
 What's done?
@@ -25,16 +27,30 @@ What's done?
 * Shorten the text (it's at least 600 over)
 * Requested edits to main text ('only a few small points')
 * Double-check the changed intro/concl
+* Double-check the changed the headings 
+* Highlight refs
+* Point by point letter 
 
 ---------
-What's NOT done?
+Getting stuff ready ... the hell of making the right tex files!
+Here's what I changed from the files in docs/ (the useful files) and the ones in docs/grephonmsFINALncc/
 
+* I deleted all the comments 
+* I deleted some of the packages and all the x-ref stuff
+* I embedded the .bbl files
+* I commented out the figure files
+* I commented out the captions for the figures for the supp (and submitted those in the inventory word file, though I deleted out some refs in the ED Fig 1 caption as it sounded very hard to include it) 
+* I UPDATED FIGURE names ... 
 
-* Highlight refs
-* Double-check the changed the headings 
-* Point by point letter 
-* Check list of what they want again
+ \ref{fig:hypothese} -> 1
+\ref{fig:heatmaps} -> 2
+\ref{fig:moraconcept} -> 3
+\ref{fig:phylomodel} -> 4
 
+\ref{fig:gxelev} -> ED Fig. 1
+\ref{fig:heatmapssupp} -> ED Fig. 2
+\ref{fig:sppfinds} -> ED Fig. 3
+\ref{fig:itrbdpep} -> ED Fig. 4 
 ---------
 Titles
 

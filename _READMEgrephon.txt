@@ -16,3 +16,4 @@ https://knb.ecoinformatics.org/view/urn%3Auuid%3A39be03f4-14ff-4c6e-9c42-f3bcfbf
 <><><><><><><>
 docs/ cleanup in August 2025
 
+I detail what changed between in _dothisGREPHON.txt (24 August 2025, look for: Here's what I changed from the files in docs/ (the useful files) and the ones in docs/grephonmsFINALncc/
