@@ -1,7 +1,41 @@
 Started 4 July 2023
 Happy Independence Day America
 
+<><><><><><><><><><><><>
+12 September 2025
 
+NCC asked for a bunch of stuff (see grephon/ncc_submitFINAL/take2/) so I updated the title again.
+
+I switched to: 
+* When longer growing seasons do not increase tree growth (which I liked)
+
+But I also suggested and got votes for:
+1) When longer growing seasons with climate change do not increase tree growth
+2) Longer seasons with climate change may not lead to the increased tree growth that forecasts assume
+3 Re-examining the assumption that longer seasons increase tree growth
+4) Divergent findings in how longer seasons affect tree growth highlight major gaps
+5) Building a unified model to predict when longer seasons increase tree growth
+6) which Ruben suggested: Longer growing seasons with climate change may not increase tree growth
+
+1) Fredi, Ruben, Alana (and me)
+2) Ruben, Alana 
+3) Ailene, JHRL, Cat, Kavya
+4) JHRL, Fredi, Cat
+6) Ruben, Alana 
+
+Also, Ruben had a good reply:
+
+(I don't really get it, the original title is very nice and it is our paper... what control freaks... anyway...)
+
+From those I like 1) and 2) best, but I can live with all of them! 🙂
+
+However, if the issue they have is the 'why'... could we simply drop it? "Longer growing seasons with climate change may not increase tree growth". I see it feels a bit emptier and it is likely why you added the extra wording on 2). Potentially adding 'expected' (Longer growing seasons with climate change may not translate into the expected tree growth increase)?
+
+But Alana had my favorite reply:
+
+This is getting kinda weird, I liked our title. 
+
+I prefer 1, 2, or Ruben’s suggestion. 1 is probably my favorite. I like having the main conclusion laid out because I think papers like this are prone to miscitation otherwise. 
 
 <><><><><><><><><><><><>
 24 August 2025
@@ -54,9 +88,20 @@ Here's what I changed from the files in docs/ (the useful files) and the ones in
 ---------
 Titles
 
+Updated from 8 September 2025. More ideas:
+
+1) When longer growing seasons with climate change do not increase tree growth
+2) Longer seasons with climate change may not lead to the increased tree growth that forecasts assume
+3) Re-examining the assumption that longer seasons increase tree growth
+4) Divergent findings in how longer seasons affect tree growth highlight major gaps
+5) Building a unified model to predict when longer seasons increase tree growth
+6) Something else? Better ideas welcome ....
+
+
 Suggested to Tegan: Why longer growing seasons with climate change do not always increase tree growth
 
 All suggestions: 
+* Why longer seasons with climate may not lead to the increased tree growth that forecasts assume
 * Why longer seasons with climate change do not consistently increase tree growth
 * When longer isn’t larger: Integrating mechanisms behind conflicting findings
 (but I prefer our initial suggestion)

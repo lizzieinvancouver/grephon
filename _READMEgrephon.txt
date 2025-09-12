@@ -21,3 +21,5 @@ I added all the changes NCC asked for a few more small tweaks to the working fil
 Then I copied these over and made them ready for NCC formatting (god willing?).
 I detail what changed between in _dothisGREPHON.txt (24 August 2025, look for: Here's what I changed from the files in docs/ (the useful files) and the ones in docs/grephonmsFINALncc/
 See commit: d8790fdba1f83b28b5c69830750a6c301a3d899d
+
+BUT then!!! They said there are no ED allowed so I reverted to using the supp in docs/ and will delete the supp in docs/grephonmsFINALncc/ (12 September 2025)
